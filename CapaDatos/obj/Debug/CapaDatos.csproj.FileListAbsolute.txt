@@ -1,0 +1,53 @@
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaDatos\bin\Debug\CapaDatos.dll.config
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaDatos\bin\Debug\CapaDatos.dll.config
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Programas\A&J Academico 1.0\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Programas\A&J Academico 1.0\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Programas\A&J Academico 1.0\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Programas\A&J Academico 1.0\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Programas\A&J Academico 1.0\CapaDatos\bin\Debug\CapaDatos.dll.config
+C:\Programas\A&J Academico 1.0\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+D:\Programas\A&J Academico 1.0\CapaDatos\bin\Debug\CapaDatos.dll.config
+D:\Programas\A&J Academico 1.0\CapaDatos\bin\Debug\CapaDatos.dll
+D:\Programas\A&J Academico 1.0\CapaDatos\bin\Debug\CapaDatos.pdb
+D:\Programas\A&J Academico 1.0\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+D:\Programas\A&J Academico 1.0\CapaDatos\obj\Debug\CapaDatos.dll
+D:\Programas\A&J Academico 1.0\CapaDatos\obj\Debug\CapaDatos.pdb
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaDatos\bin\Debug\CapaDatos.dll.config
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaDatos\bin\Debug\CapaDatos.dll
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaDatos\bin\Debug\CapaDatos.pdb
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaDatos\obj\Debug\CapaDatos.csprojAssemblyReference.cache
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaDatos\obj\Debug\CapaDatos.dll
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaDatos\obj\Debug\CapaDatos.pdb
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaDatos\bin\Debug\CapaDatos.dll.config
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaDatos\bin\Debug\CapaDatos.dll
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaDatos\bin\Debug\CapaDatos.pdb
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaDatos\obj\Debug\CapaDatos.csprojAssemblyReference.cache
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaDatos\obj\Debug\CapaDatos.dll
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaDatos\obj\Debug\CapaDatos.pdb
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaDatos\bin\Debug\CapaDatos.dll.config
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaDatos\bin\Debug\CapaDatos.dll
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaDatos\bin\Debug\CapaDatos.pdb
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaDatos\obj\Debug\CapaDatos.csprojAssemblyReference.cache
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaDatos\obj\Debug\CapaDatos.dll
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaDatos\obj\Debug\CapaDatos.pdb
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaDatos\bin\Debug\CapaDatos.dll.config
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaDatos\bin\Debug\CapaDatos.dll
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaDatos\bin\Debug\CapaDatos.pdb
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaDatos\obj\Debug\CapaDatos.csprojAssemblyReference.cache
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaDatos\obj\Debug\CapaDatos.dll
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaDatos\obj\Debug\CapaDatos.pdb

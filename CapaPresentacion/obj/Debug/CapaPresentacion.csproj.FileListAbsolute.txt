@@ -1,0 +1,578 @@
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.csprojResolveAssemblyReference.cache
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Alumnos.resources
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Bitacora.resources
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Familias.resources
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Matricula.resources
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAlmacen_Bodegas.resources
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAlmacen_IngresosDeBodega.resources
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAlmacen_Pedidos.resources
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAlmacen_Productos.resources
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAlmacen_Proveedor.resources
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAlmacen_SalidaDeProductos.resources
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Articulos.resources
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Inventario.resources
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Libros.resources
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Prestamos.resources
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Rutas.resources
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmConfiguracion_DatosDeSeguridad.resources
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmLogin.resources
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmMenuPrincipal.resources
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_Asignaturas.resources
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_Aulas.resources
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_Docentes.resources
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_Empleados.resources
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_Padrinos.resources
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_Paradas.resources
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_Rutas.resources
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_ServiciosOfrecidos.resources
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_SolicitudDeServicio.resources
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_Vehiculos.resources
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_AreaAcademica.resources
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_AñoElectivo.resources
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_Cursos.resources
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_Jornada.resources
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_Periodos.resources
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAlmacen_Comprobante.resources
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.Cache
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaPresentacion\bin\Debug\CapaPresentacion.dll
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaPresentacion\bin\Debug\CapaNegocio.dll
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaPresentacion\bin\Debug\CapaDatos.dll
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaPresentacion\bin\Debug\CapaDatos.pdb
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaPresentacion\obj\Debug\CapaPresentacion.csprojResolveAssemblyReference.cache
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Alumnos.resources
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Bitacora.resources
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Familias.resources
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Matricula.resources
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaPresentacion\obj\Debug\CapaPresentacion.frmAlmacen_Bodegas.resources
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaPresentacion\obj\Debug\CapaPresentacion.frmAlmacen_IngresosDeBodega.resources
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaPresentacion\obj\Debug\CapaPresentacion.frmAlmacen_Pedidos.resources
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaPresentacion\obj\Debug\CapaPresentacion.frmAlmacen_Productos.resources
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaPresentacion\obj\Debug\CapaPresentacion.frmAlmacen_Proveedor.resources
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaPresentacion\obj\Debug\CapaPresentacion.frmAlmacen_SalidaDeProductos.resources
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Articulos.resources
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Inventario.resources
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Libros.resources
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Prestamos.resources
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Rutas.resources
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaPresentacion\obj\Debug\CapaPresentacion.frmConfiguracion_DatosDeSeguridad.resources
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaPresentacion\obj\Debug\CapaPresentacion.frmLogin.resources
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaPresentacion\obj\Debug\CapaPresentacion.frmMenuPrincipal.resources
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_Asignaturas.resources
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_Aulas.resources
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_Docentes.resources
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_Empleados.resources
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_Padrinos.resources
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_Paradas.resources
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_Rutas.resources
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_ServiciosOfrecidos.resources
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_SolicitudDeServicio.resources
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_Vehiculos.resources
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_AreaAcademica.resources
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_AñoElectivo.resources
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_Cursos.resources
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_Jornada.resources
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_Periodos.resources
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAlmacen_Comprobante.resources
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.Cache
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaPresentacion\obj\Debug\CapaPresentacion.dll
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Programas\A&J Academico 1.0\CapaPresentacion\bin\Debug\CapaPresentacion.dll
+C:\Programas\A&J Academico 1.0\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+C:\Programas\A&J Academico 1.0\CapaPresentacion\bin\Debug\CapaNegocio.dll
+C:\Programas\A&J Academico 1.0\CapaPresentacion\bin\Debug\CapaDatos.dll
+C:\Programas\A&J Academico 1.0\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+C:\Programas\A&J Academico 1.0\CapaPresentacion\bin\Debug\CapaDatos.pdb
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.csprojResolveAssemblyReference.cache
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Alumnos.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Bitacora.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Familias.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Matricula.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Articulos.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Inventario.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Libros.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Prestamos.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Rutas.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmConfiguracion_DatosDeSeguridad.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmLogin.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmMenuPrincipal.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_Asignaturas.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_Aulas.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_Padrinos.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_Paradas.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_Rutas.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_ServiciosOfrecidos.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_SolicitudDeServicio.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_Vehiculos.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_AreaAcademica.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_AñoElectivo.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_Cursos.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_Jornada.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_Periodos.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAlmacen_Comprobante.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.Cache
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.dll
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\bin\Debug\CapaPresentacion.dll
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\bin\Debug\CapaNegocio.dll
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\bin\Debug\CapaDatos.dll
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\bin\Debug\CapaDatos.pdb
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.csprojResolveAssemblyReference.cache
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Alumnos.resources
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Bitacora.resources
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Familias.resources
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Matricula.resources
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAlmacen_Bodegas.resources
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAlmacen_IngresosDeBodega.resources
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAlmacen_Pedidos.resources
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAlmacen_Productos.resources
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAlmacen_Proveedor.resources
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAlmacen_SalidaDeProductos.resources
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Articulos.resources
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Inventario.resources
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Libros.resources
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Prestamos.resources
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Rutas.resources
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmConfiguracion_DatosDeSeguridad.resources
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmLogin.resources
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmMenuPrincipal.resources
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_Asignaturas.resources
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_Aulas.resources
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_Padrinos.resources
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_Paradas.resources
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_Rutas.resources
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_ServiciosOfrecidos.resources
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_SolicitudDeServicio.resources
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_Vehiculos.resources
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_AreaAcademica.resources
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_AñoElectivo.resources
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_Cursos.resources
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_Jornada.resources
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_Periodos.resources
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAlmacen_Comprobante.resources
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.Cache
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.dll
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAdministracion_Docentes.resources
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAdministracion_Empleados.resources
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_Aula.resources
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarAcademico_Familias.resources
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmTesoreria_OrdenDeMatricula.resources
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmTesoreria_ValoresAcademicos.resources
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarAcademico_OrdenDeMatricula.resources
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarTesoreria_ValoresAcademicos.resources
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Boletines.resources
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Calificaciones.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Boletines.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Calificaciones.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarAcademico_Familias.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarAcademico_OrdenDeMatricula.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarTesoreria_ValoresAcademicos.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmTesoreria_OrdenDeMatricula.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmTesoreria_ValoresAcademicos.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_Aula.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Bodegas.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Impuestos.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_IngresosDeBodega.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Pedidos.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Productos.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Proveedor.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_SalidaDeProductos.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmGestionHumana_Docentes.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmGestionHumana_Empleados.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarBiblioteca_Articulos.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarBiblioteca_Libros.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarProduccion_Impuestos.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmGestionHumana_DatosFinancieros.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Asistencia.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarBiblioteca_Alumno.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarBiblioteca_ArticulosAlumno.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarBiblioteca_ArticulosDocente.resources
+C:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarBiblioteca_Docente.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\bin\Debug\CapaPresentacion.dll
+D:\Programas\A&J Academico 1.0\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+D:\Programas\A&J Academico 1.0\CapaPresentacion\bin\Debug\CapaNegocio.dll
+D:\Programas\A&J Academico 1.0\CapaPresentacion\bin\Debug\CapaDatos.dll
+D:\Programas\A&J Academico 1.0\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+D:\Programas\A&J Academico 1.0\CapaPresentacion\bin\Debug\CapaDatos.pdb
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.csprojResolveAssemblyReference.cache
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Alumnos.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Asistencia.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Bitacora.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Boletines.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Calificaciones.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Familias.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Matricula.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarProduccion_Impuestos.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Bodegas.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Impuestos.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_IngresosDeBodega.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Productos.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Proveedor.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_SalidaDeProductos.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Inventario.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Libros.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Prestamos.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmConfiguracion_DatosDeSeguridad.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarAcademico_Familias.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarAcademico_OrdenDeMatricula.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarTesoreria_ValoresAcademicos.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmTesoreria_ValoresAcademicos.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmLogin.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmMenuPrincipal.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmGestionHumana_Empleados.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_ServiciosOfrecidos.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_SolicitudDeServicio.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_AreaAcademica.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_Aula.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_AñoElectivo.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_Jornada.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_Periodos.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAlmacen_Comprobante.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.Cache
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.dll
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarAcademico_Codigo.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_CodigoID.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_Informacion.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarAcademico_Alumno.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_Bitacora.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarBiblioteca_Solicitante.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Grupos.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Niveles.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Temas.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmConfiguracion_CodigoID.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Cursos.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_OrdenDeMatricula.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Asignaturas.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Aulas.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Padrinos.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Paradas.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Rutas.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Vehiculos.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Cliente.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Cliente_Financiera.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Cliente_Tipos.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_CodigosDeBarra.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Costos.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_OrdenDeCompra.resources
+D:\Programas\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Unidades.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\bin\Debug\CapaPresentacion.dll
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\bin\Debug\CapaNegocio.dll
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\bin\Debug\CapaDatos.dll
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\bin\Debug\CapaDatos.pdb
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\bin\Debug\CapaDatos.dll.config
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.csprojAssemblyReference.cache
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Grupos.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Niveles.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmConfiguracion_CodigoID.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarAcademico_Alumno.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Alumnos.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Asistencia.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Bitacora.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Boletines.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Calificaciones.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Familias.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Matricula.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarAcademico_Codigo.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarBiblioteca_Solicitante.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarProduccion_Impuestos.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_Informacion.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Bodegas.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Cliente.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Cliente_Financiera.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Cliente_Tipos.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_CodigosDeBarra.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Costos.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Impuestos.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_IngresosDeBodega.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_OrdenDeCompra.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Productos.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Proveedor.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_SalidaDeProductos.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Inventario.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Libros.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Prestamos.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmConfiguracion_DatosDeSeguridad.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarAcademico_Familias.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarAcademico_OrdenDeMatricula.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarTesoreria_ValoresAcademicos.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Unidades.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_Bitacora.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_CodigoID.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_OrdenDeMatricula.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmTesoreria_ValoresAcademicos.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmLogin.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmMenuPrincipal.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Asignaturas.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Aulas.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmGestionHumana_Empleados.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Padrinos.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Paradas.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Rutas.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_ServiciosOfrecidos.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_SolicitudDeServicio.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Vehiculos.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_AreaAcademica.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_Aula.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_AñoElectivo.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Cursos.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_Jornada.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_Periodos.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAlmacen_Comprobante.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Temas.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CopyComplete
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.dll
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\bin\Debug\CapaPresentacion.dll
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\bin\Debug\CapaNegocio.dll
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\bin\Debug\CapaDatos.dll
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\bin\Debug\CapaDatos.pdb
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\bin\Debug\CapaDatos.dll.config
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.csprojAssemblyReference.cache
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Grupos.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Niveles.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmConfiguracion_CodigoID.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarAcademico_Alumno.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Alumnos.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Asistencia.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Bitacora.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Boletines.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Calificaciones.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Familias.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Matricula.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarAcademico_Codigo.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarBiblioteca_Solicitante.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarProduccion_Impuestos.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_Informacion.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Bodegas.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Cliente.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Cliente_Financiera.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Cliente_Tipos.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_OrdenDeCompra.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Productos.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Proveedor.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_SalidaDeProductos.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Inventario.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Libros.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Prestamos.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmConfiguracion_DatosDeSeguridad.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarAcademico_Familias.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarAcademico_OrdenDeMatricula.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarTesoreria_ValoresAcademicos.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_Bitacora.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_CodigoID.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_OrdenDeMatricula.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmTesoreria_ValoresAcademicos.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmLogin.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmMenuPrincipal.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Asignaturas.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Aulas.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmGestionHumana_Empleados.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Padrinos.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Paradas.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Rutas.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_ServiciosOfrecidos.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_SolicitudDeServicio.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Vehiculos.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_AreaAcademica.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_Aula.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_AñoElectivo.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Cursos.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_Jornada.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_Periodos.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAlmacen_Comprobante.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Temas.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CopyComplete
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.dll
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarProduccion_Clientes.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarProduccion_Proveedor.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Productos_Codigos.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Productos_Costos.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Proveedor_CuentasBancarias.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Proveedor_Financiera.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Productos_Impuestos.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Bodegas_Ingreso.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Productos_Unidades.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarProduccion_Bodega.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistema_Sucurzal.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarProduccion_Productos.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\bin\Debug\CapaPresentacion.dll
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\bin\Debug\CapaNegocio.dll
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\bin\Debug\CapaDatos.dll
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\bin\Debug\CapaDatos.pdb
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\bin\Debug\CapaDatos.dll.config
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.csprojAssemblyReference.cache
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Grupos.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Niveles.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmConfiguracion_CodigoID.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Alumnos.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Asistencia.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Bitacora.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Boletines.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Calificaciones.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Familias.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Matricula.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarBiblioteca_Solicitante.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarProduccion_Bodega.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarProduccion_Clientes.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarProduccion_Impuestos.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarProduccion_Productos.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarProduccion_Proveedor.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_Informacion.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Bodegas.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Cliente.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Cliente_Financiera.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Cliente_Tipos.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Productos_Codigos.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Productos_Costos.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Proveedor_CuentasBancarias.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Proveedor_Financiera.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Productos_Impuestos.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Bodegas_Ingreso.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_OrdenDeCompra.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Productos.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Proveedor.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_SalidaDeProductos.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Inventario.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Libros.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Prestamos.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmConfiguracion_DatosDeSeguridad.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarTesoreria_ValoresAcademicos.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_Bitacora.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_CodigoID.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_OrdenDeMatricula.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmTesoreria_ValoresAcademicos.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmLogin.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmMenuPrincipal.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Asignaturas.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Aulas.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmGestionHumana_Empleados.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Padrinos.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Paradas.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Rutas.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_ServiciosOfrecidos.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_SolicitudDeServicio.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Vehiculos.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_AreaAcademica.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_Aula.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Cursos.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_Jornada.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_Periodos.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAlmacen_Comprobante.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Temas.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CopyComplete
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.dll
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\bin\Debug\CapaPresentacion.dll
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\bin\Debug\CapaPresentacion.pdb
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\bin\Debug\CapaNegocio.dll
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\bin\Debug\CapaDatos.dll
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\bin\Debug\CapaNegocio.pdb
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\bin\Debug\CapaDatos.pdb
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\bin\Debug\CapaDatos.dll.config
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.csprojAssemblyReference.cache
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Grupos.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Niveles.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmConfiguracion_CodigoID.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Alumnos.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Asistencia.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Bitacora.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Boletines.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Calificaciones.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Familias.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Matricula.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarBiblioteca_Solicitante.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarProduccion_Bodega.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarProduccion_Clientes.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarProduccion_Impuestos.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarProduccion_Productos.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarProduccion_Proveedor.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_Informacion.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Bodegas.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Cliente.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Cliente_Financiera.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Cliente_Tipos.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Productos_Codigos.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Productos_Costos.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Proveedor_CuentasBancarias.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Proveedor_Financiera.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Productos_Impuestos.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Bodegas_Ingreso.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_OrdenDeCompra.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Productos.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Proveedor.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_SalidaDeProductos.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Inventario.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Libros.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Prestamos.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmConfiguracion_DatosDeSeguridad.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminarTesoreria_ValoresAcademicos.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Productos_Unidades.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_Bitacora.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_CodigoID.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_OrdenDeMatricula.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmTesoreria_ValoresAcademicos.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmLogin.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmMenuPrincipal.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Asignaturas.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Aulas.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmGestionHumana_Empleados.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Padrinos.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Paradas.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Rutas.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_ServiciosOfrecidos.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmPlantel_SolicitudDeServicio.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Vehiculos.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_AreaAcademica.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_Aula.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Cursos.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_Jornada.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_Periodos.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAlmacen_Comprobante.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.Properties.Resources.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Temas.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CopyComplete
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.dll
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistema_Sucursal.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminar_Alumno.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminar_AlumnoPorCodigo.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminar_Familias.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminar_OrdenDeMatricula.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_Año.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistema_Estados.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminar_Alumno.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminar_AlumnoPorCodigo.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminar_Familias.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminar_OrdenDeMatricula.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistema_Estados.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistema_Sucursal.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_Año.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Productos_Marcas.resources

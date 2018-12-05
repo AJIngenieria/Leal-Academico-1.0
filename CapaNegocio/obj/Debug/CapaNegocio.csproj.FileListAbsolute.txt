@@ -1,0 +1,69 @@
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\CapaNegocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaNegocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\Dios Te Bendiga\Desktop\Final\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaNegocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\CapaNegocio\obj\Debug\CapaNegocio.pdb
+C:\Programas\A&J Academico 1.0\CapaNegocio\bin\Debug\CapaNegocio.dll
+C:\Programas\A&J Academico 1.0\CapaNegocio\bin\Debug\CapaNegocio.pdb
+C:\Programas\A&J Academico 1.0\CapaNegocio\bin\Debug\CapaDatos.dll
+C:\Programas\A&J Academico 1.0\CapaNegocio\bin\Debug\CapaDatos.pdb
+C:\Programas\A&J Academico 1.0\CapaNegocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
+C:\Programas\A&J Academico 1.0\CapaNegocio\obj\Debug\CapaNegocio.dll
+C:\Programas\A&J Academico 1.0\CapaNegocio\obj\Debug\CapaNegocio.pdb
+D:\Programas\A&J Academico 1.0\CapaNegocio\bin\Debug\CapaNegocio.dll
+D:\Programas\A&J Academico 1.0\CapaNegocio\bin\Debug\CapaNegocio.pdb
+D:\Programas\A&J Academico 1.0\CapaNegocio\bin\Debug\CapaDatos.dll
+D:\Programas\A&J Academico 1.0\CapaNegocio\bin\Debug\CapaDatos.pdb
+D:\Programas\A&J Academico 1.0\CapaNegocio\obj\Debug\CapaNegocio.csprojResolveAssemblyReference.cache
+D:\Programas\A&J Academico 1.0\CapaNegocio\obj\Debug\CapaNegocio.dll
+D:\Programas\A&J Academico 1.0\CapaNegocio\obj\Debug\CapaNegocio.pdb
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaNegocio\bin\Debug\CapaNegocio.dll
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaNegocio\bin\Debug\CapaNegocio.pdb
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaNegocio\bin\Debug\CapaDatos.dll
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaNegocio\bin\Debug\CapaDatos.pdb
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaNegocio\bin\Debug\CapaDatos.dll.config
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaNegocio\obj\Debug\CapaNegocio.csprojAssemblyReference.cache
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaNegocio\obj\Debug\CapaNegocio.dll
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\CapaNegocio\obj\Debug\CapaNegocio.pdb
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaNegocio\bin\Debug\CapaNegocio.dll
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaNegocio\bin\Debug\CapaNegocio.pdb
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaNegocio\bin\Debug\CapaDatos.dll
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaNegocio\bin\Debug\CapaDatos.pdb
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaNegocio\bin\Debug\CapaDatos.dll.config
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaNegocio\obj\Debug\CapaNegocio.csprojAssemblyReference.cache
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaNegocio\obj\Debug\CapaNegocio.dll
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\CapaNegocio\obj\Debug\CapaNegocio.pdb
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaNegocio\bin\Debug\CapaNegocio.dll
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaNegocio\bin\Debug\CapaNegocio.pdb
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaNegocio\bin\Debug\CapaDatos.dll
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaNegocio\bin\Debug\CapaDatos.pdb
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaNegocio\bin\Debug\CapaDatos.dll.config
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaNegocio\obj\Debug\CapaNegocio.csprojAssemblyReference.cache
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaNegocio\obj\Debug\CapaNegocio.dll
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaNegocio\obj\Debug\CapaNegocio.pdb
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaNegocio\bin\Debug\CapaNegocio.dll
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaNegocio\bin\Debug\CapaNegocio.pdb
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaNegocio\bin\Debug\CapaDatos.dll
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaNegocio\bin\Debug\CapaDatos.pdb
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaNegocio\bin\Debug\CapaDatos.dll.config
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaNegocio\obj\Debug\CapaNegocio.csprojAssemblyReference.cache
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaNegocio\obj\Debug\CapaNegocio.dll
+E:\Proyectos de Programacion\Leal Academico 1.0\CapaNegocio\obj\Debug\CapaNegocio.pdb

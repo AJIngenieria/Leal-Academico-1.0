@@ -1,0 +1,36 @@
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\AJ Academico 1.0\bin\Debug\Leal Academico 1.0.exe.config
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\AJ Academico 1.0\bin\Debug\Leal Academico 1.0.exe
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\AJ Academico 1.0\bin\Debug\Leal Academico 1.0.pdb
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\AJ Academico 1.0\bin\Debug\CapaPresentacion.dll
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\AJ Academico 1.0\bin\Debug\CapaNegocio.dll
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\AJ Academico 1.0\bin\Debug\CapaDatos.dll
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\AJ Academico 1.0\bin\Debug\CapaPresentacion.pdb
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\AJ Academico 1.0\bin\Debug\CapaNegocio.pdb
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\AJ Academico 1.0\bin\Debug\CapaDatos.pdb
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\AJ Academico 1.0\bin\Debug\CapaDatos.dll.config
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\AJ Academico 1.0\obj\Debug\Leal Academico 1.0.csprojAssemblyReference.cache
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\AJ Academico 1.0\obj\Debug\AJ_Academico_1._0.Form1.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\AJ Academico 1.0\obj\Debug\Leal_Academico.Properties.Resources.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\AJ Academico 1.0\obj\Debug\Leal Academico 1.0.csproj.GenerateResource.cache
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\AJ Academico 1.0\obj\Debug\Leal Academico 1.0.csproj.CoreCompileInputs.cache
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\AJ Academico 1.0\obj\Debug\Leal Academico 1.0.csproj.CopyComplete
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\AJ Academico 1.0\obj\Debug\Leal Academico 1.0.exe
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\AJ Academico 1.0\obj\Debug\Leal Academico 1.0.pdb
+E:\Proyectos de Programacion\Leal Academico 1.0\AJ Academico 1.0\bin\Debug\Leal Academico 1.0.exe.config
+E:\Proyectos de Programacion\Leal Academico 1.0\AJ Academico 1.0\bin\Debug\Leal Academico 1.0.exe
+E:\Proyectos de Programacion\Leal Academico 1.0\AJ Academico 1.0\bin\Debug\Leal Academico 1.0.pdb
+E:\Proyectos de Programacion\Leal Academico 1.0\AJ Academico 1.0\bin\Debug\CapaPresentacion.dll
+E:\Proyectos de Programacion\Leal Academico 1.0\AJ Academico 1.0\bin\Debug\CapaNegocio.dll
+E:\Proyectos de Programacion\Leal Academico 1.0\AJ Academico 1.0\bin\Debug\CapaDatos.dll
+E:\Proyectos de Programacion\Leal Academico 1.0\AJ Academico 1.0\bin\Debug\CapaPresentacion.pdb
+E:\Proyectos de Programacion\Leal Academico 1.0\AJ Academico 1.0\bin\Debug\CapaNegocio.pdb
+E:\Proyectos de Programacion\Leal Academico 1.0\AJ Academico 1.0\bin\Debug\CapaDatos.pdb
+E:\Proyectos de Programacion\Leal Academico 1.0\AJ Academico 1.0\bin\Debug\CapaDatos.dll.config
+E:\Proyectos de Programacion\Leal Academico 1.0\AJ Academico 1.0\obj\Debug\Leal Academico 1.0.csprojAssemblyReference.cache
+E:\Proyectos de Programacion\Leal Academico 1.0\AJ Academico 1.0\obj\Debug\AJ_Academico_1._0.Form1.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\AJ Academico 1.0\obj\Debug\Leal_Academico.Properties.Resources.resources
+E:\Proyectos de Programacion\Leal Academico 1.0\AJ Academico 1.0\obj\Debug\Leal Academico 1.0.csproj.GenerateResource.cache
+E:\Proyectos de Programacion\Leal Academico 1.0\AJ Academico 1.0\obj\Debug\Leal Academico 1.0.csproj.CoreCompileInputs.cache
+E:\Proyectos de Programacion\Leal Academico 1.0\AJ Academico 1.0\obj\Debug\Leal Academico 1.0.csproj.CopyComplete
+E:\Proyectos de Programacion\Leal Academico 1.0\AJ Academico 1.0\obj\Debug\Leal Academico 1.0.exe
+E:\Proyectos de Programacion\Leal Academico 1.0\AJ Academico 1.0\obj\Debug\Leal Academico 1.0.pdb

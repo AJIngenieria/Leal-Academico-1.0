@@ -1,0 +1,99 @@
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\AJ Academico 1.0\bin\Debug\AJ Academico 1.0.exe.config
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\AJ Academico 1.0\obj\Debug\AJ Academico 1.0.csprojResolveAssemblyReference.cache
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\AJ Academico 1.0\obj\Debug\AJ_Academico_1._0.Properties.Resources.resources
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\AJ Academico 1.0\obj\Debug\AJ Academico 1.0.csproj.GenerateResource.Cache
+C:\Users\Dios Te Bendiga\Desktop\Final\AJ Academico 1.0\bin\Debug\AJ Academico 1.0.exe.config
+C:\Users\Dios Te Bendiga\Desktop\Final\AJ Academico 1.0\bin\Debug\AJ Academico 1.0.exe
+C:\Users\Dios Te Bendiga\Desktop\Final\AJ Academico 1.0\bin\Debug\AJ Academico 1.0.pdb
+C:\Users\Dios Te Bendiga\Desktop\Final\AJ Academico 1.0\bin\Debug\CapaPresentacion.dll
+C:\Users\Dios Te Bendiga\Desktop\Final\AJ Academico 1.0\bin\Debug\CapaNegocio.dll
+C:\Users\Dios Te Bendiga\Desktop\Final\AJ Academico 1.0\bin\Debug\CapaDatos.dll
+C:\Users\Dios Te Bendiga\Desktop\Final\AJ Academico 1.0\bin\Debug\CapaPresentacion.pdb
+C:\Users\Dios Te Bendiga\Desktop\Final\AJ Academico 1.0\bin\Debug\CapaNegocio.pdb
+C:\Users\Dios Te Bendiga\Desktop\Final\AJ Academico 1.0\bin\Debug\CapaDatos.pdb
+C:\Users\Dios Te Bendiga\Desktop\Final\AJ Academico 1.0\obj\Debug\AJ Academico 1.0.csprojResolveAssemblyReference.cache
+C:\Users\Dios Te Bendiga\Desktop\Final\AJ Academico 1.0\obj\Debug\AJ_Academico_1._0.Properties.Resources.resources
+C:\Users\Dios Te Bendiga\Desktop\Final\AJ Academico 1.0\obj\Debug\AJ Academico 1.0.csproj.GenerateResource.Cache
+C:\Users\Dios Te Bendiga\Desktop\Final\AJ Academico 1.0\obj\Debug\AJ Academico 1.0.exe
+C:\Users\Dios Te Bendiga\Desktop\Final\AJ Academico 1.0\obj\Debug\AJ Academico 1.0.pdb
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\AJ Academico 1.0.exe.config
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\obj\Debug\AJ Academico 1.0.exe
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\obj\Debug\AJ Academico 1.0.pdb
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\AJ Academico 1.0.exe
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\AJ Academico 1.0.pdb
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\CapaPresentacion.dll
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\CapaNegocio.dll
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\CapaDatos.dll
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\CapaPresentacion.pdb
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\CapaNegocio.pdb
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\CapaDatos.pdb
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\obj\Debug\AJ Academico 1.0.csprojResolveAssemblyReference.cache
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\obj\Debug\AJ_Academico_1._0.Properties.Resources.resources
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\obj\Debug\AJ Academico 1.0.csproj.GenerateResource.Cache
+C:\Programas\A&J Academico 1.0\AJ Academico 1.0\obj\Debug\AJ_Academico_1._0.Form1.resources
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\AJ Academico 1.0.exe.config
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\AJ Academico 1.0\obj\Debug\AJ Academico 1.0.exe
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\AJ Academico 1.0\obj\Debug\AJ Academico 1.0.pdb
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\AJ Academico 1.0.exe
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\AJ Academico 1.0.pdb
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\CapaPresentacion.dll
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\CapaNegocio.dll
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\CapaDatos.dll
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\CapaPresentacion.pdb
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\CapaNegocio.pdb
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\CapaDatos.pdb
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\AJ Academico 1.0\obj\Debug\AJ Academico 1.0.csprojResolveAssemblyReference.cache
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\AJ Academico 1.0\obj\Debug\AJ_Academico_1._0.Form1.resources
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\AJ Academico 1.0\obj\Debug\AJ_Academico_1._0.Properties.Resources.resources
+C:\Users\Dios Te Bendiga\Desktop\Nueva carpeta\A&J Academico 1.0\AJ Academico 1.0\obj\Debug\AJ Academico 1.0.csproj.GenerateResource.Cache
+D:\Programas\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\AJ Academico 1.0.exe.config
+D:\Programas\A&J Academico 1.0\AJ Academico 1.0\obj\Debug\AJ Academico 1.0.exe
+D:\Programas\A&J Academico 1.0\AJ Academico 1.0\obj\Debug\AJ Academico 1.0.pdb
+D:\Programas\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\AJ Academico 1.0.exe
+D:\Programas\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\AJ Academico 1.0.pdb
+D:\Programas\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\CapaPresentacion.dll
+D:\Programas\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\CapaNegocio.dll
+D:\Programas\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\CapaDatos.dll
+D:\Programas\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\CapaPresentacion.pdb
+D:\Programas\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\CapaNegocio.pdb
+D:\Programas\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\CapaDatos.pdb
+D:\Programas\A&J Academico 1.0\AJ Academico 1.0\obj\Debug\AJ Academico 1.0.csprojResolveAssemblyReference.cache
+D:\Programas\A&J Academico 1.0\AJ Academico 1.0\obj\Debug\AJ_Academico_1._0.Form1.resources
+D:\Programas\A&J Academico 1.0\AJ Academico 1.0\obj\Debug\AJ_Academico_1._0.Properties.Resources.resources
+D:\Programas\A&J Academico 1.0\AJ Academico 1.0\obj\Debug\AJ Academico 1.0.csproj.GenerateResource.Cache
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\AJ Academico 1.0.exe.config
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\AJ Academico 1.0.exe
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\AJ Academico 1.0.pdb
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\CapaPresentacion.dll
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\CapaNegocio.dll
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\CapaDatos.dll
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\CapaPresentacion.pdb
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\CapaNegocio.pdb
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\CapaDatos.pdb
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\CapaDatos.dll.config
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\AJ Academico 1.0\obj\Debug\AJ Academico 1.0.csprojAssemblyReference.cache
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\AJ Academico 1.0\obj\Debug\AJ_Academico_1._0.Form1.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\AJ Academico 1.0\obj\Debug\AJ_Academico_1._0.Properties.Resources.resources
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\AJ Academico 1.0\obj\Debug\AJ Academico 1.0.csproj.GenerateResource.cache
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\AJ Academico 1.0\obj\Debug\AJ Academico 1.0.csproj.CoreCompileInputs.cache
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\AJ Academico 1.0\obj\Debug\AJ Academico 1.0.csproj.CopyComplete
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\AJ Academico 1.0\obj\Debug\AJ Academico 1.0.exe
+D:\Software de Programacion\Proyectos\AJ Academico\A&J Academico 1.0\AJ Academico 1.0\obj\Debug\AJ Academico 1.0.pdb
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\AJ Academico 1.0.exe.config
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\AJ Academico 1.0.exe
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\AJ Academico 1.0.pdb
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\CapaPresentacion.dll
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\CapaNegocio.dll
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\CapaDatos.dll
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\CapaPresentacion.pdb
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\CapaNegocio.pdb
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\CapaDatos.pdb
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\CapaDatos.dll.config
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\AJ Academico 1.0\obj\Debug\AJ Academico 1.0.csprojAssemblyReference.cache
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\AJ Academico 1.0\obj\Debug\AJ_Academico_1._0.Form1.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\AJ Academico 1.0\obj\Debug\AJ_Academico_1._0.Properties.Resources.resources
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\AJ Academico 1.0\obj\Debug\AJ Academico 1.0.csproj.GenerateResource.cache
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\AJ Academico 1.0\obj\Debug\AJ Academico 1.0.csproj.CoreCompileInputs.cache
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\AJ Academico 1.0\obj\Debug\AJ Academico 1.0.csproj.CopyComplete
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\AJ Academico 1.0\obj\Debug\AJ Academico 1.0.exe
+D:\Software de Programacion\Proyectos\A&J Academico 1.0\AJ Academico 1.0\obj\Debug\AJ Academico 1.0.pdb

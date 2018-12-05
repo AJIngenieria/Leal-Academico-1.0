@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{533EDD15-A166-48B9-9F42-D7135B1BCFEC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CapaNegocio</RootNamespace>
+    <AssemblyName>CapaNegocio</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Class1.cs" />
+    <Compile Include="fAcademico_Alumno.cs" />
+    <Compile Include="fAcademico_Asistencia.cs" />
+    <Compile Include="fAcademico_AusentismoInjustificado.cs" />
+    <Compile Include="fAcademico_AusentismoJustificado.cs" />
+    <Compile Include="fAcademico_BajaConducta.cs" />
+    <Compile Include="fAcademico_Bitacora.cs" />
+    <Compile Include="fAcademico_Expulsion.cs" />
+    <Compile Include="fAcademico_Familia.cs" />
+    <Compile Include="fAcademico_Indisciplina.cs" />
+    <Compile Include="fAcademico_ReActivaciondematricula.cs" />
+    <Compile Include="fAcademico_SuspensionDeMatricula.cs" />
+    <Compile Include="fBiblioteca_Editorial.cs" />
+    <Compile Include="fBiblioteca_Libros.cs" />
+    <Compile Include="fBiblioteca_Prestamos.cs" />
+    <Compile Include="fConfiguracion_CodigoID.cs" />
+    <Compile Include="fGestion_DatosMedicos.cs" />
+    <Compile Include="fGestion_DatosPersonales.cs" />
+    <Compile Include="fGestion_Empleados.cs" />
+    <Compile Include="fProduccion_Bodega.cs" />
+    <Compile Include="fProduccion_Clientes.cs" />
+    <Compile Include="fProduccion_Impuesto.cs" />
+    <Compile Include="fProduccion_Marcas.cs" />
+    <Compile Include="fProduccion_Productos.cs" />
+    <Compile Include="fProduccion_Proveedor.cs" />
+    <Compile Include="fSistema_Estados.cs" />
+    <Compile Include="fSistema_Sucurzal.cs" />
+    <Compile Include="fProduccion_Unidad.cs" />
+    <Compile Include="fSistema_Academico_Bitacora.cs" />
+    <Compile Include="fSistema_Gestion_Roles.cs" />
+    <Compile Include="fSistema_Usuarios.cs" />
+    <Compile Include="fSistema_Academico_AreaAcademica.cs" />
+    <Compile Include="fAcademico_Aulas.cs" />
+    <Compile Include="fSistema_Academico_Año.cs" />
+    <Compile Include="fSistema_Academico_CodigoID.cs" />
+    <Compile Include="fAcademico_Cursos.cs" />
+    <Compile Include="fSistema_Academico_Jornadas.cs" />
+    <Compile Include="fSistema_Academico_Periodos.cs" />
+    <Compile Include="fAcademico_OrdenDeMatricula.cs" />
+    <Compile Include="fTesoreria_ValoresAcademicos.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CapaDatos\CapaDatos.csproj">
+      <Project>{ef034b46-c90a-4c0e-a0eb-379bc7d58ae2}</Project>
+      <Name>CapaDatos</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
