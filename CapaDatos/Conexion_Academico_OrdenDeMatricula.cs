@@ -12,10 +12,13 @@ namespace CapaDatos
     public class Conexion_Academico_OrdenDeMatricula
     {
         private int _Idorden;
-        private int _Idvalores;
+        private int _Idvalor;
+        private int _Idestado;
+        private int _Idcurso;
+        private int _Idjornada;
         private string _Alumno;
+        private string _Documento;
         private string _Identificacion;
-        private string _NoIdentificacion;
         private string _Valor;
         private string _Año;
         private string _Orden;
@@ -24,10 +27,13 @@ namespace CapaDatos
         private string _Filtro;
 
         public int Idorden { get => _Idorden; set => _Idorden = value; }
-        public int Idvalores { get => _Idvalores; set => _Idvalores = value; }
+        public int Idvalor { get => _Idvalor; set => _Idvalor = value; }
+        public int Idestado { get => _Idestado; set => _Idestado = value; }
+        public int Idcurso { get => _Idcurso; set => _Idcurso = value; }
+        public int Idjornada { get => _Idjornada; set => _Idjornada = value; }
         public string Alumno { get => _Alumno; set => _Alumno = value; }
+        public string Documento { get => _Documento; set => _Documento = value; }
         public string Identificacion { get => _Identificacion; set => _Identificacion = value; }
-        public string NoIdentificacion { get => _NoIdentificacion; set => _NoIdentificacion = value; }
         public string Valor { get => _Valor; set => _Valor = value; }
         public string Año { get => _Año; set => _Año = value; }
         public string Orden { get => _Orden; set => _Orden = value; }
@@ -39,12 +45,16 @@ namespace CapaDatos
 
         }
 
-        public Conexion_Academico_OrdenDeMatricula(int idvalores, string alumno, string identificacion, string noidentificacion,string año, string valor, string orden)
+        public Conexion_Academico_OrdenDeMatricula(int idorden, int idvalor, int idestado, int idcurso, int idjornada, string alumno, string identificacion, string documento,string año, string valor, string orden)
         {
-            this.Idvalores = idvalores;
+            this.Idorden = idorden;
+            this.Idvalor = idvalor;
+            this.Idestado = idestado;
+            this.Idcurso = idcurso;
+            this.Idjornada = idjornada;
             this.Alumno = alumno;
             this.Identificacion = identificacion;
-            this.NoIdentificacion = noidentificacion;
+            this.Documento = documento;
             this.Año = año;
             this.Valor = valor;
             this.Orden = orden;
@@ -65,25 +75,44 @@ namespace CapaDatos
                 //Establecer la conexion para mandar a la base de datos
                 SqlCommand SqlCmd = new SqlCommand();
                 SqlCmd.Connection = SqlCon;
-                SqlCmd.CommandText = "Tesoreria.AJ_OrdenDeMatricula";
+                SqlCmd.CommandText = "Academico.AJ_OrdenDeMatricula";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
                 //Comienzo a mandar a la base de datos
-                SqlParameter ParIdjornada = new SqlParameter();
-                ParIdjornada.ParameterName = "@Idorden";
-                ParIdjornada.SqlDbType = SqlDbType.Int;
-                ParIdjornada.Direction = ParameterDirection.Output;
-                SqlCmd.Parameters.Add(ParIdjornada);
+                SqlParameter ParIdorden = new SqlParameter();
+                ParIdorden.ParameterName = "@Idorden";
+                ParIdorden.SqlDbType = SqlDbType.Int;
+                ParIdorden.Direction = ParameterDirection.Output;
+                SqlCmd.Parameters.Add(ParIdorden);
 
                 SqlParameter ParIdvalor = new SqlParameter();
                 ParIdvalor.ParameterName = "@Idvalor";
                 ParIdvalor.SqlDbType = SqlDbType.Int;
-                ParIdvalor.Value = Orden.Idvalores;
+                ParIdvalor.Value = Orden.Idvalor;
                 SqlCmd.Parameters.Add(ParIdvalor);
+
+                SqlParameter ParIdestado = new SqlParameter();
+                ParIdestado.ParameterName = "@Idestado";
+                ParIdestado.SqlDbType = SqlDbType.Int;
+                ParIdestado.Value = Orden.Idestado;
+                SqlCmd.Parameters.Add(ParIdestado);
+
+                SqlParameter ParIdcurso = new SqlParameter();
+                ParIdcurso.ParameterName = "@Idcurso";
+                ParIdcurso.SqlDbType = SqlDbType.Int;
+                ParIdcurso.Value = Orden.Idcurso;
+                SqlCmd.Parameters.Add(ParIdcurso);
+
+                SqlParameter ParIdjornada = new SqlParameter();
+                ParIdjornada.ParameterName = "@Idjornada";
+                ParIdjornada.SqlDbType = SqlDbType.Int;
+                ParIdjornada.Value = Orden.Idjornada;
+                SqlCmd.Parameters.Add(ParIdjornada);
 
                 SqlParameter ParAuto = new SqlParameter();
                 ParAuto.ParameterName = "@Auto";
-                ParAuto.SqlDbType = SqlDbType.Int;
+                ParAuto.SqlDbType = SqlDbType.VarChar;
+                ParAuto.Size = 1;
                 ParAuto.Value = Orden.Auto;
                 SqlCmd.Parameters.Add(ParAuto);
 
@@ -101,12 +130,12 @@ namespace CapaDatos
                 ParIdentificacion.Value = Orden.Identificacion;
                 SqlCmd.Parameters.Add(ParIdentificacion);
 
-                SqlParameter ParNoIdentificacion = new SqlParameter();
-                ParNoIdentificacion.ParameterName = "@NoIdentificacion";
-                ParNoIdentificacion.SqlDbType = SqlDbType.VarChar;
-                ParNoIdentificacion.Size = 20;
-                ParNoIdentificacion.Value = Orden.NoIdentificacion;
-                SqlCmd.Parameters.Add(ParNoIdentificacion);
+                SqlParameter ParDocumento = new SqlParameter();
+                ParDocumento.ParameterName = "@Documento";
+                ParDocumento.SqlDbType = SqlDbType.VarChar;
+                ParDocumento.Size = 5;
+                ParDocumento.Value = Orden.Documento;
+                SqlCmd.Parameters.Add(ParDocumento);
 
                 SqlParameter ParAño = new SqlParameter();
                 ParAño.ParameterName = "@Año";

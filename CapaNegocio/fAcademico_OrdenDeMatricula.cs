@@ -13,17 +13,20 @@ namespace CapaNegocio
     {
         public static string Guardar_DatosBasicos
             (//Datos Basicos
-            int idvalor, string alumno, string identificacion, string noidentificacion,string valor, string año, string orden, string auto)
+            int idvalor, int idestado, int idcurso, int idjornada, string alumno, string identificacion, string documento, string valor, string año, string orden, string auto)
         {
             Conexion_Academico_OrdenDeMatricula Obj = new Conexion_Academico_OrdenDeMatricula();
             //Datos Basicos
-            Obj.Idvalores = idvalor;
-            Obj.Auto = auto;
+
+            Obj.Idvalor = idvalor;
+            Obj.Idestado = idestado;
+            Obj.Idcurso = idcurso;
+            Obj.Idjornada = idjornada;
             Obj.Alumno = alumno;
             Obj.Identificacion = identificacion;
-            Obj.NoIdentificacion = noidentificacion;
-            Obj.Valor = valor;
+            Obj.Documento = documento;
             Obj.Año = año;
+            Obj.Valor = valor;
             Obj.Orden = orden;
             
             return Obj.Guardar_DatosBasicos(Obj);

@@ -53,8 +53,8 @@ namespace CapaPresentacion
                 //Informacion Academica
                 this.TBAlumno.ReadOnly = true;
                 this.TBAlumno.BackColor = Color.FromArgb(187, 222, 251);
-                this.CBIdentificacion.Enabled = false;
-                this.CBIdentificacion.BackColor = Color.FromArgb(187, 222, 251);
+                this.CBDocumento.Enabled = false;
+                this.CBDocumento.BackColor = Color.FromArgb(187, 222, 251);
                 this.TBIdentificacion.Enabled = true;
                 this.TBIdentificacion.BackColor = Color.FromArgb(187, 222, 251);
                 this.TBOrden.ReadOnly = true;
@@ -69,8 +69,8 @@ namespace CapaPresentacion
             {
                 this.TBAlumno.ReadOnly = false;
                 this.TBAlumno.BackColor = Color.FromArgb(32, 178, 170);
-                this.CBIdentificacion.Enabled = true;
-                this.CBIdentificacion.BackColor = Color.FromArgb(32, 178, 170);
+                this.CBDocumento.Enabled = true;
+                this.CBDocumento.BackColor = Color.FromArgb(32, 178, 170);
                 this.TBIdentificacion.ReadOnly = false;
                 this.TBIdentificacion.BackColor = Color.FromArgb(32, 178, 170);
                 this.TBOrden.ReadOnly = false;
@@ -81,7 +81,7 @@ namespace CapaPresentacion
         private void Limpiar()
         {
             this.TBAlumno.Text = string.Empty;
-            this.CBIdentificacion.Text = string.Empty;
+            this.CBDocumento.Text = string.Empty;
             this.TBIdentificacion.Text = string.Empty;
             this.TBValor.Text = string.Empty;
             this.TBAño.Text = string.Empty;
@@ -149,10 +149,10 @@ namespace CapaPresentacion
                     MensajeError("Faltan Ingresar Algunos Datos, Estos Seran Remarcados");
                     TBAlumno.BackColor = Color.FromArgb(250, 235, 215);
                 }
-                else if (this.CBIdentificacion.Text == string.Empty)
+                else if (this.CBDocumento.Text == string.Empty)
                 {
                     MensajeError("Faltan Ingresar Algunos Datos, Estos Seran Remarcados");
-                    CBIdentificacion.BackColor = Color.FromArgb(250, 235, 215);
+                    CBDocumento.BackColor = Color.FromArgb(250, 235, 215);
                 }
                 else if (this.TBIdentificacion.Text == string.Empty)
                 {
@@ -179,7 +179,7 @@ namespace CapaPresentacion
                 {
                     if (this.IsNuevo)
                     {
-                        rptaDatosBasicos = fAcademico_OrdenDeMatricula.Guardar_DatosBasicos(Convert.ToInt32(this.IDValor.Text), this.TBAlumno.Text, this.CBIdentificacion.Text, this.TBIdentificacion.Text, this.TBValor.Text, this.TBAño.Text, this.TBOrden.Text, "1");
+                        rptaDatosBasicos = fAcademico_OrdenDeMatricula.Guardar_DatosBasicos(Convert.ToInt32(this.IDValor.Text), Convert.ToInt32(this.CBEstado.Text), Convert.ToInt32(this.CBCurso.Text), Convert.ToInt32(this.CBJornada.Text), this.TBAlumno.Text, this.TBIdentificacion.Text, this.CBDocumento.Text, this.TBValor.Text, this.TBAño.Text, this.TBOrden.Text, "1");
                     }
 
                     if (rptaDatosBasicos.Equals("OK"))

@@ -70,8 +70,11 @@ namespace CapaDatos
             //Llaves principales
             this.Idproveedor = idproveedor;
             this.Idempleado = idempleado;
-            this.Auto = auto;
+            this.Idpais = idpais;
+            this.Idciudad = idciudad;
             this.Idestado = idestado;
+
+            this.Auto = auto;
             this.Filtro = filtro;
 
             //Datos Basicos
@@ -82,8 +85,7 @@ namespace CapaDatos
             this.Titular = titular;
             this.Documento = documento;
             this.Identificacion = identificacion;
-            this.Idpais = idpais;
-            this.Idciudad = idciudad;
+
             this.Telefono = telefono;
             this.Movil = movil;
             this.Direccion1 = direccion1;
