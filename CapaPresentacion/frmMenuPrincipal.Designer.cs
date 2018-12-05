@@ -671,27 +671,26 @@
             this.boletinesAcademicosToolStripMenuItem1,
             this.toolStripMenuItem1});
             this.academicoToolStripMenuItem2.Name = "academicoToolStripMenuItem2";
-            this.academicoToolStripMenuItem2.Size = new System.Drawing.Size(131, 22);
+            this.academicoToolStripMenuItem2.Size = new System.Drawing.Size(180, 22);
             this.academicoToolStripMenuItem2.Text = "Academico";
             // 
             // alumnoToolStripMenuItem1
             // 
-            this.alumnoToolStripMenuItem1.Image = global::CapaPresentacion.Properties.Resources.Sub_Alumno;
             this.alumnoToolStripMenuItem1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.alumnoToolStripMenuItem1.Name = "alumnoToolStripMenuItem1";
-            this.alumnoToolStripMenuItem1.Size = new System.Drawing.Size(194, 30);
+            this.alumnoToolStripMenuItem1.Size = new System.Drawing.Size(186, 22);
             this.alumnoToolStripMenuItem1.Text = "Alumno";
             // 
             // asistenciaToolStripMenuItem1
             // 
             this.asistenciaToolStripMenuItem1.Name = "asistenciaToolStripMenuItem1";
-            this.asistenciaToolStripMenuItem1.Size = new System.Drawing.Size(194, 30);
+            this.asistenciaToolStripMenuItem1.Size = new System.Drawing.Size(186, 22);
             this.asistenciaToolStripMenuItem1.Text = "Asistencia";
             // 
             // boletinesAcademicosToolStripMenuItem1
             // 
             this.boletinesAcademicosToolStripMenuItem1.Name = "boletinesAcademicosToolStripMenuItem1";
-            this.boletinesAcademicosToolStripMenuItem1.Size = new System.Drawing.Size(194, 30);
+            this.boletinesAcademicosToolStripMenuItem1.Size = new System.Drawing.Size(186, 22);
             this.boletinesAcademicosToolStripMenuItem1.Text = "Boletines Academicos";
             // 
             // toolStripMenuItem1
@@ -701,7 +700,7 @@
             this.toolStripMenuItem3,
             this.toolStripMenuItem4});
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(194, 30);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(186, 22);
             this.toolStripMenuItem1.Text = "Matricula Academica";
             // 
             // toolStripMenuItem2
@@ -731,7 +730,7 @@
             this.pedidosToolStripMenuItem});
             this.almacenToolStripMenuItem1.Image = global::CapaPresentacion.Properties.Resources.Sub_Almacen;
             this.almacenToolStripMenuItem1.Name = "almacenToolStripMenuItem1";
-            this.almacenToolStripMenuItem1.Size = new System.Drawing.Size(131, 22);
+            this.almacenToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.almacenToolStripMenuItem1.Text = "Almacen";
             // 
             // bodegaToolStripMenuItem
@@ -801,7 +800,7 @@
             this.prestamosToolStripMenuItem1});
             this.bibliotecaToolStripMenuItem1.Image = global::CapaPresentacion.Properties.Resources.Sub_Biblioteca;
             this.bibliotecaToolStripMenuItem1.Name = "bibliotecaToolStripMenuItem1";
-            this.bibliotecaToolStripMenuItem1.Size = new System.Drawing.Size(131, 22);
+            this.bibliotecaToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.bibliotecaToolStripMenuItem1.Text = "Biblioteca";
             // 
             // articulosToolStripMenuItem2
@@ -826,7 +825,7 @@
             // 
             this.enfermeriaToolStripMenuItem1.Image = global::CapaPresentacion.Properties.Resources.Sub_Enfermeria;
             this.enfermeriaToolStripMenuItem1.Name = "enfermeriaToolStripMenuItem1";
-            this.enfermeriaToolStripMenuItem1.Size = new System.Drawing.Size(131, 22);
+            this.enfermeriaToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.enfermeriaToolStripMenuItem1.Text = "Enfermeria";
             // 
             // financieraToolStripMenuItem1
@@ -840,7 +839,7 @@
             this.valoresAcademicosToolStripMenuItem1});
             this.financieraToolStripMenuItem1.Image = global::CapaPresentacion.Properties.Resources.Sub_Financiera;
             this.financieraToolStripMenuItem1.Name = "financieraToolStripMenuItem1";
-            this.financieraToolStripMenuItem1.Size = new System.Drawing.Size(131, 22);
+            this.financieraToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.financieraToolStripMenuItem1.Text = "Financiera";
             // 
             // cajaMenorToolStripMenuItem2
@@ -913,7 +912,7 @@
             // 
             this.ventasToolStripMenuItem1.Image = global::CapaPresentacion.Properties.Resources.Sub_Ventas;
             this.ventasToolStripMenuItem1.Name = "ventasToolStripMenuItem1";
-            this.ventasToolStripMenuItem1.Size = new System.Drawing.Size(131, 22);
+            this.ventasToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.ventasToolStripMenuItem1.Text = "Ventas";
             // 
             // administracionToolStripMenuItem

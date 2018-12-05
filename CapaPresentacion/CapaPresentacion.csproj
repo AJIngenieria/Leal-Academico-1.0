@@ -70,6 +70,24 @@
     <Compile Include="frmConfiguracion_CodigoID.Designer.cs">
       <DependentUpon>frmConfiguracion_CodigoID.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmConsulta_Academico_Alumnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsulta_Academico_Alumnos.Designer.cs">
+      <DependentUpon>frmConsulta_Academico_Alumnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsulta_Academico_Asistencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsulta_Academico_Asistencia.Designer.cs">
+      <DependentUpon>frmConsulta_Academico_Asistencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConsulta_Academico_Aulas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConsulta_Academico_Aulas.Designer.cs">
+      <DependentUpon>frmConsulta_Academico_Aulas.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmExaminar_Alumno.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -84,7 +84,7 @@
             this.groupBox1.Size = new System.Drawing.Size(794, 498);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "A&&J Academico - Ingreso de Productos a Bodega";
+            this.groupBox1.Text = "Leal Academico - Ingreso de Productos a Bodega";
             // 
             // TBIdbodega
             // 

@@ -296,5 +296,6 @@ namespace CapaPresentacion
             //this.Combobox();
             //this.TBProducto.Focus();
         }
+
     }
 }
