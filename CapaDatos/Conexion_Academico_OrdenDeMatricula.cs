@@ -175,7 +175,7 @@ namespace CapaDatos
             return rpta;
         }
 
-        public DataTable Buscar_OrdenPorAlumno(Conexion_Academico_OrdenDeMatricula Orden)
+        public DataTable Buscar_OrdenDeMatricula(Conexion_Academico_OrdenDeMatricula Orden)
         {
             DataTable DtResultado = new DataTable("Tesoreria.Tesoreria_OrdenDeMatricula");
             SqlConnection SqlCon = new SqlConnection();
@@ -184,7 +184,7 @@ namespace CapaDatos
                 SqlCon.ConnectionString = Conexion_BaseDeDatos.Cn;
                 SqlCommand SqlCmd = new SqlCommand();
                 SqlCmd.Connection = SqlCon;
-                SqlCmd.CommandText = "Tesoreria.Buscar_OrdenPorAlumno";
+                SqlCmd.CommandText = "Tesoreria.Buscar_OrdenDeMatricula";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
                 SqlParameter ParFiltro = new SqlParameter();
@@ -207,73 +207,6 @@ namespace CapaDatos
             }
             return DtResultado;
         }
-
-        public DataTable Buscar_OrdenPorOrden(Conexion_Academico_OrdenDeMatricula Orden)
-        {
-            DataTable DtResultado = new DataTable("Tesoreria.Tesoreria_OrdenDeMatricula");
-            SqlConnection SqlCon = new SqlConnection();
-            try
-            {
-                SqlCon.ConnectionString = Conexion_BaseDeDatos.Cn;
-                SqlCommand SqlCmd = new SqlCommand();
-                SqlCmd.Connection = SqlCon;
-                SqlCmd.CommandText = "Tesoreria.Buscar_OrdenPorOrden";
-                SqlCmd.CommandType = CommandType.StoredProcedure;
-
-                SqlParameter ParTextoBuscar = new SqlParameter();
-                ParTextoBuscar.ParameterName = "@Filtro";
-                ParTextoBuscar.SqlDbType = SqlDbType.VarChar;
-                ParTextoBuscar.Size = 50;
-                ParTextoBuscar.Value = Orden.Filtro;
-                SqlCmd.Parameters.Add(ParTextoBuscar);
-
-                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
-                SqlDat.Fill(DtResultado);
-
-            }
-#pragma warning disable CS0168 // La variable está declarada pero nunca se usa
-            catch (Exception ex)
-#pragma warning restore CS0168 // La variable está declarada pero nunca se usa
-            {
-
-                DtResultado = null;
-            }
-            return DtResultado;
-        }
-
-        public DataTable Buscar_OdenPorAño(Conexion_Academico_OrdenDeMatricula Orden)
-        {
-            DataTable DtResultado = new DataTable("Tesoreria.Tesoreria_OrdenDeMatricula");
-            SqlConnection SqlCon = new SqlConnection();
-            try
-            {
-                SqlCon.ConnectionString = Conexion_BaseDeDatos.Cn;
-                SqlCommand SqlCmd = new SqlCommand();
-                SqlCmd.Connection = SqlCon;
-                SqlCmd.CommandText = "Tesoreria.Buscar_OrdenPorAño";
-                SqlCmd.CommandType = CommandType.StoredProcedure;
-
-                SqlParameter ParTextoBuscar = new SqlParameter();
-                ParTextoBuscar.ParameterName = "@Filtro";
-                ParTextoBuscar.SqlDbType = SqlDbType.VarChar;
-                ParTextoBuscar.Size = 50;
-                ParTextoBuscar.Value = Orden.Filtro;
-                SqlCmd.Parameters.Add(ParTextoBuscar);
-
-                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
-                SqlDat.Fill(DtResultado);
-
-            }
-#pragma warning disable CS0168 // La variable está declarada pero nunca se usa
-            catch (Exception ex)
-#pragma warning restore CS0168 // La variable está declarada pero nunca se usa
-            {
-
-                DtResultado = null;
-            }
-            return DtResultado;
-        }
-
     }
 }
 

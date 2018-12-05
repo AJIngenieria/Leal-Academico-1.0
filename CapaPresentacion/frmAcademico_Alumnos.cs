@@ -725,8 +725,8 @@ namespace CapaPresentacion
 
         private void btnExaminar_Orden_Click(object sender, EventArgs e)
         {
-            frmExaminar_OrdenDeMatricula frmExaminarAcademico_OrdenDeMatricula = new frmExaminar_OrdenDeMatricula();
-            frmExaminarAcademico_OrdenDeMatricula.ShowDialog();
+            frmExaminar_OrdenDeMatricula frmExaminar_OrdenDeMatricula = new frmExaminar_OrdenDeMatricula();
+            frmExaminar_OrdenDeMatricula.ShowDialog();
         }
 
         private void btnExaminar_Familia_Click(object sender, EventArgs e)

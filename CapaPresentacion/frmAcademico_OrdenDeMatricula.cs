@@ -112,16 +112,38 @@ namespace CapaPresentacion
             this.TBAño.Text = año;
         }
 
+        private void Combobox()
+        {
+            try
+            {
+                CBCurso.DataSource = fAcademico_Cursos.Mostrar();
+                CBCurso.ValueMember = "Idcurso";
+                CBCurso.DisplayMember = "Curso";
+
+                CBJornada.DataSource = fSistema_Academico_Jornadas.Mostrar();
+                CBJornada.ValueMember = "Idjornada";
+                CBJornada.DisplayMember = "Jornada";
+
+                CBEstado.DataSource = fSistema_Estados.Mostrar();
+                CBEstado.ValueMember = "Idestado";
+                CBEstado.DisplayMember = "Estado";
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
+        }
+
         //Mensaje de confirmacion
         private void MensajeOk(string mensaje)
         {
-            MessageBox.Show(mensaje, "A&J Academico", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show(mensaje, "Leal Academico", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         //Mensaje de Error
         private void MensajeError(string mensaje)
         {
-            MessageBox.Show(mensaje, "A&J Academico - Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            MessageBox.Show(mensaje, "Leal Academico - Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         private void CBIdentificacion_SelectedIndexChanged(object sender, EventArgs e)
@@ -134,6 +156,8 @@ namespace CapaPresentacion
             this.IsNuevo = true;
             this.Botones();
             this.Habilitar();
+            this.Combobox();
+
             this.TBAlumno.Focus();
         }
 
@@ -208,8 +232,8 @@ namespace CapaPresentacion
 
         private void btnExaminar_Click(object sender, EventArgs e)
         {
-            frmExaminarTesoreria_ValoresAcademicos frmExaminrTesoreria_ValoresAcademicos = new frmExaminarTesoreria_ValoresAcademicos();
-            frmExaminrTesoreria_ValoresAcademicos.ShowDialog();
+            frmExaminarTesoreria_ValoresAcademicos frmExaminarTesoreria_ValoresAcademicos = new frmExaminarTesoreria_ValoresAcademicos();
+            frmExaminarTesoreria_ValoresAcademicos.ShowDialog();
         }
 
         private void btnNuevo_MouseDown(object sender, MouseEventArgs e)

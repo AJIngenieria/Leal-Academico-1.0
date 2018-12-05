@@ -32,26 +32,11 @@ namespace CapaNegocio
             return Obj.Guardar_DatosBasicos(Obj);
         }
 
-        public static DataTable Buscar_PorAlumno(string filtro)
+        public static DataTable Buscar_OrdenDeMatricula(string filtro)
         {
             Conexion_Academico_OrdenDeMatricula Obj = new Conexion_Academico_OrdenDeMatricula();
             Obj.Filtro = filtro;
-            return Obj.Buscar_OrdenPorAlumno(Obj);
+            return Obj.Buscar_OrdenDeMatricula(Obj);
         }
-
-        public static DataTable Buscar_PorAño(string filtro)
-        {
-            Conexion_Academico_OrdenDeMatricula Obj = new Conexion_Academico_OrdenDeMatricula();
-            Obj.Filtro = filtro;
-            return Obj.Buscar_OdenPorAño(Obj);
-        }
-
-        public static DataTable Buscar_PorOrden(string filtro)
-        {
-            Conexion_Academico_OrdenDeMatricula Obj = new Conexion_Academico_OrdenDeMatricula();
-            Obj.Filtro = filtro;
-            return Obj.Buscar_OrdenPorOrden(Obj);
-        }
-
     }
 }

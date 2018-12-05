@@ -29,41 +29,26 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.CBBuscar = new System.Windows.Forms.ComboBox();
             this.DGResultados = new System.Windows.Forms.DataGridView();
             this.TBBuscar = new System.Windows.Forms.TextBox();
             this.lblTotal = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGResultados)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.CBBuscar);
+            this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.DGResultados);
             this.groupBox1.Controls.Add(this.TBBuscar);
             this.groupBox1.Controls.Add(this.lblTotal);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(649, 290);
+            this.groupBox1.Size = new System.Drawing.Size(553, 290);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "A&&J Academico - Filtro de Ordenes de Matriculas Registradas";
-            // 
-            // CBBuscar
-            // 
-            this.CBBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CBBuscar.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBBuscar.FormattingEnabled = true;
-            this.CBBuscar.Items.AddRange(new object[] {
-            "Seleccione",
-            "Alumno",
-            "Año",
-            "Orden"});
-            this.CBBuscar.Location = new System.Drawing.Point(9, 22);
-            this.CBBuscar.Name = "CBBuscar";
-            this.CBBuscar.Size = new System.Drawing.Size(117, 23);
-            this.CBBuscar.TabIndex = 4;
             // 
             // DGResultados
             // 
@@ -77,13 +62,13 @@
             this.DGResultados.Name = "DGResultados";
             this.DGResultados.ReadOnly = true;
             this.DGResultados.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGResultados.Size = new System.Drawing.Size(637, 218);
+            this.DGResultados.Size = new System.Drawing.Size(539, 218);
             this.DGResultados.TabIndex = 3;
             this.DGResultados.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGResultados_CellDoubleClick);
             // 
             // TBBuscar
             // 
-            this.TBBuscar.Location = new System.Drawing.Point(132, 22);
+            this.TBBuscar.Location = new System.Drawing.Point(97, 22);
             this.TBBuscar.Name = "TBBuscar";
             this.TBBuscar.Size = new System.Drawing.Size(448, 23);
             this.TBBuscar.TabIndex = 2;
@@ -98,17 +83,26 @@
             this.lblTotal.TabIndex = 1;
             this.lblTotal.Text = "Datos Registrados: ";
             // 
-            // frmExaminarAcademico_OrdenDeMatricula
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 25);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(85, 15);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "Filtro de Orden";
+            // 
+            // frmExaminar_OrdenDeMatricula
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(673, 314);
+            this.ClientSize = new System.Drawing.Size(573, 314);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MaximizeBox = false;
-            this.Name = "frmExaminarAcademico_OrdenDeMatricula";
+            this.Name = "frmExaminar_OrdenDeMatricula";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Examinar - Orden de Matricula";
             this.Load += new System.EventHandler(this.frmExaminarAcademico_OrdenDeMatricula_Load);
@@ -125,6 +119,6 @@
         private System.Windows.Forms.DataGridView DGResultados;
         private System.Windows.Forms.TextBox TBBuscar;
         private System.Windows.Forms.Label lblTotal;
-        private System.Windows.Forms.ComboBox CBBuscar;
+        private System.Windows.Forms.Label label1;
     }
 }

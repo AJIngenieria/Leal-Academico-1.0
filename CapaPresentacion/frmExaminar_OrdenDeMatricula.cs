@@ -31,55 +31,17 @@ namespace CapaPresentacion
             //lblTotal.Text = "Datos Registrados: " + Convert.ToString(DGResultados.Rows.Count);
         }
 
-        private void Buscar_PorAlumno()
-        {
-            try
-            {
-                this.DGResultados.DataSource = fAcademico_OrdenDeMatricula.Buscar_PorAlumno(this.TBBuscar.Text);
-                this.OcultarColumna();
-                lblTotal.Text = "Datos Registrados: " + Convert.ToString(DGResultados.Rows.Count);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message + ex.StackTrace);
-            }
-        }
-
-        private void Buscar_PorAño()
-        {
-            try
-            {
-                this.DGResultados.DataSource = fAcademico_OrdenDeMatricula.Buscar_PorAño(this.TBBuscar.Text);
-                this.OcultarColumna();
-                lblTotal.Text = "Datos Registrados: " + Convert.ToString(DGResultados.Rows.Count);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message + ex.StackTrace);
-            }
-        }
-
-        private void Buscar_PorOrden()
-        {
-            try
-            {
-                this.DGResultados.DataSource = fAcademico_OrdenDeMatricula.Buscar_PorOrden(this.TBBuscar.Text);
-                this.OcultarColumna();
-                lblTotal.Text = "Datos Registrados: " + Convert.ToString(DGResultados.Rows.Count);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message + ex.StackTrace);
-            }
-        }
-
         private void OcultarColumna()
         {
             try
             {
-                this.DGResultados.Columns[0].Visible = false;
+                this.DGResultados.Columns["Idorden"].Visible = false;
                 this.DGResultados.Columns["Idvalor"].Visible = false;
-                this.DGResultados.Columns["Estado"].Visible = false;
+                this.DGResultados.Columns["Idestado"].Visible = false;
+                this.DGResultados.Columns["Idcurso"].Visible = false;
+                this.DGResultados.Columns["Idjornada"].Visible = false;
+                this.DGResultados.Columns["Documento"].Visible = false;
+                this.DGResultados.Columns["Fecha"].Visible = false;
             }
             catch (Exception ex)
             {
@@ -92,27 +54,9 @@ namespace CapaPresentacion
         {
             try
             {
-                if (CBBuscar.SelectedIndex == 0)
-                {
-                    this.TBBuscar.ReadOnly = true;
-                    this.TBBuscar.BackColor = Color.FromArgb(187, 222, 251);
-                    this.TBBuscar.Text = string.Empty;
-                }
-                else if (CBBuscar.SelectedIndex == 1)
-                {
-                    this.TBBuscar.BackColor = Color.FromArgb(32, 178, 170);
-                    this.Buscar_PorAlumno();
-                }
-                else if (CBBuscar.SelectedIndex == 2)
-                {
-                    this.TBBuscar.BackColor = Color.FromArgb(32, 178, 170);
-                    this.Buscar_PorAño();
-                }
-                else if (CBBuscar.SelectedIndex == 3)
-                {
-                    this.TBBuscar.BackColor = Color.FromArgb(32, 178, 170);
-                    this.Buscar_PorOrden();
-                }
+                this.DGResultados.DataSource = fAcademico_OrdenDeMatricula.Buscar_OrdenDeMatricula(this.TBBuscar.Text);
+                this.OcultarColumna();
+                lblTotal.Text = "Datos Registrados: " + Convert.ToString(DGResultados.Rows.Count);
             }
             catch (Exception ex)
             {

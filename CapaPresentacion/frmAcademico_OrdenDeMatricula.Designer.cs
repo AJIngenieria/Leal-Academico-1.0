@@ -85,7 +85,7 @@
             this.groupBox1.Size = new System.Drawing.Size(339, 287);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "A&&J Academico - Ordenes de Matricula";
+            this.groupBox1.Text = "Leal Academico - Ordenes de Matricula";
             // 
             // label4
             // 

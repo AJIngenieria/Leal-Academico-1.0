@@ -219,14 +219,14 @@ namespace CapaDatos
 
         public DataTable Buscar_ValoresAcademico(Conexion_Tesoreria_ValoresAcademicos Valor)
         {
-            DataTable DtResultado = new DataTable("Tesoreria_ValoresAcademicos");
+            DataTable DtResultado = new DataTable("Academico.ValoresAcademicos");
             SqlConnection SqlCon = new SqlConnection();
             try
             {
                 SqlCon.ConnectionString = Conexion_BaseDeDatos.Cn;
                 SqlCommand SqlCmd = new SqlCommand();
                 SqlCmd.Connection = SqlCon;
-                SqlCmd.CommandText = "Tesoreria.Buscar_ValoresAcademicos";
+                SqlCmd.CommandText = "Academico.Buscar_ValoresAcademicos";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
                 SqlParameter ParFiltro = new SqlParameter();
