@@ -21,35 +21,16 @@ namespace CapaPresentacion
 
         private void frmExaminarProduccion_Bodega_Load(object sender, EventArgs e)
         {
-            this.CBBuscar.SelectedIndex = 0;
+
         }
 
         private void TBBuscar_TextChanged(object sender, EventArgs e)
         {
             try
             {
-                if (CBBuscar.SelectedIndex == 0)
-                {
-                    this.TBBuscar.Text = "";
-                }
-                else if (CBBuscar.SelectedIndex == 1)
-                {
-                    this.DGResultados.DataSource = fProduccion_Bodega.Examinar_PorCodigo(this.TBBuscar.Text);
-                    this.DGResultados.Columns[0].Visible = false;
-                    lblTotal.Text = "Datos Registrados: " + Convert.ToString(DGResultados.Rows.Count);
-                }
-                else if (CBBuscar.SelectedIndex == 2)
-                {
-                    this.DGResultados.DataSource = fProduccion_Bodega.Examinar_PorNombre(this.TBBuscar.Text);
-                    this.DGResultados.Columns[0].Visible = false;
-                    lblTotal.Text = "Datos Registrados: " + Convert.ToString(DGResultados.Rows.Count);
-                }
-                else if (CBBuscar.SelectedIndex == 3)
-                {
-                    this.DGResultados.DataSource = fProduccion_Bodega.Examinar_PorSucurzal(this.TBBuscar.Text);
-                    this.DGResultados.Columns[0].Visible = false;
-                    lblTotal.Text = "Datos Registrados: " + Convert.ToString(DGResultados.Rows.Count);
-                }
+                this.DGResultados.DataSource = fProduccion_Bodega.Buscar_Bodega(this.TBBuscar.Text);
+                this.DGResultados.Columns[0].Visible = false;
+                lblTotal.Text = "Datos Registrados: " + Convert.ToString(DGResultados.Rows.Count);
             }
             catch (Exception ex)
             {

@@ -23,63 +23,17 @@ namespace CapaPresentacion
         {
 
         }
-
-        private void Buscar_PorAlumno()
-        {
-            try
-            {
-                this.DGResultados.DataSource = fAcademico_Alumno.Examinar_PorNombre(this.TBBuscar.Text);
-                lblTotal.Text = "Datos Registrados: " + Convert.ToString(DGResultados.Rows.Count);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message + ex.StackTrace);
-            }
-        }
-
-        private void Buscar_Carnet()
-        {
-            try
-            {
-                this.DGResultados.DataSource = fAcademico_Alumno.Examinar_PorCarnet(this.TBBuscar.Text);
-                lblTotal.Text = "Datos Registrados: " + Convert.ToString(DGResultados.Rows.Count);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message + ex.StackTrace);
-            }
-        }
-
-        private void Buscar_PorIdentificacion()
-        {
-            try
-            {
-                this.DGResultados.DataSource = fAcademico_Alumno.Examinar_PorIdentificacion(this.TBBuscar.Text);
-                lblTotal.Text = "Datos Registrados: " + Convert.ToString(DGResultados.Rows.Count);
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message + ex.StackTrace);
-            }
-        }
-
+        
         private void TBBuscar_TextChanged(object sender, EventArgs e)
         {
-            if (CBBuscar.SelectedIndex == 0)
+            try
             {
-                this.TBBuscar.Text = string.Empty;
+                this.DGResultados.DataSource = fAcademico_Alumno.Buscar_Alumno(this.TBBuscar.Text);
+                lblTotal.Text = "Datos Registrados: " + Convert.ToString(DGResultados.Rows.Count);
             }
-            else if (CBBuscar.SelectedIndex == 1)
+            catch (Exception ex)
             {
-                this.Buscar_PorAlumno();
-            }
-            else if (CBBuscar.SelectedIndex == 2)
-            {
-                this.Buscar_Carnet();
-            }
-            else if (CBBuscar.SelectedIndex == 3)
-            {
-                this.Buscar_PorIdentificacion();
+                MessageBox.Show(ex.Message + ex.StackTrace);
             }
         }
 

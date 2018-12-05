@@ -136,12 +136,6 @@
     <Compile Include="frmAcademico_Matricula.Designer.cs">
       <DependentUpon>frmAcademico_Matricula.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmExaminar_AlumnoPorCodigo.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="frmExaminar_AlumnoPorCodigo.Designer.cs">
-      <DependentUpon>frmExaminar_AlumnoPorCodigo.cs</DependentUpon>
-    </Compile>
     <Compile Include="frmExaminarBiblioteca_Solicitante.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -532,9 +526,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAcademico_Matricula.resx">
       <DependentUpon>frmAcademico_Matricula.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frmExaminar_AlumnoPorCodigo.resx">
-      <DependentUpon>frmExaminar_AlumnoPorCodigo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmExaminarBiblioteca_Solicitante.resx">
       <DependentUpon>frmExaminarBiblioteca_Solicitante.cs</DependentUpon>

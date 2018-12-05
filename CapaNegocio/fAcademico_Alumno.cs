@@ -169,25 +169,11 @@ namespace CapaNegocio
             return Obj.Guardar_InformacionAcademica(Obj);
         }
 
-        public static DataTable Examinar_PorCarnet(string filtro)
+        public static DataTable Buscar_Alumno(string filtro)
         {
             Conexion_Academico_Alumno Obj = new Conexion_Academico_Alumno();
             Obj.Filtro = filtro;
-            return Obj.Examinar_AlumnoPorCarnet(Obj);
-        }
-
-        public static DataTable Examinar_PorIdentificacion(string filtro)
-        {
-            Conexion_Academico_Alumno Obj = new Conexion_Academico_Alumno();
-            Obj.Filtro = filtro;
-            return Obj.Examinar_AlumnoPorIdentificacion(Obj);
-        }
-
-        public static DataTable Examinar_PorNombre(string filtro)
-        {
-            Conexion_Academico_Alumno Obj = new Conexion_Academico_Alumno();
-            Obj.Filtro = filtro;
-            return Obj.Examinar_Alumno(Obj);
+            return Obj.Buscar_Alumno(Obj);
         }
 
     }

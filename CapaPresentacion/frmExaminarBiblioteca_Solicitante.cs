@@ -33,28 +33,9 @@ namespace CapaPresentacion
         {
             try
             {
-                if (CBBuscar.SelectedIndex == 0)
-                {
-                    this.TBBuscar.Text = "";
-                }
-                else if (CBBuscar.SelectedIndex == 1)
-                {
-                    this.DGResultados.DataSource = fAcademico_Alumno.Examinar_PorCarnet(this.TBBuscar.Text);
-                    this.DGResultados.Columns[0].Visible = false;
-                    lblTotal.Text = "Datos Registrados: " + Convert.ToString(DGResultados.Rows.Count);
-                }
-                else if (CBBuscar.SelectedIndex == 2)
-                {
-                    this.DGResultados.DataSource = fAcademico_Alumno.Examinar_PorIdentificacion(this.TBBuscar.Text);
-                    this.DGResultados.Columns[0].Visible = false;
-                    lblTotal.Text = "Datos Registrados: " + Convert.ToString(DGResultados.Rows.Count);
-                }
-                else if (CBBuscar.SelectedIndex == 3)
-                {
-                    this.DGResultados.DataSource = fAcademico_Alumno.Examinar_PorNombre(this.TBBuscar.Text);
-                    this.DGResultados.Columns[0].Visible = false;
-                    lblTotal.Text = "Datos Registrados: " + Convert.ToString(DGResultados.Rows.Count);
-                }
+                this.DGResultados.DataSource = fAcademico_Alumno.Buscar_Alumno(this.TBBuscar.Text);
+                this.DGResultados.Columns[0].Visible = false;
+                lblTotal.Text = "Datos Registrados: " + Convert.ToString(DGResultados.Rows.Count);
             }
             catch (Exception ex)
             {

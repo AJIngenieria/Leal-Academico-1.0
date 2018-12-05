@@ -263,6 +263,39 @@ namespace CapaDatos
             return rpta;
         }
 
+        public DataTable Buscar_Proveedor(Conexion_Produccion_Proveedor Proveedor)
+        {
+            DataTable DtResultado = new DataTable("Produccion.Proveedor");
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                SqlCon.ConnectionString = Conexion_BaseDeDatos.Cn;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "Produccion.Buscar_Proveedor";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter ParTextoBuscar = new SqlParameter();
+                ParTextoBuscar.ParameterName = "@Filtro";
+                ParTextoBuscar.SqlDbType = SqlDbType.VarChar;
+                ParTextoBuscar.Size = 50;
+                ParTextoBuscar.Value = Proveedor.Filtro;
+                SqlCmd.Parameters.Add(ParTextoBuscar);
+
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+
+            }
+#pragma warning disable CS0168 // La variable está declarada pero nunca se usa
+            catch (Exception ex)
+#pragma warning restore CS0168 // La variable está declarada pero nunca se usa
+            {
+
+                DtResultado = null;
+            }
+            return DtResultado;
+        }
+
         public DataTable Mostrar()
         {
             DataTable DtResultado = new DataTable("Produccion.Proveedor");
@@ -288,104 +321,7 @@ namespace CapaDatos
             }
             return DtResultado;
         }
-
-        public DataTable Examinar_PorCodigo(Conexion_Produccion_Proveedor Proveedor)
-        {
-            DataTable DtResultado = new DataTable("Produccion.Proveedor");
-            SqlConnection SqlCon = new SqlConnection();
-            try
-            {
-                SqlCon.ConnectionString = Conexion_BaseDeDatos.Cn;
-                SqlCommand SqlCmd = new SqlCommand();
-                SqlCmd.Connection = SqlCon;
-                SqlCmd.CommandText = "Produccion.CB_Proveedor_PorCodigo";
-                SqlCmd.CommandType = CommandType.StoredProcedure;
-
-                SqlParameter ParTextoBuscar = new SqlParameter();
-                ParTextoBuscar.ParameterName = "@Filtro";
-                ParTextoBuscar.SqlDbType = SqlDbType.VarChar;
-                ParTextoBuscar.Size = 50;
-                ParTextoBuscar.Value = Proveedor.Filtro;
-                SqlCmd.Parameters.Add(ParTextoBuscar);
-
-                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
-                SqlDat.Fill(DtResultado);
-
-            }
-#pragma warning disable CS0168 // La variable está declarada pero nunca se usa
-            catch (Exception ex)
-#pragma warning restore CS0168 // La variable está declarada pero nunca se usa
-            {
-
-                DtResultado = null;
-            }
-            return DtResultado;
-        }
-
-        public DataTable Examinar_PorIdentificacion(Conexion_Produccion_Proveedor Proveedor)
-        {
-            DataTable DtResultado = new DataTable("Produccion.Proveedor");
-            SqlConnection SqlCon = new SqlConnection();
-            try
-            {
-                SqlCon.ConnectionString = Conexion_BaseDeDatos.Cn;
-                SqlCommand SqlCmd = new SqlCommand();
-                SqlCmd.Connection = SqlCon;
-                SqlCmd.CommandText = "Produccion.CB_Proveedor_PorIdentificacion";
-                SqlCmd.CommandType = CommandType.StoredProcedure;
-
-                SqlParameter ParTextoBuscar = new SqlParameter();
-                ParTextoBuscar.ParameterName = "@Filtro";
-                ParTextoBuscar.SqlDbType = SqlDbType.VarChar;
-                ParTextoBuscar.Size = 50;
-                ParTextoBuscar.Value = Proveedor.Filtro;
-                SqlCmd.Parameters.Add(ParTextoBuscar);
-
-                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
-                SqlDat.Fill(DtResultado);
-
-            }
-#pragma warning disable CS0168 // La variable está declarada pero nunca se usa
-            catch (Exception ex)
-#pragma warning restore CS0168 // La variable está declarada pero nunca se usa
-            {
-
-                DtResultado = null;
-            }
-            return DtResultado;
-        }
-
-        public DataTable Examinar_PorNombre(Conexion_Produccion_Proveedor Proveedor)
-        {
-            DataTable DtResultado = new DataTable("Produccion.Proveedor");
-            SqlConnection SqlCon = new SqlConnection();
-            try
-            {
-                SqlCon.ConnectionString = Conexion_BaseDeDatos.Cn;
-                SqlCommand SqlCmd = new SqlCommand();
-                SqlCmd.Connection = SqlCon;
-                SqlCmd.CommandText = "Produccion.CB_Proveedor_PorNombre";
-                SqlCmd.CommandType = CommandType.StoredProcedure;
-
-                SqlParameter ParTextoBuscar = new SqlParameter();
-                ParTextoBuscar.ParameterName = "@Filtro";
-                ParTextoBuscar.SqlDbType = SqlDbType.VarChar;
-                ParTextoBuscar.Size = 50;
-                ParTextoBuscar.Value = Proveedor.Filtro;
-                SqlCmd.Parameters.Add(ParTextoBuscar);
-
-                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
-                SqlDat.Fill(DtResultado);
-
-            }
-#pragma warning disable CS0168 // La variable está declarada pero nunca se usa
-            catch (Exception ex)
-#pragma warning restore CS0168 // La variable está declarada pero nunca se usa
-            {
-
-                DtResultado = null;
-            }
-            return DtResultado;
-        }
+        
+        
     }
 }

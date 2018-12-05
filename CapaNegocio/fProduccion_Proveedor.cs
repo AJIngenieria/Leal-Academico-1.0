@@ -44,30 +44,18 @@ namespace CapaNegocio
             return Obj.Guardar_DatosBasicos(Obj);
         }
 
+
+        public static DataTable Buscar_Proveedor(string filtro)
+        {
+            Conexion_Produccion_Proveedor Obj = new Conexion_Produccion_Proveedor();
+            Obj.Filtro = filtro;
+            return Obj.Buscar_Proveedor(Obj);
+        }
+
         public static DataTable Mostrar()
         {
             return new Conexion_Produccion_Proveedor().Mostrar();
         }
 
-        public static DataTable Examinar_PorCodigo(string filtro)
-        {
-            Conexion_Produccion_Proveedor Obj = new Conexion_Produccion_Proveedor();
-            Obj.Filtro = filtro;
-            return Obj.Examinar_PorCodigo(Obj);
-        }
-
-        public static DataTable Examinar_PorIdentificacion(string filtro)
-        {
-            Conexion_Produccion_Proveedor Obj = new Conexion_Produccion_Proveedor();
-            Obj.Filtro = filtro;
-            return Obj.Examinar_PorIdentificacion(Obj);
-        }
-
-        public static DataTable Examinar_PorNombre(string filtro)
-        {
-            Conexion_Produccion_Proveedor Obj = new Conexion_Produccion_Proveedor();
-            Obj.Filtro = filtro;
-            return Obj.Examinar_PorNombre(Obj);
-        }
     }
 }

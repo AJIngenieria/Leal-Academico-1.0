@@ -314,7 +314,7 @@ namespace CapaDatos
 
         }
 
-        public DataTable Examinar_Alumno(Conexion_Academico_Alumno Alumno)
+        public DataTable Buscar_Alumno(Conexion_Academico_Alumno Alumno)
         {
             DataTable DtResultado = new DataTable("Academico.DatosBasicos");
             SqlConnection SqlCon = new SqlConnection();
@@ -323,7 +323,7 @@ namespace CapaDatos
                 SqlCon.ConnectionString = Conexion_BaseDeDatos.Cn;
                 SqlCommand SqlCmd = new SqlCommand();
                 SqlCmd.Connection = SqlCon;
-                SqlCmd.CommandText = "Academico.CB_PorAlumno";
+                SqlCmd.CommandText = "Academico.Buscar_Alumno";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
                 SqlParameter ParTextoBuscar = new SqlParameter();
@@ -341,79 +341,9 @@ namespace CapaDatos
             catch (Exception ex)
 #pragma warning restore CS0168 // La variable está declarada pero nunca se usa
             {
-
                 DtResultado = null;
             }
             return DtResultado;
-        }
-
-        public DataTable Examinar_AlumnoPorCarnet(Conexion_Academico_Alumno Alumno)
-        {
-            DataTable DtResultado = new DataTable("Academico.DatosBasicos");
-            SqlConnection SqlCon = new SqlConnection();
-            try
-            {
-                SqlCon.ConnectionString = Conexion_BaseDeDatos.Cn;
-                SqlCommand SqlCmd = new SqlCommand();
-                SqlCmd.Connection = SqlCon;
-                SqlCmd.CommandText = "Academico.CB_PorCarnet";
-                SqlCmd.CommandType = CommandType.StoredProcedure;
-
-                SqlParameter ParTextoBuscar = new SqlParameter();
-                ParTextoBuscar.ParameterName = "@Filtro";
-                ParTextoBuscar.SqlDbType = SqlDbType.VarChar;
-                ParTextoBuscar.Size = 50;
-                ParTextoBuscar.Value = Alumno.Filtro;
-                SqlCmd.Parameters.Add(ParTextoBuscar);
-
-                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
-                SqlDat.Fill(DtResultado);
-
-            }
-#pragma warning disable CS0168 // La variable está declarada pero nunca se usa
-            catch (Exception ex)
-#pragma warning restore CS0168 // La variable está declarada pero nunca se usa
-            {
-
-                DtResultado = null;
-            }
-            return DtResultado;
-        }
-
-        
-        public DataTable Examinar_AlumnoPorIdentificacion(Conexion_Academico_Alumno Alumno)
-        {
-            DataTable DtResultado = new DataTable("Academico.DatosBasicos");
-            SqlConnection SqlCon = new SqlConnection();
-            try
-            {
-                SqlCon.ConnectionString = Conexion_BaseDeDatos.Cn;
-                SqlCommand SqlCmd = new SqlCommand();
-                SqlCmd.Connection = SqlCon;
-                SqlCmd.CommandText = "Academico.CB_PorIdentificacion";
-                SqlCmd.CommandType = CommandType.StoredProcedure;
-
-                SqlParameter ParTextoBuscar = new SqlParameter();
-                ParTextoBuscar.ParameterName = "@Filtro";
-                ParTextoBuscar.SqlDbType = SqlDbType.VarChar;
-                ParTextoBuscar.Size = 50;
-                ParTextoBuscar.Value = Alumno.Filtro;
-                SqlCmd.Parameters.Add(ParTextoBuscar);
-
-                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
-                SqlDat.Fill(DtResultado);
-
-            }
-#pragma warning disable CS0168 // La variable está declarada pero nunca se usa
-            catch (Exception ex)
-#pragma warning restore CS0168 // La variable está declarada pero nunca se usa
-            {
-
-                DtResultado = null;
-            }
-            return DtResultado;
-        }
-
-        
+        }        
     }
 }
