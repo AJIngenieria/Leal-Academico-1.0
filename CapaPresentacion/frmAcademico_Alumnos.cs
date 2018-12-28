@@ -737,8 +737,7 @@ namespace CapaPresentacion
 
         private void btnExaminar_Codigo_Click(object sender, EventArgs e)
         {
-            frmExaminar_AlumnoPorCodigo frmExaminarAcademico_CodigoID = new frmExaminar_AlumnoPorCodigo();
-            frmExaminarAcademico_CodigoID.ShowDialog();
+            
         }
 
         private void PanelFoto_Click(object sender, EventArgs e)
