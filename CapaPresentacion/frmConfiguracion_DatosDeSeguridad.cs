@@ -36,7 +36,8 @@ namespace CapaPresentacion
             try
             {
                 //Abrir el archivo, recuperar filas y cerrar el archivo
-                string[] rows = File.ReadAllLines(@"C:\Windows\System32\drivers\etc\DatosServer.ini", Encoding.Default);
+                //string[] rows = File.ReadAllLines(@"C:\Windows\System32\drivers\etc\DatosServer.ini", Encoding.Default);
+                string[] rows = File.ReadAllLines(@"D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaDatos\app.config", Encoding.Default);
 
                 //Recuperar el encabezado
                 textBox1.Text = rows[0];
@@ -99,10 +100,18 @@ namespace CapaPresentacion
             try
             {
                 //string Almacenamiento = @"C:\Windows\System32\drivers\etc\DatosServer.ini";
-                string Almacenamiento = @"C:\Windows\System32\drivers\etc\DatosServer.ini";
+                //D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaDatos\app.config
+                //string Almacenamiento = @"C:\Windows\System32\drivers\etc\DatosServer.ini";
+                //string Almacenamiento = @"D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaDatos\Properties\Settings.settings";
+
+
+                string Almacenamiento = @"D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaDatos\Properties\Settings.Designer.cs";
+                //string Configuracion = @"D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaDatos\Properties\Settings.settings";
 
                 string Datos = File.ReadAllText(Almacenamiento);
+                //string Config = File.ReadAllText(Configuracion);
                 TBDatosServer.Text = Datos;
+                //TBDatosConfiguracion.Text = Config;
             }
             catch
             {
@@ -116,8 +125,15 @@ namespace CapaPresentacion
             try
             {
                 //string Almacenamiento = @"C:\Programas\A&J Academico 1.0\AJ Academico 1.0\bin\Debug\AJ Academico 1.0.exe.config";
-                string Almacenamiento = @"C:\Windows\System32\drivers\etc\DatosServer.ini";
+                //string Almacenamiento = @"C:\Windows\System32\drivers\etc\DatosServer.ini";
+                //string Almacenamiento = @"D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaDatos\Properties\Settings.settings";
+
+                string Almacenamiento = @"D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaDatos\Properties\Settings.Designer.cs";
+                //string Configuracion = @"D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaDatos\Properties\Settings.settings";
+
+
                 File.WriteAllText(Almacenamiento, TBDatosServer.Text);
+                //File.WriteAllText(Configuracion, TBDatosConfiguracion.Text);
 
                 MessageBox.Show("Datos de Actualizados Correctamente");
             }

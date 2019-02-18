@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.btnEditarDatos = new System.Windows.Forms.Button();
             this.btnActualizar = new System.Windows.Forms.Button();
             this.TBDatosServer = new System.Windows.Forms.TextBox();
@@ -46,13 +48,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.TBDatosConfiguracion = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.TBDatosConfiguracion);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.btnEditarDatos);
@@ -74,14 +76,32 @@
             this.groupBox1.Controls.Add(this.btnGuardar);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(671, 278);
+            this.groupBox1.Size = new System.Drawing.Size(717, 414);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(130, 171);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(96, 15);
+            this.label6.TabIndex = 20;
+            this.label6.Text = "Serial Procesador";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(126, 139);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(66, 15);
+            this.label5.TabIndex = 19;
+            this.label5.Text = "Serial HDD";
+            // 
             // btnEditarDatos
             // 
-            this.btnEditarDatos.Location = new System.Drawing.Point(307, 215);
+            this.btnEditarDatos.Location = new System.Drawing.Point(9, 273);
             this.btnEditarDatos.Name = "btnEditarDatos";
             this.btnEditarDatos.Size = new System.Drawing.Size(103, 33);
             this.btnEditarDatos.TabIndex = 18;
@@ -101,10 +121,11 @@
             // 
             // TBDatosServer
             // 
-            this.TBDatosServer.Location = new System.Drawing.Point(423, 22);
+            this.TBDatosServer.Location = new System.Drawing.Point(369, 22);
             this.TBDatosServer.Multiline = true;
             this.TBDatosServer.Name = "TBDatosServer";
-            this.TBDatosServer.Size = new System.Drawing.Size(237, 187);
+            this.TBDatosServer.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.TBDatosServer.Size = new System.Drawing.Size(342, 187);
             this.TBDatosServer.TabIndex = 16;
             // 
             // textBox2
@@ -152,28 +173,28 @@
             // 
             this.TBCodigoDeSeguridad.Location = new System.Drawing.Point(129, 109);
             this.TBCodigoDeSeguridad.Name = "TBCodigoDeSeguridad";
-            this.TBCodigoDeSeguridad.Size = new System.Drawing.Size(288, 23);
+            this.TBCodigoDeSeguridad.Size = new System.Drawing.Size(234, 23);
             this.TBCodigoDeSeguridad.TabIndex = 8;
             // 
             // TBServidor
             // 
             this.TBServidor.Location = new System.Drawing.Point(129, 22);
             this.TBServidor.Name = "TBServidor";
-            this.TBServidor.Size = new System.Drawing.Size(288, 23);
+            this.TBServidor.Size = new System.Drawing.Size(234, 23);
             this.TBServidor.TabIndex = 7;
             // 
             // TBBasePrincipal
             // 
             this.TBBasePrincipal.Location = new System.Drawing.Point(129, 51);
             this.TBBasePrincipal.Name = "TBBasePrincipal";
-            this.TBBasePrincipal.Size = new System.Drawing.Size(288, 23);
+            this.TBBasePrincipal.Size = new System.Drawing.Size(234, 23);
             this.TBBasePrincipal.TabIndex = 6;
             // 
             // TBCodigoServer
             // 
             this.TBCodigoServer.Location = new System.Drawing.Point(129, 80);
             this.TBCodigoServer.Name = "TBCodigoServer";
-            this.TBCodigoServer.Size = new System.Drawing.Size(288, 23);
+            this.TBCodigoServer.Size = new System.Drawing.Size(234, 23);
             this.TBCodigoServer.TabIndex = 5;
             // 
             // label4
@@ -229,30 +250,21 @@
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
-            // label5
+            // TBDatosConfiguracion
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(126, 139);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(66, 15);
-            this.label5.TabIndex = 19;
-            this.label5.Text = "Serial HDD";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(130, 171);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(96, 15);
-            this.label6.TabIndex = 20;
-            this.label6.Text = "Serial Procesador";
+            this.TBDatosConfiguracion.Location = new System.Drawing.Point(369, 215);
+            this.TBDatosConfiguracion.Multiline = true;
+            this.TBDatosConfiguracion.Name = "TBDatosConfiguracion";
+            this.TBDatosConfiguracion.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.TBDatosConfiguracion.Size = new System.Drawing.Size(342, 187);
+            this.TBDatosConfiguracion.TabIndex = 21;
             // 
             // frmConfiguracion_DatosDeSeguridad
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(695, 302);
+            this.ClientSize = new System.Drawing.Size(741, 437);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "frmConfiguracion_DatosDeSeguridad";
@@ -286,5 +298,6 @@
         private System.Windows.Forms.Button btnEditarDatos;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox TBDatosConfiguracion;
     }
 }

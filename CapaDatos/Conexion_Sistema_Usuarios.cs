@@ -16,68 +16,20 @@ namespace CapaDatos
         private string _Contraseña;
 
         private string _Filtro;
+        public int Idusuario { get => _Idusuario; set => _Idusuario = value; }
+        public string Usuario { get => _Usuario; set => _Usuario = value; }
+        public string Contraseña { get => _Contraseña; set => _Contraseña = value; }
+        public string Filtro { get => _Filtro; set => _Filtro = value; }
 
-        public int Idusuario
+
+        //Constructor Vacio
+        public Conexion_Sistema_Usuarios()
         {
-            get
-            {
-                return _Idusuario;
-            }
 
-            set
-            {
-                _Idusuario = value;
-            }
         }
-
-        public string Usuario
+        //Constructor con todos los parametros
+        public Conexion_Sistema_Usuarios (int idusuario, string usuario, string contraseña,string filtro)
         {
-            get
-            {
-                return _Usuario;
-            }
-
-            set
-            {
-                _Usuario = value;
-            }
-        }
-
-        public string Contraseña
-        {
-            get
-            {
-                return _Contraseña;
-            }
-
-            set
-            {
-                _Contraseña = value;
-            }
-        }
-
-        public string Filtro
-        {
-            get
-            {
-                return _Filtro;
-            }
-
-            set
-            {
-                _Filtro = value;
-            }
-        }
-
-    
-    //Constructor Vacio
-    public Conexion_Sistema_Usuarios()
-    {
-
-    }
-    //Constructor con todos los parametros
-    public Conexion_Sistema_Usuarios (int idusuario, string usuario, string contraseña,string filtro)
-    {
 
             //Informacion Academica
             this.Idusuario = idusuario;
@@ -88,12 +40,12 @@ namespace CapaDatos
             this.Filtro = filtro;
         }
 
-    public DataTable Login(Conexion_Sistema_Usuarios Usuarios)
-    {
-        DataTable DtResultado = new DataTable("Sistema.Usuarios");
-        SqlConnection SqlCon = new SqlConnection();
-        try
+        public DataTable Login(Conexion_Sistema_Usuarios Usuarios)
         {
+            DataTable DtResultado = new DataTable("Sistema.Usuarios");
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
             SqlCon.ConnectionString = Conexion_BaseDeDatos.Cn;
             SqlCommand SqlCmd = new SqlCommand();
             SqlCmd.Connection = SqlCon;

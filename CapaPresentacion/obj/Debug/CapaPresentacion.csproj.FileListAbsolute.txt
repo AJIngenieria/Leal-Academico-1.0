@@ -569,7 +569,6 @@ E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaP
 E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_Año.resources
 E:\Proyectos de Programacion\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistema_Estados.resources
 D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminar_Alumno.resources
-D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminar_AlumnoPorCodigo.resources
 D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminar_Familias.resources
 D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminar_OrdenDeMatricula.resources
 D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistema_Estados.resources

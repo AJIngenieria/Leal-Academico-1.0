@@ -43,6 +43,7 @@ namespace CapaPresentacion
             this.Habilitar();
             this.Botones();
 
+            //Iniciar combobox con primer Item
             this.CBGenero.SelectedIndex = 0;
             this.CBBecario.SelectedIndex = 0;
             this.CBEstado.SelectedIndex = 0;
