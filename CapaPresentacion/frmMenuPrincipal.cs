@@ -365,5 +365,12 @@ namespace CapaPresentacion
             frmProduccion_Productos_Marcas.MdiParent = this;
             frmProduccion_Productos_Marcas.Show();
         }
+
+        private void asignaturasToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmAcademico_Asignaturas frmAcademico_Asignaturas = new frmAcademico_Asignaturas();
+            frmAcademico_Asignaturas.MdiParent = this;
+            frmAcademico_Asignaturas.Show();
+        }
     }
 }

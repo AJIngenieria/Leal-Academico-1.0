@@ -328,17 +328,17 @@
     <Compile Include="Filtros\frmExaminarTesoreria_ValoresAcademicos.Designer.cs">
       <DependentUpon>frmExaminarTesoreria_ValoresAcademicos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sistema\frmSistemaAcademico_Bitacora.cs">
+    <Compile Include="Sistema\Academico\frmSistema_Bitacora.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sistema\frmSistemaAcademico_Bitacora.Designer.cs">
-      <DependentUpon>frmSistemaAcademico_Bitacora.cs</DependentUpon>
+    <Compile Include="Sistema\Academico\frmSistema_Bitacora.Designer.cs">
+      <DependentUpon>frmSistema_Bitacora.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sistema\frmSistemaAcademico_CodigoID.cs">
+    <Compile Include="Sistema\Academico\frmSistema_CodigoID.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sistema\frmSistemaAcademico_CodigoID.Designer.cs">
-      <DependentUpon>frmSistemaAcademico_CodigoID.cs</DependentUpon>
+    <Compile Include="Sistema\Academico\frmSistema_CodigoID.Designer.cs">
+      <DependentUpon>frmSistema_CodigoID.cs</DependentUpon>
     </Compile>
     <Compile Include="Academico\frmAcademico_OrdenDeMatricula.cs">
       <SubType>Form</SubType>
@@ -430,23 +430,23 @@
     <Compile Include="Academico\frmAcademico_Vehiculos.Designer.cs">
       <DependentUpon>frmAcademico_Vehiculos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sistema\frmSistemaAcademico_AreaAcademica.cs">
+    <Compile Include="Sistema\Academico\frmSistema_AreaAcademica.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sistema\frmSistemaAcademico_AreaAcademica.Designer.cs">
-      <DependentUpon>frmSistemaAcademico_AreaAcademica.cs</DependentUpon>
+    <Compile Include="Sistema\Academico\frmSistema_AreaAcademica.Designer.cs">
+      <DependentUpon>frmSistema_AreaAcademica.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sistema\frmSistemaAcademico_Aula.cs">
+    <Compile Include="Sistema\Academico\frmSistema_Aula.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sistema\frmSistemaAcademico_Aula.Designer.cs">
-      <DependentUpon>frmSistemaAcademico_Aula.cs</DependentUpon>
+    <Compile Include="Sistema\Academico\frmSistema_Aula.Designer.cs">
+      <DependentUpon>frmSistema_Aula.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sistema\frmSistemaAcademico_Año.cs">
+    <Compile Include="Sistema\Academico\frmSistema_Año.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sistema\.Designer.cs">
-      <DependentUpon>frmSistemaAcademico_Año.cs</DependentUpon>
+    <Compile Include="Sistema\Academico\.Designer.cs">
+      <DependentUpon>frmSistema_Año.cs</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Academico\frmAcademico_Cursos.cs">
@@ -455,23 +455,23 @@
     <Compile Include="Academico\frmAcademico_Cursos.Designer.cs">
       <DependentUpon>frmAcademico_Cursos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sistema\frmSistemaAcademico_Jornada.cs">
+    <Compile Include="Sistema\Academico\frmSistema_Jornada.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sistema\frmSistemaAcademico_Jornada.Designer.cs">
-      <DependentUpon>frmSistemaAcademico_Jornada.cs</DependentUpon>
+    <Compile Include="Sistema\Academico\frmSistema_Jornada.Designer.cs">
+      <DependentUpon>frmSistema_Jornada.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sistema\frmSistemaAcademico_Periodos.cs">
+    <Compile Include="Sistema\Academico\frmSistema_Periodos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sistema\frmSistemaAcademico_Periodos.Designer.cs">
-      <DependentUpon>frmSistemaAcademico_Periodos.cs</DependentUpon>
+    <Compile Include="Sistema\Academico\frmSistema_Periodos.Designer.cs">
+      <DependentUpon>frmSistema_Periodos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Sistema\frmSistemaAlmacen_Comprobante.cs">
+    <Compile Include="Sistema\frmSistema_Comprobante.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Sistema\frmSistemaAlmacen_Comprobante.Designer.cs">
-      <DependentUpon>frmSistemaAlmacen_Comprobante.cs</DependentUpon>
+    <Compile Include="Sistema\frmSistema_Comprobante.Designer.cs">
+      <DependentUpon>frmSistema_Comprobante.cs</DependentUpon>
     </Compile>
     <Compile Include="Informacion_Computer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -617,11 +617,11 @@
     <EmbeddedResource Include="Filtros\frmExaminarTesoreria_ValoresAcademicos.resx">
       <DependentUpon>frmExaminarTesoreria_ValoresAcademicos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Sistema\frmSistemaAcademico_Bitacora.resx">
-      <DependentUpon>frmSistemaAcademico_Bitacora.cs</DependentUpon>
+    <EmbeddedResource Include="Sistema\Academico\frmSistema_Bitacora.resx">
+      <DependentUpon>frmSistema_Bitacora.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Sistema\frmSistemaAcademico_CodigoID.resx">
-      <DependentUpon>frmSistemaAcademico_CodigoID.cs</DependentUpon>
+    <EmbeddedResource Include="Sistema\Academico\frmSistema_CodigoID.resx">
+      <DependentUpon>frmSistema_CodigoID.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Academico\frmAcademico_OrdenDeMatricula.resx">
       <DependentUpon>frmAcademico_OrdenDeMatricula.cs</DependentUpon>
@@ -668,26 +668,26 @@
     <EmbeddedResource Include="Academico\frmAcademico_Vehiculos.resx">
       <DependentUpon>frmAcademico_Vehiculos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Sistema\frmSistemaAcademico_AreaAcademica.resx">
-      <DependentUpon>frmSistemaAcademico_AreaAcademica.cs</DependentUpon>
+    <EmbeddedResource Include="Sistema\Academico\frmSistema_AreaAcademica.resx">
+      <DependentUpon>frmSistema_AreaAcademica.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Sistema\frmSistemaAcademico_Aula.resx">
-      <DependentUpon>frmSistemaAcademico_Aula.cs</DependentUpon>
+    <EmbeddedResource Include="Sistema\Academico\frmSistema_Aula.resx">
+      <DependentUpon>frmSistema_Aula.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Sistema\frmSistemaAcademico_Año.resx">
-      <DependentUpon>frmSistemaAcademico_Año.cs</DependentUpon>
+    <EmbeddedResource Include="Sistema\Academico\frmSistema_Año.resx">
+      <DependentUpon>frmSistema_Año.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Academico\frmAcademico_Cursos.resx">
       <DependentUpon>frmAcademico_Cursos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Sistema\frmSistemaAcademico_Jornada.resx">
-      <DependentUpon>frmSistemaAcademico_Jornada.cs</DependentUpon>
+    <EmbeddedResource Include="Sistema\Academico\frmSistema_Jornada.resx">
+      <DependentUpon>frmSistema_Jornada.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Sistema\frmSistemaAcademico_Periodos.resx">
-      <DependentUpon>frmSistemaAcademico_Periodos.cs</DependentUpon>
+    <EmbeddedResource Include="Sistema\Academico\frmSistema_Periodos.resx">
+      <DependentUpon>frmSistema_Periodos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Sistema\frmSistemaAlmacen_Comprobante.resx">
-      <DependentUpon>frmSistemaAlmacen_Comprobante.cs</DependentUpon>
+    <EmbeddedResource Include="Sistema\frmSistema_Comprobante.resx">
+      <DependentUpon>frmSistema_Comprobante.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

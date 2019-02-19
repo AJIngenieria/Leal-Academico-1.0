@@ -472,6 +472,7 @@
             this.asignaturasToolStripMenuItem1.Name = "asignaturasToolStripMenuItem1";
             this.asignaturasToolStripMenuItem1.Size = new System.Drawing.Size(200, 22);
             this.asignaturasToolStripMenuItem1.Text = "Asignaturas";
+            this.asignaturasToolStripMenuItem1.Click += new System.EventHandler(this.asignaturasToolStripMenuItem1_Click);
             // 
             // aulasDeClaseToolStripMenuItem1
             // 
@@ -2301,7 +2302,7 @@
             // toolStripLabel3
             // 
             this.toolStripLabel3.Name = "toolStripLabel3";
-            this.toolStripLabel3.Size = new System.Drawing.Size(177, 22);
+            this.toolStripLabel3.Size = new System.Drawing.Size(187, 22);
             this.toolStripLabel3.Text = "Alexander Javier Guerrero Cuello";
             // 
             // toolStripSeparator2
@@ -2319,7 +2320,7 @@
             // toolStripLabel5
             // 
             this.toolStripLabel5.Name = "toolStripLabel5";
-            this.toolStripLabel5.Size = new System.Drawing.Size(129, 22);
+            this.toolStripLabel5.Size = new System.Drawing.Size(135, 22);
             this.toolStripLabel5.Text = "Aca_Instituto_Fundecar";
             // 
             // toolStripSeparator3
@@ -2337,7 +2338,7 @@
             // toolStripLabel7
             // 
             this.toolStripLabel7.Name = "toolStripLabel7";
-            this.toolStripLabel7.Size = new System.Drawing.Size(144, 22);
+            this.toolStripLabel7.Size = new System.Drawing.Size(157, 22);
             this.toolStripLabel7.Text = "San Jose de los Campanos";
             // 
             // frmMenuPrincipal
