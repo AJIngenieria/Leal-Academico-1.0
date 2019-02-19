@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CapaPresentacion
 {
-    public partial class frmConfiguracion_CodigoID : Form
+    public partial class frmSistema_CodigoID : Form
     {
-        public frmConfiguracion_CodigoID()
+        public frmSistema_CodigoID()
         {
             InitializeComponent();
         }

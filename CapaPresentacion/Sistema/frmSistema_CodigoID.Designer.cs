@@ -1,6 +1,6 @@
 ﻿namespace CapaPresentacion
 {
-    partial class frmConfiguracion_CodigoID
+    partial class frmSistema_CodigoID
     {
         /// <summary>
         /// Required designer variable.

@@ -46,142 +46,142 @@
   <ItemGroup>
     <Compile Include="Class1.cs" />
     <Compile Include="Configuracion\Cadena_Conexion.cs" />
-    <Compile Include="frmBiblioteca_Editorial.cs">
+    <Compile Include="Biblioteca\frmBiblioteca_Editorial.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmBiblioteca_Editorial.Designer.cs">
+    <Compile Include="Biblioteca\frmBiblioteca_Editorial.Designer.cs">
       <DependentUpon>frmBiblioteca_Editorial.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmBiblioteca_Grupos.cs">
+    <Compile Include="Biblioteca\frmBiblioteca_Grupos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmBiblioteca_Grupos.Designer.cs">
+    <Compile Include="Biblioteca\frmBiblioteca_Grupos.Designer.cs">
       <DependentUpon>frmBiblioteca_Grupos.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmBiblioteca_Niveles.cs">
+    <Compile Include="Biblioteca\frmBiblioteca_Niveles.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmBiblioteca_Niveles.Designer.cs">
+    <Compile Include="Biblioteca\frmBiblioteca_Niveles.Designer.cs">
       <DependentUpon>frmBiblioteca_Niveles.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmConfiguracion_CodigoID.cs">
+    <Compile Include="Sistema\frmSistema_CodigoID.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmConfiguracion_CodigoID.Designer.cs">
-      <DependentUpon>frmConfiguracion_CodigoID.cs</DependentUpon>
+    <Compile Include="Sistema\frmSistema_CodigoID.Designer.cs">
+      <DependentUpon>frmSistema_CodigoID.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmConsulta_Academico_Alumnos.cs">
+    <Compile Include="Consultas\frmConsulta_Academico_Alumnos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmConsulta_Academico_Alumnos.Designer.cs">
+    <Compile Include="Consultas\frmConsulta_Academico_Alumnos.Designer.cs">
       <DependentUpon>frmConsulta_Academico_Alumnos.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmConsulta_Academico_Asistencia.cs">
+    <Compile Include="Consultas\frmConsulta_Academico_Asistencia.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmConsulta_Academico_Asistencia.Designer.cs">
+    <Compile Include="Consultas\frmConsulta_Academico_Asistencia.Designer.cs">
       <DependentUpon>frmConsulta_Academico_Asistencia.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmConsulta_Academico_Aulas.cs">
+    <Compile Include="Consultas\frmConsulta_Academico_Aulas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmConsulta_Academico_Aulas.Designer.cs">
+    <Compile Include="Consultas\frmConsulta_Academico_Aulas.Designer.cs">
       <DependentUpon>frmConsulta_Academico_Aulas.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmExaminar_Alumno.cs">
+    <Compile Include="Filtros\frmExaminar_Alumno.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmExaminar_Alumno.Designer.cs">
+    <Compile Include="Filtros\frmExaminar_Alumno.Designer.cs">
       <DependentUpon>frmExaminar_Alumno.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAcademico_Asistencia.cs">
+    <Compile Include="Academico\frmAcademico_Asistencia.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAcademico_Asistencia.Designer.cs">
+    <Compile Include="Academico\frmAcademico_Asistencia.Designer.cs">
       <DependentUpon>frmAcademico_Asistencia.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAcademico_Alumnos.cs">
+    <Compile Include="Academico\frmAcademico_Alumnos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAcademico_Alumnos.Designer.cs">
+    <Compile Include="Academico\frmAcademico_Alumnos.Designer.cs">
       <DependentUpon>frmAcademico_Alumnos.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAcademico_Bitacora.cs">
+    <Compile Include="Academico\frmAcademico_Bitacora.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAcademico_Bitacora.Designer.cs">
+    <Compile Include="Academico\frmAcademico_Bitacora.Designer.cs">
       <DependentUpon>frmAcademico_Bitacora.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAcademico_Boletines.cs">
+    <Compile Include="Academico\frmAcademico_Boletines.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAcademico_Boletines.Designer.cs">
+    <Compile Include="Academico\frmAcademico_Boletines.Designer.cs">
       <DependentUpon>frmAcademico_Boletines.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAcademico_Calificaciones.cs">
+    <Compile Include="Academico\frmAcademico_Calificaciones.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAcademico_Calificaciones.Designer.cs">
+    <Compile Include="Academico\frmAcademico_Calificaciones.Designer.cs">
       <DependentUpon>frmAcademico_Calificaciones.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAcademico_Familias.cs">
+    <Compile Include="Academico\frmAcademico_Familias.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAcademico_Familias.Designer.cs">
+    <Compile Include="Academico\frmAcademico_Familias.Designer.cs">
       <DependentUpon>frmAcademico_Familias.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAcademico_Matricula.cs">
+    <Compile Include="Academico\frmAcademico_Matricula.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAcademico_Matricula.Designer.cs">
+    <Compile Include="Academico\frmAcademico_Matricula.Designer.cs">
       <DependentUpon>frmAcademico_Matricula.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmExaminarBiblioteca_Solicitante.cs">
+    <Compile Include="Filtros\frmExaminarBiblioteca_Solicitante.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmExaminarBiblioteca_Solicitante.Designer.cs">
+    <Compile Include="Filtros\frmExaminarBiblioteca_Solicitante.Designer.cs">
       <DependentUpon>frmExaminarBiblioteca_Solicitante.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmExaminarProduccion_Bodega.cs">
+    <Compile Include="Filtros\frmExaminarProduccion_Bodega.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmExaminarProduccion_Bodega.Designer.cs">
+    <Compile Include="Filtros\frmExaminarProduccion_Bodega.Designer.cs">
       <DependentUpon>frmExaminarProduccion_Bodega.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmExaminarProduccion_Clientes.cs">
+    <Compile Include="Filtros\frmExaminarProduccion_Clientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmExaminarProduccion_Clientes.Designer.cs">
+    <Compile Include="Filtros\frmExaminarProduccion_Clientes.Designer.cs">
       <DependentUpon>frmExaminarProduccion_Clientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmExaminarProduccion_Impuestos.cs">
+    <Compile Include="Filtros\frmExaminarProduccion_Impuestos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmExaminarProduccion_Impuestos.Designer.cs">
+    <Compile Include="Filtros\frmExaminarProduccion_Impuestos.Designer.cs">
       <DependentUpon>frmExaminarProduccion_Impuestos.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmExaminarProduccion_Productos.cs">
+    <Compile Include="Filtros\frmExaminarProduccion_Productos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmExaminarProduccion_Productos.Designer.cs">
+    <Compile Include="Filtros\frmExaminarProduccion_Productos.Designer.cs">
       <DependentUpon>frmExaminarProduccion_Productos.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmExaminarProduccion_Proveedor.cs">
+    <Compile Include="Filtros\frmExaminarProduccion_Proveedor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmExaminarProduccion_Proveedor.Designer.cs">
+    <Compile Include="Filtros\frmExaminarProduccion_Proveedor.Designer.cs">
       <DependentUpon>frmExaminarProduccion_Proveedor.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmGestionHumana_FaltasInjustificadas.cs">
+    <Compile Include="GestionHumana\frmGestionHumana_FaltasInjustificadas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmGestionHumana_FaltasInjustificadas.Designer.cs">
+    <Compile Include="GestionHumana\frmGestionHumana_FaltasInjustificadas.Designer.cs">
       <DependentUpon>frmGestionHumana_FaltasInjustificadas.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmGestionHumana_FaltasJustificadas.cs">
+    <Compile Include="GestionHumana\frmGestionHumana_FaltasJustificadas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmGestionHumana_FaltasJustificadas.Designer.cs">
+    <Compile Include="GestionHumana\frmGestionHumana_FaltasJustificadas.Designer.cs">
       <DependentUpon>frmGestionHumana_FaltasJustificadas.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPlantel_Informacion.cs">
@@ -190,172 +190,172 @@
     <Compile Include="frmPlantel_Informacion.Designer.cs">
       <DependentUpon>frmPlantel_Informacion.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmProduccion_Bodegas.cs">
+    <Compile Include="Produccion\frmProduccion_Bodegas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmProduccion_Bodegas.Designer.cs">
+    <Compile Include="Produccion\frmProduccion_Bodegas.Designer.cs">
       <DependentUpon>frmProduccion_Bodegas.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmProduccion_Bodegas_Traslados.cs">
+    <Compile Include="Produccion\frmProduccion_Bodegas_Traslados.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmProduccion_Bodegas_Traslados.Designer.cs">
+    <Compile Include="Produccion\frmProduccion_Bodegas_Traslados.Designer.cs">
       <DependentUpon>frmProduccion_Bodegas_Traslados.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmProduccion_Cliente.cs">
+    <Compile Include="Produccion\frmProduccion_Cliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmProduccion_Cliente.Designer.cs">
+    <Compile Include="Produccion\frmProduccion_Cliente.Designer.cs">
       <DependentUpon>frmProduccion_Cliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmProduccion_Cliente_Financiera.cs">
+    <Compile Include="Produccion\frmProduccion_Cliente_Financiera.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmProduccion_Cliente_Financiera.Designer.cs">
+    <Compile Include="Produccion\frmProduccion_Cliente_Financiera.Designer.cs">
       <DependentUpon>frmProduccion_Cliente_Financiera.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmProduccion_Cliente_Tipos.cs">
+    <Compile Include="Produccion\frmProduccion_Cliente_Tipos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmProduccion_Cliente_Tipos.Designer.cs">
+    <Compile Include="Produccion\frmProduccion_Cliente_Tipos.Designer.cs">
       <DependentUpon>frmProduccion_Cliente_Tipos.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmProduccion_Productos_Codigos.cs">
+    <Compile Include="Produccion\frmProduccion_Productos_Codigos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmProduccion_Productos_Codigos.Designer.cs">
+    <Compile Include="Produccion\frmProduccion_Productos_Codigos.Designer.cs">
       <DependentUpon>frmProduccion_Productos_Codigos.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmProduccion_Productos_Marcas.cs">
+    <Compile Include="Produccion\frmProduccion_Productos_Marcas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmProduccion_Productos_Marcas.Designer.cs">
+    <Compile Include="Produccion\frmProduccion_Productos_Marcas.Designer.cs">
       <DependentUpon>frmProduccion_Productos_Marcas.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmProduccion_Proveedor_CuentasBancarias.cs">
+    <Compile Include="Produccion\frmProduccion_Proveedor_CuentasBancarias.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmProduccion_Proveedor_CuentasBancarias.Designer.cs">
+    <Compile Include="Produccion\frmProduccion_Proveedor_CuentasBancarias.Designer.cs">
       <DependentUpon>frmProduccion_Proveedor_CuentasBancarias.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmProduccion_Proveedor_Financiera.cs">
+    <Compile Include="Produccion\frmProduccion_Proveedor_Financiera.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmProduccion_Proveedor_Financiera.Designer.cs">
+    <Compile Include="Produccion\frmProduccion_Proveedor_Financiera.Designer.cs">
       <DependentUpon>frmProduccion_Proveedor_Financiera.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmProduccion_Productos_Impuestos.cs">
+    <Compile Include="Produccion\frmProduccion_Productos_Impuestos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmProduccion_Productos_Impuestos.Designer.cs">
+    <Compile Include="Produccion\frmProduccion_Productos_Impuestos.Designer.cs">
       <DependentUpon>frmProduccion_Productos_Impuestos.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmProduccion_Bodegas_Ingreso.cs">
+    <Compile Include="Produccion\frmProduccion_Bodegas_Ingreso.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmProduccion_Bodegas_Ingreso.Designer.cs">
+    <Compile Include="Produccion\frmProduccion_Bodegas_Ingreso.Designer.cs">
       <DependentUpon>frmProduccion_Bodegas_Ingreso.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmProduccion_OrdenDeCompra.cs">
+    <Compile Include="Produccion\frmProduccion_OrdenDeCompra.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmProduccion_OrdenDeCompra.Designer.cs">
+    <Compile Include="Produccion\frmProduccion_OrdenDeCompra.Designer.cs">
       <DependentUpon>frmProduccion_OrdenDeCompra.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmProduccion_Productos_Costos.cs">
+    <Compile Include="Produccion\frmProduccion_Productos_Costos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmProduccion_Productos_Costos.Designer.cs">
+    <Compile Include="Produccion\frmProduccion_Productos_Costos.Designer.cs">
       <DependentUpon>frmProduccion_Productos_Costos.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmProduccion_Productos.cs">
+    <Compile Include="Produccion\frmProduccion_Productos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmProduccion_Productos.Designer.cs">
+    <Compile Include="Produccion\frmProduccion_Productos.Designer.cs">
       <DependentUpon>frmProduccion_Productos.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmProduccion_Proveedor.cs">
+    <Compile Include="Produccion\frmProduccion_Proveedor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmProduccion_Proveedor.Designer.cs">
+    <Compile Include="Produccion\frmProduccion_Proveedor.Designer.cs">
       <DependentUpon>frmProduccion_Proveedor.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmProduccion_Bodegas_Salidas.cs">
+    <Compile Include="Produccion\frmProduccion_Bodegas_Salidas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmProduccion_SalidaDeProductos.Designer.cs">
+    <Compile Include="Produccion\frmProduccion_SalidaDeProductos.Designer.cs">
       <DependentUpon>frmProduccion_Bodegas_Salidas.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmBiblioteca_Inventario.cs">
+    <Compile Include="Biblioteca\frmBiblioteca_Inventario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmBiblioteca_Inventario.Designer.cs">
+    <Compile Include="Biblioteca\frmBiblioteca_Inventario.Designer.cs">
       <DependentUpon>frmBiblioteca_Inventario.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmBiblioteca_Libros.cs">
+    <Compile Include="Biblioteca\frmBiblioteca_Libros.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmBiblioteca_Libros.Designer.cs">
+    <Compile Include="Biblioteca\frmBiblioteca_Libros.Designer.cs">
       <DependentUpon>frmBiblioteca_Libros.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmBiblioteca_Prestamos.cs">
+    <Compile Include="Biblioteca\frmBiblioteca_Prestamos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmBiblioteca_Prestamos.Designer.cs">
+    <Compile Include="Biblioteca\frmBiblioteca_Prestamos.Designer.cs">
       <DependentUpon>frmBiblioteca_Prestamos.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmConfiguracion_DatosDeSeguridad.cs">
+    <Compile Include="Configuracion\frmConfiguracion_DatosDeSeguridad.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmConfiguracion_DatosDeSeguridad.Designer.cs">
+    <Compile Include="Configuracion\frmConfiguracion_DatosDeSeguridad.Designer.cs">
       <DependentUpon>frmConfiguracion_DatosDeSeguridad.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmExaminar_Familias.cs">
+    <Compile Include="Filtros\frmExaminar_Familias.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmExaminar_Familias.Designer.cs">
+    <Compile Include="Filtros\frmExaminar_Familias.Designer.cs">
       <DependentUpon>frmExaminar_Familias.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmExaminar_OrdenDeMatricula.cs">
+    <Compile Include="Filtros\frmExaminar_OrdenDeMatricula.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmExaminar_OrdenDeMatricula.Designer.cs">
+    <Compile Include="Filtros\frmExaminar_OrdenDeMatricula.Designer.cs">
       <DependentUpon>frmExaminar_OrdenDeMatricula.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmExaminarTesoreria_ValoresAcademicos.cs">
+    <Compile Include="Filtros\frmExaminarTesoreria_ValoresAcademicos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmExaminarTesoreria_ValoresAcademicos.Designer.cs">
+    <Compile Include="Filtros\frmExaminarTesoreria_ValoresAcademicos.Designer.cs">
       <DependentUpon>frmExaminarTesoreria_ValoresAcademicos.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmSistemaAcademico_Bitacora.cs">
+    <Compile Include="Sistema\frmSistemaAcademico_Bitacora.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmSistemaAcademico_Bitacora.Designer.cs">
+    <Compile Include="Sistema\frmSistemaAcademico_Bitacora.Designer.cs">
       <DependentUpon>frmSistemaAcademico_Bitacora.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmSistemaAcademico_CodigoID.cs">
+    <Compile Include="Sistema\frmSistemaAcademico_CodigoID.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmSistemaAcademico_CodigoID.Designer.cs">
+    <Compile Include="Sistema\frmSistemaAcademico_CodigoID.Designer.cs">
       <DependentUpon>frmSistemaAcademico_CodigoID.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAcademico_OrdenDeMatricula.cs">
+    <Compile Include="Academico\frmAcademico_OrdenDeMatricula.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAcademico_OrdenDeMatricula.Designer.cs">
+    <Compile Include="Academico\frmAcademico_OrdenDeMatricula.Designer.cs">
       <DependentUpon>frmAcademico_OrdenDeMatricula.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmSistema_Estados.cs">
+    <Compile Include="Sistema\frmSistema_Estados.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmSistema_Estados.Designer.cs">
+    <Compile Include="Sistema\frmSistema_Estados.Designer.cs">
       <DependentUpon>frmSistema_Estados.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmSistema_Sucursal.cs">
+    <Compile Include="Sistema\frmSistema_Sucursal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmSistema_Sucursal.Designer.cs">
+    <Compile Include="Sistema\frmSistema_Sucursal.Designer.cs">
       <DependentUpon>frmSistema_Sucursal.cs</DependentUpon>
     </Compile>
     <Compile Include="frmTesoreria_ValoresAcademicos.cs">
@@ -376,40 +376,40 @@
     <Compile Include="frmMenuPrincipal.Designer.cs">
       <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAcademico_Asignaturas.cs">
+    <Compile Include="Academico\frmAcademico_Asignaturas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAcademico_Asignaturas.Designer.cs">
+    <Compile Include="Academico\frmAcademico_Asignaturas.Designer.cs">
       <DependentUpon>frmAcademico_Asignaturas.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAcademico_Aulas.cs">
+    <Compile Include="Academico\frmAcademico_Aulas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAcademico_Aulas.Designer.cs">
+    <Compile Include="Academico\frmAcademico_Aulas.Designer.cs">
       <DependentUpon>frmAcademico_Aulas.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmGestionHumana_Empleados.cs">
+    <Compile Include="GestionHumana\frmGestionHumana_Empleados.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmGestionHumana_Empleados.Designer.cs">
+    <Compile Include="GestionHumana\frmGestionHumana_Empleados.Designer.cs">
       <DependentUpon>frmGestionHumana_Empleados.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAcademico_Padrinos.cs">
+    <Compile Include="Academico\frmAcademico_Padrinos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAcademico_Padrinos.Designer.cs">
+    <Compile Include="Academico\frmAcademico_Padrinos.Designer.cs">
       <DependentUpon>frmAcademico_Padrinos.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAcademico_Paradas.cs">
+    <Compile Include="Academico\frmAcademico_Paradas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAcademico_Paradas.Designer.cs">
+    <Compile Include="Academico\frmAcademico_Paradas.Designer.cs">
       <DependentUpon>frmAcademico_Paradas.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAcademico_Rutas.cs">
+    <Compile Include="Academico\frmAcademico_Rutas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAcademico_Rutas.Designer.cs">
+    <Compile Include="Academico\frmAcademico_Rutas.Designer.cs">
       <DependentUpon>frmAcademico_Rutas.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPlantel_ServiciosOfrecidos.cs">
@@ -424,53 +424,53 @@
     <Compile Include="frmPlantel_SolicitudDeServicio.Designer.cs">
       <DependentUpon>frmPlantel_SolicitudDeServicio.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmAcademico_Vehiculos.cs">
+    <Compile Include="Academico\frmAcademico_Vehiculos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAcademico_Vehiculos.Designer.cs">
+    <Compile Include="Academico\frmAcademico_Vehiculos.Designer.cs">
       <DependentUpon>frmAcademico_Vehiculos.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmSistemaAcademico_AreaAcademica.cs">
+    <Compile Include="Sistema\frmSistemaAcademico_AreaAcademica.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmSistemaAcademico_AreaAcademica.Designer.cs">
+    <Compile Include="Sistema\frmSistemaAcademico_AreaAcademica.Designer.cs">
       <DependentUpon>frmSistemaAcademico_AreaAcademica.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmSistemaAcademico_Aula.cs">
+    <Compile Include="Sistema\frmSistemaAcademico_Aula.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmSistemaAcademico_Aula.Designer.cs">
+    <Compile Include="Sistema\frmSistemaAcademico_Aula.Designer.cs">
       <DependentUpon>frmSistemaAcademico_Aula.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmSistemaAcademico_Año.cs">
+    <Compile Include="Sistema\frmSistemaAcademico_Año.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include=".Designer.cs">
+    <Compile Include="Sistema\.Designer.cs">
       <DependentUpon>frmSistemaAcademico_Año.cs</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAcademico_Cursos.cs">
+    <Compile Include="Academico\frmAcademico_Cursos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmAcademico_Cursos.Designer.cs">
+    <Compile Include="Academico\frmAcademico_Cursos.Designer.cs">
       <DependentUpon>frmAcademico_Cursos.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmSistemaAcademico_Jornada.cs">
+    <Compile Include="Sistema\frmSistemaAcademico_Jornada.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmSistemaAcademico_Jornada.Designer.cs">
+    <Compile Include="Sistema\frmSistemaAcademico_Jornada.Designer.cs">
       <DependentUpon>frmSistemaAcademico_Jornada.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmSistemaAcademico_Periodos.cs">
+    <Compile Include="Sistema\frmSistemaAcademico_Periodos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmSistemaAcademico_Periodos.Designer.cs">
+    <Compile Include="Sistema\frmSistemaAcademico_Periodos.Designer.cs">
       <DependentUpon>frmSistemaAcademico_Periodos.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmSistemaAlmacen_Comprobante.cs">
+    <Compile Include="Sistema\frmSistemaAlmacen_Comprobante.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmSistemaAlmacen_Comprobante.Designer.cs">
+    <Compile Include="Sistema\frmSistemaAlmacen_Comprobante.Designer.cs">
       <DependentUpon>frmSistemaAlmacen_Comprobante.cs</DependentUpon>
     </Compile>
     <Compile Include="Informacion_Computer.cs" />
@@ -480,10 +480,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="frmBiblioteca_Temas.cs">
+    <Compile Include="Biblioteca\frmBiblioteca_Temas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmBiblioteca_Temas.Designer.cs">
+    <Compile Include="Biblioteca\frmBiblioteca_Temas.Designer.cs">
       <DependentUpon>frmBiblioteca_Temas.cs</DependentUpon>
     </Compile>
   </ItemGroup>
@@ -494,142 +494,142 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="frmBiblioteca_Grupos.resx">
+    <EmbeddedResource Include="Biblioteca\frmBiblioteca_Grupos.resx">
       <DependentUpon>frmBiblioteca_Grupos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmBiblioteca_Niveles.resx">
+    <EmbeddedResource Include="Biblioteca\frmBiblioteca_Niveles.resx">
       <DependentUpon>frmBiblioteca_Niveles.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmConfiguracion_CodigoID.resx">
-      <DependentUpon>frmConfiguracion_CodigoID.cs</DependentUpon>
+    <EmbeddedResource Include="Sistema\frmSistema_CodigoID.resx">
+      <DependentUpon>frmSistema_CodigoID.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmConsulta_Academico_Alumnos.resx">
+    <EmbeddedResource Include="Consultas\frmConsulta_Academico_Alumnos.resx">
       <DependentUpon>frmConsulta_Academico_Alumnos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmExaminar_Alumno.resx">
+    <EmbeddedResource Include="Filtros\frmExaminar_Alumno.resx">
       <DependentUpon>frmExaminar_Alumno.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAcademico_Alumnos.resx">
+    <EmbeddedResource Include="Academico\frmAcademico_Alumnos.resx">
       <DependentUpon>frmAcademico_Alumnos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAcademico_Asistencia.resx">
+    <EmbeddedResource Include="Academico\frmAcademico_Asistencia.resx">
       <DependentUpon>frmAcademico_Asistencia.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAcademico_Bitacora.resx">
+    <EmbeddedResource Include="Academico\frmAcademico_Bitacora.resx">
       <DependentUpon>frmAcademico_Bitacora.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAcademico_Boletines.resx">
+    <EmbeddedResource Include="Academico\frmAcademico_Boletines.resx">
       <DependentUpon>frmAcademico_Boletines.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAcademico_Calificaciones.resx">
+    <EmbeddedResource Include="Academico\frmAcademico_Calificaciones.resx">
       <DependentUpon>frmAcademico_Calificaciones.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAcademico_Familias.resx">
+    <EmbeddedResource Include="Academico\frmAcademico_Familias.resx">
       <DependentUpon>frmAcademico_Familias.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAcademico_Matricula.resx">
+    <EmbeddedResource Include="Academico\frmAcademico_Matricula.resx">
       <DependentUpon>frmAcademico_Matricula.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmExaminarBiblioteca_Solicitante.resx">
+    <EmbeddedResource Include="Filtros\frmExaminarBiblioteca_Solicitante.resx">
       <DependentUpon>frmExaminarBiblioteca_Solicitante.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmExaminarProduccion_Bodega.resx">
+    <EmbeddedResource Include="Filtros\frmExaminarProduccion_Bodega.resx">
       <DependentUpon>frmExaminarProduccion_Bodega.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmExaminarProduccion_Clientes.resx">
+    <EmbeddedResource Include="Filtros\frmExaminarProduccion_Clientes.resx">
       <DependentUpon>frmExaminarProduccion_Clientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmExaminarProduccion_Impuestos.resx">
+    <EmbeddedResource Include="Filtros\frmExaminarProduccion_Impuestos.resx">
       <DependentUpon>frmExaminarProduccion_Impuestos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmExaminarProduccion_Productos.resx">
+    <EmbeddedResource Include="Filtros\frmExaminarProduccion_Productos.resx">
       <DependentUpon>frmExaminarProduccion_Productos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmExaminarProduccion_Proveedor.resx">
+    <EmbeddedResource Include="Filtros\frmExaminarProduccion_Proveedor.resx">
       <DependentUpon>frmExaminarProduccion_Proveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPlantel_Informacion.resx">
       <DependentUpon>frmPlantel_Informacion.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmProduccion_Bodegas.resx">
+    <EmbeddedResource Include="Produccion\frmProduccion_Bodegas.resx">
       <DependentUpon>frmProduccion_Bodegas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmProduccion_Cliente.resx">
+    <EmbeddedResource Include="Produccion\frmProduccion_Cliente.resx">
       <DependentUpon>frmProduccion_Cliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmProduccion_Cliente_Financiera.resx">
+    <EmbeddedResource Include="Produccion\frmProduccion_Cliente_Financiera.resx">
       <DependentUpon>frmProduccion_Cliente_Financiera.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmProduccion_Cliente_Tipos.resx">
+    <EmbeddedResource Include="Produccion\frmProduccion_Cliente_Tipos.resx">
       <DependentUpon>frmProduccion_Cliente_Tipos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmProduccion_Productos_Codigos.resx">
+    <EmbeddedResource Include="Produccion\frmProduccion_Productos_Codigos.resx">
       <DependentUpon>frmProduccion_Productos_Codigos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmProduccion_Productos_Costos.resx">
+    <EmbeddedResource Include="Produccion\frmProduccion_Productos_Costos.resx">
       <DependentUpon>frmProduccion_Productos_Costos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmProduccion_Productos_Marcas.resx">
+    <EmbeddedResource Include="Produccion\frmProduccion_Productos_Marcas.resx">
       <DependentUpon>frmProduccion_Productos_Marcas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmProduccion_Proveedor_CuentasBancarias.resx">
+    <EmbeddedResource Include="Produccion\frmProduccion_Proveedor_CuentasBancarias.resx">
       <DependentUpon>frmProduccion_Proveedor_CuentasBancarias.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmProduccion_Proveedor_Financiera.resx">
+    <EmbeddedResource Include="Produccion\frmProduccion_Proveedor_Financiera.resx">
       <DependentUpon>frmProduccion_Proveedor_Financiera.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmProduccion_Productos_Impuestos.resx">
+    <EmbeddedResource Include="Produccion\frmProduccion_Productos_Impuestos.resx">
       <DependentUpon>frmProduccion_Productos_Impuestos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmProduccion_Bodegas_Ingreso.resx">
+    <EmbeddedResource Include="Produccion\frmProduccion_Bodegas_Ingreso.resx">
       <DependentUpon>frmProduccion_Bodegas_Ingreso.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmProduccion_OrdenDeCompra.resx">
+    <EmbeddedResource Include="Produccion\frmProduccion_OrdenDeCompra.resx">
       <DependentUpon>frmProduccion_OrdenDeCompra.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmProduccion_Productos.resx">
+    <EmbeddedResource Include="Produccion\frmProduccion_Productos.resx">
       <DependentUpon>frmProduccion_Productos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmProduccion_Proveedor.resx">
+    <EmbeddedResource Include="Produccion\frmProduccion_Proveedor.resx">
       <DependentUpon>frmProduccion_Proveedor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmProduccion_SalidaDeProductos.resx">
+    <EmbeddedResource Include="Produccion\frmProduccion_SalidaDeProductos.resx">
       <DependentUpon>frmProduccion_Bodegas_Salidas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmBiblioteca_Inventario.resx">
+    <EmbeddedResource Include="Biblioteca\frmBiblioteca_Inventario.resx">
       <DependentUpon>frmBiblioteca_Inventario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmBiblioteca_Libros.resx">
+    <EmbeddedResource Include="Biblioteca\frmBiblioteca_Libros.resx">
       <DependentUpon>frmBiblioteca_Libros.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmBiblioteca_Prestamos.resx">
+    <EmbeddedResource Include="Biblioteca\frmBiblioteca_Prestamos.resx">
       <DependentUpon>frmBiblioteca_Prestamos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmConfiguracion_DatosDeSeguridad.resx">
+    <EmbeddedResource Include="Configuracion\frmConfiguracion_DatosDeSeguridad.resx">
       <DependentUpon>frmConfiguracion_DatosDeSeguridad.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmExaminar_Familias.resx">
+    <EmbeddedResource Include="Filtros\frmExaminar_Familias.resx">
       <DependentUpon>frmExaminar_Familias.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmExaminar_OrdenDeMatricula.resx">
+    <EmbeddedResource Include="Filtros\frmExaminar_OrdenDeMatricula.resx">
       <DependentUpon>frmExaminar_OrdenDeMatricula.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmExaminarTesoreria_ValoresAcademicos.resx">
+    <EmbeddedResource Include="Filtros\frmExaminarTesoreria_ValoresAcademicos.resx">
       <DependentUpon>frmExaminarTesoreria_ValoresAcademicos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmSistemaAcademico_Bitacora.resx">
+    <EmbeddedResource Include="Sistema\frmSistemaAcademico_Bitacora.resx">
       <DependentUpon>frmSistemaAcademico_Bitacora.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmSistemaAcademico_CodigoID.resx">
+    <EmbeddedResource Include="Sistema\frmSistemaAcademico_CodigoID.resx">
       <DependentUpon>frmSistemaAcademico_CodigoID.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAcademico_OrdenDeMatricula.resx">
+    <EmbeddedResource Include="Academico\frmAcademico_OrdenDeMatricula.resx">
       <DependentUpon>frmAcademico_OrdenDeMatricula.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmSistema_Estados.resx">
+    <EmbeddedResource Include="Sistema\frmSistema_Estados.resx">
       <DependentUpon>frmSistema_Estados.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmSistema_Sucursal.resx">
+    <EmbeddedResource Include="Sistema\frmSistema_Sucursal.resx">
       <DependentUpon>frmSistema_Sucursal.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmTesoreria_ValoresAcademicos.resx">
@@ -641,22 +641,22 @@
     <EmbeddedResource Include="frmMenuPrincipal.resx">
       <DependentUpon>frmMenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAcademico_Asignaturas.resx">
+    <EmbeddedResource Include="Academico\frmAcademico_Asignaturas.resx">
       <DependentUpon>frmAcademico_Asignaturas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAcademico_Aulas.resx">
+    <EmbeddedResource Include="Academico\frmAcademico_Aulas.resx">
       <DependentUpon>frmAcademico_Aulas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmGestionHumana_Empleados.resx">
+    <EmbeddedResource Include="GestionHumana\frmGestionHumana_Empleados.resx">
       <DependentUpon>frmGestionHumana_Empleados.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAcademico_Padrinos.resx">
+    <EmbeddedResource Include="Academico\frmAcademico_Padrinos.resx">
       <DependentUpon>frmAcademico_Padrinos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAcademico_Paradas.resx">
+    <EmbeddedResource Include="Academico\frmAcademico_Paradas.resx">
       <DependentUpon>frmAcademico_Paradas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAcademico_Rutas.resx">
+    <EmbeddedResource Include="Academico\frmAcademico_Rutas.resx">
       <DependentUpon>frmAcademico_Rutas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPlantel_ServiciosOfrecidos.resx">
@@ -665,35 +665,35 @@
     <EmbeddedResource Include="frmPlantel_SolicitudDeServicio.resx">
       <DependentUpon>frmPlantel_SolicitudDeServicio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAcademico_Vehiculos.resx">
+    <EmbeddedResource Include="Academico\frmAcademico_Vehiculos.resx">
       <DependentUpon>frmAcademico_Vehiculos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmSistemaAcademico_AreaAcademica.resx">
+    <EmbeddedResource Include="Sistema\frmSistemaAcademico_AreaAcademica.resx">
       <DependentUpon>frmSistemaAcademico_AreaAcademica.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmSistemaAcademico_Aula.resx">
+    <EmbeddedResource Include="Sistema\frmSistemaAcademico_Aula.resx">
       <DependentUpon>frmSistemaAcademico_Aula.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmSistemaAcademico_Año.resx">
+    <EmbeddedResource Include="Sistema\frmSistemaAcademico_Año.resx">
       <DependentUpon>frmSistemaAcademico_Año.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmAcademico_Cursos.resx">
+    <EmbeddedResource Include="Academico\frmAcademico_Cursos.resx">
       <DependentUpon>frmAcademico_Cursos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmSistemaAcademico_Jornada.resx">
+    <EmbeddedResource Include="Sistema\frmSistemaAcademico_Jornada.resx">
       <DependentUpon>frmSistemaAcademico_Jornada.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmSistemaAcademico_Periodos.resx">
+    <EmbeddedResource Include="Sistema\frmSistemaAcademico_Periodos.resx">
       <DependentUpon>frmSistemaAcademico_Periodos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmSistemaAlmacen_Comprobante.resx">
+    <EmbeddedResource Include="Sistema\frmSistemaAlmacen_Comprobante.resx">
       <DependentUpon>frmSistemaAlmacen_Comprobante.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmBiblioteca_Temas.resx">
+    <EmbeddedResource Include="Biblioteca\frmBiblioteca_Temas.resx">
       <DependentUpon>frmBiblioteca_Temas.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>

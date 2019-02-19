@@ -426,7 +426,6 @@ D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\bin\De
 D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.csprojAssemblyReference.cache
 D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Grupos.resources
 D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmBiblioteca_Niveles.resources
-D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmConfiguracion_CodigoID.resources
 D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Alumnos.resources
 D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Asistencia.resources
 D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmAcademico_Bitacora.resources
@@ -576,3 +575,4 @@ D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\De
 D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_Año.resources
 D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Productos_Marcas.resources
 D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmConsulta_Academico_Alumnos.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistema_CodigoID.resources
