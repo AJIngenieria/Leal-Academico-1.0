@@ -34,21 +34,22 @@
             this.IDOrden = new System.Windows.Forms.TextBox();
             this.tabControl2 = new System.Windows.Forms.TabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.CBInstitutoAnterior = new System.Windows.Forms.ComboBox();
-            this.label53 = new System.Windows.Forms.Label();
+            this.TBJornada = new System.Windows.Forms.TextBox();
+            this.TBCurso = new System.Windows.Forms.TextBox();
             this.DTFechaDeRegistro = new System.Windows.Forms.DateTimePicker();
             this.label71 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.TBCodigoID = new System.Windows.Forms.TextBox();
             this.PanelFoto = new System.Windows.Forms.PictureBox();
             this.CBEstado = new System.Windows.Forms.ComboBox();
-            this.TBInstitutoAnterior = new System.Windows.Forms.TextBox();
             this.label74 = new System.Windows.Forms.Label();
             this.label69 = new System.Windows.Forms.Label();
             this.label68 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.TPDatosBasicos = new System.Windows.Forms.TabPage();
+            this.CBInstitutoAnterior = new System.Windows.Forms.ComboBox();
             this.CBNacionalidad = new System.Windows.Forms.ComboBox();
+            this.label53 = new System.Windows.Forms.Label();
             this.CBCiudad = new System.Windows.Forms.ComboBox();
             this.CBMunicipio = new System.Windows.Forms.ComboBox();
             this.TBTipoIdentificacion_Alumno = new System.Windows.Forms.TextBox();
@@ -56,6 +57,7 @@
             this.label58 = new System.Windows.Forms.Label();
             this.TBEmail = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
+            this.TBInstitutoAnterior = new System.Windows.Forms.TextBox();
             this.TBMovil = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.TBTelefono = new System.Windows.Forms.TextBox();
@@ -88,6 +90,8 @@
             this.label48 = new System.Windows.Forms.Label();
             this.TBCarnet = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.TPDocumentos = new System.Windows.Forms.TabPage();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.TPMadre = new System.Windows.Forms.TabPage();
             this.CBRetiro_Madre = new System.Windows.Forms.ComboBox();
             this.CBInformacion_Madre = new System.Windows.Forms.ComboBox();
@@ -192,23 +196,19 @@
             this.label59 = new System.Windows.Forms.Label();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
-            this.TPDocumentos = new System.Windows.Forms.TabPage();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.TBCurso = new System.Windows.Forms.TextBox();
-            this.TBJornada = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.tabControl2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PanelFoto)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.TPDatosBasicos.SuspendLayout();
+            this.TPDocumentos.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.TPMadre.SuspendLayout();
             this.TPPadre.SuspendLayout();
             this.TPAcudiente.SuspendLayout();
             this.TPSalud.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            this.TPDocumentos.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -270,28 +270,19 @@
             this.tabPage3.Text = "Informacion Academica";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // CBInstitutoAnterior
+            // TBJornada
             // 
-            this.CBInstitutoAnterior.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CBInstitutoAnterior.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBInstitutoAnterior.FormattingEnabled = true;
-            this.CBInstitutoAnterior.Items.AddRange(new object[] {
-            "Seleccione",
-            "Si",
-            "No"});
-            this.CBInstitutoAnterior.Location = new System.Drawing.Point(107, 325);
-            this.CBInstitutoAnterior.Name = "CBInstitutoAnterior";
-            this.CBInstitutoAnterior.Size = new System.Drawing.Size(109, 23);
-            this.CBInstitutoAnterior.TabIndex = 25;
+            this.TBJornada.Location = new System.Drawing.Point(70, 267);
+            this.TBJornada.Name = "TBJornada";
+            this.TBJornada.Size = new System.Drawing.Size(123, 23);
+            this.TBJornada.TabIndex = 25;
             // 
-            // label53
+            // TBCurso
             // 
-            this.label53.AutoSize = true;
-            this.label53.Location = new System.Drawing.Point(6, 328);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(95, 15);
-            this.label53.TabIndex = 24;
-            this.label53.Text = "Instituto Anterior";
+            this.TBCurso.Location = new System.Drawing.Point(70, 238);
+            this.TBCurso.Name = "TBCurso";
+            this.TBCurso.Size = new System.Drawing.Size(123, 23);
+            this.TBCurso.TabIndex = 24;
             // 
             // DTFechaDeRegistro
             // 
@@ -355,13 +346,6 @@
             this.CBEstado.Name = "CBEstado";
             this.CBEstado.Size = new System.Drawing.Size(123, 23);
             this.CBEstado.TabIndex = 13;
-            // 
-            // TBInstitutoAnterior
-            // 
-            this.TBInstitutoAnterior.Location = new System.Drawing.Point(222, 325);
-            this.TBInstitutoAnterior.Name = "TBInstitutoAnterior";
-            this.TBInstitutoAnterior.Size = new System.Drawing.Size(311, 23);
-            this.TBInstitutoAnterior.TabIndex = 1;
             // 
             // label74
             // 
@@ -457,6 +441,20 @@
             this.TPDatosBasicos.Text = "Datos Basicos";
             this.TPDatosBasicos.UseVisualStyleBackColor = true;
             // 
+            // CBInstitutoAnterior
+            // 
+            this.CBInstitutoAnterior.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CBInstitutoAnterior.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBInstitutoAnterior.FormattingEnabled = true;
+            this.CBInstitutoAnterior.Items.AddRange(new object[] {
+            "Seleccione",
+            "Si",
+            "No"});
+            this.CBInstitutoAnterior.Location = new System.Drawing.Point(107, 325);
+            this.CBInstitutoAnterior.Name = "CBInstitutoAnterior";
+            this.CBInstitutoAnterior.Size = new System.Drawing.Size(109, 23);
+            this.CBInstitutoAnterior.TabIndex = 25;
+            // 
             // CBNacionalidad
             // 
             this.CBNacionalidad.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -466,6 +464,15 @@
             this.CBNacionalidad.Name = "CBNacionalidad";
             this.CBNacionalidad.Size = new System.Drawing.Size(176, 23);
             this.CBNacionalidad.TabIndex = 197;
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Location = new System.Drawing.Point(6, 328);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(95, 15);
+            this.label53.TabIndex = 24;
+            this.label53.Text = "Instituto Anterior";
             // 
             // CBCiudad
             // 
@@ -545,6 +552,13 @@
             this.label17.Size = new System.Drawing.Size(41, 15);
             this.label17.TabIndex = 187;
             this.label17.Text = "E-mail";
+            // 
+            // TBInstitutoAnterior
+            // 
+            this.TBInstitutoAnterior.Location = new System.Drawing.Point(222, 325);
+            this.TBInstitutoAnterior.Name = "TBInstitutoAnterior";
+            this.TBInstitutoAnterior.Size = new System.Drawing.Size(311, 23);
+            this.TBInstitutoAnterior.TabIndex = 1;
             // 
             // TBMovil
             // 
@@ -945,6 +959,25 @@
             this.label1.Size = new System.Drawing.Size(43, 15);
             this.label1.TabIndex = 0;
             this.label1.Text = "Carnet";
+            // 
+            // TPDocumentos
+            // 
+            this.TPDocumentos.Controls.Add(this.dataGridView1);
+            this.TPDocumentos.Location = new System.Drawing.Point(4, 24);
+            this.TPDocumentos.Name = "TPDocumentos";
+            this.TPDocumentos.Padding = new System.Windows.Forms.Padding(3);
+            this.TPDocumentos.Size = new System.Drawing.Size(541, 353);
+            this.TPDocumentos.TabIndex = 5;
+            this.TPDocumentos.Text = "Documentos";
+            this.TPDocumentos.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(6, 197);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
+            this.dataGridView1.TabIndex = 0;
             // 
             // TPMadre
             // 
@@ -2299,39 +2332,6 @@
             this.btnNuevo.MouseLeave += new System.EventHandler(this.btnNuevo_MouseLeave);
             this.btnNuevo.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnNuevo_MouseMove);
             // 
-            // TPDocumentos
-            // 
-            this.TPDocumentos.Controls.Add(this.dataGridView1);
-            this.TPDocumentos.Location = new System.Drawing.Point(4, 24);
-            this.TPDocumentos.Name = "TPDocumentos";
-            this.TPDocumentos.Padding = new System.Windows.Forms.Padding(3);
-            this.TPDocumentos.Size = new System.Drawing.Size(541, 353);
-            this.TPDocumentos.TabIndex = 5;
-            this.TPDocumentos.Text = "Documentos";
-            this.TPDocumentos.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 197);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(240, 150);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // TBCurso
-            // 
-            this.TBCurso.Location = new System.Drawing.Point(70, 238);
-            this.TBCurso.Name = "TBCurso";
-            this.TBCurso.Size = new System.Drawing.Size(123, 23);
-            this.TBCurso.TabIndex = 24;
-            // 
-            // TBJornada
-            // 
-            this.TBJornada.Location = new System.Drawing.Point(70, 267);
-            this.TBJornada.Name = "TBJornada";
-            this.TBJornada.Size = new System.Drawing.Size(123, 23);
-            this.TBJornada.TabIndex = 25;
-            // 
             // frmAcademico_Alumnos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -2357,6 +2357,8 @@
             this.tabControl1.ResumeLayout(false);
             this.TPDatosBasicos.ResumeLayout(false);
             this.TPDatosBasicos.PerformLayout();
+            this.TPDocumentos.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.TPMadre.ResumeLayout(false);
             this.TPMadre.PerformLayout();
             this.TPPadre.ResumeLayout(false);
@@ -2367,8 +2369,6 @@
             this.TPSalud.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            this.TPDocumentos.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }

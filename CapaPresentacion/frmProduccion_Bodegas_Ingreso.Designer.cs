@@ -496,7 +496,7 @@
             this.MaximizeBox = false;
             this.Name = "frmProduccion_Bodegas_Ingreso";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmAlmacen_IngresosDeBodega";
+            this.Text = "Produccion - Ingreso de Bodega";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmProduccion_Bodegas_Ingreso_FormClosing);
             this.Load += new System.EventHandler(this.frmAlmacen_IngresosDeBodega_Load);
             this.groupBox1.ResumeLayout(false);

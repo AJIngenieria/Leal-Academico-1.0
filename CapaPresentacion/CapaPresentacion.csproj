@@ -503,6 +503,9 @@
     <EmbeddedResource Include="frmConfiguracion_CodigoID.resx">
       <DependentUpon>frmConfiguracion_CodigoID.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmConsulta_Academico_Alumnos.resx">
+      <DependentUpon>frmConsulta_Academico_Alumnos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmExaminar_Alumno.resx">
       <DependentUpon>frmExaminar_Alumno.cs</DependentUpon>
     </EmbeddedResource>

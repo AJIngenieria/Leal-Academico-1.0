@@ -575,3 +575,4 @@ D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\De
 D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistema_Sucursal.resources
 D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmSistemaAcademico_Año.resources
 D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Productos_Marcas.resources
+D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmConsulta_Academico_Alumnos.resources

@@ -28,8 +28,6 @@ namespace CapaPresentacion
 
             this.CBEstado.SelectedIndex = 0;
             this.CBZonas.SelectedIndex = 0;
-            this.CBPropiedad.SelectedIndex = 0;
-            this.CBMensualidad.SelectedIndex = 0;
         }
         private void ColoresDeBotones()
         {
@@ -57,18 +55,8 @@ namespace CapaPresentacion
                 this.CBSucurzal.BackColor = Color.FromArgb(187, 222, 251);
                 this.TBDireccion1.ReadOnly = true;
                 this.TBDireccion1.BackColor = Color.FromArgb(187, 222, 251);
-                this.TBDireccion2.ReadOnly = true;
-                this.TBDireccion2.BackColor = Color.FromArgb(187, 222, 251);
                 this.TBTelefono.ReadOnly = true;
                 this.TBTelefono.BackColor = Color.FromArgb(187, 222, 251);
-                this.TBMovil.ReadOnly = true;
-                this.TBMovil.BackColor = Color.FromArgb(187, 222, 251);
-                this.CBPropiedad.Enabled = false;
-                this.CBPropiedad.BackColor = Color.FromArgb(187, 222, 251);
-                this.CBMensualidad.Enabled = false;
-                this.CBMensualidad.BackColor = Color.FromArgb(187, 222, 251);
-                this.TBValor.ReadOnly = true;
-                this.TBValor.BackColor = Color.FromArgb(187, 222, 251);
             }
 
             else if (IsNuevo == true)
@@ -89,18 +77,8 @@ namespace CapaPresentacion
                 this.CBSucurzal.BackColor = Color.FromArgb(32, 178, 170);
                 this.TBDireccion1.ReadOnly = false;
                 this.TBDireccion1.BackColor = Color.FromArgb(32, 178, 170);
-                this.TBDireccion2.ReadOnly = false;
-                this.TBDireccion2.BackColor = Color.FromArgb(32, 178, 170);
                 this.TBTelefono.ReadOnly = false;
                 this.TBTelefono.BackColor = Color.FromArgb(32, 178, 170);
-                this.TBMovil.ReadOnly = false;
-                this.TBMovil.BackColor = Color.FromArgb(32, 178, 170);
-                this.CBPropiedad.Enabled = true;
-                this.CBPropiedad.BackColor = Color.FromArgb(32, 178, 170);
-                this.CBMensualidad.Enabled = true;
-                this.CBMensualidad.BackColor = Color.FromArgb(32, 178, 170);
-                this.TBValor.ReadOnly = false;
-                this.TBValor.BackColor = Color.FromArgb(32, 178, 170);
             }
         }
 
@@ -114,12 +92,7 @@ namespace CapaPresentacion
             this.CBZonas.SelectedIndex = 0;
             this.CBSucurzal.SelectedIndex = 0;
             this.TBDireccion1.Text = string.Empty;
-            this.TBDireccion2.Text = string.Empty;
             this.TBTelefono.Text = string.Empty;
-            this.TBMovil.Text = string.Empty;
-            this.CBPropiedad.SelectedIndex = 0;
-            this.CBMensualidad.SelectedIndex = 0;
-            this.TBValor.Text = string.Empty;
         }
 
 
@@ -217,9 +190,9 @@ namespace CapaPresentacion
                 {
                     if (this.IsNuevo)
                     {
-                        rptaDatosBasicos = fProduccion_Bodega.Guardar_DatosBasicos(4, this.TBCodigoID.Text, this.TBDescripcion.Text,
-                        this.TBResponsable.Text, this.CBCiudadB.Text, this.CBZonas.Text, this.CBSucurzal.Text, this.TBDireccion1.Text, this.TBDireccion2.Text, this.TBTelefono.Text,
-                        this.TBMovil.Text, this.CBPropiedad.Text, this.CBMensualidad.Text, this.TBValor.Text, this.CBEstado.Text, "1");
+                        //rptaDatosBasicos = fProduccion_Bodega.Guardar_DatosBasicos(4, this.TBCodigoID.Text, this.TBDescripcion.Text,
+                        //this.TBResponsable.Text, this.CBCiudadB.Text, this.CBZonas.Text, this.CBSucurzal.Text, this.TBDireccion1.Text, this.TBDireccion2.Text, this.TBTelefono.Text,
+                        //this.TBMovil.Text, this.CBPropiedad.Text, this.CBMensualidad.Text, this.TBValor.Text, this.CBEstado.Text, "1");
                     }
 
                     if (rptaDatosBasicos.Equals("OK"))
