@@ -36,5 +36,30 @@ namespace CapaPresentacion
         {
 
         }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DGResultados_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void TBBuscar_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CHEliminar_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

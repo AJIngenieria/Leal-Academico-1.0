@@ -296,13 +296,6 @@ namespace CapaPresentacion
             frmProduccion_Cliente_DatosBasicos.Show();
         }
 
-        private void tiposDeClientesToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmProduccion_Cliente_Tipos frmProduccion_Cliente_Tipos = new frmProduccion_Cliente_Tipos();
-            frmProduccion_Cliente_Tipos.MdiParent = this;
-            frmProduccion_Cliente_Tipos.Show();
-        }
-
         private void datosBasicosToolStripMenuItem1_Click(object sender, EventArgs e)
         {
             frmProduccion_Productos frmProduccion_Productos = new frmProduccion_Productos();
@@ -371,6 +364,18 @@ namespace CapaPresentacion
             frmAcademico_Asignaturas frmAcademico_Asignaturas = new frmAcademico_Asignaturas();
             frmAcademico_Asignaturas.MdiParent = this;
             frmAcademico_Asignaturas.Show();
+        }
+
+        private void creditosFinancierosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void datosFinancierosToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            frmProduccion_Proveedor_Financiera frmProduccion_Proveedor_Financiera = new frmProduccion_Proveedor_Financiera();
+            frmProduccion_Proveedor_Financiera.MdiParent = this;
+            frmProduccion_Proveedor_Financiera.Show();
         }
     }
 }

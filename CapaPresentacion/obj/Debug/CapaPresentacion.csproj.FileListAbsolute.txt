@@ -443,7 +443,6 @@ D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\De
 D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Bodegas.resources
 D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Cliente.resources
 D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Cliente_Financiera.resources
-D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Cliente_Tipos.resources
 D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Productos_Codigos.resources
 D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Productos_Costos.resources
 D:\Software de Programacion\Proyectos\Leal Academico 1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmProduccion_Proveedor_CuentasBancarias.resources

@@ -27,7 +27,7 @@ namespace CapaPresentacion
             this.Habilitar();
 
             this.CBTipo.Text = string.Empty;
-            this.CBDocumento.Text = string.Empty;
+            //this.CBDocumento.Text = string.Empty;
         }
 
         private void ColoresDeBotones()
@@ -46,8 +46,8 @@ namespace CapaPresentacion
                 this.CBEstado.BackColor = Color.FromArgb(187, 222, 251);
                 this.TBCliente.Enabled = false;
                 this.TBCliente.BackColor = Color.FromArgb(187, 222, 251);
-                this.CBDocumento.Enabled = false;
-                this.CBDocumento.BackColor = Color.FromArgb(187, 222, 251);
+                //this.CBDocumento.Enabled = false;
+                //this.CBDocumento.BackColor = Color.FromArgb(187, 222, 251);
                 this.TBDocumento.Enabled = false;
                 this.TBDocumento.BackColor = Color.FromArgb(187, 222, 251);
                 this.CBPais.Enabled = false;
@@ -72,8 +72,8 @@ namespace CapaPresentacion
                 this.CBEstado.BackColor = Color.FromArgb(32, 178, 170);
                 this.TBCliente.Enabled = true;
                 this.TBCliente.BackColor = Color.FromArgb(32, 178, 170);
-                this.CBDocumento.Enabled = true;
-                this.CBDocumento.BackColor = Color.FromArgb(32, 178, 170);
+                //this.CBDocumento.Enabled = true;
+                //this.CBDocumento.BackColor = Color.FromArgb(32, 178, 170);
                 this.TBDocumento.ReadOnly = false;
                 this.TBDocumento.BackColor = Color.FromArgb(32, 178, 170);
                 this.CBPais.Enabled = true;
@@ -96,7 +96,7 @@ namespace CapaPresentacion
             this.TBCodigoID.Text = string.Empty;
             this.CBEstado.Text = string.Empty;
             this.TBCliente.Text = string.Empty;
-            this.CBDocumento.Text = string.Empty;
+            //this.CBDocumento.Text = string.Empty;
             this.TBDocumento.Text = string.Empty;
             this.CBPais.Text = string.Empty;
             this.CBCiudad.Text = string.Empty;
@@ -126,13 +126,13 @@ namespace CapaPresentacion
         //Mensaje de confirmacion
         private void MensajeOk(string mensaje)
         {
-            MessageBox.Show(mensaje, "A&J Academico", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show(mensaje, "Leal Academico", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         //Mensaje de Error
         private void MensajeError(string mensaje)
         {
-            MessageBox.Show(mensaje, "A&J Academico - Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            MessageBox.Show(mensaje, "Leal Academico - Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         private void Combobox()
@@ -168,44 +168,44 @@ namespace CapaPresentacion
         {
             try
             {
-                string rptaDatosBasicos = "";
+                //string rptaDatosBasicos = "";
 
-                //Datos Basicos
-                if (this.TBCodigoID.Text == string.Empty || this.CBEstado.Text == string.Empty || this.TBCliente.Text == string.Empty ||
-                    this.CBDocumento.Text == string.Empty)
-                {
-                    MensajeError("Faltan Ingresar Algunos Datos, Estos Seran Remarcados");
-                    //TBCodigoID.BackColor = Color.FromArgb(250, 235, 215);
+                ////Datos Basicos
+                //if (this.TBCodigoID.Text == string.Empty || this.CBEstado.Text == string.Empty || this.TBCliente.Text == string.Empty ||
+                //    this.CBDocumento.Text == string.Empty)
+                //{
+                //    MensajeError("Faltan Ingresar Algunos Datos, Estos Seran Remarcados");
+                //    //TBCodigoID.BackColor = Color.FromArgb(250, 235, 215);
 
-                }
+                //}
 
-                else
-                {
-                    if (this.IsNuevo)
-                    {
-                        //rptaDatosBasicos = fProduccion_Clientes.Guardar_DatosBasicos(1, Convert.ToInt32(this.CBEstado.Text), Convert.ToInt32(this.TBIdimpuesto.Text),
-                        //"1", this.CBEstado.Text, this.TBImpuesto_Tipo.Text, this.TBCliente.Text, this.CBDocumento.Text, this.TBDocumento.Text, this.CBPais.Text,
-                        //this.CBDepartamento.Text, this.CBCiudad.Text, this.TBCodigoPostal.Text, this.TBTelefono.Text, this.TBEmail.Text, this.TBDireccion.Text, this.TBGramo.Text,
-                        //this.TBImpuesto.Text, this.TBImpuesto_Valor.Text, this.TBValorbasico.Text, this.TBValorreal.Text, this.TBUbicacion.Text);
-                    }
+                //else
+                //{
+                //    if (this.IsNuevo)
+                //    {
+                //        //rptaDatosBasicos = fProduccion_Clientes.Guardar_DatosBasicos(1, Convert.ToInt32(this.CBEstado.Text), Convert.ToInt32(this.TBIdimpuesto.Text),
+                //        //"1", this.CBEstado.Text, this.TBImpuesto_Tipo.Text, this.TBCliente.Text, this.CBDocumento.Text, this.TBDocumento.Text, this.CBPais.Text,
+                //        //this.CBDepartamento.Text, this.CBCiudad.Text, this.TBCodigoPostal.Text, this.TBTelefono.Text, this.TBEmail.Text, this.TBDireccion.Text, this.TBGramo.Text,
+                //        //this.TBImpuesto.Text, this.TBImpuesto_Valor.Text, this.TBValorbasico.Text, this.TBValorreal.Text, this.TBUbicacion.Text);
+                //    }
 
-                    if (rptaDatosBasicos.Equals("OK"))
-                    {
-                        if (this.IsNuevo)
-                        {
-                            this.MensajeOk("Cliente Registrado Exitosamente");
-                        }
-                    }
+                //    if (rptaDatosBasicos.Equals("OK"))
+                //    {
+                //        if (this.IsNuevo)
+                //        {
+                //            this.MensajeOk("Cliente Registrado Exitosamente");
+                //        }
+                //    }
 
-                    else
-                    {
-                        this.MensajeError(rptaDatosBasicos);
-                    }
+                //    else
+                //    {
+                //        this.MensajeError(rptaDatosBasicos);
+                //    }
 
-                    this.IsNuevo = false;
-                    this.Botones();
-                    this.Limpiar();
-                }
+                //    this.IsNuevo = false;
+                //    this.Botones();
+                //    this.Limpiar();
+                //}
             }
             catch (Exception ex)
             {
@@ -241,6 +241,26 @@ namespace CapaPresentacion
         private void btnGuardar_MouseMove(object sender, MouseEventArgs e)
         {
             btnGuardar.BackgroundImage = Properties.Resources.BR_Guardar;
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TBBuscar_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CHEliminar_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -214,12 +214,6 @@
     <Compile Include="Produccion\frmProduccion_Cliente_Financiera.Designer.cs">
       <DependentUpon>frmProduccion_Cliente_Financiera.cs</DependentUpon>
     </Compile>
-    <Compile Include="Produccion\frmProduccion_Cliente_Tipos.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Produccion\frmProduccion_Cliente_Tipos.Designer.cs">
-      <DependentUpon>frmProduccion_Cliente_Tipos.cs</DependentUpon>
-    </Compile>
     <Compile Include="Produccion\frmProduccion_Productos_Codigos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -559,9 +553,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Produccion\frmProduccion_Cliente_Financiera.resx">
       <DependentUpon>frmProduccion_Cliente_Financiera.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Produccion\frmProduccion_Cliente_Tipos.resx">
-      <DependentUpon>frmProduccion_Cliente_Tipos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Produccion\frmProduccion_Productos_Codigos.resx">
       <DependentUpon>frmProduccion_Productos_Codigos.cs</DependentUpon>

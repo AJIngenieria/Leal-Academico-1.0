@@ -56,10 +56,10 @@ namespace CapaPresentacion
                 this.CBEstado.BackColor = Color.FromArgb(187, 222, 251);
                 this.TBRepresentante.ReadOnly = true;
                 this.TBRepresentante.BackColor = Color.FromArgb(187, 222, 251);
-                this.CBPais.Enabled = false;
-                this.CBPais.BackColor = Color.FromArgb(187, 222, 251);
-                this.CBCiudad.Enabled = false;
-                this.CBCiudad.BackColor = Color.FromArgb(187, 222, 251);
+                //this.CBPais.Enabled = false;
+                //this.CBPais.BackColor = Color.FromArgb(187, 222, 251);
+                //this.CBCiudad.Enabled = false;
+                //this.CBCiudad.BackColor = Color.FromArgb(187, 222, 251);
                 this.TBDireccion1.ReadOnly = true;
                 this.TBDireccion1.BackColor = Color.FromArgb(187, 222, 251);
                 this.TBDireccion2.ReadOnly = true;
@@ -92,10 +92,10 @@ namespace CapaPresentacion
                 this.CBEstado.BackColor = Color.FromArgb(32, 178, 170);
                 this.TBRepresentante.ReadOnly = false;
                 this.TBRepresentante.BackColor = Color.FromArgb(32, 178, 170);
-                this.CBPais.Enabled = true;
-                this.CBPais.BackColor = Color.FromArgb(32, 178, 170);
-                this.CBCiudad.Enabled = true;
-                this.CBCiudad.BackColor = Color.FromArgb(32, 178, 170);
+                //this.CBPais.Enabled = true;
+                //this.CBPais.BackColor = Color.FromArgb(32, 178, 170);
+                //this.CBCiudad.Enabled = true;
+                //this.CBCiudad.BackColor = Color.FromArgb(32, 178, 170);
                 this.TBDireccion1.ReadOnly = false;
                 this.TBDireccion1.BackColor = Color.FromArgb(32, 178, 170);
                 this.TBDireccion2.ReadOnly = false;
@@ -121,8 +121,8 @@ namespace CapaPresentacion
             this.TBIdentificacion.Text = string.Empty;
             this.CBEstado.SelectedIndex = 0;
             this.TBRepresentante.Text = string.Empty;
-            this.CBPais.Text = string.Empty;
-            this.CBCiudad.Text = string.Empty;
+            //this.CBPais.Text = string.Empty;
+            //this.CBCiudad.Text = string.Empty;
             this.TBDireccion1.Text = string.Empty;
             this.TBDireccion2.Text = string.Empty;
             this.TBTelefono.Text = string.Empty;
@@ -170,83 +170,83 @@ namespace CapaPresentacion
         {
             try
             {
-                string rptaDatosBasicos = "";
+                //string rptaDatosBasicos = "";
 
-                //Datos Basicos
-                if (this.CBTipodeproveedor.Text == string.Empty)
-                {
-                    MensajeError("Faltan Ingresar Algunos Datos, Estos Seran Remarcados");
-                    CBTipodeproveedor.BackColor = Color.FromArgb(250, 235, 215);
-                }
-                else if (this.TBArea.Text == string.Empty)
-                {
-                    MensajeError("Faltan Ingresar Algunos Datos, Estos Seran Remarcados");
-                    TBArea.BackColor = Color.FromArgb(250, 235, 215);
-                }
-                else if (this.TBProveedor.Text == string.Empty)
-                {
-                    MensajeError("Faltan Ingresar Algunos Datos, Estos Seran Remarcados");
-                    TBProveedor.BackColor = Color.FromArgb(250, 235, 215);
-                }
-                else if (this.TBCodigoID.Text == string.Empty)
-                {
-                    MensajeError("Faltan Ingresar Algunos Datos, Estos Seran Remarcados");
-                    TBCodigoID.BackColor = Color.FromArgb(250, 235, 215);
-                }
-                else if (this.CBIdentificacion.Text == string.Empty)
-                {
-                    MensajeError("Faltan Ingresar Algunos Datos, Estos Seran Remarcados");
-                    CBIdentificacion.BackColor = Color.FromArgb(250, 235, 215);
-                }
-                else if (this.TBIdentificacion.Text == string.Empty)
-                {
-                    MensajeError("Faltan Ingresar Algunos Datos, Estos Seran Remarcados");
-                    TBIdentificacion.BackColor = Color.FromArgb(250, 235, 215);
-                }
-                else if (this.CBEstado.Text == string.Empty)
-                {
-                    MensajeError("Faltan Ingresar Algunos Datos, Estos Seran Remarcados");
-                    CBEstado.BackColor = Color.FromArgb(250, 235, 215);
-                }
-                else if (this.TBRepresentante.Text == string.Empty)
-                {
-                    MensajeError("Faltan Ingresar Algunos Datos, Estos Seran Remarcados");
-                    TBRepresentante.BackColor = Color.FromArgb(250, 235, 215);
-                }
+                ////Datos Basicos
+                //if (this.CBTipodeproveedor.Text == string.Empty)
+                //{
+                //    MensajeError("Faltan Ingresar Algunos Datos, Estos Seran Remarcados");
+                //    CBTipodeproveedor.BackColor = Color.FromArgb(250, 235, 215);
+                //}
+                //else if (this.TBArea.Text == string.Empty)
+                //{
+                //    MensajeError("Faltan Ingresar Algunos Datos, Estos Seran Remarcados");
+                //    TBArea.BackColor = Color.FromArgb(250, 235, 215);
+                //}
+                //else if (this.TBProveedor.Text == string.Empty)
+                //{
+                //    MensajeError("Faltan Ingresar Algunos Datos, Estos Seran Remarcados");
+                //    TBProveedor.BackColor = Color.FromArgb(250, 235, 215);
+                //}
+                //else if (this.TBCodigoID.Text == string.Empty)
+                //{
+                //    MensajeError("Faltan Ingresar Algunos Datos, Estos Seran Remarcados");
+                //    TBCodigoID.BackColor = Color.FromArgb(250, 235, 215);
+                //}
+                //else if (this.CBIdentificacion.Text == string.Empty)
+                //{
+                //    MensajeError("Faltan Ingresar Algunos Datos, Estos Seran Remarcados");
+                //    CBIdentificacion.BackColor = Color.FromArgb(250, 235, 215);
+                //}
+                //else if (this.TBIdentificacion.Text == string.Empty)
+                //{
+                //    MensajeError("Faltan Ingresar Algunos Datos, Estos Seran Remarcados");
+                //    TBIdentificacion.BackColor = Color.FromArgb(250, 235, 215);
+                //}
+                //else if (this.CBEstado.Text == string.Empty)
+                //{
+                //    MensajeError("Faltan Ingresar Algunos Datos, Estos Seran Remarcados");
+                //    CBEstado.BackColor = Color.FromArgb(250, 235, 215);
+                //}
+                //else if (this.TBRepresentante.Text == string.Empty)
+                //{
+                //    MensajeError("Faltan Ingresar Algunos Datos, Estos Seran Remarcados");
+                //    TBRepresentante.BackColor = Color.FromArgb(250, 235, 215);
+                //}
                 
-                else
-                {
-                    System.IO.MemoryStream ms = new System.IO.MemoryStream();
-                    this.PanelLogo.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
+                //else
+                //{
+                //    System.IO.MemoryStream ms = new System.IO.MemoryStream();
+                //    this.PanelLogo.Image.Save(ms, System.Drawing.Imaging.ImageFormat.Jpeg);
 
-                    byte[] imagen = ms.GetBuffer();
+                //    byte[] imagen = ms.GetBuffer();
 
-                    if (this.IsNuevo)
-                    {
-                        rptaDatosBasicos = fProduccion_Proveedor.Guardar_DatosBasicos(4, this.TBCodigoID.Text, this.TBProveedor.Text,
-                        this.CBTipodeproveedor.Text, this.TBArea.Text, this.CBIdentificacion.Text, this.TBIdentificacion.Text, Convert.ToInt32(this.TBEstado.Text), this.TBRepresentante.Text, Convert.ToInt32(this.CBPais.Text),
-                        Convert.ToInt32(this.CBCiudad.Text), this.TBTelefono.Text, this.TBMovil.Text, this.TBDireccion1.Text, this.TBDireccion2.Text, this.TBCorreo.Text, this.DTInicio.Value, imagen, 1);
-                    }
+                //    if (this.IsNuevo)
+                //    {
+                //        rptaDatosBasicos = fProduccion_Proveedor.Guardar_DatosBasicos(4, this.TBCodigoID.Text, this.TBProveedor.Text,
+                //        this.CBTipodeproveedor.Text, this.TBArea.Text, this.CBIdentificacion.Text, this.TBIdentificacion.Text, Convert.ToInt32(this.TBEstado.Text), this.TBRepresentante.Text, Convert.ToInt32(this.CBPais.Text),
+                //        Convert.ToInt32(this.CBCiudad.Text), this.TBTelefono.Text, this.TBMovil.Text, this.TBDireccion1.Text, this.TBDireccion2.Text, this.TBCorreo.Text, this.DTInicio.Value, imagen, 1);
+                //    }
 
-                    if (rptaDatosBasicos.Equals("OK"))
-                    {
-                        if (this.IsNuevo)
-                        {
-                            this.MensajeOk("Proveedor Registrado Exitosamente");
-                        }
-                    }
+                //    if (rptaDatosBasicos.Equals("OK"))
+                //    {
+                //        if (this.IsNuevo)
+                //        {
+                //            this.MensajeOk("Proveedor Registrado Exitosamente");
+                //        }
+                //    }
 
-                    else
-                    {
-                        this.MensajeError(rptaDatosBasicos);
-                    }
+                //    else
+                //    {
+                //        this.MensajeError(rptaDatosBasicos);
+                //    }
 
-                    this.IsNuevo = false;
-                    this.Botones();
-                    this.Limpiar();
-                    this.Habilitar();
-                    this.TBProveedor.Focus();
-                }
+                //    this.IsNuevo = false;
+                //    this.Botones();
+                //    this.Limpiar();
+                //    this.Habilitar();
+                //    this.TBProveedor.Focus();
+                //}
             }
             catch (Exception ex)
             {
@@ -311,6 +311,16 @@ namespace CapaPresentacion
             {
                 this.TBEstado.Text = "0";
             }
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

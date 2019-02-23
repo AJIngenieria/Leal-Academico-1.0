@@ -249,5 +249,15 @@ namespace CapaPresentacion
         {
             btnGuardar.BackgroundImage = Properties.Resources.BR_Guardar;
         }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
