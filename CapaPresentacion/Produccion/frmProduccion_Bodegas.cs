@@ -33,6 +33,8 @@ namespace CapaPresentacion
         {
             btnNuevo.BackgroundImage = Properties.Resources.BV_Nuevo;
             btnGuardar.BackgroundImage = Properties.Resources.BV_Guardar;
+            btnEliminar.BackgroundImage = Properties.Resources.BV_Eliminar;
+            btnEditar.BackgroundImage = Properties.Resources.BV_Editar;
         }
 
         private void Habilitar()
@@ -220,6 +222,16 @@ namespace CapaPresentacion
             }
         }
 
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnNuevo_MouseDown(object sender, MouseEventArgs e)
         {
             btnNuevo.BackgroundImage = Properties.Resources.BV_Nuevo;
@@ -250,12 +262,47 @@ namespace CapaPresentacion
             btnGuardar.BackgroundImage = Properties.Resources.BR_Guardar;
         }
 
-        private void btnEditar_Click(object sender, EventArgs e)
+        private void btnEditar_MouseDown(object sender, MouseEventArgs e)
+        {
+            btnEditar.BackgroundImage = Properties.Resources.BV_Editar;
+        }
+
+        private void btnEditar_MouseLeave(object sender, EventArgs e)
+        {
+            btnEditar.BackgroundImage = Properties.Resources.BV_Editar;
+        }
+
+        private void btnEditar_MouseMove(object sender, MouseEventArgs e)
+        {
+            btnEditar.BackgroundImage = Properties.Resources.BR_Editar;
+        }
+
+        private void btnEliminar_MouseDown(object sender, MouseEventArgs e)
+        {
+            btnEliminar.BackgroundImage = Properties.Resources.BV_Eliminar;
+        }
+
+        private void btnEliminar_MouseLeave(object sender, EventArgs e)
+        {
+            btnEliminar.BackgroundImage = Properties.Resources.BV_Eliminar;
+        }
+
+        private void btnEliminar_MouseMove(object sender, MouseEventArgs e)
+        {
+            btnEliminar.BackgroundImage = Properties.Resources.BR_Eliminar;
+        }
+
+        private void DGResultado_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
 
-        private void btnEliminar_Click(object sender, EventArgs e)
+        private void DGResultado_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void TBBuscar_TextChanged(object sender, EventArgs e)
         {
 
         }

@@ -156,7 +156,7 @@ namespace CapaPresentacion
 
         private void ingresosToolStripMenuItem4_Click(object sender, EventArgs e)
         {
-            frmProduccion_Bodegas_Ingreso frmProduccion_IngresosDeBodega = frmProduccion_Bodegas_Ingreso.GetInstancia();
+            frmProduccion_Ingresos frmProduccion_IngresosDeBodega = frmProduccion_Ingresos.GetInstancia();
             frmProduccion_IngresosDeBodega.MdiParent = this;
             frmProduccion_IngresosDeBodega.Show();
         }
@@ -170,7 +170,7 @@ namespace CapaPresentacion
 
         private void salidasDeBodegaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmProduccion_SalidaDeProductos frmProduccion_SalidaDeProductos = new frmProduccion_SalidaDeProductos();
+            frmProduccion_Salidas frmProduccion_SalidaDeProductos = new frmProduccion_Salidas();
             frmProduccion_SalidaDeProductos.MdiParent = this;
             frmProduccion_SalidaDeProductos.Show();
         }
@@ -182,7 +182,7 @@ namespace CapaPresentacion
 
         private void impuestosToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            frmProduccion_Productos_Impuestos frmProduccion_Impuestos = new frmProduccion_Productos_Impuestos();
+            frmProduccion_Impuestos frmProduccion_Impuestos = new frmProduccion_Impuestos();
             frmProduccion_Impuestos.MdiParent = this;
             frmProduccion_Impuestos.Show();
         }
@@ -305,21 +305,21 @@ namespace CapaPresentacion
 
         private void costosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmProduccion_Productos_Costos frmProduccion_Costos = new frmProduccion_Productos_Costos();
+            frmProduccion_Costos frmProduccion_Costos = new frmProduccion_Costos();
             frmProduccion_Costos.MdiParent = this;
             frmProduccion_Costos.Show();
         }
 
         private void impuestosToolStripMenuItem3_Click(object sender, EventArgs e)
         {
-            frmProduccion_Productos_Impuestos frmProduccion_Impuestos = new frmProduccion_Productos_Impuestos();
+            frmProduccion_Impuestos frmProduccion_Impuestos = new frmProduccion_Impuestos();
             frmProduccion_Impuestos.MdiParent = this;
             frmProduccion_Impuestos.Show();
         }
 
         private void codigosDeBarraToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmProduccion_Productos_Codigos frmProduccion_CodigosDeBarra = new frmProduccion_Productos_Codigos();
+            frmProduccion_Codigos frmProduccion_CodigosDeBarra = new frmProduccion_Codigos();
             frmProduccion_CodigosDeBarra.MdiParent = this;
             frmProduccion_CodigosDeBarra.Show();
         }
@@ -333,7 +333,7 @@ namespace CapaPresentacion
 
         private void cuentasBancariasToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            frmProduccion_Proveedor_CuentasBancarias frmProduccion_CuentasBancarias = new frmProduccion_Proveedor_CuentasBancarias();
+            frmProduccion_CuentasBancarias frmProduccion_CuentasBancarias = new frmProduccion_CuentasBancarias();
             frmProduccion_CuentasBancarias.MdiParent = this;
             frmProduccion_CuentasBancarias.Show();
         }
@@ -354,7 +354,7 @@ namespace CapaPresentacion
 
         private void marcasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmProduccion_Productos_Marcas frmProduccion_Productos_Marcas = new frmProduccion_Productos_Marcas();
+            frmProduccion_Marcas frmProduccion_Productos_Marcas = new frmProduccion_Marcas();
             frmProduccion_Productos_Marcas.MdiParent = this;
             frmProduccion_Productos_Marcas.Show();
         }
@@ -373,7 +373,7 @@ namespace CapaPresentacion
 
         private void datosFinancierosToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            frmProduccion_Proveedor_Financiera frmProduccion_Proveedor_Financiera = new frmProduccion_Proveedor_Financiera();
+            frmProduccion_Financiera frmProduccion_Proveedor_Financiera = new frmProduccion_Financiera();
             frmProduccion_Proveedor_Financiera.MdiParent = this;
             frmProduccion_Proveedor_Financiera.Show();
         }

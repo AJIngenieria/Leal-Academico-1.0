@@ -12,22 +12,21 @@ using CapaNegocio;
 
 namespace CapaPresentacion
 {
-    public partial class frmProduccion_Productos_Impuestos : Form
+    public partial class frmProduccion_Marcas : Form
     {
         private bool IsNuevo = false;
-        public frmProduccion_Productos_Impuestos()
+        public frmProduccion_Marcas()
         {
             InitializeComponent();
         }
 
-        private void frmProduccion_Impuestos_Load(object sender, EventArgs e)
+        private void frmProduccion_Productos_Marcas_Load(object sender, EventArgs e)
         {
-            this.CBTipo.SelectedIndex = 0;
-
             this.ColoresDeBotones();
             this.Botones();
             this.Habilitar();
         }
+
         private void ColoresDeBotones()
         {
             btnNuevo.BackgroundImage = Properties.Resources.BV_Nuevo;
@@ -38,30 +37,35 @@ namespace CapaPresentacion
         {
             if (IsNuevo == false)
             {
-                this.TBImpuesto.ReadOnly = true;
-                this.TBImpuesto.BackColor = Color.FromArgb(187, 222, 251);
-                this.CBTipo.Enabled = false;
-                this.CBTipo.BackColor = Color.FromArgb(187, 222, 251);
-                this.TBValor.ReadOnly = true;
-                this.TBValor.BackColor = Color.FromArgb(187, 222, 251);
+                this.TBMarca.ReadOnly = true;
+                this.TBMarca.BackColor = Color.FromArgb(187, 222, 251);
+                this.CBEstado.Enabled = false;
+                this.CBEstado.BackColor = Color.FromArgb(187, 222, 251);
+                this.TBDescripcion.ReadOnly = true;
+                this.TBDescripcion.BackColor = Color.FromArgb(187, 222, 251);
+                this.CBProveedor.Enabled = false;
+                this.CBProveedor.BackColor = Color.FromArgb(187, 222, 251);
             }
 
             else if (IsNuevo == true)
             {
-                this.TBImpuesto.ReadOnly = false;
-                this.TBImpuesto.BackColor = Color.FromArgb(32, 178, 170);
-                this.CBTipo.Enabled = true;
-                this.CBTipo.BackColor = Color.FromArgb(32, 178, 170);
-                this.TBValor.ReadOnly = false;
-                this.TBValor.BackColor = Color.FromArgb(32, 178, 170);
+                this.TBMarca.ReadOnly = false;
+                this.TBMarca.BackColor = Color.FromArgb(32, 178, 170);
+                this.CBEstado.Enabled = true;
+                this.CBEstado.BackColor = Color.FromArgb(32, 178, 170);
+                this.TBDescripcion.ReadOnly = false;
+                this.TBDescripcion.BackColor = Color.FromArgb(32, 178, 170);
+                this.CBProveedor.Enabled = true;
+                this.CBProveedor.BackColor = Color.FromArgb(32, 178, 170);
             }
         }
 
         private void Limpiar()
         {
-            this.TBImpuesto.Text = string.Empty;
-            this.CBTipo.SelectedIndex = 0;
-            this.TBValor.Text = string.Empty;
+            this.TBMarca.Text = string.Empty;
+            this.CBEstado.SelectedIndex = 0;
+            this.TBDescripcion.Text = string.Empty;
+            this.CBProveedor.Text = string.Empty;
         }
 
 
@@ -80,6 +84,24 @@ namespace CapaPresentacion
             }
         }
 
+        private void Combobox()
+        {
+            try
+            {
+                CBEstado.DataSource = fSistema_Estados.Mostrar();
+                CBEstado.ValueMember = "Idestado";
+                CBEstado.DisplayMember = "Estado";
+
+                CBProveedor.DataSource = fProduccion_Proveedor.Mostrar();
+                CBProveedor.ValueMember = "Idproveedor";
+                CBProveedor.DisplayMember = "Proveedor";
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
+        }
 
         //Mensaje de confirmacion
         private void MensajeOk(string mensaje)
@@ -98,7 +120,8 @@ namespace CapaPresentacion
             this.IsNuevo = true;
             this.Botones();
             this.Habilitar();
-            this.TBImpuesto.Focus();
+            this.Combobox();
+            this.TBMarca.Focus();
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -108,33 +131,39 @@ namespace CapaPresentacion
                 string rptaDatosBasicos = "";
 
                 //Datos Basicos
-                if (this.TBImpuesto.Text == string.Empty)
+                if (this.TBMarca.Text == string.Empty)
                 {
-                    MensajeError("Faltan Ingresar Algunos Datos, Estos Seran Remarcados");
-                    TBImpuesto.BackColor = Color.FromArgb(250, 235, 215);
+                    MensajeError("Faltan Ingresar Algunos Datos en la Pestaña 'Datos Basicos', Estos Seran Remarcados");
+                    TBMarca.BackColor = Color.FromArgb(250, 235, 215);
                 }
-                else if (this.CBTipo.Text == string.Empty)
+                else if (this.CBEstado.Text == string.Empty)
                 {
-                    MensajeError("Faltan Ingresar Algunos Datos, Estos Seran Remarcados");
-                    CBTipo.BackColor = Color.FromArgb(250, 235, 215);
+                    MensajeError("Faltan Ingresar Algunos Datos en la Pestaña 'Datos Basicos', Estos Seran Remarcados");
+                    CBEstado.BackColor = Color.FromArgb(250, 235, 215);
                 }
-                else if (this.TBValor.Text == string.Empty)
+                else if (this.CBProveedor.Text == string.Empty)
                 {
-                    MensajeError("Faltan Ingresar Algunos Datos, Estos Seran Remarcados");
-                    TBValor.BackColor = Color.FromArgb(250, 235, 215);
+                    MensajeError("Faltan Ingresar Algunos Datos en la Pestaña 'Datos Basicos', Estos Seran Remarcados");
+                    CBProveedor.BackColor = Color.FromArgb(250, 235, 215);
                 }
+                else if (this.TBDescripcion.Text == string.Empty)
+                {
+                    MensajeError("Faltan Ingresar Algunos Datos en la Pestaña 'Datos Basicos', Estos Seran Remarcados");
+                    TBDescripcion.BackColor = Color.FromArgb(250, 235, 215);
+                }
+
                 else
                 {
                     if (this.IsNuevo)
                     {
-                        rptaDatosBasicos = fProduccion_Impuesto.Guardar_DatosBasicos("1", this.TBImpuesto.Text, this.CBTipo.Text, this.TBValor.Text);
+                        rptaDatosBasicos = fProduccion_Marcas.Guardar_DatosBasicos(1, Convert.ToInt32(this.CBEstado.Text), Convert.ToInt32(this.CBProveedor.Text), this.TBDescripcion.Text);
                     }
 
                     if (rptaDatosBasicos.Equals("OK"))
                     {
                         if (this.IsNuevo)
                         {
-                            this.MensajeOk("Impuesto Registrado Exitosamente");
+                            this.MensajeOk("Marca Registrada Exitosamente");
                         }
                     }
 
@@ -146,7 +175,6 @@ namespace CapaPresentacion
                     this.IsNuevo = false;
                     this.Botones();
                     this.Limpiar();
-                    this.Habilitar();
                 }
             }
             catch (Exception ex)
@@ -154,7 +182,6 @@ namespace CapaPresentacion
                 MessageBox.Show(ex.Message + ex.StackTrace);
             }
         }
-
 
         private void btnNuevo_MouseDown(object sender, MouseEventArgs e)
         {
@@ -184,32 +211,6 @@ namespace CapaPresentacion
         private void btnGuardar_MouseMove(object sender, MouseEventArgs e)
         {
             btnGuardar.BackgroundImage = Properties.Resources.BR_Guardar;
-        }
-
-        
-        private void CBTipo_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TBBuscar_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void DGResultados_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void checkBox1_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void DGResultados_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }

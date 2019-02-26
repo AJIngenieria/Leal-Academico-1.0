@@ -142,11 +142,11 @@
     <Compile Include="Filtros\frmExaminarBiblioteca_Solicitante.Designer.cs">
       <DependentUpon>frmExaminarBiblioteca_Solicitante.cs</DependentUpon>
     </Compile>
-    <Compile Include="Filtros\frmExaminarProduccion_Bodega.cs">
+    <Compile Include="Filtros\frmExaminar_Bodega.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Filtros\frmExaminarProduccion_Bodega.Designer.cs">
-      <DependentUpon>frmExaminarProduccion_Bodega.cs</DependentUpon>
+    <Compile Include="Filtros\frmExaminar_Bodega.Designer.cs">
+      <DependentUpon>frmExaminar_Bodega.cs</DependentUpon>
     </Compile>
     <Compile Include="Filtros\frmExaminarProduccion_Clientes.cs">
       <SubType>Form</SubType>
@@ -166,11 +166,11 @@
     <Compile Include="Filtros\frmExaminarProduccion_Productos.Designer.cs">
       <DependentUpon>frmExaminarProduccion_Productos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Filtros\frmExaminarProduccion_Proveedor.cs">
+    <Compile Include="Filtros\frmExaminar_Proveedor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Filtros\frmExaminarProduccion_Proveedor.Designer.cs">
-      <DependentUpon>frmExaminarProduccion_Proveedor.cs</DependentUpon>
+    <Compile Include="Filtros\frmExaminar_Proveedor.Designer.cs">
+      <DependentUpon>frmExaminar_Proveedor.cs</DependentUpon>
     </Compile>
     <Compile Include="GestionHumana\frmGestionHumana_FaltasInjustificadas.cs">
       <SubType>Form</SubType>
@@ -196,11 +196,11 @@
     <Compile Include="Produccion\frmProduccion_Bodegas.Designer.cs">
       <DependentUpon>frmProduccion_Bodegas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Produccion\frmProduccion_Bodegas_Traslados.cs">
+    <Compile Include="Produccion\frmProduccion_Traslados.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Produccion\frmProduccion_Bodegas_Traslados.Designer.cs">
-      <DependentUpon>frmProduccion_Bodegas_Traslados.cs</DependentUpon>
+    <Compile Include="Produccion\frmProduccion_Traslados.Designer.cs">
+      <DependentUpon>frmProduccion_Traslados.cs</DependentUpon>
     </Compile>
     <Compile Include="Produccion\frmProduccion_Cliente.cs">
       <SubType>Form</SubType>
@@ -214,41 +214,41 @@
     <Compile Include="Produccion\frmProduccion_Cliente_Financiera.Designer.cs">
       <DependentUpon>frmProduccion_Cliente_Financiera.cs</DependentUpon>
     </Compile>
-    <Compile Include="Produccion\frmProduccion_Productos_Codigos.cs">
+    <Compile Include="Produccion\frmProduccion_Codigos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Produccion\frmProduccion_Productos_Codigos.Designer.cs">
-      <DependentUpon>frmProduccion_Productos_Codigos.cs</DependentUpon>
+    <Compile Include="Produccion\frmProduccion_Codigos.Designer.cs">
+      <DependentUpon>frmProduccion_Codigos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Produccion\frmProduccion_Productos_Marcas.cs">
+    <Compile Include="Produccion\frmProduccion_Marcas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Produccion\frmProduccion_Productos_Marcas.Designer.cs">
-      <DependentUpon>frmProduccion_Productos_Marcas.cs</DependentUpon>
+    <Compile Include="Produccion\frmProduccion_Marcas.Designer.cs">
+      <DependentUpon>frmProduccion_Marcas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Produccion\frmProduccion_Proveedor_CuentasBancarias.cs">
+    <Compile Include="Produccion\frmProduccion_CuentasBancarias.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Produccion\frmProduccion_Proveedor_CuentasBancarias.Designer.cs">
-      <DependentUpon>frmProduccion_Proveedor_CuentasBancarias.cs</DependentUpon>
+    <Compile Include="Produccion\frmProduccion_CuentasBancarias.Designer.cs">
+      <DependentUpon>frmProduccion_CuentasBancarias.cs</DependentUpon>
     </Compile>
-    <Compile Include="Produccion\frmProduccion_Proveedor_Financiera.cs">
+    <Compile Include="Produccion\frmProduccion_Financiera.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Produccion\frmProduccion_Proveedor_Financiera.Designer.cs">
-      <DependentUpon>frmProduccion_Proveedor_Financiera.cs</DependentUpon>
+    <Compile Include="Produccion\frmProduccion_Financiera.Designer.cs">
+      <DependentUpon>frmProduccion_Financiera.cs</DependentUpon>
     </Compile>
-    <Compile Include="Produccion\frmProduccion_Productos_Impuestos.cs">
+    <Compile Include="Produccion\frmProduccion_Impuestos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Produccion\frmProduccion_Productos_Impuestos.Designer.cs">
-      <DependentUpon>frmProduccion_Productos_Impuestos.cs</DependentUpon>
+    <Compile Include="Produccion\frmProduccion_Impuestos.Designer.cs">
+      <DependentUpon>frmProduccion_Impuestos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Produccion\frmProduccion_Bodegas_Ingreso.cs">
+    <Compile Include="Produccion\frmProduccion_Ingresos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Produccion\frmProduccion_Bodegas_Ingreso.Designer.cs">
-      <DependentUpon>frmProduccion_Bodegas_Ingreso.cs</DependentUpon>
+    <Compile Include="Produccion\frmProduccion_Ingresos.Designer.cs">
+      <DependentUpon>frmProduccion_Ingresos.cs</DependentUpon>
     </Compile>
     <Compile Include="Produccion\frmProduccion_OrdenDeCompra.cs">
       <SubType>Form</SubType>
@@ -256,11 +256,11 @@
     <Compile Include="Produccion\frmProduccion_OrdenDeCompra.Designer.cs">
       <DependentUpon>frmProduccion_OrdenDeCompra.cs</DependentUpon>
     </Compile>
-    <Compile Include="Produccion\frmProduccion_Productos_Costos.cs">
+    <Compile Include="Produccion\frmProduccion_Costos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Produccion\frmProduccion_Productos_Costos.Designer.cs">
-      <DependentUpon>frmProduccion_Productos_Costos.cs</DependentUpon>
+    <Compile Include="Produccion\frmProduccion_Costos.Designer.cs">
+      <DependentUpon>frmProduccion_Costos.cs</DependentUpon>
     </Compile>
     <Compile Include="Produccion\frmProduccion_Productos.cs">
       <SubType>Form</SubType>
@@ -274,11 +274,11 @@
     <Compile Include="Produccion\frmProduccion_Proveedor.Designer.cs">
       <DependentUpon>frmProduccion_Proveedor.cs</DependentUpon>
     </Compile>
-    <Compile Include="Produccion\frmProduccion_Bodegas_Salidas.cs">
+    <Compile Include="Produccion\frmProduccion_Salidas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Produccion\frmProduccion_SalidaDeProductos.Designer.cs">
-      <DependentUpon>frmProduccion_Bodegas_Salidas.cs</DependentUpon>
+    <Compile Include="Produccion\frmProduccion_Salidas.Designer.cs">
+      <DependentUpon>frmProduccion_Salidas.cs</DependentUpon>
     </Compile>
     <Compile Include="Biblioteca\frmBiblioteca_Inventario.cs">
       <SubType>Form</SubType>
@@ -494,6 +494,12 @@
     <EmbeddedResource Include="Biblioteca\frmBiblioteca_Niveles.resx">
       <DependentUpon>frmBiblioteca_Niveles.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Produccion\frmProduccion_Salidas.resx">
+      <DependentUpon>frmProduccion_Salidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produccion\frmProduccion_Traslados.resx">
+      <DependentUpon>frmProduccion_Traslados.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Sistema\frmSistema_CodigoID.resx">
       <DependentUpon>frmSistema_CodigoID.cs</DependentUpon>
     </EmbeddedResource>
@@ -527,8 +533,8 @@
     <EmbeddedResource Include="Filtros\frmExaminarBiblioteca_Solicitante.resx">
       <DependentUpon>frmExaminarBiblioteca_Solicitante.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Filtros\frmExaminarProduccion_Bodega.resx">
-      <DependentUpon>frmExaminarProduccion_Bodega.cs</DependentUpon>
+    <EmbeddedResource Include="Filtros\frmExaminar_Bodega.resx">
+      <DependentUpon>frmExaminar_Bodega.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Filtros\frmExaminarProduccion_Clientes.resx">
       <DependentUpon>frmExaminarProduccion_Clientes.cs</DependentUpon>
@@ -539,8 +545,8 @@
     <EmbeddedResource Include="Filtros\frmExaminarProduccion_Productos.resx">
       <DependentUpon>frmExaminarProduccion_Productos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Filtros\frmExaminarProduccion_Proveedor.resx">
-      <DependentUpon>frmExaminarProduccion_Proveedor.cs</DependentUpon>
+    <EmbeddedResource Include="Filtros\frmExaminar_Proveedor.resx">
+      <DependentUpon>frmExaminar_Proveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPlantel_Informacion.resx">
       <DependentUpon>frmPlantel_Informacion.cs</DependentUpon>
@@ -554,26 +560,26 @@
     <EmbeddedResource Include="Produccion\frmProduccion_Cliente_Financiera.resx">
       <DependentUpon>frmProduccion_Cliente_Financiera.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Produccion\frmProduccion_Productos_Codigos.resx">
-      <DependentUpon>frmProduccion_Productos_Codigos.cs</DependentUpon>
+    <EmbeddedResource Include="Produccion\frmProduccion_Codigos.resx">
+      <DependentUpon>frmProduccion_Codigos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Produccion\frmProduccion_Productos_Costos.resx">
-      <DependentUpon>frmProduccion_Productos_Costos.cs</DependentUpon>
+    <EmbeddedResource Include="Produccion\frmProduccion_Costos.resx">
+      <DependentUpon>frmProduccion_Costos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Produccion\frmProduccion_Productos_Marcas.resx">
-      <DependentUpon>frmProduccion_Productos_Marcas.cs</DependentUpon>
+    <EmbeddedResource Include="Produccion\frmProduccion_Marcas.resx">
+      <DependentUpon>frmProduccion_Marcas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Produccion\frmProduccion_Proveedor_CuentasBancarias.resx">
-      <DependentUpon>frmProduccion_Proveedor_CuentasBancarias.cs</DependentUpon>
+    <EmbeddedResource Include="Produccion\frmProduccion_CuentasBancarias.resx">
+      <DependentUpon>frmProduccion_CuentasBancarias.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Produccion\frmProduccion_Proveedor_Financiera.resx">
-      <DependentUpon>frmProduccion_Proveedor_Financiera.cs</DependentUpon>
+    <EmbeddedResource Include="Produccion\frmProduccion_Financiera.resx">
+      <DependentUpon>frmProduccion_Financiera.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Produccion\frmProduccion_Productos_Impuestos.resx">
-      <DependentUpon>frmProduccion_Productos_Impuestos.cs</DependentUpon>
+    <EmbeddedResource Include="Produccion\frmProduccion_Impuestos.resx">
+      <DependentUpon>frmProduccion_Impuestos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Produccion\frmProduccion_Bodegas_Ingreso.resx">
-      <DependentUpon>frmProduccion_Bodegas_Ingreso.cs</DependentUpon>
+    <EmbeddedResource Include="Produccion\frmProduccion_Ingresos.resx">
+      <DependentUpon>frmProduccion_Ingresos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Produccion\frmProduccion_OrdenDeCompra.resx">
       <DependentUpon>frmProduccion_OrdenDeCompra.cs</DependentUpon>
@@ -585,7 +591,7 @@
       <DependentUpon>frmProduccion_Proveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Produccion\frmProduccion_SalidaDeProductos.resx">
-      <DependentUpon>frmProduccion_Bodegas_Salidas.cs</DependentUpon>
+      <DependentUpon>frmProduccion_Salidas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Biblioteca\frmBiblioteca_Inventario.resx">
       <DependentUpon>frmBiblioteca_Inventario.cs</DependentUpon>

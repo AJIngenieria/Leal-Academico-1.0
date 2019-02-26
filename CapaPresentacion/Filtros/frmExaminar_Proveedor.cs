@@ -12,9 +12,9 @@ using CapaNegocio;
 
 namespace CapaPresentacion
 {
-    public partial class frmExaminarProduccion_Proveedor : Form
+    public partial class frmExaminar_Proveedor : Form
     {
-        public frmExaminarProduccion_Proveedor()
+        public frmExaminar_Proveedor()
         {
             InitializeComponent();
         }
@@ -42,7 +42,7 @@ namespace CapaPresentacion
         {
             try
             {
-                frmProduccion_Bodegas_Ingreso form = frmProduccion_Bodegas_Ingreso.GetInstancia();
+                frmProduccion_Ingresos form = frmProduccion_Ingresos.GetInstancia();
                 string par1, par2, par3;
                 par1 = Convert.ToString(this.DGResultados.CurrentRow.Cells["idproveedor"].Value);
                 par2 = Convert.ToString(this.DGResultados.CurrentRow.Cells["Proveedor"].Value);
@@ -63,7 +63,7 @@ namespace CapaPresentacion
             {
                 if (e.KeyChar == Convert.ToChar(Keys.Enter))
                 {
-                    frmProduccion_Bodegas_Ingreso form = frmProduccion_Bodegas_Ingreso.GetInstancia();
+                    frmProduccion_Ingresos form = frmProduccion_Ingresos.GetInstancia();
                     string par1, par2, par3;
                     par1 = Convert.ToString(this.DGResultados.CurrentRow.Cells["idproveedor"].Value);
                     par2 = Convert.ToString(this.DGResultados.CurrentRow.Cells["Proveedor"].Value);

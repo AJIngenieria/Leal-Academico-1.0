@@ -1,6 +1,6 @@
 ﻿namespace CapaPresentacion
 {
-    partial class frmProduccion_Productos_Marcas
+    partial class frmProduccion_Marcas
     {
         /// <summary>
         /// Required designer variable.
@@ -204,7 +204,7 @@
             this.btnNuevo.MouseLeave += new System.EventHandler(this.btnNuevo_MouseLeave);
             this.btnNuevo.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnNuevo_MouseMove);
             // 
-            // frmProduccion_Productos_Marcas
+            // frmProduccion_Marcas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -213,7 +213,7 @@
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MaximizeBox = false;
-            this.Name = "frmProduccion_Productos_Marcas";
+            this.Name = "frmProduccion_Marcas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmProduccion_Productos_Marcas";
             this.Load += new System.EventHandler(this.frmProduccion_Productos_Marcas_Load);

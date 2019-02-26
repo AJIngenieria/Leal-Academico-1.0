@@ -10,23 +10,23 @@ using System.Windows.Forms;
 
 namespace CapaPresentacion
 {
-    public partial class frmProduccion_Bodegas_Ingreso : Form
+    public partial class frmProduccion_Ingresos : Form
     {
         private bool IsNuevo = false;
         private DataTable dtDetalle;
 
-        private static frmProduccion_Bodegas_Ingreso _Instancia;
+        private static frmProduccion_Ingresos _Instancia;
 
-        public static frmProduccion_Bodegas_Ingreso GetInstancia()
+        public static frmProduccion_Ingresos GetInstancia()
         {
             if (_Instancia == null)
             {
-                _Instancia = new frmProduccion_Bodegas_Ingreso();
+                _Instancia = new frmProduccion_Ingresos();
             }
             return _Instancia;
         }
 
-        public frmProduccion_Bodegas_Ingreso()
+        public frmProduccion_Ingresos()
         {
             InitializeComponent();
         }
@@ -213,13 +213,13 @@ namespace CapaPresentacion
 
         private void btnExaminar_Bodega_Click(object sender, EventArgs e)
         {
-            frmExaminarProduccion_Bodega frmExaminarProduccion_Bodega = new frmExaminarProduccion_Bodega();
+            frmExaminar_Bodega frmExaminarProduccion_Bodega = new frmExaminar_Bodega();
             frmExaminarProduccion_Bodega.ShowDialog();
         }
 
         private void btnExaminar_Proveedor_Click(object sender, EventArgs e)
         {
-            frmExaminarProduccion_Proveedor frmExaminarProduccion_Proveedor = new frmExaminarProduccion_Proveedor();
+            frmExaminar_Proveedor frmExaminarProduccion_Proveedor = new frmExaminar_Proveedor();
             frmExaminarProduccion_Proveedor.ShowDialog();
         }
 

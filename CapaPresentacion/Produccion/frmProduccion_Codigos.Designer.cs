@@ -1,6 +1,6 @@
 ﻿namespace CapaPresentacion
 {
-    partial class frmProduccion_Productos_Codigos
+    partial class frmProduccion_Codigos
     {
         /// <summary>
         /// Required designer variable.
@@ -50,8 +50,8 @@
             this.CHEliminar = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.DGResultado = new System.Windows.Forms.DataGridView();
-            this.TBBuscar = new System.Windows.Forms.TextBox();
             this.Eliminar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.TBBuscar = new System.Windows.Forms.TextBox();
             this.groupBox3.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGResultado)).BeginInit();
@@ -318,6 +318,12 @@
             this.DGResultado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGResultado_CellContentClick);
             this.DGResultado.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGResultado_CellDoubleClick);
             // 
+            // Eliminar
+            // 
+            this.Eliminar.HeaderText = "Eliminar";
+            this.Eliminar.Name = "Eliminar";
+            this.Eliminar.ReadOnly = true;
+            // 
             // TBBuscar
             // 
             this.TBBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -330,13 +336,7 @@
             this.TBBuscar.Text = "ALEXANDER JAVIER GUERRERO CUELLO";
             this.TBBuscar.TextChanged += new System.EventHandler(this.TBBuscar_TextChanged);
             // 
-            // Eliminar
-            // 
-            this.Eliminar.HeaderText = "Eliminar";
-            this.Eliminar.Name = "Eliminar";
-            this.Eliminar.ReadOnly = true;
-            // 
-            // frmProduccion_Productos_Codigos
+            // frmProduccion_Codigos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -346,7 +346,7 @@
             this.Controls.Add(this.groupBox2);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MaximizeBox = false;
-            this.Name = "frmProduccion_Productos_Codigos";
+            this.Name = "frmProduccion_Codigos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmProduccion_CodigosDeBarra";
             this.Load += new System.EventHandler(this.frmProduccion_CodigosDeBarra_Load);
