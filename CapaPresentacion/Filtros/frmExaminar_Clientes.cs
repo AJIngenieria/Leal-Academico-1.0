@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace CapaPresentacion
 {
-    public partial class frmExaminarProduccion_Productos : Form
+    public partial class frmExaminar_Clientes : Form
     {
-        public frmExaminarProduccion_Productos()
+        public frmExaminar_Clientes()
         {
             InitializeComponent();
         }
 
-        private void frmExaminarProduccion_Productos_Load(object sender, EventArgs e)
+        private void frmExaminarProduccion_Clientes_Load(object sender, EventArgs e)
         {
 
         }
@@ -28,11 +28,6 @@ namespace CapaPresentacion
         }
 
         private void DGResultados_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void DGResultados_KeyPress(object sender, KeyPressEventArgs e)
         {
 
         }

@@ -219,5 +219,35 @@ namespace CapaDatos
 
         }
 
+        public DataTable CodigoID_Solicitud(Conexion_Produccion_Producto CodigoID)
+        {
+            DataTable DtResultado = new DataTable("Produccion.Productos");
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                SqlCon.ConnectionString = Conexion_BaseDeDatos.Cn;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "Sistema.CodigoID_Productos";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter ParFiltro = new SqlParameter();
+                ParFiltro.ParameterName = "@Filtro";
+                ParFiltro.SqlDbType = SqlDbType.VarChar;
+                ParFiltro.Size = 1;
+                ParFiltro.Value = CodigoID.Filtro;
+                SqlCmd.Parameters.Add(ParFiltro);
+
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+
+            }
+            catch (Exception ex)
+            {
+                DtResultado = null;
+            }
+            return DtResultado;
+        }
+
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace CapaPresentacion
 {
-    partial class frmExaminarProduccion_Productos
+    partial class frmExaminar_Productos
     {
         /// <summary>
         /// Required designer variable.
@@ -105,7 +105,7 @@
             this.TBBuscar.TabIndex = 4;
             this.TBBuscar.TextChanged += new System.EventHandler(this.TBBuscar_TextChanged);
             // 
-            // frmExaminarProduccion_Productos
+            // frmExaminar_Productos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -116,7 +116,7 @@
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MaximizeBox = false;
-            this.Name = "frmExaminarProduccion_Productos";
+            this.Name = "frmExaminar_Productos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmExaminarProduccion_Productos";
             this.Load += new System.EventHandler(this.frmExaminarProduccion_Productos_Load);

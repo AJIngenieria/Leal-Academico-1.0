@@ -170,9 +170,9 @@ namespace CapaPresentacion
 
         private void salidasDeBodegaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmProduccion_Salidas frmProduccion_SalidaDeProductos = new frmProduccion_Salidas();
-            frmProduccion_SalidaDeProductos.MdiParent = this;
-            frmProduccion_SalidaDeProductos.Show();
+            //frmProduccion_SalidasBodega frmProduccion_SalidaDeProductos = new frmProduccion_SalidasBodega();
+            //frmProduccion_SalidaDeProductos.MdiParent = this;
+            //frmProduccion_SalidaDeProductos.Show();
         }
 
         private void trasladosToolStripMenuItem_Click(object sender, EventArgs e)

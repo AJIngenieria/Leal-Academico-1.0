@@ -17,6 +17,8 @@ namespace CapaPresentacion
         private bool IsNuevo = false;
         private string IDEmpleado;
 
+        public string Codigo = "";
+
         public frmProduccion_Productos()
         {
             InitializeComponent();
@@ -121,6 +123,39 @@ namespace CapaPresentacion
             this.TBUbicacion.Text = string.Empty;
         }
 
+        private void Consulta_CodigoID()
+        {
+            try
+            {
+                DataTable Datos = CapaNegocio.fProduccion_Productos.CodigoID_Solicitud(this.TBFiltroID.Text);
+                //Evaluamos si  existen los Datos
+                if (Datos.Rows.Count == 0)
+                {
+                    Codigo = TBFiltroID.Text;
+                    //TBCodigoID.Text = "1";
+                    //MessageBox.Show("No se Encontraron Registros en la Base de Datos", "Sistema Instituto Fundecar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    //frmAcademico_RegistrarAlumno frm = new frmAcademico_RegistrarAlumno();
+                    Codigo = Datos.Rows[0][0].ToString();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
+        }
+
+        public void AutoCompletar_ReInscripcion()
+        {
+            //Obtenemos el resultado de la base de datos de
+            //La columna Iddatos basicos - Tabla Prestamos.DatosBasicos
+            //Procedimiento Almacenado Sistema.CodigoID_Solicitud
+
+            this.TBCodigoID.Text = Codigo;
+
+        }
 
         private void Botones()
         {
@@ -171,6 +206,10 @@ namespace CapaPresentacion
             this.Habilitar();
             this.Combobox();
             this.TBProducto.Focus();
+
+            this.Consulta_CodigoID();
+            this.AutoCompletar_ReInscripcion();
+
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -221,10 +260,30 @@ namespace CapaPresentacion
             }
         }
 
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnExaminar_Click(object sender, EventArgs e)
         {
-            frmExaminarProduccion_Impuestos frmExaminarProduccion_Impuestos = new frmExaminarProduccion_Impuestos();
-            frmExaminarProduccion_Impuestos.ShowDialog();
+            frmExaminar_Proveedor frmExaminar_Proveedor = new frmExaminar_Proveedor();
+            frmExaminar_Proveedor.ShowDialog();
+        }
+
+        private void CHEliminar_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TBBuscar_TextChanged(object sender, EventArgs e)
+        {
+
         }
 
         private void btnNuevo_MouseDown(object sender, MouseEventArgs e)
@@ -255,26 +314,10 @@ namespace CapaPresentacion
         private void btnGuardar_MouseMove(object sender, MouseEventArgs e)
         {
             btnGuardar.BackgroundImage = Properties.Resources.BR_Guardar;
-        }
+        }      
 
-        private void btnEditar_Click(object sender, EventArgs e)
-        {
+        
 
-        }
-
-        private void btnEliminar_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void CHEliminar_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TBBuscar_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

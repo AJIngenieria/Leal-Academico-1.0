@@ -48,8 +48,6 @@ namespace CapaPresentacion
                 this.TBProveedor.BackColor = Color.FromArgb(187, 222, 251);
                 this.TBCodigoID.ReadOnly = true;
                 this.TBCodigoID.BackColor = Color.FromArgb(187, 222, 251);
-                this.CBIdentificacion.Enabled = false;
-                this.CBIdentificacion.BackColor = Color.FromArgb(187, 222, 251);
                 this.TBIdentificacion.ReadOnly = true;
                 this.TBIdentificacion.BackColor = Color.FromArgb(187, 222, 251);
                 this.CBEstado.Enabled = false;
@@ -84,8 +82,6 @@ namespace CapaPresentacion
                 this.TBProveedor.BackColor = Color.FromArgb(32, 178, 170);
                 this.TBCodigoID.ReadOnly = false;
                 this.TBCodigoID.BackColor = Color.FromArgb(32, 178, 170);
-                this.CBIdentificacion.Enabled = true;
-                this.CBIdentificacion.BackColor = Color.FromArgb(32, 178, 170);
                 this.TBIdentificacion.ReadOnly = false;
                 this.TBIdentificacion.BackColor = Color.FromArgb(32, 178, 170);
                 this.CBEstado.Enabled = true;
@@ -117,7 +113,6 @@ namespace CapaPresentacion
             this.TBArea.Text = string.Empty;
             this.TBProveedor.Text = string.Empty;
             this.TBCodigoID.Text = string.Empty;
-            this.CBIdentificacion.SelectedIndex = 0;
             this.TBIdentificacion.Text = string.Empty;
             this.CBEstado.SelectedIndex = 0;
             this.TBRepresentante.Text = string.Empty;

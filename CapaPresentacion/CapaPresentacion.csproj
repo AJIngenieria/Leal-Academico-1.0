@@ -148,23 +148,23 @@
     <Compile Include="Filtros\frmExaminar_Bodega.Designer.cs">
       <DependentUpon>frmExaminar_Bodega.cs</DependentUpon>
     </Compile>
-    <Compile Include="Filtros\frmExaminarProduccion_Clientes.cs">
+    <Compile Include="Filtros\frmExaminar_Clientes.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Filtros\frmExaminarProduccion_Clientes.Designer.cs">
-      <DependentUpon>frmExaminarProduccion_Clientes.cs</DependentUpon>
+    <Compile Include="Filtros\frmExaminar_Clientes.Designer.cs">
+      <DependentUpon>frmExaminar_Clientes.cs</DependentUpon>
     </Compile>
-    <Compile Include="Filtros\frmExaminarProduccion_Impuestos.cs">
+    <Compile Include="Filtros\frmExaminar_Impuestos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Filtros\frmExaminarProduccion_Impuestos.Designer.cs">
-      <DependentUpon>frmExaminarProduccion_Impuestos.cs</DependentUpon>
+    <Compile Include="Filtros\frmExaminar_Impuestos.Designer.cs">
+      <DependentUpon>frmExaminar_Impuestos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Filtros\frmExaminarProduccion_Productos.cs">
+    <Compile Include="Filtros\frmExaminar_Productos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Filtros\frmExaminarProduccion_Productos.Designer.cs">
-      <DependentUpon>frmExaminarProduccion_Productos.cs</DependentUpon>
+    <Compile Include="Filtros\frmExaminar_Productos.Designer.cs">
+      <DependentUpon>frmExaminar_Productos.cs</DependentUpon>
     </Compile>
     <Compile Include="Filtros\frmExaminar_Proveedor.cs">
       <SubType>Form</SubType>
@@ -273,12 +273,6 @@
     </Compile>
     <Compile Include="Produccion\frmProduccion_Proveedor.Designer.cs">
       <DependentUpon>frmProduccion_Proveedor.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Produccion\frmProduccion_Salidas.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Produccion\frmProduccion_Salidas.Designer.cs">
-      <DependentUpon>frmProduccion_Salidas.cs</DependentUpon>
     </Compile>
     <Compile Include="Biblioteca\frmBiblioteca_Inventario.cs">
       <SubType>Form</SubType>
@@ -494,9 +488,6 @@
     <EmbeddedResource Include="Biblioteca\frmBiblioteca_Niveles.resx">
       <DependentUpon>frmBiblioteca_Niveles.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Produccion\frmProduccion_Salidas.resx">
-      <DependentUpon>frmProduccion_Salidas.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Produccion\frmProduccion_Traslados.resx">
       <DependentUpon>frmProduccion_Traslados.cs</DependentUpon>
     </EmbeddedResource>
@@ -536,14 +527,14 @@
     <EmbeddedResource Include="Filtros\frmExaminar_Bodega.resx">
       <DependentUpon>frmExaminar_Bodega.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Filtros\frmExaminarProduccion_Clientes.resx">
-      <DependentUpon>frmExaminarProduccion_Clientes.cs</DependentUpon>
+    <EmbeddedResource Include="Filtros\frmExaminar_Clientes.resx">
+      <DependentUpon>frmExaminar_Clientes.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Filtros\frmExaminarProduccion_Impuestos.resx">
-      <DependentUpon>frmExaminarProduccion_Impuestos.cs</DependentUpon>
+    <EmbeddedResource Include="Filtros\frmExaminar_Impuestos.resx">
+      <DependentUpon>frmExaminar_Impuestos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Filtros\frmExaminarProduccion_Productos.resx">
-      <DependentUpon>frmExaminarProduccion_Productos.cs</DependentUpon>
+    <EmbeddedResource Include="Filtros\frmExaminar_Productos.resx">
+      <DependentUpon>frmExaminar_Productos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Filtros\frmExaminar_Proveedor.resx">
       <DependentUpon>frmExaminar_Proveedor.cs</DependentUpon>
@@ -589,9 +580,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Produccion\frmProduccion_Proveedor.resx">
       <DependentUpon>frmProduccion_Proveedor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Produccion\frmProduccion_SalidaDeProductos.resx">
-      <DependentUpon>frmProduccion_Salidas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Biblioteca\frmBiblioteca_Inventario.resx">
       <DependentUpon>frmBiblioteca_Inventario.cs</DependentUpon>

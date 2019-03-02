@@ -12,9 +12,9 @@ using CapaNegocio;
 
 namespace CapaPresentacion
 {
-    public partial class frmExaminarProduccion_Impuestos : Form
+    public partial class frmExaminar_Impuestos : Form
     {
-        public frmExaminarProduccion_Impuestos()
+        public frmExaminar_Impuestos()
         {
             InitializeComponent();
         }

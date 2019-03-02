@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.btnExaminar = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -37,7 +39,6 @@
             this.Idproveedor = new System.Windows.Forms.TextBox();
             this.TBDescripcion = new System.Windows.Forms.TextBox();
             this.CBMarca = new System.Windows.Forms.ComboBox();
-            this.TBIdimpuesto = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.TBProducto = new System.Windows.Forms.TextBox();
@@ -62,20 +63,24 @@
             this.label14 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lblTotal = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.DGResultados = new System.Windows.Forms.DataGridView();
             this.Eliminar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.CHEliminar = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
             this.TBBuscar = new System.Windows.Forms.TextBox();
+            this.TBFiltroID = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGResultados)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.TBFiltroID);
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.btnExaminar);
             this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.textBox2);
@@ -84,7 +89,6 @@
             this.groupBox1.Controls.Add(this.Idproveedor);
             this.groupBox1.Controls.Add(this.TBDescripcion);
             this.groupBox1.Controls.Add(this.CBMarca);
-            this.groupBox1.Controls.Add(this.TBIdimpuesto);
             this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.btnGuardar);
             this.groupBox1.Controls.Add(this.TBProducto);
@@ -109,10 +113,26 @@
             this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(342, 303);
+            this.groupBox1.Size = new System.Drawing.Size(342, 327);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Leal Academico - Registro de Productos";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(84, 244);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(120, 21);
+            this.textBox1.TabIndex = 46;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(6, 247);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(32, 15);
+            this.label11.TabIndex = 45;
+            this.label11.Text = "Dias";
             // 
             // btnExaminar
             // 
@@ -129,6 +149,7 @@
             this.btnExaminar.Size = new System.Drawing.Size(25, 21);
             this.btnExaminar.TabIndex = 44;
             this.btnExaminar.UseVisualStyleBackColor = true;
+            this.btnExaminar.Click += new System.EventHandler(this.btnExaminar_Click);
             // 
             // label10
             // 
@@ -164,7 +185,7 @@
             // 
             // Idproveedor
             // 
-            this.Idproveedor.Location = new System.Drawing.Point(167, 273);
+            this.Idproveedor.Location = new System.Drawing.Point(97, 298);
             this.Idproveedor.Name = "Idproveedor";
             this.Idproveedor.Size = new System.Drawing.Size(51, 21);
             this.Idproveedor.TabIndex = 41;
@@ -186,13 +207,6 @@
             this.CBMarca.Size = new System.Drawing.Size(120, 23);
             this.CBMarca.TabIndex = 41;
             // 
-            // TBIdimpuesto
-            // 
-            this.TBIdimpuesto.Location = new System.Drawing.Point(94, 271);
-            this.TBIdimpuesto.Name = "TBIdimpuesto";
-            this.TBIdimpuesto.Size = new System.Drawing.Size(51, 21);
-            this.TBIdimpuesto.TabIndex = 40;
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -213,7 +227,7 @@
             this.btnGuardar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.btnGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardar.Location = new System.Drawing.Point(259, 271);
+            this.btnGuardar.Location = new System.Drawing.Point(259, 296);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(75, 25);
             this.btnGuardar.TabIndex = 4;
@@ -241,7 +255,7 @@
             this.btnNuevo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.btnNuevo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNuevo.Location = new System.Drawing.Point(6, 271);
+            this.btnNuevo.Location = new System.Drawing.Point(6, 296);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(75, 25);
             this.btnNuevo.TabIndex = 3;
@@ -299,7 +313,7 @@
             // 
             // TBUbicacion
             // 
-            this.TBUbicacion.Location = new System.Drawing.Point(84, 244);
+            this.TBUbicacion.Location = new System.Drawing.Point(84, 271);
             this.TBUbicacion.Name = "TBUbicacion";
             this.TBUbicacion.Size = new System.Drawing.Size(250, 21);
             this.TBUbicacion.TabIndex = 3;
@@ -363,7 +377,7 @@
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Location = new System.Drawing.Point(6, 247);
+            this.label33.Location = new System.Drawing.Point(6, 274);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(62, 15);
             this.label33.TabIndex = 1;
@@ -449,7 +463,7 @@
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.lblTotal);
-            this.groupBox2.Controls.Add(this.dataGridView1);
+            this.groupBox2.Controls.Add(this.DGResultados);
             this.groupBox2.Controls.Add(this.btnEliminar);
             this.groupBox2.Controls.Add(this.btnEditar);
             this.groupBox2.Controls.Add(this.CHEliminar);
@@ -457,7 +471,7 @@
             this.groupBox2.Controls.Add(this.TBBuscar);
             this.groupBox2.Location = new System.Drawing.Point(360, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(500, 303);
+            this.groupBox2.Size = new System.Drawing.Size(512, 327);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Leal Academico - Consulta de Productos";
@@ -471,20 +485,20 @@
             this.lblTotal.TabIndex = 6;
             this.lblTotal.Text = "---------------------";
             // 
-            // dataGridView1
+            // DGResultados
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.DGResultados.AllowUserToAddRows = false;
+            this.DGResultados.AllowUserToDeleteRows = false;
+            this.DGResultados.BackgroundColor = System.Drawing.Color.White;
+            this.DGResultados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGResultados.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Eliminar});
-            this.dataGridView1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 62);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(488, 204);
-            this.dataGridView1.TabIndex = 5;
+            this.DGResultados.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DGResultados.Location = new System.Drawing.Point(6, 62);
+            this.DGResultados.Name = "DGResultados";
+            this.DGResultados.ReadOnly = true;
+            this.DGResultados.Size = new System.Drawing.Size(500, 228);
+            this.DGResultados.TabIndex = 5;
             // 
             // Eliminar
             // 
@@ -502,7 +516,7 @@
             this.btnEliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminar.Location = new System.Drawing.Point(419, 272);
+            this.btnEliminar.Location = new System.Drawing.Point(431, 296);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(75, 25);
             this.btnEliminar.TabIndex = 4;
@@ -519,7 +533,7 @@
             this.btnEditar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.btnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditar.Location = new System.Drawing.Point(6, 272);
+            this.btnEditar.Location = new System.Drawing.Point(6, 296);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Size = new System.Drawing.Size(75, 25);
             this.btnEditar.TabIndex = 3;
@@ -560,13 +574,21 @@
             this.TBBuscar.TabIndex = 0;
             this.TBBuscar.TextChanged += new System.EventHandler(this.TBBuscar_TextChanged);
             // 
+            // TBFiltroID
+            // 
+            this.TBFiltroID.Location = new System.Drawing.Point(154, 298);
+            this.TBFiltroID.Name = "TBFiltroID";
+            this.TBFiltroID.Size = new System.Drawing.Size(50, 21);
+            this.TBFiltroID.TabIndex = 7;
+            this.TBFiltroID.Text = "1";
+            // 
             // frmProduccion_Productos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(870, 327);
+            this.ClientSize = new System.Drawing.Size(882, 351);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -579,7 +601,7 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DGResultados)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -612,7 +634,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox TBUbicacion;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.TextBox TBIdimpuesto;
         private System.Windows.Forms.ComboBox CBMarca;
         private System.Windows.Forms.TextBox Idproveedor;
         private System.Windows.Forms.GroupBox groupBox2;
@@ -625,7 +646,10 @@
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Label lblTotal;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView DGResultados;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Eliminar;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox TBFiltroID;
     }
 }
