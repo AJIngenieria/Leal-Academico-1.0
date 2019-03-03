@@ -315,9 +315,6 @@ namespace CapaPresentacion
         {
             btnGuardar.BackgroundImage = Properties.Resources.BR_Guardar;
         }      
-
-        
-
         
     }
 }

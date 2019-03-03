@@ -71,6 +71,7 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.DGResultado = new System.Windows.Forms.DataGridView();
+            this.TBFiltroID = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PanelLogo)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -82,6 +83,7 @@
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.TBFiltroID);
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.TBEstado);
@@ -149,7 +151,7 @@
             this.TBEstado.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TBEstado.Location = new System.Drawing.Point(183, 350);
+            this.TBEstado.Location = new System.Drawing.Point(90, 350);
             this.TBEstado.Name = "TBEstado";
             this.TBEstado.Size = new System.Drawing.Size(100, 21);
             this.TBEstado.TabIndex = 47;
@@ -560,7 +562,7 @@
             this.groupBox2.Size = new System.Drawing.Size(500, 380);
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
+            this.groupBox2.Text = "Leal Academico - Consulta de Proveedores Registrados";
             // 
             // label11
             // 
@@ -675,6 +677,14 @@
             this.DGResultado.Size = new System.Drawing.Size(488, 280);
             this.DGResultado.TabIndex = 0;
             // 
+            // TBFiltroID
+            // 
+            this.TBFiltroID.Location = new System.Drawing.Point(196, 350);
+            this.TBFiltroID.Name = "TBFiltroID";
+            this.TBFiltroID.Size = new System.Drawing.Size(100, 21);
+            this.TBFiltroID.TabIndex = 50;
+            this.TBFiltroID.Text = "1";
+            // 
             // frmProduccion_Proveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -746,5 +756,6 @@
         private System.Windows.Forms.CheckBox CHEliminar;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox TBFiltroID;
     }
 }

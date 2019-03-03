@@ -23,7 +23,6 @@ namespace CapaPresentacion
             this.TBUsuario.Focus();
 
             this.textBox1.ReadOnly = true;
-            this.textBox2.ReadOnly = true;
             this.textBox5.ReadOnly = true;
         }
 

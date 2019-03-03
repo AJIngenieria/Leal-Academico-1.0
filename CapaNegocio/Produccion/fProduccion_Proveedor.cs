@@ -57,5 +57,12 @@ namespace CapaNegocio
             return new Conexion_Produccion_Proveedor().Mostrar();
         }
 
+        public static DataTable CodigoID_Solicitud(string filtro)
+        {
+            Conexion_Produccion_Proveedor Obj = new Conexion_Produccion_Proveedor();
+            Obj.Filtro = filtro;
+            return Obj.CodigoID_Solicitud(Obj);
+        }
+
     }
 }

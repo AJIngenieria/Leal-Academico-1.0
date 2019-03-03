@@ -228,7 +228,7 @@ namespace CapaDatos
                 SqlCon.ConnectionString = Conexion_BaseDeDatos.Cn;
                 SqlCommand SqlCmd = new SqlCommand();
                 SqlCmd.Connection = SqlCon;
-                SqlCmd.CommandText = "Sistema.CodigoID_Productos";
+                SqlCmd.CommandText = "Sistema.ID_Productos";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
                 SqlParameter ParFiltro = new SqlParameter();

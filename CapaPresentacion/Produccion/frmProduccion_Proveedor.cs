@@ -15,6 +15,9 @@ namespace CapaPresentacion
     public partial class frmProduccion_Proveedor : Form
     {
         private bool IsNuevo = false;
+
+        public string Codigo = "";
+
         public frmProduccion_Proveedor()
         {
             InitializeComponent();
@@ -140,6 +143,40 @@ namespace CapaPresentacion
             }
         }
 
+        private void Consulta_CodigoID()
+        {
+            try
+            {
+                DataTable Datos = CapaNegocio.fProduccion_Productos.CodigoID_Solicitud(this.TBFiltroID.Text);
+                //Evaluamos si  existen los Datos
+                if (Datos.Rows.Count == 0)
+                {
+                    Codigo = TBFiltroID.Text;
+                    //TBCodigoID.Text = "1";
+                    //MessageBox.Show("No se Encontraron Registros en la Base de Datos", "Sistema Instituto Fundecar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    //frmAcademico_RegistrarAlumno frm = new frmAcademico_RegistrarAlumno();
+                    Codigo = Datos.Rows[0][0].ToString();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
+        }
+
+        public void AutoCompletar_ReInscripcion()
+        {
+            //Obtenemos el resultado de la base de datos de
+            //La columna Iddatos basicos - Tabla Prestamos.DatosBasicos
+            //Procedimiento Almacenado Sistema.CodigoID_Solicitud
+
+            this.TBCodigoID.Text = Codigo;
+
+        }
+
 
         //Mensaje de confirmacion
         private void MensajeOk(string mensaje)
@@ -159,6 +196,10 @@ namespace CapaPresentacion
             this.Botones();
             this.Habilitar();
             this.TBProveedor.Focus();
+
+            this.Consulta_CodigoID();
+            this.AutoCompletar_ReInscripcion();
+
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
