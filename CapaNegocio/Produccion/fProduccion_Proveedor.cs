@@ -13,8 +13,11 @@ namespace CapaNegocio
     {
         public static string Guardar_DatosBasicos
             (//Datos Basicos
-            int idempleado, string codigoid, string proveedor, string tipo, string area, string documento, string identificacion, int idestado,
-            string titular, int idpais, int idciudad, string telefono, string movil, string direccion1, string direccion2, string email, DateTime inicio, byte[] foto,
+
+            int idempleado, string codigoid, string proveedor, string tipo, string area, string documento, string estado,
+            string titular, string pais, string ciudad, string telefono, string movil, string direccion1, string direccion2, 
+            string email, DateTime inicio, byte[] foto,
+
             int auto)
         {
             Conexion_Produccion_Proveedor Obj = new Conexion_Produccion_Proveedor();
@@ -25,14 +28,13 @@ namespace CapaNegocio
 
             Obj.Tipo = tipo;
             Obj.Area = area;
-            Obj.Idestado = idestado;
+            Obj.Estado = estado;
             Obj.Proveedor = proveedor;
             Obj.CodigoID = codigoid;
             Obj.Documento = documento;
-            Obj.Identificacion = identificacion;
             Obj.Titular = titular;
-            Obj.Idpais = idpais;
-            Obj.Idciudad = idciudad;
+            Obj.Pais = pais;
+            Obj.Ciudad = ciudad;
             Obj.Telefono = telefono;
             Obj.Movil = movil;
             Obj.Direccion1 = direccion1;

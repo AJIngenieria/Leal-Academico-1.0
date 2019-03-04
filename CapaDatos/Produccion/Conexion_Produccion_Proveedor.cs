@@ -11,21 +11,24 @@ namespace CapaDatos
 {
     public class Conexion_Produccion_Proveedor
     {
+        //Llaves Primarias
         private int _Idproveedor;
         private int _Idempleado;
-        private int _Auto;
-        private int _Idestado;
-        private string _CodigoID;
-        private string _Filtro;
 
-        private string _Proveedor;
+        //Variable de Condicion Guardar o Editar
+        private int _Auto;
+
+        //Variables Generales
+        
         private string _Tipo;
         private string _Area;
+        private string _Proveedor;
+        private string _CodigoID;
         private string _Documento;
-        private string _Identificacion;
+        private string _Estado;
         private string _Titular;
-        private int _Idpais;
-        private int _Idciudad;
+        private string _Pais;
+        private string _Ciudad;
         private string _Telefono;
         private string _Movil;
         private string _Direccion1;
@@ -34,20 +37,21 @@ namespace CapaDatos
         private DateTime _Inicio;
         private byte[] _Foto;
 
+        //Variable de Consulta General o Filtros
+        private string _Filtro;
+
         public int Idproveedor { get => _Idproveedor; set => _Idproveedor = value; }
         public int Idempleado { get => _Idempleado; set => _Idempleado = value; }
         public int Auto { get => _Auto; set => _Auto = value; }
-        public int Idestado { get => _Idestado; set => _Idestado = value; }
-        public string CodigoID { get => _CodigoID; set => _CodigoID = value; }
-        public string Filtro { get => _Filtro; set => _Filtro = value; }
-        public string Proveedor { get => _Proveedor; set => _Proveedor = value; }
         public string Tipo { get => _Tipo; set => _Tipo = value; }
         public string Area { get => _Area; set => _Area = value; }
+        public string Proveedor { get => _Proveedor; set => _Proveedor = value; }
+        public string CodigoID { get => _CodigoID; set => _CodigoID = value; }
         public string Documento { get => _Documento; set => _Documento = value; }
-        public string Identificacion { get => _Identificacion; set => _Identificacion = value; }
+        public string Estado { get => _Estado; set => _Estado = value; }
         public string Titular { get => _Titular; set => _Titular = value; }
-        public int Idpais { get => _Idpais; set => _Idpais = value; }
-        public int Idciudad { get => _Idciudad; set => _Idciudad = value; }
+        public string Pais { get => _Pais; set => _Pais = value; }
+        public string Ciudad { get => _Ciudad; set => _Ciudad = value; }
         public string Telefono { get => _Telefono; set => _Telefono = value; }
         public string Movil { get => _Movil; set => _Movil = value; }
         public string Direccion1 { get => _Direccion1; set => _Direccion1 = value; }
@@ -55,27 +59,23 @@ namespace CapaDatos
         public string Email { get => _Email; set => _Email = value; }
         public DateTime Inicio { get => _Inicio; set => _Inicio = value; }
         public byte[] Foto { get => _Foto; set => _Foto = value; }
-        
+        public string Filtro { get => _Filtro; set => _Filtro = value; }
+
+
         //Constructores
         public Conexion_Produccion_Proveedor()
         {
 
         }
         //Constructor con todos los parametros
-        public Conexion_Produccion_Proveedor(int idproveedor, int idempleado, string codigoid, string proveedor, string tipo, string area, string documento, string identificacion,
-        string titular, int idpais, int idciudad, string telefono, string movil, string direccion1, string direccion2, string email, DateTime inicio, byte[] foto,
-        int auto, int idestado, string filtro)
+        public Conexion_Produccion_Proveedor(int idproveedor, int idempleado, string codigoid, string proveedor, string tipo, string area, string documento,
+        string titular, string pais, string ciudad, string telefono, string movil, string direccion1, string direccion2, string email, DateTime inicio, byte[] foto,
+        int auto, string estado, string filtro)
 
         {
             //Llaves principales
             this.Idproveedor = idproveedor;
             this.Idempleado = idempleado;
-            this.Idpais = idpais;
-            this.Idciudad = idciudad;
-            this.Idestado = idestado;
-
-            this.Auto = auto;
-            this.Filtro = filtro;
 
             //Datos Basicos
             this.CodigoID = codigoid;
@@ -84,8 +84,8 @@ namespace CapaDatos
             this.Area = area;
             this.Titular = titular;
             this.Documento = documento;
-            this.Identificacion = identificacion;
-
+            this.Pais = pais;
+            this.Ciudad = ciudad;
             this.Telefono = telefono;
             this.Movil = movil;
             this.Direccion1 = direccion1;
@@ -93,7 +93,12 @@ namespace CapaDatos
             this.Email = email;
             this.Inicio = inicio;
             this.Foto = foto;
-    }
+
+            this.Estado = estado;
+
+            this.Auto = auto;
+            this.Filtro = filtro;
+        }
 
         //Metodo Insertar
 
@@ -110,7 +115,7 @@ namespace CapaDatos
                 //Establecer la conexion para mandar a la base de datos
                 SqlCommand SqlCmd = new SqlCommand();
                 SqlCmd.Connection = SqlCon;
-                SqlCmd.CommandText = "Produccion.AJ_Proveedor";
+                SqlCmd.CommandText = "Produccion.LA_Proveedor";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
                 //Comienzo a mandar a la base de datos
@@ -126,12 +131,6 @@ namespace CapaDatos
                 ParIdempleado.Value = Proveedor.Idempleado;
                 SqlCmd.Parameters.Add(ParIdempleado);
 
-                SqlParameter ParCodigoID = new SqlParameter();
-                ParCodigoID.ParameterName = "@CodigoID";
-                ParCodigoID.SqlDbType = SqlDbType.VarChar;
-                ParCodigoID.Size = 20;
-                ParCodigoID.Value = Proveedor.CodigoID;
-                SqlCmd.Parameters.Add(ParCodigoID);
 
                 SqlParameter ParTipo = new SqlParameter();
                 ParTipo.ParameterName = "@Tipo";
@@ -154,37 +153,46 @@ namespace CapaDatos
                 ParProveedor.Value = Proveedor.Proveedor;
                 SqlCmd.Parameters.Add(ParProveedor);
 
+                SqlParameter ParCodigoID = new SqlParameter();
+                ParCodigoID.ParameterName = "@CodigoID";
+                ParCodigoID.SqlDbType = SqlDbType.VarChar;
+                ParCodigoID.Size = 20;
+                ParCodigoID.Value = Proveedor.CodigoID;
+                SqlCmd.Parameters.Add(ParCodigoID);
+
                 SqlParameter ParDocumento = new SqlParameter();
                 ParDocumento.ParameterName = "@Documento";
                 ParDocumento.SqlDbType = SqlDbType.VarChar;
-                ParDocumento.Size = 5;
+                ParDocumento.Size = 15;
                 ParDocumento.Value = Proveedor.Documento;
                 SqlCmd.Parameters.Add(ParDocumento);
 
-                SqlParameter ParIdentificacion = new SqlParameter();
-                ParIdentificacion.ParameterName = "@Identificacion";
-                ParIdentificacion.SqlDbType = SqlDbType.VarChar;
-                ParIdentificacion.Size = 20;
-                ParIdentificacion.Value = Proveedor.Identificacion;
-                SqlCmd.Parameters.Add(ParIdentificacion);
+                SqlParameter ParEstado = new SqlParameter();
+                ParEstado.ParameterName = "@Estado";
+                ParEstado.SqlDbType = SqlDbType.VarChar;
+                ParEstado.Size = 10;
+                ParEstado.Value = Proveedor.Estado;
+                SqlCmd.Parameters.Add(ParEstado);
 
-                SqlParameter ParTitular = new SqlParameter();
-                ParTitular.ParameterName = "@Representante";
-                ParTitular.SqlDbType = SqlDbType.VarChar;
-                ParTitular.Size = 50;
-                ParTitular.Value = Proveedor.Titular;
-                SqlCmd.Parameters.Add(ParTitular);
+                SqlParameter ParRepresentante = new SqlParameter();
+                ParRepresentante.ParameterName = "@Titular";
+                ParRepresentante.SqlDbType = SqlDbType.VarChar;
+                ParRepresentante.Size = 50;
+                ParRepresentante.Value = Proveedor.Titular;
+                SqlCmd.Parameters.Add(ParRepresentante);
 
                 SqlParameter ParPais = new SqlParameter();
-                ParPais.ParameterName = "@Idpais";
-                ParPais.SqlDbType = SqlDbType.Int;
-                ParPais.Value = Proveedor.Idpais;
+                ParPais.ParameterName = "@Pais";
+                ParPais.SqlDbType = SqlDbType.VarChar;
+                ParPais.Size = 20;
+                ParPais.Value = Proveedor.Pais;
                 SqlCmd.Parameters.Add(ParPais);
 
                 SqlParameter ParCiudad = new SqlParameter();
-                ParCiudad.ParameterName = "@Idciudad";
-                ParCiudad.SqlDbType = SqlDbType.Int;
-                ParCiudad.Value = Proveedor.Idciudad;
+                ParCiudad.ParameterName = "@Ciudad";
+                ParCiudad.SqlDbType = SqlDbType.VarChar;
+                ParCiudad.Size = 20;
+                ParCiudad.Value = Proveedor.Ciudad;
                 SqlCmd.Parameters.Add(ParCiudad);
 
                 SqlParameter ParTelefono = new SqlParameter();
@@ -233,12 +241,6 @@ namespace CapaDatos
                 ParFoto.SqlDbType = SqlDbType.Image;
                 ParFoto.Value = Proveedor.Foto;
                 SqlCmd.Parameters.Add(ParFoto);
-
-                SqlParameter ParEstado = new SqlParameter();
-                ParEstado.ParameterName = "@Idestado";
-                ParEstado.SqlDbType = SqlDbType.Int;
-                ParEstado.Value = Proveedor.Idestado;
-                SqlCmd.Parameters.Add(ParEstado);
 
                 SqlParameter ParAuto = new SqlParameter();
                 ParAuto.ParameterName = "@Auto";
