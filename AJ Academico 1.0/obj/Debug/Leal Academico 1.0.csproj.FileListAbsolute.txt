@@ -34,3 +34,21 @@ E:\Proyectos de Programacion\Leal Academico 1.0\AJ Academico 1.0\obj\Debug\Leal 
 E:\Proyectos de Programacion\Leal Academico 1.0\AJ Academico 1.0\obj\Debug\Leal Academico 1.0.csproj.CopyComplete
 E:\Proyectos de Programacion\Leal Academico 1.0\AJ Academico 1.0\obj\Debug\Leal Academico 1.0.exe
 E:\Proyectos de Programacion\Leal Academico 1.0\AJ Academico 1.0\obj\Debug\Leal Academico 1.0.pdb
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\AJ Academico 1.0\bin\Debug\Leal Academico 1.0.exe.config
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\AJ Academico 1.0\bin\Debug\Leal Academico 1.0.exe
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\AJ Academico 1.0\bin\Debug\Leal Academico 1.0.pdb
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\AJ Academico 1.0\bin\Debug\CapaPresentacion.dll
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\AJ Academico 1.0\bin\Debug\CapaNegocio.dll
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\AJ Academico 1.0\bin\Debug\CapaDatos.dll
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\AJ Academico 1.0\bin\Debug\CapaPresentacion.pdb
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\AJ Academico 1.0\bin\Debug\CapaNegocio.pdb
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\AJ Academico 1.0\bin\Debug\CapaDatos.pdb
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\AJ Academico 1.0\bin\Debug\CapaDatos.dll.config
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\AJ Academico 1.0\obj\Debug\Leal Academico 1.0.csprojAssemblyReference.cache
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\AJ Academico 1.0\obj\Debug\AJ_Academico_1._0.Form1.resources
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\AJ Academico 1.0\obj\Debug\Leal_Academico.Properties.Resources.resources
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\AJ Academico 1.0\obj\Debug\Leal Academico 1.0.csproj.GenerateResource.cache
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\AJ Academico 1.0\obj\Debug\Leal Academico 1.0.csproj.CoreCompileInputs.cache
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\AJ Academico 1.0\obj\Debug\Leal Academico 1.0.csproj.CopyComplete
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\AJ Academico 1.0\obj\Debug\Leal Academico 1.0.exe
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\AJ Academico 1.0\obj\Debug\Leal Academico 1.0.pdb

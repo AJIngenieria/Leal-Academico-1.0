@@ -49,8 +49,8 @@ namespace CapaPresentacion
                 this.TBDescripcion.BackColor = Color.FromArgb(187, 222, 251);
                 this.TBResponsable.ReadOnly = true;
                 this.TBResponsable.BackColor = Color.FromArgb(187, 222, 251);
-                this.CBCiudadB.Enabled = false;
-                this.CBCiudadB.BackColor = Color.FromArgb(187, 222, 251);
+                this.TBCiudad.Enabled = false;
+                this.TBCiudad.BackColor = Color.FromArgb(187, 222, 251);
                 this.CBZonas.Enabled = false;
                 this.CBZonas.BackColor = Color.FromArgb(187, 222, 251);
                 this.CBSucurzal.Enabled = false;
@@ -71,8 +71,8 @@ namespace CapaPresentacion
                 this.TBDescripcion.BackColor = Color.FromArgb(32, 178, 170);
                 this.TBResponsable.ReadOnly = false;
                 this.TBResponsable.BackColor = Color.FromArgb(32, 178, 170);
-                this.CBCiudadB.Enabled = true;
-                this.CBCiudadB.BackColor = Color.FromArgb(32, 178, 170);
+                this.TBCiudad.Enabled = true;
+                this.TBCiudad.BackColor = Color.FromArgb(32, 178, 170);
                 this.CBZonas.Enabled = true;
                 this.CBZonas.BackColor = Color.FromArgb(32, 178, 170);
                 this.CBSucurzal.Enabled = true;
@@ -90,7 +90,7 @@ namespace CapaPresentacion
             this.CBEstado.SelectedIndex = 0;
             this.TBDescripcion.Text = string.Empty;
             this.TBResponsable.Text = string.Empty;
-            this.CBCiudadB.Text = string.Empty;
+            this.TBCiudad.Text = string.Empty;
             this.CBZonas.SelectedIndex = 0;
             this.CBSucurzal.SelectedIndex = 0;
             this.TBDireccion1.Text = string.Empty;
@@ -172,10 +172,10 @@ namespace CapaPresentacion
                     MensajeError("Faltan Ingresar Algunos Datos, Estos Seran Remarcados");
                     TBDescripcion.BackColor = Color.FromArgb(250, 235, 215);
                 }
-                else if (this.CBCiudadB.Text == string.Empty)
+                else if (this.TBCiudad.Text == string.Empty)
                 {
                     MensajeError("Faltan Ingresar Algunos Datos, Estos Seran Remarcados");
-                    CBCiudadB.BackColor = Color.FromArgb(250, 235, 215);
+                    TBCiudad.BackColor = Color.FromArgb(250, 235, 215);
                 }
                 else if (this.CBZonas.Text == string.Empty)
                 {

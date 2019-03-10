@@ -43,8 +43,8 @@ namespace CapaPresentacion
                 this.CBEstado.BackColor = Color.FromArgb(187, 222, 251);
                 this.TBDescripcion.ReadOnly = true;
                 this.TBDescripcion.BackColor = Color.FromArgb(187, 222, 251);
-                this.CBProveedor.Enabled = false;
-                this.CBProveedor.BackColor = Color.FromArgb(187, 222, 251);
+                this.TBProveedor.Enabled = false;
+                this.TBProveedor.BackColor = Color.FromArgb(187, 222, 251);
             }
 
             else if (IsNuevo == true)
@@ -55,8 +55,8 @@ namespace CapaPresentacion
                 this.CBEstado.BackColor = Color.FromArgb(32, 178, 170);
                 this.TBDescripcion.ReadOnly = false;
                 this.TBDescripcion.BackColor = Color.FromArgb(32, 178, 170);
-                this.CBProveedor.Enabled = true;
-                this.CBProveedor.BackColor = Color.FromArgb(32, 178, 170);
+                this.TBProveedor.Enabled = true;
+                this.TBProveedor.BackColor = Color.FromArgb(32, 178, 170);
             }
         }
 
@@ -65,7 +65,7 @@ namespace CapaPresentacion
             this.TBMarca.Text = string.Empty;
             this.CBEstado.SelectedIndex = 0;
             this.TBDescripcion.Text = string.Empty;
-            this.CBProveedor.Text = string.Empty;
+            this.TBProveedor.Text = string.Empty;
         }
 
 
@@ -84,35 +84,16 @@ namespace CapaPresentacion
             }
         }
 
-        private void Combobox()
-        {
-            try
-            {
-                CBEstado.DataSource = fSistema_Estados.Mostrar();
-                CBEstado.ValueMember = "Idestado";
-                CBEstado.DisplayMember = "Estado";
-
-                CBProveedor.DataSource = fProduccion_Proveedor.Mostrar();
-                CBProveedor.ValueMember = "Idproveedor";
-                CBProveedor.DisplayMember = "Proveedor";
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message + ex.StackTrace);
-            }
-        }
-
         //Mensaje de confirmacion
         private void MensajeOk(string mensaje)
         {
-            MessageBox.Show(mensaje, "A&J Academico", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show(mensaje, "Leal Academico", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         //Mensaje de Error
         private void MensajeError(string mensaje)
         {
-            MessageBox.Show(mensaje, "A&J Academico - Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            MessageBox.Show(mensaje, "Leal Academico - Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
@@ -120,7 +101,6 @@ namespace CapaPresentacion
             this.IsNuevo = true;
             this.Botones();
             this.Habilitar();
-            this.Combobox();
             this.TBMarca.Focus();
         }
 
@@ -141,10 +121,10 @@ namespace CapaPresentacion
                     MensajeError("Faltan Ingresar Algunos Datos en la Pestaña 'Datos Basicos', Estos Seran Remarcados");
                     CBEstado.BackColor = Color.FromArgb(250, 235, 215);
                 }
-                else if (this.CBProveedor.Text == string.Empty)
+                else if (this.TBProveedor.Text == string.Empty)
                 {
                     MensajeError("Faltan Ingresar Algunos Datos en la Pestaña 'Datos Basicos', Estos Seran Remarcados");
-                    CBProveedor.BackColor = Color.FromArgb(250, 235, 215);
+                    TBProveedor.BackColor = Color.FromArgb(250, 235, 215);
                 }
                 else if (this.TBDescripcion.Text == string.Empty)
                 {
@@ -156,7 +136,7 @@ namespace CapaPresentacion
                 {
                     if (this.IsNuevo)
                     {
-                        rptaDatosBasicos = fProduccion_Marcas.Guardar_DatosBasicos(1, Convert.ToInt32(this.CBEstado.Text), Convert.ToInt32(this.CBProveedor.Text), this.TBDescripcion.Text);
+                        rptaDatosBasicos = fProduccion_Marcas.Guardar_DatosBasicos(1, Convert.ToInt32(this.CBEstado.Text), Convert.ToInt32(this.TBProveedor.Text), this.TBDescripcion.Text);
                     }
 
                     if (rptaDatosBasicos.Equals("OK"))
@@ -181,6 +161,36 @@ namespace CapaPresentacion
             {
                 MessageBox.Show(ex.Message + ex.StackTrace);
             }
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEliminar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TBBuscar_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void CHEliminar_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DGResultado_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void DGResultado_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
 
         private void btnNuevo_MouseDown(object sender, MouseEventArgs e)
@@ -212,5 +222,37 @@ namespace CapaPresentacion
         {
             btnGuardar.BackgroundImage = Properties.Resources.BR_Guardar;
         }
+
+        private void btnEditar_MouseDown(object sender, MouseEventArgs e)
+        {
+            btnEditar.BackgroundImage = Properties.Resources.BV_Editar;
+        }
+
+        private void btnEditar_MouseLeave(object sender, EventArgs e)
+        {
+            btnEditar.BackgroundImage = Properties.Resources.BV_Editar;
+        }
+
+        private void btnEditar_MouseMove(object sender, MouseEventArgs e)
+        {
+            btnEditar.BackgroundImage = Properties.Resources.BR_Editar;
+        }
+
+        private void btnEliminar_MouseDown(object sender, MouseEventArgs e)
+        {
+            btnEliminar.BackgroundImage = Properties.Resources.BV_Eliminar;
+        }
+
+        private void btnEliminar_MouseLeave(object sender, EventArgs e)
+        {
+            btnEliminar.BackgroundImage = Properties.Resources.BV_Eliminar;
+        }
+
+        private void btnEliminar_MouseMove(object sender, MouseEventArgs e)
+        {
+            btnEliminar.BackgroundImage = Properties.Resources.BR_Eliminar;
+        }
+
+        
     }
 }

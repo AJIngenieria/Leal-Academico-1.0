@@ -51,3 +51,10 @@ E:\Proyectos de Programacion\Leal Academico 1.0\CapaDatos\obj\Debug\CapaDatos.cs
 E:\Proyectos de Programacion\Leal Academico 1.0\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
 E:\Proyectos de Programacion\Leal Academico 1.0\CapaDatos\obj\Debug\CapaDatos.dll
 E:\Proyectos de Programacion\Leal Academico 1.0\CapaDatos\obj\Debug\CapaDatos.pdb
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\CapaDatos\bin\Debug\CapaDatos.dll.config
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\CapaDatos\bin\Debug\CapaDatos.dll
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\CapaDatos\bin\Debug\CapaDatos.pdb
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\CapaDatos\obj\Debug\CapaDatos.csprojAssemblyReference.cache
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\CapaDatos\obj\Debug\CapaDatos.csproj.CoreCompileInputs.cache
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\CapaDatos\obj\Debug\CapaDatos.dll
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\CapaDatos\obj\Debug\CapaDatos.pdb

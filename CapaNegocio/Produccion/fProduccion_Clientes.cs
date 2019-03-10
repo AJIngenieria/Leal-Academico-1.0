@@ -31,5 +31,13 @@ namespace CapaNegocio
 
             return Obj.Guardar_DatosBasicos(Obj);
         }
+
+        public static DataTable CodigoID_Solicitud(string filtro)
+        {
+            Conexion_Produccion_Clientes Obj = new Conexion_Produccion_Clientes();
+            Obj.Filtro = filtro;
+            return Obj.Codigo_ID(Obj);
+        }
+
     }
 }

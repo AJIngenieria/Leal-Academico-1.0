@@ -67,3 +67,13 @@ E:\Proyectos de Programacion\Leal Academico 1.0\CapaNegocio\obj\Debug\CapaNegoci
 E:\Proyectos de Programacion\Leal Academico 1.0\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
 E:\Proyectos de Programacion\Leal Academico 1.0\CapaNegocio\obj\Debug\CapaNegocio.dll
 E:\Proyectos de Programacion\Leal Academico 1.0\CapaNegocio\obj\Debug\CapaNegocio.pdb
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\CapaNegocio\bin\Debug\CapaNegocio.dll
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\CapaNegocio\bin\Debug\CapaNegocio.pdb
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\CapaNegocio\bin\Debug\CapaDatos.dll
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\CapaNegocio\bin\Debug\CapaDatos.pdb
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\CapaNegocio\bin\Debug\CapaDatos.dll.config
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\CapaNegocio\obj\Debug\CapaNegocio.csprojAssemblyReference.cache
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\CapaNegocio\obj\Debug\CapaNegocio.csproj.CoreCompileInputs.cache
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\CapaNegocio\obj\Debug\CapaNegocio.csproj.CopyComplete
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\CapaNegocio\obj\Debug\CapaNegocio.dll
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\CapaNegocio\obj\Debug\CapaNegocio.pdb

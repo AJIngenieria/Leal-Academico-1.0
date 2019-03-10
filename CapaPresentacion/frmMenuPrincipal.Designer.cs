@@ -219,6 +219,7 @@
             this.cuentasBancariasToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
             this.dotacionDeArticulosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registroToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.datosFinancierosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.datosDeEnvioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.academicoToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
@@ -293,7 +294,6 @@
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripLabel6 = new System.Windows.Forms.ToolStripLabel();
             this.toolStripLabel7 = new System.Windows.Forms.ToolStripLabel();
-            this.datosFinancierosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -318,7 +318,7 @@
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
             this.menuStrip.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
-            this.menuStrip.Size = new System.Drawing.Size(1395, 46);
+            this.menuStrip.Size = new System.Drawing.Size(1370, 46);
             this.menuStrip.TabIndex = 5;
             this.menuStrip.Text = "MenuStrip";
             // 
@@ -1752,6 +1752,13 @@
             this.registroToolStripMenuItem1.Text = "Datos Basicos";
             this.registroToolStripMenuItem1.Click += new System.EventHandler(this.registroToolStripMenuItem1_Click);
             // 
+            // datosFinancierosToolStripMenuItem1
+            // 
+            this.datosFinancierosToolStripMenuItem1.Name = "datosFinancierosToolStripMenuItem1";
+            this.datosFinancierosToolStripMenuItem1.Size = new System.Drawing.Size(189, 22);
+            this.datosFinancierosToolStripMenuItem1.Text = "Datos Financieros";
+            this.datosFinancierosToolStripMenuItem1.Click += new System.EventHandler(this.datosFinancierosToolStripMenuItem1_Click);
+            // 
             // datosDeEnvioToolStripMenuItem
             // 
             this.datosDeEnvioToolStripMenuItem.Name = "datosDeEnvioToolStripMenuItem";
@@ -2261,7 +2268,7 @@
             this.toolStripLabel7});
             this.toolStrip1.Location = new System.Drawing.Point(0, 468);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1395, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(1370, 25);
             this.toolStrip1.TabIndex = 6;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -2299,7 +2306,7 @@
             // 
             this.toolStripLabel4.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripLabel4.Name = "toolStripLabel4";
-            this.toolStripLabel4.Size = new System.Drawing.Size(84, 22);
+            this.toolStripLabel4.Size = new System.Drawing.Size(86, 22);
             this.toolStripLabel4.Text = "Base de Datos:";
             // 
             // toolStripLabel5
@@ -2317,7 +2324,7 @@
             // 
             this.toolStripLabel6.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.toolStripLabel6.Name = "toolStripLabel6";
-            this.toolStripLabel6.Size = new System.Drawing.Size(36, 22);
+            this.toolStripLabel6.Size = new System.Drawing.Size(37, 22);
             this.toolStripLabel6.Text = "Cede:";
             // 
             // toolStripLabel7
@@ -2326,22 +2333,15 @@
             this.toolStripLabel7.Size = new System.Drawing.Size(157, 22);
             this.toolStripLabel7.Text = "San Jose de los Campanos";
             // 
-            // datosFinancierosToolStripMenuItem1
-            // 
-            this.datosFinancierosToolStripMenuItem1.Name = "datosFinancierosToolStripMenuItem1";
-            this.datosFinancierosToolStripMenuItem1.Size = new System.Drawing.Size(189, 22);
-            this.datosFinancierosToolStripMenuItem1.Text = "Datos Financieros";
-            this.datosFinancierosToolStripMenuItem1.Click += new System.EventHandler(this.datosFinancierosToolStripMenuItem1_Click);
-            // 
             // frmMenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImage = global::CapaPresentacion.Properties.Resources.A_J_Academico;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1395, 493);
+            this.ClientSize = new System.Drawing.Size(1370, 493);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.menuStrip);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

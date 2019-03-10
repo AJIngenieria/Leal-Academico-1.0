@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.TBFiltroID = new System.Windows.Forms.TextBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.btnExaminar = new System.Windows.Forms.Button();
@@ -70,7 +71,6 @@
             this.CHEliminar = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
             this.TBBuscar = new System.Windows.Forms.TextBox();
-            this.TBFiltroID = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGResultados)).BeginInit();
@@ -118,17 +118,25 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Leal Academico - Registro de Productos";
             // 
+            // TBFiltroID
+            // 
+            this.TBFiltroID.Location = new System.Drawing.Point(154, 298);
+            this.TBFiltroID.Name = "TBFiltroID";
+            this.TBFiltroID.Size = new System.Drawing.Size(50, 21);
+            this.TBFiltroID.TabIndex = 7;
+            this.TBFiltroID.Text = "1";
+            // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(84, 244);
+            this.textBox1.Location = new System.Drawing.Point(84, 242);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(120, 21);
+            this.textBox1.Size = new System.Drawing.Size(110, 21);
             this.textBox1.TabIndex = 46;
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(6, 247);
+            this.label11.Location = new System.Drawing.Point(6, 245);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(32, 15);
             this.label11.TabIndex = 45;
@@ -202,15 +210,15 @@
             this.CBMarca.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CBMarca.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CBMarca.FormattingEnabled = true;
-            this.CBMarca.Location = new System.Drawing.Point(84, 157);
+            this.CBMarca.Location = new System.Drawing.Point(84, 155);
             this.CBMarca.Name = "CBMarca";
-            this.CBMarca.Size = new System.Drawing.Size(120, 23);
+            this.CBMarca.Size = new System.Drawing.Size(110, 23);
             this.CBMarca.TabIndex = 41;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(210, 23);
+            this.label9.Location = new System.Drawing.Point(200, 22);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(45, 15);
             this.label9.TabIndex = 15;
@@ -255,7 +263,7 @@
             this.btnNuevo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.btnNuevo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNuevo.Location = new System.Drawing.Point(6, 296);
+            this.btnNuevo.Location = new System.Drawing.Point(9, 296);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(75, 25);
             this.btnNuevo.TabIndex = 3;
@@ -274,9 +282,9 @@
             "-",
             "Activo",
             "Inactivo"});
-            this.CBEstado.Location = new System.Drawing.Point(261, 18);
+            this.CBEstado.Location = new System.Drawing.Point(251, 18);
             this.CBEstado.Name = "CBEstado";
-            this.CBEstado.Size = new System.Drawing.Size(73, 23);
+            this.CBEstado.Size = new System.Drawing.Size(83, 23);
             this.CBEstado.TabIndex = 16;
             // 
             // CBOfertable
@@ -313,7 +321,7 @@
             // 
             // TBUbicacion
             // 
-            this.TBUbicacion.Location = new System.Drawing.Point(84, 271);
+            this.TBUbicacion.Location = new System.Drawing.Point(84, 269);
             this.TBUbicacion.Name = "TBUbicacion";
             this.TBUbicacion.Size = new System.Drawing.Size(250, 21);
             this.TBUbicacion.TabIndex = 3;
@@ -322,9 +330,9 @@
             // 
             this.TBCodigoID.Location = new System.Drawing.Point(84, 20);
             this.TBCodigoID.Name = "TBCodigoID";
-            this.TBCodigoID.Size = new System.Drawing.Size(120, 21);
+            this.TBCodigoID.Size = new System.Drawing.Size(110, 21);
             this.TBCodigoID.TabIndex = 8;
-            this.TBCodigoID.Text = "01234567890";
+            this.TBCodigoID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // CBEmpacado
             // 
@@ -337,9 +345,9 @@
             "Carton",
             "No Aplicable",
             "Plastico"});
-            this.CBEmpacado.Location = new System.Drawing.Point(84, 186);
+            this.CBEmpacado.Location = new System.Drawing.Point(84, 184);
             this.CBEmpacado.Name = "CBEmpacado";
-            this.CBEmpacado.Size = new System.Drawing.Size(120, 23);
+            this.CBEmpacado.Size = new System.Drawing.Size(110, 23);
             this.CBEmpacado.TabIndex = 19;
             // 
             // CBImportado
@@ -437,9 +445,9 @@
             "Descechable",
             "Natural",
             "Quimico"});
-            this.CBGrupo.Location = new System.Drawing.Point(84, 215);
+            this.CBGrupo.Location = new System.Drawing.Point(84, 213);
             this.CBGrupo.Name = "CBGrupo";
-            this.CBGrupo.Size = new System.Drawing.Size(120, 23);
+            this.CBGrupo.Size = new System.Drawing.Size(110, 23);
             this.CBGrupo.TabIndex = 23;
             // 
             // label7
@@ -573,14 +581,6 @@
             this.TBBuscar.Size = new System.Drawing.Size(250, 21);
             this.TBBuscar.TabIndex = 0;
             this.TBBuscar.TextChanged += new System.EventHandler(this.TBBuscar_TextChanged);
-            // 
-            // TBFiltroID
-            // 
-            this.TBFiltroID.Location = new System.Drawing.Point(154, 298);
-            this.TBFiltroID.Name = "TBFiltroID";
-            this.TBFiltroID.Size = new System.Drawing.Size(50, 21);
-            this.TBFiltroID.TabIndex = 7;
-            this.TBFiltroID.Text = "1";
             // 
             // frmProduccion_Productos
             // 
