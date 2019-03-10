@@ -18,7 +18,7 @@ namespace AJ_Academico_1._0
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmMenuPrincipal());
+            Application.Run(new frmLogin());
         }
     }
 }

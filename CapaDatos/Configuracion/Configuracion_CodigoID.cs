@@ -28,122 +28,16 @@ namespace CapaDatos
         private string _Simbolo_Empleado;
         private string _Numero_Empleado;
 
-        public int Idcodigoid
-        {
-            get
-            {
-                return _Idcodigoid;
-            }
+        public int Idcodigoid { get => _Idcodigoid; set => _Idcodigoid = value; }
+        public string Auto { get => _Auto; set => _Auto = value; }
+        public string Filtro { get => _Filtro; set => _Filtro = value; }
+        public string Letra_Alumno { get => _Letra_Alumno; set => _Letra_Alumno = value; }
+        public string Simbolo_Alumno { get => _Simbolo_Alumno; set => _Simbolo_Alumno = value; }
+        public string Numero_Alumno { get => _Numero_Alumno; set => _Numero_Alumno = value; }
+        public string Letra_Empleado { get => _Letra_Empleado; set => _Letra_Empleado = value; }
+        public string Simbolo_Empleado { get => _Simbolo_Empleado; set => _Simbolo_Empleado = value; }
+        public string Numero_Empleado { get => _Numero_Empleado; set => _Numero_Empleado = value; }
 
-            set
-            {
-                _Idcodigoid = value;
-            }
-        }
-
-        public string Auto
-        {
-            get
-            {
-                return _Auto;
-            }
-
-            set
-            {
-                _Auto = value;
-            }
-        }
-
-        public string Filtro
-        {
-            get
-            {
-                return _Filtro;
-            }
-
-            set
-            {
-                _Filtro = value;
-            }
-        }
-
-        public string Letra_Alumno
-        {
-            get
-            {
-                return _Letra_Alumno;
-            }
-
-            set
-            {
-                _Letra_Alumno = value;
-            }
-        }
-
-        public string Simbolo_Alumno
-        {
-            get
-            {
-                return _Simbolo_Alumno;
-            }
-
-            set
-            {
-                _Simbolo_Alumno = value;
-            }
-        }
-
-        public string Numero_Alumno
-        {
-            get
-            {
-                return _Numero_Alumno;
-            }
-
-            set
-            {
-                _Numero_Alumno = value;
-            }
-        }
-
-        public string Letra_Empleado
-        {
-            get
-            {
-                return _Letra_Empleado;
-            }
-
-            set
-            {
-                _Letra_Empleado = value;
-            }
-        }
-
-        public string Simbolo_Empleado
-        {
-            get
-            {
-                return _Simbolo_Empleado;
-            }
-
-            set
-            {
-                _Simbolo_Empleado = value;
-            }
-        }
-
-        public string Numero_Empleado
-        {
-            get
-            {
-                return _Numero_Empleado;
-            }
-
-            set
-            {
-                _Numero_Empleado = value;
-            }
-        }
 
         //Constructor Vacio
         public Conexion_Configuracion_CodigoID()

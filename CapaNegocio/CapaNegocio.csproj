@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CapaNegocio</RootNamespace>
     <AssemblyName>CapaNegocio</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -55,6 +56,7 @@
     <Compile Include="Biblioteca\fBiblioteca_Editorial.cs" />
     <Compile Include="Biblioteca\fBiblioteca_Libros.cs" />
     <Compile Include="Biblioteca\fBiblioteca_Prestamos.cs" />
+    <Compile Include="Configuracion\fConfiguracion_Equipos.cs" />
     <Compile Include="fConfiguracion_CodigoID.cs" />
     <Compile Include="Gestion\fGestion_DatosMedicos.cs" />
     <Compile Include="Gestion\fGestion_DatosPersonales.cs" />
@@ -68,16 +70,16 @@
     <Compile Include="Sistema\fSistema_Estados.cs" />
     <Compile Include="Sistema\fSistema_Sucurzal.cs" />
     <Compile Include="Produccion\fProduccion_Unidad.cs" />
-    <Compile Include="Sistema\fSistema_Academico_Bitacora.cs" />
+    <Compile Include="Sistema\fSistema_Bitacora.cs" />
     <Compile Include="Sistema\fSistema_Gestion_Roles.cs" />
     <Compile Include="Sistema\fSistema_Usuarios.cs" />
-    <Compile Include="Sistema\fSistema_Academico_AreaAcademica.cs" />
+    <Compile Include="Sistema\fSistema_AreaAcademica.cs" />
     <Compile Include="Academico\fAcademico_Aulas.cs" />
-    <Compile Include="Sistema\fSistema_Academico_Año.cs" />
-    <Compile Include="Sistema\fSistema_Academico_CodigoID.cs" />
+    <Compile Include="Sistema\fSistema_Año.cs" />
+    <Compile Include="Sistema\fSistema_CodigoID.cs" />
     <Compile Include="Academico\fAcademico_Cursos.cs" />
-    <Compile Include="Sistema\fSistema_Academico_Jornadas.cs" />
-    <Compile Include="Sistema\fSistema_Academico_Periodos.cs" />
+    <Compile Include="Sistema\fSistema_Jornadas.cs" />
+    <Compile Include="Sistema\fSistema_Periodos.cs" />
     <Compile Include="Academico\fAcademico_OrdenDeMatricula.cs" />
     <Compile Include="fTesoreria_ValoresAcademicos.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

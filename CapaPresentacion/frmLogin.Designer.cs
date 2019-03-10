@@ -98,6 +98,7 @@
             this.TBUsuario.Name = "TBUsuario";
             this.TBUsuario.Size = new System.Drawing.Size(178, 21);
             this.TBUsuario.TabIndex = 5;
+            this.TBUsuario.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TBUsuario_KeyPress);
             // 
             // label3
             // 

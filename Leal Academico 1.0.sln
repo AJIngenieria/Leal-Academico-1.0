@@ -19,7 +19,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Diseño_CapaPresentacion", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Leal Academico_Principal", "Leal Academico_Principal", "{B0B34986-7CE1-4C2C-85BF-CFF9BE448825}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuracion", "Configuracion", "{22FC207E-C952-45F7-B2ED-36AF9864B96C}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuracion_SETUP", "Configuracion_SETUP", "{22FC207E-C952-45F7-B2ED-36AF9864B96C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Leal_Configuracion", "Leal_Configuracion\Leal_Configuracion.csproj", "{DC634CE7-E6DA-4D08-87F1-B6339C34C0FD}"
 EndProject

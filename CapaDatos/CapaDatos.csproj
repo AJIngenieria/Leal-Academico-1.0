@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CapaDatos</RootNamespace>
     <AssemblyName>CapaDatos</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -64,7 +65,8 @@
     <Compile Include="Biblioteca\Conexion_Biblioteca_DetalleDePrestamos.cs" />
     <Compile Include="Biblioteca\Conexion_Biblioteca_Libros.cs" />
     <Compile Include="Biblioteca\Conexion_Biblioteca_Prestamos.cs" />
-    <Compile Include="Conexion_Configuracion_CodigoID.cs" />
+    <Compile Include="Configuracion\Conexion_Configuracion_Equipos.cs" />
+    <Compile Include="Configuracion\Configuracion_CodigoID.cs" />
     <Compile Include="Financiera\Conexion_Financiera_Consignaciones.cs" />
     <Compile Include="Financiera\Conexion_Financiera_CuentasBancarias.cs" />
     <Compile Include="Financiera\Conexion_Financiera_Transferencias.cs" />
@@ -93,7 +95,7 @@
     <Compile Include="Academico\Conexion_Academico_OrdenDeMatricula.cs" />
     <Compile Include="Academico\Conexion_Academico_Jornadas.cs" />
     <Compile Include="Sistema\Conexion_Sistema_Periodos.cs" />
-    <Compile Include="Conexion_BaseDeDatos.cs" />
+    <Compile Include="Configuracion\Conexion_BaseDeDatos.cs" />
     <Compile Include="Sistema\Conexion_Sistema_AreaAcademica.cs" />
     <Compile Include="Academico\Conexion_Academico_Aula.cs" />
     <Compile Include="Sistema\Conexion_Sistema_Año.cs" />

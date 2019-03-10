@@ -654,3 +654,7 @@ E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\CapaPresentacion\obj\Debug\Cap
 E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.CopyComplete
 E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\CapaPresentacion\obj\Debug\CapaPresentacion.dll
 E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\CapaPresentacion\bin\Debug\CapaPresentacion.dll.config
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\CapaPresentacion\bin\Debug\Leal_Configuracion.exe
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\CapaPresentacion\bin\Debug\Leal_Configuracion.pdb
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\CapaPresentacion\bin\Debug\Leal_Configuracion.exe.config

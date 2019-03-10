@@ -137,6 +137,7 @@
             this.btnExaminar.Size = new System.Drawing.Size(25, 21);
             this.btnExaminar.TabIndex = 45;
             this.btnExaminar.UseVisualStyleBackColor = true;
+            this.btnExaminar.Click += new System.EventHandler(this.btnExaminar_Click);
             // 
             // textBox11
             // 

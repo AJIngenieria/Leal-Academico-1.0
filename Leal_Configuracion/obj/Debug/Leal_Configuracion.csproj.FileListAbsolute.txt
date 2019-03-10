@@ -1,0 +1,16 @@
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\Leal_Configuracion\bin\Debug\Leal_Configuracion.exe.config
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\Leal_Configuracion\bin\Debug\Leal_Configuracion.exe
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\Leal_Configuracion\bin\Debug\Leal_Configuracion.pdb
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\Leal_Configuracion\obj\Debug\Leal_Configuracion.csprojAssemblyReference.cache
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\Leal_Configuracion\obj\Debug\Leal_Configuracion.frmSETUP_Equipos.resources
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\Leal_Configuracion\obj\Debug\Leal_Configuracion.Properties.Resources.resources
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\Leal_Configuracion\obj\Debug\Leal_Configuracion.csproj.GenerateResource.cache
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\Leal_Configuracion\obj\Debug\Leal_Configuracion.csproj.CoreCompileInputs.cache
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\Leal_Configuracion\obj\Debug\Leal_Configuracion.exe
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\Leal_Configuracion\obj\Debug\Leal_Configuracion.pdb
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\Leal_Configuracion\bin\Debug\CapaNegocio.dll
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\Leal_Configuracion\bin\Debug\CapaDatos.dll
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\Leal_Configuracion\bin\Debug\CapaNegocio.pdb
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\Leal_Configuracion\bin\Debug\CapaDatos.pdb
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\Leal_Configuracion\bin\Debug\CapaDatos.dll.config
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\Leal_Configuracion\obj\Debug\Leal_Configuracion.csproj.CopyComplete

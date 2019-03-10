@@ -67,17 +67,22 @@ namespace CapaPresentacion
 
         }
 
-        private void DGResultado_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void btnEditar_Click(object sender, EventArgs e)
         {
 
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnExaminar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DGResultado_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
@@ -96,5 +101,7 @@ namespace CapaPresentacion
         {
 
         }
+
+        
     }
 }

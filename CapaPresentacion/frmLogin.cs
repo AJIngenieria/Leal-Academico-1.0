@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using Leal_Configuracion;
+
 
 namespace CapaPresentacion
 {
@@ -24,7 +26,9 @@ namespace CapaPresentacion
 
             this.textBox1.ReadOnly = true;
             this.textBox5.ReadOnly = true;
+
         }
+
 
         private void TBContraseña_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -49,11 +53,34 @@ namespace CapaPresentacion
                         this.Hide();
                     }
                 }
+
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message + ex.StackTrace);
             }
+        }
+
+        private void TBUsuario_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            try
+            {
+                if (e.KeyChar == Convert.ToChar(Keys.Enter))
+                {
+                    this.TBContraseña.Focus();
+                }
+                else if (e.KeyChar == Convert.ToChar(Keys.Escape))
+                {
+                    frmSETUP_Equipos frmSETUP_Equipos = new frmSETUP_Equipos();
+                    frmSETUP_Equipos.Show();
+                    this.Hide();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
+            
         }
     }
 }
