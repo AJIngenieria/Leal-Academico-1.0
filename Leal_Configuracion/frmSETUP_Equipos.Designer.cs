@@ -73,7 +73,7 @@
             this.groupBox1.Size = new System.Drawing.Size(330, 164);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Text = "Leal Academico - Registro de Equipos";
             // 
             // TBHdd
             // 
@@ -172,33 +172,43 @@
             // 
             // btnNuevo
             // 
+            this.btnNuevo.BackgroundImage = global::Leal_Configuracion.Properties.Resources.BV_Nuevo;
+            this.btnNuevo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnNuevo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNuevo.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnNuevo.FlatAppearance.BorderSize = 0;
             this.btnNuevo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.btnNuevo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNuevo.Location = new System.Drawing.Point(9, 133);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(75, 25);
             this.btnNuevo.TabIndex = 10;
-            this.btnNuevo.Text = "Nuevo";
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
+            this.btnNuevo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnNuevo_MouseDown);
+            this.btnNuevo.MouseLeave += new System.EventHandler(this.btnNuevo_MouseLeave);
+            this.btnNuevo.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnNuevo_MouseMove);
             // 
             // btnGuardar
             // 
+            this.btnGuardar.BackgroundImage = global::Leal_Configuracion.Properties.Resources.BV_Guardar;
+            this.btnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnGuardar.FlatAppearance.BorderSize = 0;
             this.btnGuardar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.btnGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Location = new System.Drawing.Point(248, 133);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(75, 25);
             this.btnGuardar.TabIndex = 11;
-            this.btnGuardar.Text = "Guardar";
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
+            this.btnGuardar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnGuardar_MouseDown);
+            this.btnGuardar.MouseLeave += new System.EventHandler(this.btnGuardar_MouseLeave);
+            this.btnGuardar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnGuardar_MouseMove);
             // 
             // groupBox2
             // 
@@ -212,13 +222,19 @@
             this.groupBox2.Size = new System.Drawing.Size(511, 164);
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
+            this.groupBox2.Text = "Leal Academico - Consulta de Equipos Registrados";
             // 
             // DGResultado
             // 
+            this.DGResultado.AllowUserToAddRows = false;
+            this.DGResultado.AllowUserToDeleteRows = false;
+            this.DGResultado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.DGResultado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGResultado.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DGResultado.Location = new System.Drawing.Point(6, 62);
             this.DGResultado.Name = "DGResultado";
+            this.DGResultado.ReadOnly = true;
+            this.DGResultado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DGResultado.Size = new System.Drawing.Size(500, 96);
             this.DGResultado.TabIndex = 0;
             this.DGResultado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGResultado_CellContentClick);
@@ -277,7 +293,8 @@
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "frmSETUP_Equipos";
-            this.Text = "frmSETUP_Equipos";
+            this.Text = "Leal Academico - Equipos en Red";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmSETUP_Equipos_FormClosing);
             this.Load += new System.EventHandler(this.frmSETUP_Equipos_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

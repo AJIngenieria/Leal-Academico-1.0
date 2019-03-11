@@ -19,83 +19,18 @@ namespace CapaDatos
         private string _Auto;
         private string _Filtro;
 
-        public int Idcodigoid
-        {
-            get
-            {
-                return _Idcodigoid;
-            }
-
-            set
-            {
-                _Idcodigoid = value;
-            }
-        }
-
-        public string Numero
-        {
-            get
-            {
-                return _Numero;
-            }
-
-            set
-            {
-                _Numero = value;
-            }
-        }
-
-        public string Letras
-        {
-            get
-            {
-                return _Letras;
-            }
-
-            set
-            {
-                _Letras = value;
-            }
-        }
-
-        public string Auto
-        {
-            get
-            {
-                return _Auto;
-            }
-
-            set
-            {
-                _Auto = value;
-            }
-        }
-
-        public string Filtro
-        {
-            get
-            {
-                return _Filtro;
-            }
-
-            set
-            {
-                _Filtro = value;
-            }
-        }
-
-        public string Simbolo
-        {
-            get
-            {
-                return _Simbolo;
-            }
-
-            set
-            {
-                _Simbolo = value;
-            }
-        }
+        public int Idcodigoid { get => Idcodigoid1; set => Idcodigoid1 = value; }
+        public string Numero { get => Numero1; set => Numero1 = value; }
+        public string Letras { get => Letras1; set => Letras1 = value; }
+        public string Simbolo { get => Simbolo1; set => Simbolo1 = value; }
+        public string Auto { get => Auto1; set => Auto1 = value; }
+        public string Filtro { get => Filtro1; set => Filtro1 = value; }
+        public int Idcodigoid1 { get => _Idcodigoid; set => _Idcodigoid = value; }
+        public string Numero1 { get => _Numero; set => _Numero = value; }
+        public string Letras1 { get => _Letras; set => _Letras = value; }
+        public string Simbolo1 { get => _Simbolo; set => _Simbolo = value; }
+        public string Auto1 { get => _Auto; set => _Auto = value; }
+        public string Filtro1 { get => _Filtro; set => _Filtro = value; }
 
         public Conexion_Sistema_CodigoID()
         {

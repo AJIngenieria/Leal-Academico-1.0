@@ -59,6 +59,14 @@ namespace CapaNegocio
             return new Conexion_Produccion_Proveedor().Mostrar();
         }
 
+        //Método que se encarga de llamar al método Eliminar
+        public static string Eliminar(int Idproveedor)
+        {
+            Conexion_Produccion_Proveedor Obj = new Conexion_Produccion_Proveedor();
+            Obj.Idproveedor = Idproveedor;
+            return Obj.Eliminar(Obj);
+        }
+
         public static DataTable CodigoID_Solicitud(string filtro)
         {
             Conexion_Produccion_Proveedor Obj = new Conexion_Produccion_Proveedor();

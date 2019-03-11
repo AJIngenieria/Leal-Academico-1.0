@@ -64,13 +64,13 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.TBResultado = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
             this.CHEliminar = new System.Windows.Forms.CheckBox();
             this.TBBuscar = new System.Windows.Forms.TextBox();
-            this.btnEliminar = new System.Windows.Forms.Button();
-            this.btnEditar = new System.Windows.Forms.Button();
             this.DGResultado = new System.Windows.Forms.DataGridView();
+            this.Eliminar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PanelLogo)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -82,6 +82,7 @@
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.groupBox1.Controls.Add(this.TBResultado);
             this.groupBox1.Controls.Add(this.TBFiltroID);
             this.groupBox1.Controls.Add(this.TBCiudad);
             this.groupBox1.Controls.Add(this.TBPais);
@@ -158,7 +159,6 @@
             this.TBPais.Name = "TBPais";
             this.TBPais.Size = new System.Drawing.Size(250, 21);
             this.TBPais.TabIndex = 48;
-            this.TBPais.Text = "COLOMBIA";
             // 
             // TBCodigoID
             // 
@@ -325,12 +325,14 @@
             this.CBTipodeproveedor.FormattingEnabled = true;
             this.CBTipodeproveedor.Items.AddRange(new object[] {
             "-",
+            "Internacional",
             "Juridico",
             "Natural"});
             this.CBTipodeproveedor.Location = new System.Drawing.Point(79, 22);
             this.CBTipodeproveedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.CBTipodeproveedor.Name = "CBTipodeproveedor";
             this.CBTipodeproveedor.Size = new System.Drawing.Size(131, 23);
+            this.CBTipodeproveedor.Sorted = true;
             this.CBTipodeproveedor.TabIndex = 24;
             // 
             // TBTelefono
@@ -574,8 +576,6 @@
             this.groupBox2.Controls.Add(this.lblTotal);
             this.groupBox2.Controls.Add(this.CHEliminar);
             this.groupBox2.Controls.Add(this.TBBuscar);
-            this.groupBox2.Controls.Add(this.btnEliminar);
-            this.groupBox2.Controls.Add(this.btnEditar);
             this.groupBox2.Controls.Add(this.DGResultado);
             this.groupBox2.Location = new System.Drawing.Point(532, 13);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -585,6 +585,16 @@
             this.groupBox2.TabIndex = 2;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Leal Academico - Consulta de Proveedores Registrados";
+            // 
+            // TBResultado
+            // 
+            this.TBResultado.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TBResultado.Location = new System.Drawing.Point(324, 347);
+            this.TBResultado.Name = "TBResultado";
+            this.TBResultado.Size = new System.Drawing.Size(100, 21);
+            this.TBResultado.TabIndex = 56;
             // 
             // label11
             // 
@@ -616,6 +626,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.CHEliminar.AutoSize = true;
+            this.CHEliminar.BackColor = System.Drawing.Color.White;
             this.CHEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.CHEliminar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.CHEliminar.FlatAppearance.BorderSize = 0;
@@ -628,7 +639,7 @@
             this.CHEliminar.Size = new System.Drawing.Size(69, 19);
             this.CHEliminar.TabIndex = 53;
             this.CHEliminar.Text = "Eliminar";
-            this.CHEliminar.UseVisualStyleBackColor = true;
+            this.CHEliminar.UseVisualStyleBackColor = false;
             this.CHEliminar.CheckedChanged += new System.EventHandler(this.CHEliminar_CheckedChanged);
             // 
             // TBBuscar
@@ -643,56 +654,6 @@
             this.TBBuscar.TabIndex = 52;
             this.TBBuscar.TextChanged += new System.EventHandler(this.TBBuscar_TextChanged);
             // 
-            // btnEliminar
-            // 
-            this.btnEliminar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEliminar.BackColor = System.Drawing.SystemColors.Control;
-            this.btnEliminar.BackgroundImage = global::CapaPresentacion.Properties.Resources.BV_Eliminar;
-            this.btnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEliminar.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnEliminar.FlatAppearance.BorderSize = 0;
-            this.btnEliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminar.Location = new System.Drawing.Point(514, 347);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(75, 25);
-            this.btnEliminar.TabIndex = 51;
-            this.btnEliminar.UseVisualStyleBackColor = false;
-            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
-            this.btnEliminar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnEliminar_MouseDown);
-            this.btnEliminar.MouseLeave += new System.EventHandler(this.btnEliminar_MouseLeave);
-            this.btnEliminar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnEliminar_MouseMove);
-            // 
-            // btnEditar
-            // 
-            this.btnEditar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEditar.BackColor = System.Drawing.SystemColors.Control;
-            this.btnEditar.BackgroundImage = global::CapaPresentacion.Properties.Resources.BV_Editar;
-            this.btnEditar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEditar.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnEditar.FlatAppearance.BorderSize = 0;
-            this.btnEditar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.btnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditar.Location = new System.Drawing.Point(7, 347);
-            this.btnEditar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(75, 25);
-            this.btnEditar.TabIndex = 50;
-            this.btnEditar.UseVisualStyleBackColor = false;
-            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
-            this.btnEditar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnEditar_MouseDown);
-            this.btnEditar.MouseLeave += new System.EventHandler(this.btnEditar_MouseLeave);
-            this.btnEditar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnEditar_MouseMove);
-            // 
             // DGResultado
             // 
             this.DGResultado.AllowUserToAddRows = false;
@@ -703,6 +664,8 @@
             this.DGResultado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.DGResultado.BackgroundColor = System.Drawing.Color.White;
             this.DGResultado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DGResultado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Eliminar});
             this.DGResultado.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DGResultado.GridColor = System.Drawing.SystemColors.Highlight;
             this.DGResultado.Location = new System.Drawing.Point(6, 62);
@@ -710,8 +673,18 @@
             this.DGResultado.Name = "DGResultado";
             this.DGResultado.ReadOnly = true;
             this.DGResultado.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGResultado.Size = new System.Drawing.Size(583, 280);
+            this.DGResultado.Size = new System.Drawing.Size(586, 310);
             this.DGResultado.TabIndex = 0;
+            this.DGResultado.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGResultado_CellContentClick);
+            this.DGResultado.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGResultado_CellDoubleClick);
+            this.DGResultado.KeyDown += new System.Windows.Forms.KeyEventHandler(this.DGResultado_KeyDown);
+            // 
+            // Eliminar
+            // 
+            this.Eliminar.HeaderText = "Eliminar";
+            this.Eliminar.Name = "Eliminar";
+            this.Eliminar.ReadOnly = true;
+            this.Eliminar.Width = 59;
             // 
             // frmProduccion_Proveedor
             // 
@@ -777,13 +750,13 @@
         private System.Windows.Forms.TextBox TBPais;
         private System.Windows.Forms.TextBox TBCiudad;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button btnEliminar;
-        private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.DataGridView DGResultado;
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.CheckBox CHEliminar;
         private System.Windows.Forms.TextBox TBBuscar;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox TBFiltroID;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn Eliminar;
+        private System.Windows.Forms.TextBox TBResultado;
     }
 }

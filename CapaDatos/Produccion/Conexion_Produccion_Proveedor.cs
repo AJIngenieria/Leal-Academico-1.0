@@ -324,6 +324,49 @@ namespace CapaDatos
             return DtResultado;
         }
 
+        public string Eliminar(Conexion_Produccion_Proveedor Proveedor)
+        {
+            string Rpta = "";
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                //1. Establecer la cadena de conexión
+                SqlCon.ConnectionString = Conexion_BaseDeDatos.Cn;
+                //2. Abrir la conexión de la BD
+                SqlCon.Open();
+                //3. Establecer el comando
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "Produccion.Eliminar_Proveedor";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+                //4. Agregar los parámetros al comando
+                //Establecemos los valores para el parámetro
+                //@Idproveedor del Procedimiento Almacenado
+
+                SqlParameter ParIdproveedor = new SqlParameter();
+                ParIdproveedor.ParameterName = "@Idproveedor";
+                ParIdproveedor.SqlDbType = SqlDbType.Int;
+                ParIdproveedor.Value = Proveedor.Idproveedor;
+                SqlCmd.Parameters.Add(ParIdproveedor);
+
+                //Agregamos el parámetro al comando
+                //5. Ejecutamos el commando
+                Rpta = SqlCmd.ExecuteNonQuery() == 1 ? "OK" : "No se pudo eliminar el registro";
+
+            }
+            catch (Exception ex)
+            {
+                Rpta = ex.Message;
+            }
+            finally
+            {
+                //6. Cerramos la conexión con la BD
+                if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
+            }
+            return Rpta;
+        }
+
         public DataTable CodigoID_Solicitud(Conexion_Produccion_Proveedor CodigoID)
         {
             DataTable DtResultado = new DataTable("Produccion.Proveedor");

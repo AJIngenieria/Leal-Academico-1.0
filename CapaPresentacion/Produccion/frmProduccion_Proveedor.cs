@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+using System.Data;
 using CapaNegocio;
 
 namespace CapaPresentacion
@@ -36,7 +37,7 @@ namespace CapaPresentacion
             this.CrearTabla();
 
             //Ocultar
-            this.btnEliminar.Visible = false;
+            //this.btnEliminar.Visible = false;
             this.TBFiltroID.Visible = false;
         }
 
@@ -60,9 +61,9 @@ namespace CapaPresentacion
                 this.CBEstado.BackColor = Color.FromArgb(187, 222, 251);
                 this.TBRepresentante.ReadOnly = true;
                 this.TBRepresentante.BackColor = Color.FromArgb(187, 222, 251);
-                this.TBPais.Enabled = false;
+                this.TBPais.ReadOnly = true;
                 this.TBPais.BackColor = Color.FromArgb(187, 222, 251);
-                this.TBCiudad.Enabled = false;
+                this.TBCiudad.ReadOnly = true;
                 this.TBCiudad.BackColor = Color.FromArgb(187, 222, 251);
                 this.TBDireccion1.ReadOnly = true;
                 this.TBDireccion1.BackColor = Color.FromArgb(187, 222, 251);
@@ -162,15 +163,19 @@ namespace CapaPresentacion
 
             if (TBBuscar.Text == "")
             {
-                btnEditar.Visible = false;
+                //btnEditar.Visible = false;
                 DGResultado.Enabled = false;
+
+                //DGResultado.DataSource = null;
+                //DGResultado.Refresh();
+
             }
             //Si el texboxt esta LLENO Habilitara el Boton editar
             //Y la tabla de resultados
 
             else if (TBBuscar.Text != "")
             {
-                btnEditar.Visible = true;
+                //btnEditar.Visible = true;
                 DGResultado.Enabled = true;
                 this.Consulta();
             }
@@ -237,8 +242,9 @@ namespace CapaPresentacion
 
                 //Despues de realizar la consulta se procede
                 //A darle colores o fondo a los botones Eliminar y Editar
-                btnEliminar.BackgroundImage = Properties.Resources.BV_Eliminar;
-                btnEditar.BackgroundImage = Properties.Resources.BV_Editar;
+
+                //btnEliminar.BackgroundImage = Properties.Resources.BV_Eliminar;
+                btnNuevo.BackgroundImage = Properties.Resources.BV_Editar;
 
 
             }
@@ -360,7 +366,55 @@ namespace CapaPresentacion
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
+            try
+            {
+                double Resultado;
+                TBResultado.Text = Convert.ToString(DGResultado.Rows.Count);
+                Resultado = Convert.ToDouble(TBResultado.Text);
 
+                if (Resultado == 0)
+                {
+                    MessageBox.Show("Actualmente no se Encuentran Registros en la Base de Datos", "Sistema General Instituto Fundecar", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                }
+
+                else
+                {
+                    DialogResult Opcion;
+                    Opcion = MessageBox.Show("Desea Eliminar el Registro Seleccionado", "Sistema General Instituto Fundecar", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+
+                    if (Opcion == DialogResult.OK)
+                    {
+                        string Codigo;
+                        string Rpta = "";
+
+                        foreach (DataGridViewRow row in DGResultado.Rows)
+                        {
+                            if (Convert.ToBoolean(row.Cells[0].Value))
+                            {
+                                Codigo = Convert.ToString(row.Cells[1].Value);
+                                Rpta = fProduccion_Proveedor.Eliminar(Convert.ToInt32(Codigo));
+
+                                if (Rpta.Equals("OK"))
+                                {
+                                    this.MensajeOk("Articulo Eliminado Correctamente");
+                                }
+                                else
+                                {
+                                    this.MensajeError(Rpta);
+                                }
+
+                            }
+                        }
+                        this.CHEliminar.Checked = false;
+                    }
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
         }
 
         private void PanelLogo_Click(object sender, EventArgs e)
@@ -401,11 +455,11 @@ namespace CapaPresentacion
         {
             if (CHEliminar.Checked == true)
             {
-                btnEliminar.Visible = true;
+                this.DGResultado.Columns[0].Visible = true;
             }
             else if (CHEliminar.Checked == false)
             {
-                btnEliminar.Visible = false;
+                this.DGResultado.Columns[0].Visible = false;
             }
         }     
 
@@ -439,36 +493,77 @@ namespace CapaPresentacion
             btnGuardar.BackgroundImage = Properties.Resources.BR_Guardar;
         }
 
-        private void btnEditar_MouseDown(object sender, MouseEventArgs e)
+        private void DGResultado_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            btnEditar.BackgroundImage = Properties.Resources.BV_Editar;
+            if (e.ColumnIndex == DGResultado.Columns["Eliminar"].Index)
+            {
+                DataGridViewCheckBoxCell CHEliminar = (DataGridViewCheckBoxCell)DGResultado.Rows[e.RowIndex].Cells["Eliminar"];
+                CHEliminar.Value = !Convert.ToBoolean(CHEliminar.Value);
+            }
         }
 
-        private void btnEditar_MouseLeave(object sender, EventArgs e)
+        private void DGResultado_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            btnEditar.BackgroundImage = Properties.Resources.BV_Editar;
+            //this.txtIdcategoria.Text = Convert.ToString(this.datalistado.CurrentRow.Cells["idcategoria"].Value);
+            //this.txtNombre.Text = Convert.ToString(this.datalistado.CurrentRow.Cells["nombre"].Value);
+            //this.txtDescripcion.Text = Convert.ToString(this.datalistado.CurrentRow.Cells["descripcion"].Value);
+            //this.tabControl1.SelectedIndex = 1;
         }
 
-        private void btnEditar_MouseMove(object sender, MouseEventArgs e)
+        private void DGResultado_KeyDown(object sender, KeyEventArgs e)
         {
-            btnEditar.BackgroundImage = Properties.Resources.BR_Editar;
-        }
+            try
+            {
+                if (e.KeyValue == Convert.ToChar(Keys.Delete))
+                {
+                    double Resultado;
+                    TBResultado.Text = Convert.ToString(DGResultado.Rows.Count);
+                    Resultado = Convert.ToDouble(TBResultado.Text);
 
-        private void btnEliminar_MouseDown(object sender, MouseEventArgs e)
-        {
-            btnEliminar.BackgroundImage = Properties.Resources.BV_Eliminar;
-        }
+                    if (Resultado == 0)
+                    {
+                        MessageBox.Show("Actualmente no se Encuentran Registros en la Base de Datos", "Leal Academico", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+                    }
 
-        private void btnEliminar_MouseLeave(object sender, EventArgs e)
-        {
-            btnEliminar.BackgroundImage = Properties.Resources.BV_Eliminar;
-        }
+                    else
+                    {
+                        DialogResult Opcion;
+                        Opcion = MessageBox.Show("Desea Eliminar el Registro Seleccionado", "Leal Academico", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
 
-        private void btnEliminar_MouseMove(object sender, MouseEventArgs e)
-        {
-            btnEliminar.BackgroundImage = Properties.Resources.BR_Eliminar;
-        }
+                        if (Opcion == DialogResult.OK)
+                        {
+                            string Codigo;
+                            string Rpta = "";
 
-        
+                            foreach (DataGridViewRow row in DGResultado.Rows)
+                            {
+                                if (Convert.ToBoolean(row.Cells[0].Value))
+                                {
+                                    Codigo = Convert.ToString(row.Cells[1].Value);
+                                    Rpta = fProduccion_Proveedor.Eliminar(Convert.ToInt32(Codigo));
+
+                                    if (Rpta.Equals("OK"))
+                                    {
+                                        this.MensajeOk("Articulo Eliminado Correctamente");
+                                    }
+                                    else
+                                    {
+                                        this.MensajeError(Rpta);
+                                    }
+
+                                }
+                            }
+                            this.CHEliminar.Checked = false;
+                            this.TBBuscar.Text = string.Empty;
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
+            
+        }
     }
 }

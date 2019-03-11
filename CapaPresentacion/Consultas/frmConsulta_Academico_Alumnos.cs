@@ -16,5 +16,10 @@ namespace CapaPresentacion
         {
             InitializeComponent();
         }
+
+        private void frmConsulta_Academico_Alumnos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

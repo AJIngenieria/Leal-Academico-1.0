@@ -289,5 +289,48 @@ namespace Leal_Configuracion
         {
 
         }
+
+        private void frmSETUP_Equipos_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            try
+            {
+                Application.Exit();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
+
+        }
+
+        private void btnNuevo_MouseDown(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void btnNuevo_MouseLeave(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnNuevo_MouseMove(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void btnGuardar_MouseDown(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void btnGuardar_MouseLeave(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGuardar_MouseMove(object sender, MouseEventArgs e)
+        {
+
+        }
     }
 }

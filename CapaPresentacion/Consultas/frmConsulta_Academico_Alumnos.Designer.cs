@@ -2325,6 +2325,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "frmConsulta_Academico_Alumnos";
             this.Text = "frmConsulta_Alumnos";
+            this.Load += new System.EventHandler(this.frmConsulta_Academico_Alumnos_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.tabControl2.ResumeLayout(false);
