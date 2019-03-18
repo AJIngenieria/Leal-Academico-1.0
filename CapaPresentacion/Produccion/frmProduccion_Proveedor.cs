@@ -1,25 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using CapaNegocio;
+using System;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-
-using System.Data;
-using CapaNegocio;
 
 namespace CapaPresentacion
 {
     public partial class frmProduccion_Proveedor : Form
     {
         private bool IsNuevo = false;
+        private bool IsEditar = false;
+
         private DataTable dtDetalle;
 
         public string Codigo_SQL = "";
         public string Codigo_ID = "";
+
+        //Variable para Metodo Eliminar
+        public string Eliminar_SQL;
 
         public frmProduccion_Proveedor()
         {
@@ -53,8 +52,6 @@ namespace CapaPresentacion
                 this.TBArea.BackColor = Color.FromArgb(187, 222, 251);
                 this.TBProveedor.ReadOnly = true;
                 this.TBProveedor.BackColor = Color.FromArgb(187, 222, 251);
-                this.TBCodigoID.ReadOnly = true;
-                this.TBCodigoID.BackColor = Color.FromArgb(187, 222, 251);
                 this.TBDocumento.ReadOnly = true;
                 this.TBDocumento.BackColor = Color.FromArgb(187, 222, 251);
                 this.CBEstado.Enabled = false;
@@ -79,8 +76,8 @@ namespace CapaPresentacion
                 this.DTInicio.BackColor = Color.FromArgb(187, 222, 251);
 
                 //Botones de Datos Basicos y Panel de Logo
-                this.btnNuevo.Visible = true;
-                this.btnGuardar.Visible = false;
+                this.btnNuevo.Enabled = false;
+                this.btnGuardar.Enabled = false;
 
                 this.PanelLogo.Enabled = false;
                 this.PanelLogo.BackColor = Color.FromArgb(187, 222, 251);
@@ -101,8 +98,6 @@ namespace CapaPresentacion
                 this.TBArea.BackColor = Color.FromArgb(32, 178, 170);
                 this.TBProveedor.ReadOnly = false;
                 this.TBProveedor.BackColor = Color.FromArgb(32, 178, 170);
-                this.TBCodigoID.ReadOnly = false;
-                this.TBCodigoID.BackColor = Color.FromArgb(32, 178, 170);
                 this.TBDocumento.ReadOnly = false;
                 this.TBDocumento.BackColor = Color.FromArgb(32, 178, 170);
                 this.CBEstado.Enabled = true;
@@ -135,6 +130,49 @@ namespace CapaPresentacion
                 this.PanelLogo.BackColor = Color.FromArgb(32, 178, 170);
                 this.PanelLogo.BackgroundImage = Properties.Resources.A_J_Academico;
             }
+            else if (IsEditar == true)
+            {
+                //Texboxt
+
+                this.CBTipodeproveedor.Enabled = true;
+                this.CBTipodeproveedor.BackColor = Color.FromArgb(32, 178, 170);
+                this.TBArea.ReadOnly = false;
+                this.TBArea.BackColor = Color.FromArgb(32, 178, 170);
+                this.TBProveedor.ReadOnly = false;
+                this.TBProveedor.BackColor = Color.FromArgb(32, 178, 170);
+                this.TBDocumento.ReadOnly = false;
+                this.TBDocumento.BackColor = Color.FromArgb(32, 178, 170);
+                this.CBEstado.Enabled = true;
+                this.CBEstado.BackColor = Color.FromArgb(32, 178, 170);
+                this.TBRepresentante.ReadOnly = false;
+                this.TBRepresentante.BackColor = Color.FromArgb(32, 178, 170);
+                this.TBPais.ReadOnly = false;
+                this.TBPais.BackColor = Color.FromArgb(32, 178, 170);
+                this.TBCiudad.ReadOnly = false;
+                this.TBCiudad.BackColor = Color.FromArgb(32, 178, 170);
+                this.TBDireccion1.ReadOnly = false;
+                this.TBDireccion1.BackColor = Color.FromArgb(32, 178, 170);
+                this.TBDireccion2.ReadOnly = false;
+                this.TBDireccion2.BackColor = Color.FromArgb(32, 178, 170);
+                this.TBTelefono.ReadOnly = false;
+                this.TBTelefono.BackColor = Color.FromArgb(32, 178, 170);
+                this.TBMovil.ReadOnly = false;
+                this.TBMovil.BackColor = Color.FromArgb(32, 178, 170);
+                this.TBCorreo.ReadOnly = false;
+                this.TBCorreo.BackColor = Color.FromArgb(32, 178, 170);
+                this.DTInicio.Enabled = true;
+                this.DTInicio.BackColor = Color.FromArgb(32, 178, 170);
+
+                //Botones de Datos Basicos y Panel de Logo
+
+                this.btnNuevo.Visible = true;
+                this.btnNuevo.BackgroundImage = Properties.Resources.BV_Editar;
+                this.btnGuardar.Visible = true;
+                this.btnNuevo.BackgroundImage = Properties.Resources.BV_Cancelar;
+
+                this.PanelLogo.Enabled = true;
+            }
+            
         }
 
         private void Limpiar()
@@ -142,7 +180,6 @@ namespace CapaPresentacion
             this.CBTipodeproveedor.SelectedIndex = 0;
             this.TBArea.Text = string.Empty;
             this.TBProveedor.Text = string.Empty;
-            this.TBCodigoID.Text = string.Empty;
             this.TBDocumento.Text = string.Empty;
             this.CBEstado.SelectedIndex = 0;
             this.TBRepresentante.Text = string.Empty;
@@ -186,12 +223,22 @@ namespace CapaPresentacion
             //Crea la tabla con el nombre de Detalle
             this.dtDetalle = new DataTable("Detalle");
             //Agrega las columnas que tendra la tabla
-            this.dtDetalle.Columns.Add("Idproveedor", System.Type.GetType("System.Int32"));
-            this.dtDetalle.Columns.Add("CodigoID", System.Type.GetType("System.String"));
-            this.dtDetalle.Columns.Add("Documento", System.Type.GetType("System.String"));
+            this.dtDetalle.Columns.Add("Codigo Proveedor", System.Type.GetType("System.Int32"));
             this.dtDetalle.Columns.Add("Proveedor", System.Type.GetType("System.String"));
+            this.dtDetalle.Columns.Add("Documento", System.Type.GetType("System.String"));
+            this.dtDetalle.Columns.Add("Estado", System.Type.GetType("System.String"));
             //Relacionamos nuestro datagridview con nuestro datatable
             this.DGResultado.DataSource = this.dtDetalle;
+
+            ////Crea la tabla con el nombre de Detalle
+            //this.dtDetalle = new DataTable("Detalle");
+            ////Agrega las columnas que tendra la tabla
+            //this.dtDetalle.Columns.Add("Idproveedor", System.Type.GetType("System.Int32"));
+            //this.dtDetalle.Columns.Add("CodigoID", System.Type.GetType("System.String"));
+            //this.dtDetalle.Columns.Add("Documento", System.Type.GetType("System.String"));
+            //this.dtDetalle.Columns.Add("Proveedor", System.Type.GetType("System.String"));
+            ////Relacionamos nuestro datagridview con nuestro datatable
+            //this.DGResultado.DataSource = this.dtDetalle;
         }
 
         private void Consulta_CodigoID()
@@ -224,7 +271,7 @@ namespace CapaPresentacion
             //La columna Iddatos basicos - Tabla Prestamos.DatosBasicos
             //Procedimiento Almacenado Sistema.CodigoID_Solicitud
 
-            this.TBCodigoID.Text = Codigo_SQL;
+            this.TBProveedor.Text = Codigo_SQL;
 
         }
 
@@ -233,9 +280,8 @@ namespace CapaPresentacion
             //Se realiza una consulta General de los datos Registrados
             //La cual se produce en la tabla Historico.Proveedor
             //Y el procedimiento Almacenado Produccion.Buscar_Proveedor
-
             try
-            {
+            {          
                 this.DGResultado.DataSource = fProduccion_Proveedor.Buscar_Proveedor(this.TBBuscar.Text);
                 this.DGResultado.Columns[0].Visible = false;
                 lblTotal.Text = "Datos Registrados: " + Convert.ToString(DGResultado.Rows.Count);
@@ -244,7 +290,7 @@ namespace CapaPresentacion
                 //A darle colores o fondo a los botones Eliminar y Editar
 
                 //btnEliminar.BackgroundImage = Properties.Resources.BV_Eliminar;
-                btnNuevo.BackgroundImage = Properties.Resources.BV_Editar;
+                //btnNuevo.BackgroundImage = Properties.Resources.BV_Editar;
 
 
             }
@@ -299,11 +345,6 @@ namespace CapaPresentacion
                     MensajeError("Faltan Ingresar Algunos Datos, Estos Seran Remarcados");
                     TBProveedor.BackColor = Color.FromArgb(250, 235, 215);
                 }
-                else if (this.TBCodigoID.Text == string.Empty)
-                {
-                    MensajeError("Faltan Ingresar Algunos Datos, Estos Seran Remarcados");
-                    TBCodigoID.BackColor = Color.FromArgb(250, 235, 215);
-                }
                 else if (this.TBDocumento.Text == string.Empty)
                 {
                     MensajeError("Faltan Ingresar Algunos Datos, Estos Seran Remarcados");
@@ -329,7 +370,7 @@ namespace CapaPresentacion
 
                     if (this.IsNuevo)
                     {
-                        rptaDatosBasicos = fProduccion_Proveedor.Guardar_DatosBasicos(4, this.TBCodigoID.Text, this.TBProveedor.Text,
+                        rptaDatosBasicos = fProduccion_Proveedor.Guardar_DatosBasicos(4, this.TBProveedor.Text,
                         this.CBTipodeproveedor.Text, this.TBArea.Text, this.TBDocumento.Text, this.CBEstado.Text, this.TBRepresentante.Text, this.TBPais.Text,
                         this.TBCiudad.Text, this.TBTelefono.Text, this.TBMovil.Text, this.TBDireccion1.Text, this.TBDireccion2.Text, this.TBCorreo.Text, this.DTInicio.Value, imagen, 1);
                     }
@@ -405,7 +446,6 @@ namespace CapaPresentacion
 
                             }
                         }
-                        this.CHEliminar.Checked = false;
                     }
                 }
 
@@ -451,51 +491,9 @@ namespace CapaPresentacion
             this.Botones_Consultas();
         }
 
-        private void CHEliminar_CheckedChanged(object sender, EventArgs e)
-        {
-            if (CHEliminar.Checked == true)
-            {
-                this.DGResultado.Columns[0].Visible = true;
-            }
-            else if (CHEliminar.Checked == false)
-            {
-                this.DGResultado.Columns[0].Visible = false;
-            }
-        }     
-
-        private void btnNuevo_MouseDown(object sender, MouseEventArgs e)
-        {
-            btnNuevo.BackgroundImage = Properties.Resources.BV_Nuevo;
-        }
-
-        private void btnNuevo_MouseLeave(object sender, EventArgs e)
-        {
-            btnNuevo.BackgroundImage = Properties.Resources.BV_Nuevo;
-        }
-
-        private void btnNuevo_MouseMove(object sender, MouseEventArgs e)
-        {
-            btnNuevo.BackgroundImage = Properties.Resources.BR_Nuevo;
-        }
-
-        private void btnGuardar_MouseDown(object sender, MouseEventArgs e)
-        {
-            btnGuardar.BackgroundImage = Properties.Resources.BV_Guardar;
-        }
-
-        private void btnGuardar_MouseLeave(object sender, EventArgs e)
-        {
-            btnGuardar.BackgroundImage = Properties.Resources.BV_Guardar;
-        }
-
-        private void btnGuardar_MouseMove(object sender, MouseEventArgs e)
-        {
-            btnGuardar.BackgroundImage = Properties.Resources.BR_Guardar;
-        }
-
         private void DGResultado_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.ColumnIndex == DGResultado.Columns["Eliminar"].Index)
+            if (e.ColumnIndex == DGResultado.Columns[1].Index)
             {
                 DataGridViewCheckBoxCell CHEliminar = (DataGridViewCheckBoxCell)DGResultado.Rows[e.RowIndex].Cells["Eliminar"];
                 CHEliminar.Value = !Convert.ToBoolean(CHEliminar.Value);
@@ -504,10 +502,36 @@ namespace CapaPresentacion
 
         private void DGResultado_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            //this.txtIdcategoria.Text = Convert.ToString(this.datalistado.CurrentRow.Cells["idcategoria"].Value);
-            //this.txtNombre.Text = Convert.ToString(this.datalistado.CurrentRow.Cells["nombre"].Value);
-            //this.txtDescripcion.Text = Convert.ToString(this.datalistado.CurrentRow.Cells["descripcion"].Value);
-            //this.tabControl1.SelectedIndex = 1;
+            try
+            {
+                this.IsEditar = true;
+
+                if (IsEditar == true)
+                {
+                    this.TBIdproveedor.Text = Convert.ToString(this.DGResultado.CurrentRow.Cells["Codigo Proveedor"].Value);
+                    this.TBProveedor.Text = Convert.ToString(this.DGResultado.CurrentRow.Cells["Proveedor"].Value);
+                    //this.TBCodigoID.Text = Convert.ToString(this.DGResultado.CurrentRow.Cells["CodigoID"].Value);
+
+                    //Se realiza el cambio del Boton Nuevo a Editar
+                    //Igualmente se cambio se funcion de Habilitar o registrar un nuevo proveedor
+                    //Para ahora realizar la funcion de editar cuando se le de clip
+
+                    this.Habilitar();
+
+                    btnNuevo.Visible = true;
+                    //btnNuevo.BackgroundImage = Properties.Resources.BV_Editar;
+
+                    btnGuardar.Visible = true;
+                    //btnGuardar.BackgroundImage = Properties.Resources.BV_Cancelar;
+
+                }
+
+                this.IsNuevo = false;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
         }
 
         private void DGResultado_KeyDown(object sender, KeyEventArgs e)
@@ -516,46 +540,33 @@ namespace CapaPresentacion
             {
                 if (e.KeyValue == Convert.ToChar(Keys.Delete))
                 {
-                    double Resultado;
-                    TBResultado.Text = Convert.ToString(DGResultado.Rows.Count);
-                    Resultado = Convert.ToDouble(TBResultado.Text);
+                    DialogResult Opcion;
+                    Opcion = MessageBox.Show("Desea Eliminar el Registro Seleccionado", "Leal Academico", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
 
-                    if (Resultado == 0)
+                    if (Opcion == DialogResult.OK)
                     {
-                        MessageBox.Show("Actualmente no se Encuentran Registros en la Base de Datos", "Leal Academico", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
-                    }
+                        string Codigo;
+                        string Rpta = "";
 
-                    else
-                    {
-                        DialogResult Opcion;
-                        Opcion = MessageBox.Show("Desea Eliminar el Registro Seleccionado", "Leal Academico", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
-
-                        if (Opcion == DialogResult.OK)
+                        foreach (DataGridViewRow row in DGResultado.Rows)
                         {
-                            string Codigo;
-                            string Rpta = "";
-
-                            foreach (DataGridViewRow row in DGResultado.Rows)
+                            if (Convert.ToBoolean(row.Cells[0].Value))
                             {
-                                if (Convert.ToBoolean(row.Cells[0].Value))
+                                Codigo = Convert.ToString(row.Cells[1].Value);
+                                Rpta = fProduccion_Proveedor.Eliminar(Convert.ToInt32(Codigo));
+
+                                if (Rpta.Equals("OK"))
                                 {
-                                    Codigo = Convert.ToString(row.Cells[1].Value);
-                                    Rpta = fProduccion_Proveedor.Eliminar(Convert.ToInt32(Codigo));
-
-                                    if (Rpta.Equals("OK"))
-                                    {
-                                        this.MensajeOk("Articulo Eliminado Correctamente");
-                                    }
-                                    else
-                                    {
-                                        this.MensajeError(Rpta);
-                                    }
-
+                                    this.MensajeOk("Articulo Eliminado Correctamente");
                                 }
+                                else
+                                {
+                                    this.MensajeError(Rpta);
+                                }
+
                             }
-                            this.CHEliminar.Checked = false;
-                            this.TBBuscar.Text = string.Empty;
                         }
+                        this.TBBuscar.Text = string.Empty;
                     }
                 }
             }
@@ -563,7 +574,100 @@ namespace CapaPresentacion
             {
                 MessageBox.Show(ex.Message + ex.StackTrace);
             }
-            
+
         }
+
+        private void CHEliminar_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnNuevo_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (IsNuevo == true)
+            {
+                btnNuevo.BackgroundImage = Properties.Resources.BV_Nuevo;
+            }
+            else if (IsNuevo == false)
+            {
+                btnNuevo.BackgroundImage = Properties.Resources.BV_Nuevo;
+            }
+            else if (IsEditar == true)
+            {
+                btnNuevo.BackgroundImage = Properties.Resources.BV_Editar;
+            }
+
+        }
+
+        private void btnNuevo_MouseLeave(object sender, EventArgs e)
+        {
+            if (IsNuevo == true)
+            {
+                btnNuevo.BackgroundImage = Properties.Resources.BV_Nuevo;
+            }
+            else if (IsNuevo == false)
+            {
+                btnNuevo.BackgroundImage = Properties.Resources.BV_Nuevo;
+            }
+            else if (IsEditar == true)
+            {
+                btnNuevo.BackgroundImage = Properties.Resources.BV_Editar;
+            }
+        }
+
+        private void btnNuevo_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (IsNuevo == true)
+            {
+                btnNuevo.BackgroundImage = Properties.Resources.BR_Nuevo;
+            }
+            else if (IsNuevo == false)
+            {
+                btnNuevo.BackgroundImage = Properties.Resources.BR_Nuevo;
+            }
+            else if (IsEditar == true)
+            {
+                btnNuevo.BackgroundImage = Properties.Resources.BR_Editar;
+            }
+
+        }
+
+        private void btnGuardar_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (IsNuevo == true)
+            {
+                btnGuardar.BackgroundImage = Properties.Resources.BV_Guardar;
+            }
+            else if (IsEditar == true)
+            {
+                btnGuardar.BackgroundImage = Properties.Resources.BV_Cancelar;
+            }
+
+        }
+
+        private void btnGuardar_MouseLeave(object sender, EventArgs e)
+        {
+            if (IsNuevo == true)
+            {
+                btnGuardar.BackgroundImage = Properties.Resources.BV_Guardar;
+            }
+            else if (IsEditar == true)
+            {
+                btnGuardar.BackgroundImage = Properties.Resources.BV_Cancelar;
+            }
+        }
+
+        private void btnGuardar_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (IsNuevo == true)
+            {
+                btnGuardar.BackgroundImage = Properties.Resources.BR_Guardar;
+            }
+            else if (IsEditar == true)
+            {
+                btnGuardar.BackgroundImage = Properties.Resources.BR_Cancelar;
+            }
+        }
+
     }
 }

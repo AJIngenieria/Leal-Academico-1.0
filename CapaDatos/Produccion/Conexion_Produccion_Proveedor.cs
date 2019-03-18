@@ -280,7 +280,7 @@ namespace CapaDatos
                 SqlParameter ParTextoBuscar = new SqlParameter();
                 ParTextoBuscar.ParameterName = "@Filtro";
                 ParTextoBuscar.SqlDbType = SqlDbType.VarChar;
-                ParTextoBuscar.Size = 50;
+                ParTextoBuscar.Size = 100;
                 ParTextoBuscar.Value = Proveedor.Filtro;
                 SqlCmd.Parameters.Add(ParTextoBuscar);
 

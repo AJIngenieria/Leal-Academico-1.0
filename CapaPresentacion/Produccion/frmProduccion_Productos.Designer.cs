@@ -507,6 +507,7 @@
             this.DGResultados.ReadOnly = true;
             this.DGResultados.Size = new System.Drawing.Size(500, 228);
             this.DGResultados.TabIndex = 5;
+            this.DGResultados.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGResultados_CellContentClick);
             // 
             // Eliminar
             // 

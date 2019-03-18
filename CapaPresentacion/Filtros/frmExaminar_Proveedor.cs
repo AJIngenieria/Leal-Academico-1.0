@@ -44,7 +44,7 @@ namespace CapaPresentacion
             {
                 frmProduccion_Ingresos form = frmProduccion_Ingresos.GetInstancia();
                 string par1, par2, par3;
-                par1 = Convert.ToString(this.DGResultados.CurrentRow.Cells["idproveedor"].Value);
+                par1 = Convert.ToString(this.DGResultados.CurrentRow.Cells[1].Value);
                 par2 = Convert.ToString(this.DGResultados.CurrentRow.Cells["Proveedor"].Value);
                 par3 = Convert.ToString(this.DGResultados.CurrentRow.Cells["CodigoID"].Value);
                 form.setProveedor(par1, par2, par3);

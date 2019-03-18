@@ -314,7 +314,11 @@ namespace CapaPresentacion
         private void btnGuardar_MouseMove(object sender, MouseEventArgs e)
         {
             btnGuardar.BackgroundImage = Properties.Resources.BR_Guardar;
-        }      
-        
+        }
+
+        private void DGResultados_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

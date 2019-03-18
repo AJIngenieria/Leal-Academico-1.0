@@ -14,7 +14,7 @@ namespace CapaNegocio
         public static string Guardar_DatosBasicos
             (//Datos Basicos
 
-            int idempleado, string codigoid, string proveedor, string tipo, string area, string documento, string estado,
+            int idempleado, string proveedor, string tipo, string area, string documento, string estado,
             string titular, string pais, string ciudad, string telefono, string movil, string direccion1, string direccion2, 
             string email, DateTime inicio, byte[] foto,
 
@@ -30,7 +30,6 @@ namespace CapaNegocio
             Obj.Area = area;
             Obj.Estado = estado;
             Obj.Proveedor = proveedor;
-            Obj.CodigoID = codigoid;
             Obj.Documento = documento;
             Obj.Titular = titular;
             Obj.Pais = pais;

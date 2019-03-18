@@ -76,6 +76,7 @@
             this.textBox5.BackColor = System.Drawing.Color.White;
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.textBox5.Enabled = false;
             this.textBox5.Location = new System.Drawing.Point(6, 109);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
@@ -142,6 +143,7 @@
             this.textBox1.BackColor = System.Drawing.Color.White;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.textBox1.Enabled = false;
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(9, 131);
             this.textBox1.Multiline = true;
