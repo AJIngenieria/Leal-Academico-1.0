@@ -76,8 +76,15 @@ namespace CapaPresentacion
                 this.DTInicio.BackColor = Color.FromArgb(187, 222, 251);
 
                 //Botones de Datos Basicos y Panel de Logo
-                this.btnNuevo.Enabled = false;
+                this.btnNuevo.Enabled = true;
+                this.btnNuevo.Image = Properties.Resources.BV_Nuevo;
+
+                //this.btnGuardar.Enabled = false;
+                //this.btnGuardar.BackgroundImage = Properties.Resources.BN_Guardar;
+
                 this.btnGuardar.Enabled = false;
+                this.btnGuardar.Image = Properties.Resources.BV_Guardar;
+
 
                 this.PanelLogo.Enabled = false;
                 this.PanelLogo.BackColor = Color.FromArgb(187, 222, 251);
@@ -123,13 +130,17 @@ namespace CapaPresentacion
 
                 //Botones de Datos Basicos y Panel de Logo
 
-                this.btnNuevo.Visible = false;
-                this.btnGuardar.Visible = true;
+                this.btnNuevo.Enabled = false;
+                this.btnNuevo.Image = Properties.Resources.BV_Nuevo;
+
+                this.btnGuardar.Enabled = true;
+                this.btnGuardar.Image = Properties.Resources.BV_Guardar;
 
                 this.PanelLogo.Enabled = true;
                 this.PanelLogo.BackColor = Color.FromArgb(32, 178, 170);
                 this.PanelLogo.BackgroundImage = Properties.Resources.A_J_Academico;
             }
+
             else if (IsEditar == true)
             {
                 //Texboxt
@@ -165,14 +176,14 @@ namespace CapaPresentacion
 
                 //Botones de Datos Basicos y Panel de Logo
 
-                this.btnNuevo.Visible = true;
-                this.btnNuevo.BackgroundImage = Properties.Resources.BV_Editar;
-                this.btnGuardar.Visible = true;
-                this.btnNuevo.BackgroundImage = Properties.Resources.BV_Cancelar;
+                this.btnNuevo.Enabled = true;
+                this.btnNuevo.Image = Properties.Resources.BV_Editar;
+                this.btnGuardar.Enabled = true;
+                this.btnGuardar.Image = Properties.Resources.BV_Cancelar;
 
                 this.PanelLogo.Enabled = true;
             }
-            
+
         }
 
         private void Limpiar()
@@ -470,22 +481,6 @@ namespace CapaPresentacion
             }
         }
 
-        private void CBEstado_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            //if (CBEstado.SelectedIndex == 0)
-            //{
-            //    this.TBEstado.Text = "";
-            //}
-            //else if (CBEstado.SelectedIndex == 1)
-            //{
-            //    this.TBEstado.Text = "1";
-            //}
-            //else if (CBEstado.SelectedIndex == 2)
-            //{
-            //    this.TBEstado.Text = "0";
-            //}
-        }
-
         private void TBBuscar_TextChanged(object sender, EventArgs e)
         {
             this.Botones_Consultas();
@@ -505,6 +500,7 @@ namespace CapaPresentacion
             try
             {
                 this.IsEditar = true;
+                this.Habilitar();
 
                 if (IsEditar == true)
                 {
@@ -512,21 +508,19 @@ namespace CapaPresentacion
                     this.TBProveedor.Text = Convert.ToString(this.DGResultado.CurrentRow.Cells["Proveedor"].Value);
                     //this.TBCodigoID.Text = Convert.ToString(this.DGResultado.CurrentRow.Cells["CodigoID"].Value);
 
+                    
+
                     //Se realiza el cambio del Boton Nuevo a Editar
                     //Igualmente se cambio se funcion de Habilitar o registrar un nuevo proveedor
                     //Para ahora realizar la funcion de editar cuando se le de clip
 
-                    this.Habilitar();
-
-                    btnNuevo.Visible = true;
+                    //btnNuevo.Visible = true;
                     //btnNuevo.BackgroundImage = Properties.Resources.BV_Editar;
 
-                    btnGuardar.Visible = true;
+                    //btnGuardar.Visible = true;
                     //btnGuardar.BackgroundImage = Properties.Resources.BV_Cancelar;
-
                 }
-
-                this.IsNuevo = false;
+                
             }
             catch (Exception ex)
             {
@@ -569,12 +563,34 @@ namespace CapaPresentacion
                         this.TBBuscar.Text = string.Empty;
                     }
                 }
+
+                else if (e.KeyValue == Convert.ToChar(Keys.Enter))
+                {
+                    this.IsEditar = true;
+                    //this.IsNuevo = false;
+
+                    if (IsEditar == true)
+                    {
+                        this.TBIdproveedor.Text = Convert.ToString(this.DGResultado.CurrentRow.Cells["Codigo Proveedor"].Value);
+                        this.TBProveedor.Text = Convert.ToString(this.DGResultado.CurrentRow.Cells["Proveedor"].Value);
+                        //this.TBCodigoID.Text = Convert.ToString(this.DGResultado.CurrentRow.Cells["CodigoID"].Value);
+
+                        //Se realiza el cambio del Boton Nuevo a Editar
+                        //Igualmente se cambio se funcion de Habilitar o registrar un nuevo proveedor
+                        //Para ahora realizar la funcion de editar cuando se le de clip
+
+                        btnNuevo.Visible = true;
+                        btnNuevo.BackgroundImage = Properties.Resources.BV_Editar;
+
+                        btnGuardar.Visible = true;
+                        btnGuardar.BackgroundImage = Properties.Resources.BV_Cancelar;
+                    }
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message + ex.StackTrace);
             }
-
         }
 
         private void CHEliminar_CheckedChanged(object sender, EventArgs e)
@@ -584,76 +600,61 @@ namespace CapaPresentacion
 
         private void btnNuevo_MouseDown(object sender, MouseEventArgs e)
         {
-            if (IsNuevo == true)
+            if (IsNuevo == false)
             {
-                btnNuevo.BackgroundImage = Properties.Resources.BV_Nuevo;
+                btnNuevo.Image = Properties.Resources.BV_Nuevo;
             }
-            else if (IsNuevo == false)
+            else if (IsNuevo == true)
             {
-                btnNuevo.BackgroundImage = Properties.Resources.BV_Nuevo;
+                btnNuevo.Image = Properties.Resources.BV_Nuevo;
             }
-            else if (IsEditar == true)
-            {
-                btnNuevo.BackgroundImage = Properties.Resources.BV_Editar;
-            }
-
         }
 
         private void btnNuevo_MouseLeave(object sender, EventArgs e)
         {
-            if (IsNuevo == true)
+            if (IsNuevo == false)
             {
-                btnNuevo.BackgroundImage = Properties.Resources.BV_Nuevo;
+                btnNuevo.Image = Properties.Resources.BV_Nuevo;
             }
-            else if (IsNuevo == false)
+            else if (IsNuevo == true)
             {
-                btnNuevo.BackgroundImage = Properties.Resources.BV_Nuevo;
-            }
-            else if (IsEditar == true)
-            {
-                btnNuevo.BackgroundImage = Properties.Resources.BV_Editar;
+                btnNuevo.Image = Properties.Resources.BV_Nuevo;
             }
         }
 
         private void btnNuevo_MouseMove(object sender, MouseEventArgs e)
         {
-            if (IsNuevo == true)
+            if (IsNuevo == false)
             {
-                btnNuevo.BackgroundImage = Properties.Resources.BR_Nuevo;
+                btnNuevo.Image = Properties.Resources.BR_Nuevo;
             }
-            else if (IsNuevo == false)
+            else if (IsNuevo == true)
             {
-                btnNuevo.BackgroundImage = Properties.Resources.BR_Nuevo;
+                btnNuevo.Image = Properties.Resources.BR_Nuevo;
             }
-            else if (IsEditar == true)
-            {
-                btnNuevo.BackgroundImage = Properties.Resources.BR_Editar;
-            }
-
         }
 
         private void btnGuardar_MouseDown(object sender, MouseEventArgs e)
         {
             if (IsNuevo == true)
             {
-                btnGuardar.BackgroundImage = Properties.Resources.BV_Guardar;
+                btnGuardar.Image = Properties.Resources.BV_Guardar;
             }
-            else if (IsEditar == true)
+            else if (IsNuevo == true)
             {
-                btnGuardar.BackgroundImage = Properties.Resources.BV_Cancelar;
+                btnGuardar.Image = Properties.Resources.BV_Guardar;
             }
-
         }
 
         private void btnGuardar_MouseLeave(object sender, EventArgs e)
         {
             if (IsNuevo == true)
             {
-                btnGuardar.BackgroundImage = Properties.Resources.BV_Guardar;
+                btnGuardar.Image = Properties.Resources.BV_Guardar;
             }
-            else if (IsEditar == true)
+            else if (IsNuevo == true)
             {
-                btnGuardar.BackgroundImage = Properties.Resources.BV_Cancelar;
+                btnGuardar.Image = Properties.Resources.BV_Guardar;
             }
         }
 
@@ -661,11 +662,11 @@ namespace CapaPresentacion
         {
             if (IsNuevo == true)
             {
-                btnGuardar.BackgroundImage = Properties.Resources.BR_Guardar;
+                btnGuardar.Image = Properties.Resources.BR_Guardar;
             }
-            else if (IsEditar == true)
+            else if (IsNuevo == true)
             {
-                btnGuardar.BackgroundImage = Properties.Resources.BR_Cancelar;
+                btnGuardar.Image = Properties.Resources.BR_Guardar;
             }
         }
 

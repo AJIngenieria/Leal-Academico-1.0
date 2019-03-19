@@ -148,8 +148,8 @@
   <data name="Sub_Traslados" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sub_Traslados.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Configuracion" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Configuracion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Sub_CajaMenor" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sub_CajaMenor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Sub_Realizar Pedido" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sub_Realizar Pedido.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,8 +157,11 @@
   <data name="Sub_Enfermeria" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sub_Enfermeria.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Sub_CajaMenor" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sub_CajaMenor.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Sub_Devoluciones" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sub_Devoluciones.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Plantel" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Plantel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Financiera" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Financiera.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -172,11 +175,8 @@
   <data name="A&amp;J Academico" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\A&amp;J Academico.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Sub_Devoluciones" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sub_Devoluciones.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Sub_CuentaporCobrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sub_CuentaporCobrar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Reportes" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Reportes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BR_Guardar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BR_Guardar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -184,14 +184,17 @@
   <data name="Sub_Ventas" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sub_Ventas.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Reportes" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Reportes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="BR_Nuevo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BR_Nuevo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BV_Agregar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BV_Agregar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Configuracion" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Configuracion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BR_Cancelar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BR_Cancelar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="BV_Cancelar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BV_Cancelar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="BV_Eliminar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BV_Eliminar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -201,6 +204,9 @@
   </data>
   <data name="Sub_Cotizacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sub_Cotizacion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Sub_Financiera" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sub_Financiera.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Biblioteca" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Biblioteca.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -223,8 +229,8 @@
   <data name="Enfermeria" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Enfermeria.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Sub_Financiera" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Sub_Financiera.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Sub_CuentaporCobrar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Sub_CuentaporCobrar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="btnExaminar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\btnExaminar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -232,8 +238,8 @@
   <data name="Sub_VerificarProduto" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sub_VerificarProduto.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Plantel" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Plantel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BV_Agregar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BV_Agregar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Sub_Banco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Sub_Banco.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -247,10 +253,10 @@
   <data name="BR_Agregar" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\BR_Agregar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BR_Cancelar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BR_Cancelar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BN_Guardar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BN_Guardar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="BV_Cancelar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\BV_Cancelar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="BN_Nuevo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\BN_Nuevo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
