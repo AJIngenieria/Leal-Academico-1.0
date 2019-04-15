@@ -9,11 +9,15 @@ namespace CapaPresentacion
 {
     public partial class frmProduccion_Proveedor : Form
     {
+        // Variable con la cual se define si el procecimiento a realizar es EDITAR o Guardar
         private bool IsNuevo = false;
-        private bool IsEditar = false;
+        private bool IsEditar = true;
 
+        // Variable para La Consulta de Datos en la Tabla o DataGriview
         private DataTable dtDetalle;
 
+        // Variables para Generar Codigo de Proveedor
+        // Y Consultarlo desde la Base de Datos
         public string Codigo_SQL = "";
         public string Codigo_ID = "";
 
@@ -27,173 +31,124 @@ namespace CapaPresentacion
 
         private void frmAlmacen_Proveedor_Load(object sender, EventArgs e)
         {
-            this.Habilitar();
+            //Inicio de Clase y Botones
+            this.DesHabilitar();
+            this.CrearTabla();
+
+            this.btnGuardar.Enabled = false;
+            this.btnEditar.Enabled = false;
+            this.btnEliminar.Enabled = false;
 
             this.CBEstado.SelectedIndex = 0;
             this.CBTipodeproveedor.SelectedIndex = 0;
 
-            this.Botones_Consultas();
-            this.CrearTabla();
 
             //Ocultar
-            //this.btnEliminar.Visible = false;
             this.TBFiltroID.Visible = false;
+            this.TBResultado.Visible = false;
+            this.TBIdproveedor.Visible = false;
         }
 
         private void Habilitar()
         {
-            if (IsNuevo == false)
-            {
-                //Texboxt
+            //Habilitacion de Combobox
+            this.CBEstado.Enabled = true;
+            this.CBEstado.BackColor = Color.FromArgb(32, 178, 170);
+            this.CBTipodeproveedor.Enabled = true;
+            this.CBTipodeproveedor.BackColor = Color.FromArgb(32, 178, 170);
 
-                this.CBTipodeproveedor.Enabled = false;
-                this.CBTipodeproveedor.BackColor = Color.FromArgb(187, 222, 251);
-                this.TBArea.ReadOnly = true;
-                this.TBArea.BackColor = Color.FromArgb(187, 222, 251);
-                this.TBProveedor.ReadOnly = true;
-                this.TBProveedor.BackColor = Color.FromArgb(187, 222, 251);
-                this.TBDocumento.ReadOnly = true;
-                this.TBDocumento.BackColor = Color.FromArgb(187, 222, 251);
-                this.CBEstado.Enabled = false;
-                this.CBEstado.BackColor = Color.FromArgb(187, 222, 251);
-                this.TBRepresentante.ReadOnly = true;
-                this.TBRepresentante.BackColor = Color.FromArgb(187, 222, 251);
-                this.TBPais.ReadOnly = true;
-                this.TBPais.BackColor = Color.FromArgb(187, 222, 251);
-                this.TBCiudad.ReadOnly = true;
-                this.TBCiudad.BackColor = Color.FromArgb(187, 222, 251);
-                this.TBDireccion1.ReadOnly = true;
-                this.TBDireccion1.BackColor = Color.FromArgb(187, 222, 251);
-                this.TBDireccion2.ReadOnly = true;
-                this.TBDireccion2.BackColor = Color.FromArgb(187, 222, 251);
-                this.TBTelefono.ReadOnly = true;
-                this.TBTelefono.BackColor = Color.FromArgb(187, 222, 251);
-                this.TBMovil.ReadOnly = true;
-                this.TBMovil.BackColor = Color.FromArgb(187, 222, 251);
-                this.TBCorreo.ReadOnly = true;
-                this.TBCorreo.BackColor = Color.FromArgb(187, 222, 251);
-                this.DTInicio.Enabled = false;
-                this.DTInicio.BackColor = Color.FromArgb(187, 222, 251);
+            //Habilitacion de Campos de Textos
+            this.TBArea.ReadOnly = false;
+            this.TBArea.BackColor = Color.FromArgb(32, 178, 170);
+            this.TBRepresentante.ReadOnly = false;
+            this.TBRepresentante.BackColor = Color.FromArgb(32, 178, 170);
+            this.TBProveedor.ReadOnly = false;
+            this.TBProveedor.BackColor = Color.FromArgb(32, 178, 170);
+            this.TBDocumento.ReadOnly = false;
+            this.TBDocumento.BackColor = Color.FromArgb(32, 178, 170);
+            this.TBCodigoID.ReadOnly = false;
+            this.TBCodigoID.BackColor = Color.FromArgb(32, 178, 170);
+            this.TBPais.ReadOnly = false;
+            this.TBPais.BackColor = Color.FromArgb(32, 178, 170);
+            this.TBCiudad.ReadOnly = false;
+            this.TBCiudad.BackColor = Color.FromArgb(32, 178, 170);
+            this.TBDireccion1.ReadOnly = false;
+            this.TBDireccion1.BackColor = Color.FromArgb(32, 178, 170);
+            this.TBDireccion2.ReadOnly = false;
+            this.TBDireccion2.BackColor = Color.FromArgb(32, 178, 170);
+            this.TBTelefono.ReadOnly = false;
+            this.TBTelefono.BackColor = Color.FromArgb(32, 178, 170);
+            this.TBMovil.ReadOnly = false;
+            this.TBMovil.BackColor = Color.FromArgb(32, 178, 170);
+            this.TBCorreo.ReadOnly = false;
+            this.TBCorreo.BackColor = Color.FromArgb(32, 178, 170);
+            this.DTInicio.Enabled = true;
+            this.DTInicio.BackColor = Color.FromArgb(32, 178, 170);
 
-                //Botones de Datos Basicos y Panel de Logo
-                this.btnNuevo.Enabled = true;
-                this.btnNuevo.Image = Properties.Resources.BV_Nuevo;
+            this.PanelLogo.Enabled = true;
+            this.PanelLogo.BackColor = Color.FromArgb(32, 178, 170);
+            this.PanelLogo.Image = Properties.Resources.A_J_Academico;
+        }
 
-                //this.btnGuardar.Enabled = false;
-                //this.btnGuardar.BackgroundImage = Properties.Resources.BN_Guardar;
+        private void DesHabilitar()
+        {
+            //Desabilitacion de Combobox
+            this.CBEstado.Enabled = false;
+            this.CBEstado.BackColor = Color.FromArgb(187, 222, 251);
+            this.CBTipodeproveedor.Enabled = false;
+            this.CBTipodeproveedor.BackColor = Color.FromArgb(187, 222, 251);
 
-                this.btnGuardar.Enabled = false;
-                this.btnGuardar.Image = Properties.Resources.BV_Guardar;
+            //Desabilitacion de Campos de Textos
+            this.TBArea.ReadOnly = true;
+            this.TBArea.BackColor = Color.FromArgb(187, 222, 251);
+            this.TBRepresentante.ReadOnly = true;
+            this.TBRepresentante.BackColor = Color.FromArgb(187, 222, 251);
+            this.TBProveedor.ReadOnly = true;
+            this.TBProveedor.BackColor = Color.FromArgb(187, 222, 251);
+            this.TBDocumento.ReadOnly = true;
+            this.TBDocumento.BackColor = Color.FromArgb(187, 222, 251);
+            this.TBCodigoID.ReadOnly = true;
+            this.TBCodigoID.BackColor = Color.FromArgb(187, 222, 251);
+            this.TBPais.ReadOnly = true;
+            this.TBPais.BackColor = Color.FromArgb(187, 222, 251);
+            this.TBCiudad.ReadOnly = true;
+            this.TBCiudad.BackColor = Color.FromArgb(187, 222, 251);
+            this.TBDireccion1.ReadOnly = true;
+            this.TBDireccion1.BackColor = Color.FromArgb(187, 222, 251);
+            this.TBDireccion2.ReadOnly = true;
+            this.TBDireccion2.BackColor = Color.FromArgb(187, 222, 251);
+            this.TBTelefono.ReadOnly = true;
+            this.TBTelefono.BackColor = Color.FromArgb(187, 222, 251);
+            this.TBMovil.ReadOnly = true;
+            this.TBMovil.BackColor = Color.FromArgb(187, 222, 251);
+            this.TBCorreo.ReadOnly = true;
+            this.TBCorreo.BackColor = Color.FromArgb(187, 222, 251);
+            this.DTInicio.Enabled = false;
+            this.DTInicio.BackColor = Color.FromArgb(187, 222, 251);
 
 
-                this.PanelLogo.Enabled = false;
-                this.PanelLogo.BackColor = Color.FromArgb(187, 222, 251);
-                this.PanelLogo.BackgroundImage = Properties.Resources.A_J_Academico;
+            this.PanelLogo.Enabled = false;
+            this.PanelLogo.BackColor = Color.FromArgb(187, 222, 251);
+            this.PanelLogo.Image = Properties.Resources.A_J_Academico;
 
-                //Texboxt Buscar o Filtro
+            //Texboxt Buscar o Filtro
 
-                this.TBBuscar.BackColor = Color.FromArgb(32, 178, 170);
-            }
-
-            else if (IsNuevo == true)
-            {
-                //Texboxt
-
-                this.CBTipodeproveedor.Enabled = true;
-                this.CBTipodeproveedor.BackColor = Color.FromArgb(32, 178, 170);
-                this.TBArea.ReadOnly = false;
-                this.TBArea.BackColor = Color.FromArgb(32, 178, 170);
-                this.TBProveedor.ReadOnly = false;
-                this.TBProveedor.BackColor = Color.FromArgb(32, 178, 170);
-                this.TBDocumento.ReadOnly = false;
-                this.TBDocumento.BackColor = Color.FromArgb(32, 178, 170);
-                this.CBEstado.Enabled = true;
-                this.CBEstado.BackColor = Color.FromArgb(32, 178, 170);
-                this.TBRepresentante.ReadOnly = false;
-                this.TBRepresentante.BackColor = Color.FromArgb(32, 178, 170);
-                this.TBPais.ReadOnly = false;
-                this.TBPais.BackColor = Color.FromArgb(32, 178, 170);
-                this.TBCiudad.ReadOnly = false;
-                this.TBCiudad.BackColor = Color.FromArgb(32, 178, 170);
-                this.TBDireccion1.ReadOnly = false;
-                this.TBDireccion1.BackColor = Color.FromArgb(32, 178, 170);
-                this.TBDireccion2.ReadOnly = false;
-                this.TBDireccion2.BackColor = Color.FromArgb(32, 178, 170);
-                this.TBTelefono.ReadOnly = false;
-                this.TBTelefono.BackColor = Color.FromArgb(32, 178, 170);
-                this.TBMovil.ReadOnly = false;
-                this.TBMovil.BackColor = Color.FromArgb(32, 178, 170);
-                this.TBCorreo.ReadOnly = false;
-                this.TBCorreo.BackColor = Color.FromArgb(32, 178, 170);
-                this.DTInicio.Enabled = true;
-                this.DTInicio.BackColor = Color.FromArgb(32, 178, 170);
-
-                //Botones de Datos Basicos y Panel de Logo
-
-                this.btnNuevo.Enabled = false;
-                this.btnNuevo.Image = Properties.Resources.BV_Nuevo;
-
-                this.btnGuardar.Enabled = true;
-                this.btnGuardar.Image = Properties.Resources.BV_Guardar;
-
-                this.PanelLogo.Enabled = true;
-                this.PanelLogo.BackColor = Color.FromArgb(32, 178, 170);
-                this.PanelLogo.BackgroundImage = Properties.Resources.A_J_Academico;
-            }
-
-            else if (IsEditar == true)
-            {
-                //Texboxt
-
-                this.CBTipodeproveedor.Enabled = true;
-                this.CBTipodeproveedor.BackColor = Color.FromArgb(32, 178, 170);
-                this.TBArea.ReadOnly = false;
-                this.TBArea.BackColor = Color.FromArgb(32, 178, 170);
-                this.TBProveedor.ReadOnly = false;
-                this.TBProveedor.BackColor = Color.FromArgb(32, 178, 170);
-                this.TBDocumento.ReadOnly = false;
-                this.TBDocumento.BackColor = Color.FromArgb(32, 178, 170);
-                this.CBEstado.Enabled = true;
-                this.CBEstado.BackColor = Color.FromArgb(32, 178, 170);
-                this.TBRepresentante.ReadOnly = false;
-                this.TBRepresentante.BackColor = Color.FromArgb(32, 178, 170);
-                this.TBPais.ReadOnly = false;
-                this.TBPais.BackColor = Color.FromArgb(32, 178, 170);
-                this.TBCiudad.ReadOnly = false;
-                this.TBCiudad.BackColor = Color.FromArgb(32, 178, 170);
-                this.TBDireccion1.ReadOnly = false;
-                this.TBDireccion1.BackColor = Color.FromArgb(32, 178, 170);
-                this.TBDireccion2.ReadOnly = false;
-                this.TBDireccion2.BackColor = Color.FromArgb(32, 178, 170);
-                this.TBTelefono.ReadOnly = false;
-                this.TBTelefono.BackColor = Color.FromArgb(32, 178, 170);
-                this.TBMovil.ReadOnly = false;
-                this.TBMovil.BackColor = Color.FromArgb(32, 178, 170);
-                this.TBCorreo.ReadOnly = false;
-                this.TBCorreo.BackColor = Color.FromArgb(32, 178, 170);
-                this.DTInicio.Enabled = true;
-                this.DTInicio.BackColor = Color.FromArgb(32, 178, 170);
-
-                //Botones de Datos Basicos y Panel de Logo
-
-                this.btnNuevo.Enabled = true;
-                this.btnNuevo.Image = Properties.Resources.BV_Editar;
-                this.btnGuardar.Enabled = true;
-                this.btnGuardar.Image = Properties.Resources.BV_Cancelar;
-
-                this.PanelLogo.Enabled = true;
-            }
+            this.TBBuscar.BackColor = Color.FromArgb(32, 178, 170);
 
         }
 
         private void Limpiar()
         {
+            //Limpieza de Coombobox
+            this.CBEstado.SelectedIndex = 0;
             this.CBTipodeproveedor.SelectedIndex = 0;
+
+            //Limpieza de Campos de Textox
             this.TBArea.Text = string.Empty;
+            this.TBRepresentante.Text = string.Empty;
             this.TBProveedor.Text = string.Empty;
             this.TBDocumento.Text = string.Empty;
-            this.CBEstado.SelectedIndex = 0;
-            this.TBRepresentante.Text = string.Empty;
+            this.TBCodigoID.Text = string.Empty;
             this.TBPais.Text = string.Empty;
             this.TBCiudad.Text = string.Empty;
             this.TBDireccion1.Text = string.Empty;
@@ -201,33 +156,12 @@ namespace CapaPresentacion
             this.TBTelefono.Text = string.Empty;
             this.TBMovil.Text = string.Empty;
             this.TBCorreo.Text = string.Empty;
-            this.PanelLogo.BackgroundImage = Properties.Resources.A_J_Academico;
+            
+            //Limpiar el Panel de Foto a la Imagen Predeterminada
+            this.PanelLogo.Image = Properties.Resources.A_J_Academico;
         }
 
-        private void Botones_Consultas()
-        {
-            //Si el texboxt esta vacio desabilitara el Boton editar
-            //Y la tabla de resultados
-
-            if (TBBuscar.Text == "")
-            {
-                //btnEditar.Visible = false;
-                DGResultado.Enabled = false;
-
-                //DGResultado.DataSource = null;
-                //DGResultado.Refresh();
-
-            }
-            //Si el texboxt esta LLENO Habilitara el Boton editar
-            //Y la tabla de resultados
-
-            else if (TBBuscar.Text != "")
-            {
-                //btnEditar.Visible = true;
-                DGResultado.Enabled = true;
-                this.Consulta();
-            }
-        }
+        
 
         private void CrearTabla()
         {
@@ -241,15 +175,6 @@ namespace CapaPresentacion
             //Relacionamos nuestro datagridview con nuestro datatable
             this.DGResultado.DataSource = this.dtDetalle;
 
-            ////Crea la tabla con el nombre de Detalle
-            //this.dtDetalle = new DataTable("Detalle");
-            ////Agrega las columnas que tendra la tabla
-            //this.dtDetalle.Columns.Add("Idproveedor", System.Type.GetType("System.Int32"));
-            //this.dtDetalle.Columns.Add("CodigoID", System.Type.GetType("System.String"));
-            //this.dtDetalle.Columns.Add("Documento", System.Type.GetType("System.String"));
-            //this.dtDetalle.Columns.Add("Proveedor", System.Type.GetType("System.String"));
-            ////Relacionamos nuestro datagridview con nuestro datatable
-            //this.DGResultado.DataSource = this.dtDetalle;
         }
 
         private void Consulta_CodigoID()
@@ -282,7 +207,7 @@ namespace CapaPresentacion
             //La columna Iddatos basicos - Tabla Prestamos.DatosBasicos
             //Procedimiento Almacenado Sistema.CodigoID_Solicitud
 
-            this.TBProveedor.Text = Codigo_SQL;
+            this.TBCodigoID.Text = Codigo_SQL;
 
         }
 
@@ -325,9 +250,26 @@ namespace CapaPresentacion
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
-            this.IsNuevo = true;
-            this.Habilitar();
+            if (!IsNuevo)
+            {
+                // Se procede habilitar los campos de textos del Datos Basicos
+                this.Habilitar();
+
+                // Se procede habilitar los Botones de Datos Basicos
+                // y Panel de Logo
+
+                //this.btnNuevo.Enabled = false;
+                //this.btnGuardar.Enabled = true;
+                //this.btnGuardar.Image = Properties.Resources.BV_Guardar;
+            }
+
+            // Se hace enfasis (Focus) Al Iniciar el Evento Click 
+            // sobre el Campo Con Nombre Proveedor
+
             this.TBProveedor.Focus();
+
+            // Se realiza la consulta para Auto Generar
+            // El Codigo del Proveedor desde la Base de Datos
 
             this.Consulta_CodigoID();
             this.AutoCompletar_ReInscripcion();
@@ -483,7 +425,7 @@ namespace CapaPresentacion
 
         private void TBBuscar_TextChanged(object sender, EventArgs e)
         {
-            this.Botones_Consultas();
+            this.Consulta();
         }
 
         private void DGResultado_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -499,28 +441,38 @@ namespace CapaPresentacion
         {
             try
             {
-                this.IsEditar = true;
-                this.Habilitar();
+                //Cuando IsEditar o la Varible que se establezca en este caso IsEditar
+                //Contenga el simbolo ! su valor es igual al False
+                //Inicialmente esta Variable se esta Iniciando de Forma False en una variable de tipo Booleano
 
-                if (IsEditar == true)
+                if (!IsEditar)
                 {
                     this.TBIdproveedor.Text = Convert.ToString(this.DGResultado.CurrentRow.Cells["Codigo Proveedor"].Value);
                     this.TBProveedor.Text = Convert.ToString(this.DGResultado.CurrentRow.Cells["Proveedor"].Value);
                     //this.TBCodigoID.Text = Convert.ToString(this.DGResultado.CurrentRow.Cells["CodigoID"].Value);
 
-                    
-
-                    //Se realiza el cambio del Boton Nuevo a Editar
-                    //Igualmente se cambio se funcion de Habilitar o registrar un nuevo proveedor
-                    //Para ahora realizar la funcion de editar cuando se le de clip
-
-                    //btnNuevo.Visible = true;
-                    //btnNuevo.BackgroundImage = Properties.Resources.BV_Editar;
-
-                    //btnGuardar.Visible = true;
-                    //btnGuardar.BackgroundImage = Properties.Resources.BV_Cancelar;
                 }
-                
+
+                //Se realiza el cambio del Boton Nuevo a Editar
+                //Igualmente se cambio se funcion de Habilitar o registrar un nuevo proveedor
+                //Para ahora realizar la funcion de Editar un registro en la Base de Datos
+                //cuando se le realice el evento Clip del Boton Ediatar/Guardar
+
+                this.btnEditar.Enabled = true;
+                this.btnEliminar.Enabled = true;
+
+                this.Habilitar();
+
+
+                btnNuevo.Enabled = true;
+                btnNuevo.Image = Properties.Resources.BV_Nuevo;
+                btnGuardar.Enabled = true;
+                btnGuardar.Image = Properties.Resources.BV_Guardar;
+
+                btnEditar.Enabled = true;
+                btnEditar.Image = Properties.Resources.BV_Editar;
+                btnEliminar.Enabled = true;
+                btnEliminar.Image = Properties.Resources.BV_Eliminar;
             }
             catch (Exception ex)
             {
@@ -600,75 +552,66 @@ namespace CapaPresentacion
 
         private void btnNuevo_MouseDown(object sender, MouseEventArgs e)
         {
-            if (IsNuevo == false)
-            {
-                btnNuevo.Image = Properties.Resources.BV_Nuevo;
-            }
-            else if (IsNuevo == true)
-            {
-                btnNuevo.Image = Properties.Resources.BV_Nuevo;
-            }
+            btnNuevo.Image = Properties.Resources.BV_Nuevo;
         }
 
         private void btnNuevo_MouseLeave(object sender, EventArgs e)
         {
-            if (IsNuevo == false)
-            {
-                btnNuevo.Image = Properties.Resources.BV_Nuevo;
-            }
-            else if (IsNuevo == true)
-            {
-                btnNuevo.Image = Properties.Resources.BV_Nuevo;
-            }
+            btnNuevo.Image = Properties.Resources.BV_Nuevo;
         }
 
         private void btnNuevo_MouseMove(object sender, MouseEventArgs e)
         {
-            if (IsNuevo == false)
-            {
-                btnNuevo.Image = Properties.Resources.BR_Nuevo;
-            }
-            else if (IsNuevo == true)
-            {
-                btnNuevo.Image = Properties.Resources.BR_Nuevo;
-            }
+            //esta funcion hace que el boton cambie a rojo
+
+            btnNuevo.Image = Properties.Resources.BR_Nuevo;
         }
 
         private void btnGuardar_MouseDown(object sender, MouseEventArgs e)
         {
-            if (IsNuevo == true)
-            {
-                btnGuardar.Image = Properties.Resources.BV_Guardar;
-            }
-            else if (IsNuevo == true)
-            {
-                btnGuardar.Image = Properties.Resources.BV_Guardar;
-            }
+            btnGuardar.Image = Properties.Resources.BV_Guardar;
         }
 
         private void btnGuardar_MouseLeave(object sender, EventArgs e)
         {
-            if (IsNuevo == true)
-            {
-                btnGuardar.Image = Properties.Resources.BV_Guardar;
-            }
-            else if (IsNuevo == true)
-            {
-                btnGuardar.Image = Properties.Resources.BV_Guardar;
-            }
+            btnGuardar.Image = Properties.Resources.BV_Guardar;
         }
 
         private void btnGuardar_MouseMove(object sender, MouseEventArgs e)
         {
-            if (IsNuevo == true)
-            {
-                btnGuardar.Image = Properties.Resources.BR_Guardar;
-            }
-            else if (IsNuevo == true)
-            {
-                btnGuardar.Image = Properties.Resources.BR_Guardar;
-            }
+            btnGuardar.Image = Properties.Resources.BR_Guardar;
         }
 
+        
+        
+        private void btnEditar_MouseDown(object sender, MouseEventArgs e)
+        {
+            btnEditar.Image = Properties.Resources.BV_Editar;
+        }
+
+        private void btnEditar_MouseLeave(object sender, EventArgs e)
+        {
+            btnEditar.Image = Properties.Resources.BV_Editar;
+        }
+
+        private void btnEditar_MouseMove(object sender, MouseEventArgs e)
+        {
+            btnEditar.Image = Properties.Resources.BR_Editar;
+        }
+
+        private void btnEliminar_MouseDown(object sender, MouseEventArgs e)
+        {
+            btnEliminar.Image = Properties.Resources.BV_Eliminar;
+        }
+
+        private void btnEliminar_MouseLeave(object sender, EventArgs e)
+        {
+            btnEliminar.Image = Properties.Resources.BV_Eliminar;
+        }
+
+        private void btnEliminar_MouseMove(object sender, MouseEventArgs e)
+        {
+            btnEliminar.Image = Properties.Resources.BR_Eliminar;
+        }
     }
 }

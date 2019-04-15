@@ -144,9 +144,7 @@ namespace CapaPresentacion
 
         private void productosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmProduccion_Productos frmProduccion_Productos = new frmProduccion_Productos();
-            frmProduccion_Productos.MdiParent = this;
-            frmProduccion_Productos.Show();
+
         }
 
         private void proveedorToolStripMenuItem1_Click(object sender, EventArgs e)

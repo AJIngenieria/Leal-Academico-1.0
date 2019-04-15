@@ -144,10 +144,10 @@ namespace CapaPresentacion
             
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Configuracion.Cadena_Conexion.ValoresDeConfiguracion(TBBasePrincipal.Text, TBSerialProcesador.Text, TBSerialHDD.Text);
-        }
+        //private void button1_Click(object sender, EventArgs e)
+        //{
+        //    Configuracion.Cadena_Conexion.ValoresDeConfiguracion(TBBasePrincipal.Text, TBSerialProcesador.Text, TBSerialHDD.Text);
+        //}
 
         private void button2_Click(object sender, EventArgs e)
         {

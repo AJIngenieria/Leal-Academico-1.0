@@ -29,7 +29,9 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.TBCodigoID = new System.Windows.Forms.TextBox();
             this.TBIdproveedor = new System.Windows.Forms.TextBox();
             this.TBResultado = new System.Windows.Forms.TextBox();
             this.TBFiltroID = new System.Windows.Forms.TextBox();
@@ -81,7 +83,9 @@
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.btnEliminar);
+            this.groupBox1.Controls.Add(this.btnEditar);
+            this.groupBox1.Controls.Add(this.TBCodigoID);
             this.groupBox1.Controls.Add(this.TBIdproveedor);
             this.groupBox1.Controls.Add(this.TBResultado);
             this.groupBox1.Controls.Add(this.TBFiltroID);
@@ -125,22 +129,71 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Leal Academico - Registro de Proveedores de Almacen";
             // 
-            // textBox1
+            // btnEliminar
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.btnEliminar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(379, 74);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 21);
-            this.textBox1.TabIndex = 58;
+            this.btnEliminar.BackColor = System.Drawing.SystemColors.Control;
+            this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEliminar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnEliminar.FlatAppearance.BorderSize = 0;
+            this.btnEliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminar.Image = global::CapaPresentacion.Properties.Resources.BV_Eliminar;
+            this.btnEliminar.Location = new System.Drawing.Point(403, 349);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(76, 26);
+            this.btnEliminar.TabIndex = 60;
+            this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
+            this.btnEliminar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnEliminar_MouseDown);
+            this.btnEliminar.MouseLeave += new System.EventHandler(this.btnEliminar_MouseLeave);
+            this.btnEliminar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnEliminar_MouseMove);
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnEditar.BackColor = System.Drawing.SystemColors.Control;
+            this.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEditar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnEditar.FlatAppearance.BorderSize = 0;
+            this.btnEditar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditar.Image = global::CapaPresentacion.Properties.Resources.BV_Editar;
+            this.btnEditar.Location = new System.Drawing.Point(321, 349);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(76, 26);
+            this.btnEditar.TabIndex = 59;
+            this.btnEditar.UseVisualStyleBackColor = false;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            this.btnEditar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnEditar_MouseDown);
+            this.btnEditar.MouseLeave += new System.EventHandler(this.btnEditar_MouseLeave);
+            this.btnEditar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnEditar_MouseMove);
+            // 
+            // TBCodigoID
+            // 
+            this.TBCodigoID.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.TBCodigoID.Location = new System.Drawing.Point(379, 74);
+            this.TBCodigoID.Name = "TBCodigoID";
+            this.TBCodigoID.Size = new System.Drawing.Size(100, 21);
+            this.TBCodigoID.TabIndex = 58;
+            this.TBCodigoID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // TBIdproveedor
             // 
             this.TBIdproveedor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TBIdproveedor.Location = new System.Drawing.Point(300, 350);
+            this.TBIdproveedor.Location = new System.Drawing.Point(386, 324);
             this.TBIdproveedor.Name = "TBIdproveedor";
             this.TBIdproveedor.Size = new System.Drawing.Size(47, 21);
             this.TBIdproveedor.TabIndex = 57;
@@ -150,9 +203,9 @@
             this.TBResultado.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TBResultado.Location = new System.Drawing.Point(194, 349);
+            this.TBResultado.Location = new System.Drawing.Point(360, 324);
             this.TBResultado.Name = "TBResultado";
-            this.TBResultado.Size = new System.Drawing.Size(100, 21);
+            this.TBResultado.Size = new System.Drawing.Size(20, 21);
             this.TBResultado.TabIndex = 56;
             // 
             // TBFiltroID
@@ -160,10 +213,10 @@
             this.TBFiltroID.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TBFiltroID.Location = new System.Drawing.Point(125, 349);
+            this.TBFiltroID.Location = new System.Drawing.Point(335, 324);
             this.TBFiltroID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TBFiltroID.Name = "TBFiltroID";
-            this.TBFiltroID.Size = new System.Drawing.Size(63, 21);
+            this.TBFiltroID.Size = new System.Drawing.Size(19, 21);
             this.TBFiltroID.TabIndex = 50;
             this.TBFiltroID.Text = "1";
             // 
@@ -249,7 +302,7 @@
             this.btnGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGuardar.Image = global::CapaPresentacion.Properties.Resources.BV_Guardar;
-            this.btnGuardar.Location = new System.Drawing.Point(403, 349);
+            this.btnGuardar.Location = new System.Drawing.Point(91, 349);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Size = new System.Drawing.Size(76, 26);
@@ -730,7 +783,9 @@
         private System.Windows.Forms.TextBox TBFiltroID;
         private System.Windows.Forms.TextBox TBResultado;
         private System.Windows.Forms.TextBox TBIdproveedor;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TBCodigoID;
         private System.Windows.Forms.CheckBox CHEliminar;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnEditar;
     }
 }
