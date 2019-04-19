@@ -32,18 +32,19 @@ namespace CapaPresentacion
         private void frmAlmacen_Proveedor_Load(object sender, EventArgs e)
         {
             //Inicio de Clase y Botones
-            this.DesHabilitar();
             this.CrearTabla();
+            this.DesHabilitar();
 
+            //Desabilitacion de Botones
             this.btnGuardar.Enabled = false;
             this.btnEditar.Enabled = false;
             this.btnEliminar.Enabled = false;
+            this.TBIdproveedor.Visible = false;
 
-            this.CBEstado.SelectedIndex = 0;
+            //Seleccion principal de Combobox
             this.CBTipodeproveedor.SelectedIndex = 0;
 
-
-            //Ocultar
+            //Y ocultacion de Texboxt
             this.TBFiltroID.Visible = false;
             this.TBResultado.Visible = false;
             this.TBIdproveedor.Visible = false;
@@ -52,8 +53,6 @@ namespace CapaPresentacion
         private void Habilitar()
         {
             //Habilitacion de Combobox
-            this.CBEstado.Enabled = true;
-            this.CBEstado.BackColor = Color.FromArgb(32, 178, 170);
             this.CBTipodeproveedor.Enabled = true;
             this.CBTipodeproveedor.BackColor = Color.FromArgb(32, 178, 170);
 
@@ -66,8 +65,6 @@ namespace CapaPresentacion
             this.TBProveedor.BackColor = Color.FromArgb(32, 178, 170);
             this.TBDocumento.ReadOnly = false;
             this.TBDocumento.BackColor = Color.FromArgb(32, 178, 170);
-            this.TBCodigoID.ReadOnly = false;
-            this.TBCodigoID.BackColor = Color.FromArgb(32, 178, 170);
             this.TBPais.ReadOnly = false;
             this.TBPais.BackColor = Color.FromArgb(32, 178, 170);
             this.TBCiudad.ReadOnly = false;
@@ -93,8 +90,6 @@ namespace CapaPresentacion
         private void DesHabilitar()
         {
             //Desabilitacion de Combobox
-            this.CBEstado.Enabled = false;
-            this.CBEstado.BackColor = Color.FromArgb(187, 222, 251);
             this.CBTipodeproveedor.Enabled = false;
             this.CBTipodeproveedor.BackColor = Color.FromArgb(187, 222, 251);
 
@@ -136,11 +131,10 @@ namespace CapaPresentacion
             this.TBBuscar.BackColor = Color.FromArgb(32, 178, 170);
 
         }
-
+              
         private void Limpiar()
         {
             //Limpieza de Coombobox
-            this.CBEstado.SelectedIndex = 0;
             this.CBTipodeproveedor.SelectedIndex = 0;
 
             //Limpieza de Campos de Textox
@@ -161,8 +155,6 @@ namespace CapaPresentacion
             this.PanelLogo.Image = Properties.Resources.A_J_Academico;
         }
 
-        
-
         private void CrearTabla()
         {
             //Crea la tabla con el nombre de Detalle
@@ -171,7 +163,8 @@ namespace CapaPresentacion
             this.dtDetalle.Columns.Add("Codigo Proveedor", System.Type.GetType("System.Int32"));
             this.dtDetalle.Columns.Add("Proveedor", System.Type.GetType("System.String"));
             this.dtDetalle.Columns.Add("Documento", System.Type.GetType("System.String"));
-            this.dtDetalle.Columns.Add("Estado", System.Type.GetType("System.String"));
+            this.dtDetalle.Columns.Add("Tipo", System.Type.GetType("System.String"));
+            this.dtDetalle.Columns.Add("Area", System.Type.GetType("System.String"));
             //Relacionamos nuestro datagridview con nuestro datatable
             this.DGResultado.DataSource = this.dtDetalle;
 
@@ -181,7 +174,7 @@ namespace CapaPresentacion
         {
             try
             {
-                DataTable Datos = CapaNegocio.fProduccion_Proveedor.CodigoID_Solicitud(this.TBFiltroID.Text);
+                DataTable Datos = CapaNegocio.fProduccion_Proveedor.CodigoID_Solicitud("1");
                 //Evaluamos si  existen los Datos
                 if (Datos.Rows.Count == 0)
                 {
@@ -191,7 +184,6 @@ namespace CapaPresentacion
                 }
                 else
                 {
-                    //frmAcademico_RegistrarAlumno frm = new frmAcademico_RegistrarAlumno();
                     Codigo_SQL = Datos.Rows[0][0].ToString();
                 }
             }
@@ -219,7 +211,7 @@ namespace CapaPresentacion
             try
             {          
                 this.DGResultado.DataSource = fProduccion_Proveedor.Buscar_Proveedor(this.TBBuscar.Text);
-                this.DGResultado.Columns[0].Visible = false;
+                //this.DGResultado.Columns[0].Visible = false;
                 lblTotal.Text = "Datos Registrados: " + Convert.ToString(DGResultado.Rows.Count);
 
                 //Despues de realizar la consulta se procede
@@ -255,12 +247,11 @@ namespace CapaPresentacion
                 // Se procede habilitar los campos de textos del Datos Basicos
                 this.Habilitar();
 
-                // Se procede habilitar los Botones de Datos Basicos
-                // y Panel de Logo
+                // Se procede habilitar el Boton Guardar
+                // y los Campos de Textos junto con el Panel de Logo
 
-                //this.btnNuevo.Enabled = false;
-                //this.btnGuardar.Enabled = true;
-                //this.btnGuardar.Image = Properties.Resources.BV_Guardar;
+                this.btnGuardar.Enabled = true;
+                this.btnGuardar.Image = Properties.Resources.BV_Guardar;
             }
 
             // Se hace enfasis (Focus) Al Iniciar el Evento Click 
@@ -273,7 +264,7 @@ namespace CapaPresentacion
 
             this.Consulta_CodigoID();
             this.AutoCompletar_ReInscripcion();
-
+            this.IsNuevo = true;
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -303,11 +294,6 @@ namespace CapaPresentacion
                     MensajeError("Faltan Ingresar Algunos Datos, Estos Seran Remarcados");
                     TBDocumento.BackColor = Color.FromArgb(250, 235, 215);
                 }
-                else if (this.CBEstado.Text == string.Empty)
-                {
-                    MensajeError("Faltan Ingresar Algunos Datos, Estos Seran Remarcados");
-                    CBEstado.BackColor = Color.FromArgb(250, 235, 215);
-                }
                 else if (this.TBRepresentante.Text == string.Empty)
                 {
                     MensajeError("Faltan Ingresar Algunos Datos, Estos Seran Remarcados");
@@ -323,9 +309,9 @@ namespace CapaPresentacion
 
                     if (this.IsNuevo)
                     {
-                        rptaDatosBasicos = fProduccion_Proveedor.Guardar_DatosBasicos(4, this.TBProveedor.Text,
-                        this.CBTipodeproveedor.Text, this.TBArea.Text, this.TBDocumento.Text, this.CBEstado.Text, this.TBRepresentante.Text, this.TBPais.Text,
-                        this.TBCiudad.Text, this.TBTelefono.Text, this.TBMovil.Text, this.TBDireccion1.Text, this.TBDireccion2.Text, this.TBCorreo.Text, this.DTInicio.Value, imagen, 1);
+                        rptaDatosBasicos = fProduccion_Proveedor.Guardar_DatosBasicos(4, this.TBProveedor.Text, this.TBCodigoID.Text,
+                        this.CBTipodeproveedor.Text, this.TBArea.Text, this.TBDocumento.Text, this.TBRepresentante.Text, this.TBPais.Text,
+                        this.TBCiudad.Text, this.TBTelefono.Text, this.TBMovil.Text, this.TBDireccion1.Text, this.TBDireccion2.Text, this.TBCorreo.Text, this.DTInicio.Value, imagen, 1, 1);
                     }
 
                     if (rptaDatosBasicos.Equals("OK"))
@@ -341,9 +327,8 @@ namespace CapaPresentacion
                         this.MensajeError(rptaDatosBasicos);
                     }
 
-                    this.IsNuevo = false;
-                    this.Limpiar();
-                    this.Habilitar();
+                    //this.Limpiar();
+                    //this.DesHabilitar();
                     this.TBProveedor.Focus();
                 }
             }
@@ -426,15 +411,6 @@ namespace CapaPresentacion
         private void TBBuscar_TextChanged(object sender, EventArgs e)
         {
             this.Consulta();
-        }
-
-        private void DGResultado_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.ColumnIndex == DGResultado.Columns[1].Index)
-            {
-                DataGridViewCheckBoxCell CHEliminar = (DataGridViewCheckBoxCell)DGResultado.Rows[e.RowIndex].Cells["Eliminar"];
-                CHEliminar.Value = !Convert.ToBoolean(CHEliminar.Value);
-            }
         }
 
         private void DGResultado_CellDoubleClick(object sender, DataGridViewCellEventArgs e)

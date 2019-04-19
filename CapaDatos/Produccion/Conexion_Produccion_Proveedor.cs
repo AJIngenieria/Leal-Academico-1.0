@@ -25,7 +25,7 @@ namespace CapaDatos
         private string _Proveedor;
         private string _CodigoID;
         private string _Documento;
-        private string _Estado;
+        private int _Estado;
         private string _Titular;
         private string _Pais;
         private string _Ciudad;
@@ -48,7 +48,7 @@ namespace CapaDatos
         public string Proveedor { get => _Proveedor; set => _Proveedor = value; }
         public string CodigoID { get => _CodigoID; set => _CodigoID = value; }
         public string Documento { get => _Documento; set => _Documento = value; }
-        public string Estado { get => _Estado; set => _Estado = value; }
+        public int Estado { get => _Estado; set => _Estado = value; }
         public string Titular { get => _Titular; set => _Titular = value; }
         public string Pais { get => _Pais; set => _Pais = value; }
         public string Ciudad { get => _Ciudad; set => _Ciudad = value; }
@@ -70,7 +70,7 @@ namespace CapaDatos
         //Constructor con todos los parametros
         public Conexion_Produccion_Proveedor(int idproveedor, int idempleado, string codigoid, string proveedor, string tipo, string area, string documento,
         string titular, string pais, string ciudad, string telefono, string movil, string direccion1, string direccion2, string email, DateTime inicio, byte[] foto,
-        int auto, string estado, string filtro)
+        int auto, int estado, string filtro)
 
         {
             //Llaves principales
@@ -169,8 +169,7 @@ namespace CapaDatos
 
                 SqlParameter ParEstado = new SqlParameter();
                 ParEstado.ParameterName = "@Estado";
-                ParEstado.SqlDbType = SqlDbType.VarChar;
-                ParEstado.Size = 10;
+                ParEstado.SqlDbType = SqlDbType.Int;
                 ParEstado.Value = Proveedor.Estado;
                 SqlCmd.Parameters.Add(ParEstado);
 

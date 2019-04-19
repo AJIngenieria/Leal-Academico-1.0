@@ -296,9 +296,11 @@ namespace CapaPresentacion
 
         private void datosBasicosToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            frmProduccion_Productos frmProduccion_Productos = new frmProduccion_Productos();
+            frmProduccion_Productos frmProduccion_Productos = frmProduccion_Productos.GetInstancia();
             frmProduccion_Productos.MdiParent = this;
             frmProduccion_Productos.Show();
+            frmProduccion_Productos.IDEmpleado = Convert.ToInt32(this.Idempleado);
+
         }
 
         private void costosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -352,7 +354,7 @@ namespace CapaPresentacion
 
         private void marcasToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmProduccion_Marcas frmProduccion_Productos_Marcas = new frmProduccion_Marcas();
+            frmProduccion_Marcas frmProduccion_Productos_Marcas = frmProduccion_Marcas.GetInstancia();
             frmProduccion_Productos_Marcas.MdiParent = this;
             frmProduccion_Productos_Marcas.Show();
         }

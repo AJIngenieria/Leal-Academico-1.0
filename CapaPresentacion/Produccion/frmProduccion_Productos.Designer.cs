@@ -29,22 +29,21 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.TBFiltroID = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TBDias = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.btnExaminar = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.TBProveedor = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.TBReferencia = new System.Windows.Forms.TextBox();
-            this.Idproveedor = new System.Windows.Forms.TextBox();
+            this.TBIdproveedor = new System.Windows.Forms.TextBox();
             this.TBDescripcion = new System.Windows.Forms.TextBox();
             this.CBMarca = new System.Windows.Forms.ComboBox();
-            this.label9 = new System.Windows.Forms.Label();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.TBProducto = new System.Windows.Forms.TextBox();
             this.btnNuevo = new System.Windows.Forms.Button();
-            this.CBEstado = new System.Windows.Forms.ComboBox();
             this.CBOfertable = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -65,9 +64,6 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.lblTotal = new System.Windows.Forms.Label();
             this.DGResultados = new System.Windows.Forms.DataGridView();
-            this.Eliminar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.btnEliminar = new System.Windows.Forms.Button();
-            this.btnEditar = new System.Windows.Forms.Button();
             this.CHEliminar = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
             this.TBBuscar = new System.Windows.Forms.TextBox();
@@ -78,22 +74,21 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.TBFiltroID);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.TBDias);
             this.groupBox1.Controls.Add(this.label11);
+            this.groupBox1.Controls.Add(this.btnEliminar);
             this.groupBox1.Controls.Add(this.btnExaminar);
+            this.groupBox1.Controls.Add(this.btnEditar);
             this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.TBProveedor);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.TBReferencia);
-            this.groupBox1.Controls.Add(this.Idproveedor);
+            this.groupBox1.Controls.Add(this.TBIdproveedor);
             this.groupBox1.Controls.Add(this.TBDescripcion);
             this.groupBox1.Controls.Add(this.CBMarca);
-            this.groupBox1.Controls.Add(this.label9);
             this.groupBox1.Controls.Add(this.btnGuardar);
             this.groupBox1.Controls.Add(this.TBProducto);
             this.groupBox1.Controls.Add(this.btnNuevo);
-            this.groupBox1.Controls.Add(this.CBEstado);
             this.groupBox1.Controls.Add(this.CBOfertable);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.label17);
@@ -118,20 +113,12 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Leal Academico - Registro de Productos";
             // 
-            // TBFiltroID
+            // TBDias
             // 
-            this.TBFiltroID.Location = new System.Drawing.Point(154, 298);
-            this.TBFiltroID.Name = "TBFiltroID";
-            this.TBFiltroID.Size = new System.Drawing.Size(50, 21);
-            this.TBFiltroID.TabIndex = 7;
-            this.TBFiltroID.Text = "1";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(84, 242);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(110, 21);
-            this.textBox1.TabIndex = 46;
+            this.TBDias.Location = new System.Drawing.Point(84, 242);
+            this.TBDias.Name = "TBDias";
+            this.TBDias.Size = new System.Drawing.Size(100, 21);
+            this.TBDias.TabIndex = 46;
             // 
             // label11
             // 
@@ -141,6 +128,23 @@
             this.label11.Size = new System.Drawing.Size(32, 15);
             this.label11.TabIndex = 45;
             this.label11.Text = "Dias";
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEliminar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnEliminar.FlatAppearance.BorderSize = 0;
+            this.btnEliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminar.Image = global::CapaPresentacion.Properties.Resources.BV_Eliminar;
+            this.btnEliminar.Location = new System.Drawing.Point(260, 295);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(76, 26);
+            this.btnEliminar.TabIndex = 4;
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnExaminar
             // 
@@ -159,6 +163,23 @@
             this.btnExaminar.UseVisualStyleBackColor = true;
             this.btnExaminar.Click += new System.EventHandler(this.btnExaminar_Click);
             // 
+            // btnEditar
+            // 
+            this.btnEditar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEditar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnEditar.FlatAppearance.BorderSize = 0;
+            this.btnEditar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditar.Image = global::CapaPresentacion.Properties.Resources.BV_Editar;
+            this.btnEditar.Location = new System.Drawing.Point(178, 295);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(76, 26);
+            this.btnEditar.TabIndex = 3;
+            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -168,12 +189,12 @@
             this.label10.TabIndex = 43;
             this.label10.Text = "Proveedor";
             // 
-            // textBox2
+            // TBProveedor
             // 
-            this.textBox2.Location = new System.Drawing.Point(84, 128);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(219, 21);
-            this.textBox2.TabIndex = 42;
+            this.TBProveedor.Location = new System.Drawing.Point(84, 128);
+            this.TBProveedor.Name = "TBProveedor";
+            this.TBProveedor.Size = new System.Drawing.Size(219, 21);
+            this.TBProveedor.TabIndex = 42;
             // 
             // label1
             // 
@@ -191,12 +212,12 @@
             this.TBReferencia.Size = new System.Drawing.Size(250, 21);
             this.TBReferencia.TabIndex = 13;
             // 
-            // Idproveedor
+            // TBIdproveedor
             // 
-            this.Idproveedor.Location = new System.Drawing.Point(97, 298);
-            this.Idproveedor.Name = "Idproveedor";
-            this.Idproveedor.Size = new System.Drawing.Size(51, 21);
-            this.Idproveedor.TabIndex = 41;
+            this.TBIdproveedor.Location = new System.Drawing.Point(236, 244);
+            this.TBIdproveedor.Name = "TBIdproveedor";
+            this.TBIdproveedor.Size = new System.Drawing.Size(51, 21);
+            this.TBIdproveedor.TabIndex = 41;
             // 
             // TBDescripcion
             // 
@@ -212,22 +233,12 @@
             this.CBMarca.FormattingEnabled = true;
             this.CBMarca.Location = new System.Drawing.Point(84, 155);
             this.CBMarca.Name = "CBMarca";
-            this.CBMarca.Size = new System.Drawing.Size(110, 23);
+            this.CBMarca.Size = new System.Drawing.Size(100, 23);
             this.CBMarca.TabIndex = 41;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(200, 22);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(45, 15);
-            this.label9.TabIndex = 15;
-            this.label9.Text = "Estado";
             // 
             // btnGuardar
             // 
             this.btnGuardar.BackColor = System.Drawing.SystemColors.Control;
-            this.btnGuardar.BackgroundImage = global::CapaPresentacion.Properties.Resources.BV_Guardar;
             this.btnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.White;
@@ -235,9 +246,10 @@
             this.btnGuardar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.btnGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardar.Location = new System.Drawing.Point(259, 296);
+            this.btnGuardar.Image = global::CapaPresentacion.Properties.Resources.BV_Guardar;
+            this.btnGuardar.Location = new System.Drawing.Point(91, 295);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(75, 25);
+            this.btnGuardar.Size = new System.Drawing.Size(76, 26);
             this.btnGuardar.TabIndex = 4;
             this.btnGuardar.UseVisualStyleBackColor = false;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
@@ -255,7 +267,6 @@
             // btnNuevo
             // 
             this.btnNuevo.BackColor = System.Drawing.Color.White;
-            this.btnNuevo.BackgroundImage = global::CapaPresentacion.Properties.Resources.BV_Nuevo;
             this.btnNuevo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnNuevo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNuevo.FlatAppearance.BorderColor = System.Drawing.Color.White;
@@ -263,29 +274,16 @@
             this.btnNuevo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.btnNuevo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNuevo.Location = new System.Drawing.Point(9, 296);
+            this.btnNuevo.Image = global::CapaPresentacion.Properties.Resources.BV_Nuevo;
+            this.btnNuevo.Location = new System.Drawing.Point(9, 295);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(75, 25);
+            this.btnNuevo.Size = new System.Drawing.Size(76, 26);
             this.btnNuevo.TabIndex = 3;
             this.btnNuevo.UseVisualStyleBackColor = false;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             this.btnNuevo.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnNuevo_MouseDown);
             this.btnNuevo.MouseLeave += new System.EventHandler(this.btnNuevo_MouseLeave);
             this.btnNuevo.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnNuevo_MouseMove);
-            // 
-            // CBEstado
-            // 
-            this.CBEstado.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.CBEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CBEstado.FormattingEnabled = true;
-            this.CBEstado.Items.AddRange(new object[] {
-            "-",
-            "Activo",
-            "Inactivo"});
-            this.CBEstado.Location = new System.Drawing.Point(251, 18);
-            this.CBEstado.Name = "CBEstado";
-            this.CBEstado.Size = new System.Drawing.Size(83, 23);
-            this.CBEstado.TabIndex = 16;
             // 
             // CBOfertable
             // 
@@ -296,15 +294,15 @@
             "-",
             "Si",
             "No"});
-            this.CBOfertable.Location = new System.Drawing.Point(279, 186);
+            this.CBOfertable.Location = new System.Drawing.Point(260, 186);
             this.CBOfertable.Name = "CBOfertable";
-            this.CBOfertable.Size = new System.Drawing.Size(55, 23);
+            this.CBOfertable.Size = new System.Drawing.Size(74, 23);
             this.CBOfertable.TabIndex = 31;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(210, 160);
+            this.label8.Location = new System.Drawing.Point(190, 160);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(63, 15);
             this.label8.TabIndex = 7;
@@ -313,7 +311,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(210, 189);
+            this.label17.Location = new System.Drawing.Point(190, 189);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(57, 15);
             this.label17.TabIndex = 29;
@@ -330,7 +328,7 @@
             // 
             this.TBCodigoID.Location = new System.Drawing.Point(84, 20);
             this.TBCodigoID.Name = "TBCodigoID";
-            this.TBCodigoID.Size = new System.Drawing.Size(110, 21);
+            this.TBCodigoID.Size = new System.Drawing.Size(250, 21);
             this.TBCodigoID.TabIndex = 8;
             this.TBCodigoID.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -340,14 +338,14 @@
             this.CBEmpacado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CBEmpacado.FormattingEnabled = true;
             this.CBEmpacado.Items.AddRange(new object[] {
-            "Sin Especificar",
+            "-",
             "Aluminio",
             "Carton",
             "No Aplicable",
             "Plastico"});
             this.CBEmpacado.Location = new System.Drawing.Point(84, 184);
             this.CBEmpacado.Name = "CBEmpacado";
-            this.CBEmpacado.Size = new System.Drawing.Size(110, 23);
+            this.CBEmpacado.Size = new System.Drawing.Size(100, 23);
             this.CBEmpacado.TabIndex = 19;
             // 
             // CBImportado
@@ -359,15 +357,15 @@
             "-",
             "Si",
             "No"});
-            this.CBImportado.Location = new System.Drawing.Point(279, 157);
+            this.CBImportado.Location = new System.Drawing.Point(259, 157);
             this.CBImportado.Name = "CBImportado";
-            this.CBImportado.Size = new System.Drawing.Size(55, 23);
+            this.CBImportado.Size = new System.Drawing.Size(75, 23);
             this.CBImportado.TabIndex = 28;
             // 
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(210, 218);
+            this.label13.Location = new System.Drawing.Point(190, 218);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(41, 15);
             this.label13.TabIndex = 20;
@@ -427,9 +425,9 @@
             "-",
             "Si",
             "No"});
-            this.CBVence.Location = new System.Drawing.Point(279, 215);
+            this.CBVence.Location = new System.Drawing.Point(260, 215);
             this.CBVence.Name = "CBVence";
-            this.CBVence.Size = new System.Drawing.Size(55, 23);
+            this.CBVence.Size = new System.Drawing.Size(74, 23);
             this.CBVence.TabIndex = 21;
             // 
             // CBGrupo
@@ -438,7 +436,7 @@
             this.CBGrupo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CBGrupo.FormattingEnabled = true;
             this.CBGrupo.Items.AddRange(new object[] {
-            "Sin Especificar",
+            "-",
             "Casero",
             "Comercial",
             "Comestible",
@@ -447,7 +445,7 @@
             "Quimico"});
             this.CBGrupo.Location = new System.Drawing.Point(84, 213);
             this.CBGrupo.Name = "CBGrupo";
-            this.CBGrupo.Size = new System.Drawing.Size(110, 23);
+            this.CBGrupo.Size = new System.Drawing.Size(100, 23);
             this.CBGrupo.TabIndex = 23;
             // 
             // label7
@@ -472,8 +470,6 @@
             // 
             this.groupBox2.Controls.Add(this.lblTotal);
             this.groupBox2.Controls.Add(this.DGResultados);
-            this.groupBox2.Controls.Add(this.btnEliminar);
-            this.groupBox2.Controls.Add(this.btnEditar);
             this.groupBox2.Controls.Add(this.CHEliminar);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.TBBuscar);
@@ -499,55 +495,14 @@
             this.DGResultados.AllowUserToDeleteRows = false;
             this.DGResultados.BackgroundColor = System.Drawing.Color.White;
             this.DGResultados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGResultados.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Eliminar});
             this.DGResultados.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DGResultados.Location = new System.Drawing.Point(6, 62);
             this.DGResultados.Name = "DGResultados";
             this.DGResultados.ReadOnly = true;
-            this.DGResultados.Size = new System.Drawing.Size(500, 228);
+            this.DGResultados.Size = new System.Drawing.Size(500, 259);
             this.DGResultados.TabIndex = 5;
             this.DGResultados.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGResultados_CellContentClick);
-            // 
-            // Eliminar
-            // 
-            this.Eliminar.HeaderText = "Eliminar";
-            this.Eliminar.Name = "Eliminar";
-            this.Eliminar.ReadOnly = true;
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.BackgroundImage = global::CapaPresentacion.Properties.Resources.BV_Eliminar;
-            this.btnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEliminar.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnEliminar.FlatAppearance.BorderSize = 0;
-            this.btnEliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminar.Location = new System.Drawing.Point(431, 296);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(75, 25);
-            this.btnEliminar.TabIndex = 4;
-            this.btnEliminar.UseVisualStyleBackColor = true;
-            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
-            // 
-            // btnEditar
-            // 
-            this.btnEditar.BackgroundImage = global::CapaPresentacion.Properties.Resources.BV_Editar;
-            this.btnEditar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEditar.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnEditar.FlatAppearance.BorderSize = 0;
-            this.btnEditar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.btnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEditar.Location = new System.Drawing.Point(6, 296);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(75, 25);
-            this.btnEditar.TabIndex = 3;
-            this.btnEditar.UseVisualStyleBackColor = true;
-            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
+            this.DGResultados.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGResultados_CellDoubleClick);
             // 
             // CHEliminar
             // 
@@ -597,6 +552,7 @@
             this.Name = "frmProduccion_Productos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Produccion - Productos";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmProduccion_Productos_FormClosing);
             this.Load += new System.EventHandler(this.frmAlmacen_Productos_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -620,8 +576,6 @@
         private System.Windows.Forms.ComboBox CBVence;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.ComboBox CBEmpacado;
-        private System.Windows.Forms.ComboBox CBEstado;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox TBReferencia;
         private System.Windows.Forms.TextBox TBDescripcion;
         private System.Windows.Forms.TextBox TBProducto;
@@ -636,21 +590,19 @@
         private System.Windows.Forms.TextBox TBUbicacion;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.ComboBox CBMarca;
-        private System.Windows.Forms.TextBox Idproveedor;
+        private System.Windows.Forms.TextBox TBIdproveedor;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox TBBuscar;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btnExaminar;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox TBProveedor;
         private System.Windows.Forms.CheckBox CHEliminar;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.DataGridView DGResultados;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn Eliminar;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TBDias;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox TBFiltroID;
     }
 }

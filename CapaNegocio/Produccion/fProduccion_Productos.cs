@@ -13,7 +13,7 @@ namespace CapaNegocio
     {
         //Método Insertar que llama al método Insertar de la clase DIngreso
         //de la CapaDatos
-        public static string Guardar_DatosBasicos(int idempleado, int idmarca, int auto, int idestado,
+        public static string Guardar_DatosBasicos(int auto, int idempleado, int idmarca,  int estado,
             string codigoid, string producto, string descripcion, string referencia, string importado, string empacado, string vence, string grupo,
             string ofertable, string ubicacion)
         {
@@ -23,7 +23,7 @@ namespace CapaNegocio
             Obj.Idmarca = idmarca;
 
             Obj.Auto = auto;
-            Obj.Idestado = idestado;
+            Obj.Estado = estado;
 
             //Datos Basicos
             Obj.CodigoID = codigoid;
@@ -39,6 +39,13 @@ namespace CapaNegocio
             Obj.Ubicacion = ubicacion;
 
             return Obj.Guardar_DatosBasicos(Obj);
+        }
+
+        public static DataTable Buscar_Producto(string filtro)
+        {
+            Conexion_Produccion_Producto Obj = new Conexion_Produccion_Producto();
+            Obj.Filtro = filtro;
+            return Obj.Buscar_Producto(Obj);
         }
 
         public static DataTable CodigoID_Solicitud(string filtro)

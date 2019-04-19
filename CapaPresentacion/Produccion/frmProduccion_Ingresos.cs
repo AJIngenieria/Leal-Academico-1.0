@@ -14,6 +14,7 @@ namespace CapaPresentacion
     {
         private bool IsNuevo = false;
         private DataTable dtDetalle;
+        public bool Filtro = true;
 
         private static frmProduccion_Ingresos _Instancia;
 

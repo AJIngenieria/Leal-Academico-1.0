@@ -15,6 +15,18 @@ namespace CapaPresentacion
     public partial class frmProduccion_Bodegas : Form
     {
         private bool IsNuevo = false;
+        private bool IsEditar = false;
+
+        // Variable para La Consulta de Datos en la Tabla o DataGriview
+        private DataTable dtDetalle;
+
+        // Variables para Generar Codigo de Proveedor
+        // Y Consultarlo desde la Base de Datos
+        public string Codigo_SQL = "";
+        public string Codigo_ID = "";
+
+        //Variable para Metodo Eliminar
+        public string Eliminar_SQL;
         public frmProduccion_Bodegas()
         {
             InitializeComponent();
@@ -22,73 +34,68 @@ namespace CapaPresentacion
 
         private void frmAlmacen_Bodegas_Load(object sender, EventArgs e)
         {
-            this.ColoresDeBotones();
-            this.Botones();
-            this.Habilitar();
+            //Inicio de Variables Basicas
+            this.DesHabilitar();
 
-            this.CBEstado.SelectedIndex = 0;
+            //Desabilitacion de Botones y Texboxt ID
+            this.btnGuardar.Enabled = false;
+            this.btnEditar.Enabled = false;
+            this.btnEliminar.Enabled = false;
+            this.TBIdbodega.Visible = false;
+
+            //Seleccion de Combobox
+            //Color De Texboxt Para Buscar
+            //Creacion de Tablas
             this.CBZonas.SelectedIndex = 0;
-        }
-        private void ColoresDeBotones()
-        {
-            btnNuevo.BackgroundImage = Properties.Resources.BV_Nuevo;
-            btnGuardar.BackgroundImage = Properties.Resources.BV_Guardar;
-            btnEliminar.BackgroundImage = Properties.Resources.BV_Eliminar;
-            btnEditar.BackgroundImage = Properties.Resources.BV_Editar;
+            this.TBBuscar.BackColor = Color.FromArgb(32, 178, 170);
+            this.CrearTabla();
         }
 
         private void Habilitar()
         {
-            if (IsNuevo == false)
-            {
-                this.TBCodigoID.ReadOnly = true;
-                this.TBCodigoID.BackColor = Color.FromArgb(187, 222, 251);
-                this.CBEstado.Enabled = false;
-                this.CBEstado.BackColor = Color.FromArgb(187, 222, 251);
-                this.TBDescripcion.ReadOnly = true;
-                this.TBDescripcion.BackColor = Color.FromArgb(187, 222, 251);
-                this.TBResponsable.ReadOnly = true;
-                this.TBResponsable.BackColor = Color.FromArgb(187, 222, 251);
-                this.TBCiudad.Enabled = false;
-                this.TBCiudad.BackColor = Color.FromArgb(187, 222, 251);
-                this.CBZonas.Enabled = false;
-                this.CBZonas.BackColor = Color.FromArgb(187, 222, 251);
-                this.CBSucurzal.Enabled = false;
-                this.CBSucurzal.BackColor = Color.FromArgb(187, 222, 251);
-                this.TBDireccion1.ReadOnly = true;
-                this.TBDireccion1.BackColor = Color.FromArgb(187, 222, 251);
-                this.TBTelefono.ReadOnly = true;
-                this.TBTelefono.BackColor = Color.FromArgb(187, 222, 251);
-            }
+            //this.TBCodigoID.ReadOnly = false;
+            //this.TBCodigoID.BackColor = Color.FromArgb(32, 178, 170);
+            this.TBNombre.ReadOnly = false;
+            this.TBNombre.BackColor = Color.FromArgb(32, 178, 170);
+            this.TBResponsable.ReadOnly = false;
+            this.TBResponsable.BackColor = Color.FromArgb(32, 178, 170);
+            this.TBCiudad.Enabled = true;
+            this.TBCiudad.BackColor = Color.FromArgb(32, 178, 170);
+            this.CBZonas.Enabled = true;
+            this.CBZonas.BackColor = Color.FromArgb(32, 178, 170);
+            this.CBSucurzal.Enabled = true;
+            this.CBSucurzal.BackColor = Color.FromArgb(32, 178, 170);
+            this.TBDireccion1.ReadOnly = false;
+            this.TBDireccion1.BackColor = Color.FromArgb(32, 178, 170);
+            this.TBTelefono.ReadOnly = false;
+            this.TBTelefono.BackColor = Color.FromArgb(32, 178, 170);
+        }
 
-            else if (IsNuevo == true)
-            {
-                this.TBCodigoID.ReadOnly = false;
-                this.TBCodigoID.BackColor = Color.FromArgb(32, 178, 170);
-                this.CBEstado.Enabled = true;
-                this.CBEstado.BackColor = Color.FromArgb(32, 178, 170);
-                this.TBDescripcion.ReadOnly = false;
-                this.TBDescripcion.BackColor = Color.FromArgb(32, 178, 170);
-                this.TBResponsable.ReadOnly = false;
-                this.TBResponsable.BackColor = Color.FromArgb(32, 178, 170);
-                this.TBCiudad.Enabled = true;
-                this.TBCiudad.BackColor = Color.FromArgb(32, 178, 170);
-                this.CBZonas.Enabled = true;
-                this.CBZonas.BackColor = Color.FromArgb(32, 178, 170);
-                this.CBSucurzal.Enabled = true;
-                this.CBSucurzal.BackColor = Color.FromArgb(32, 178, 170);
-                this.TBDireccion1.ReadOnly = false;
-                this.TBDireccion1.BackColor = Color.FromArgb(32, 178, 170);
-                this.TBTelefono.ReadOnly = false;
-                this.TBTelefono.BackColor = Color.FromArgb(32, 178, 170);
-            }
+        private void DesHabilitar()
+        {
+            this.TBCodigoID.ReadOnly = true;
+            this.TBCodigoID.BackColor = Color.FromArgb(187, 222, 251);
+            this.TBNombre.ReadOnly = true;
+            this.TBNombre.BackColor = Color.FromArgb(187, 222, 251);
+            this.TBResponsable.ReadOnly = true;
+            this.TBResponsable.BackColor = Color.FromArgb(187, 222, 251);
+            this.TBCiudad.Enabled = false;
+            this.TBCiudad.BackColor = Color.FromArgb(187, 222, 251);
+            this.CBZonas.Enabled = false;
+            this.CBZonas.BackColor = Color.FromArgb(187, 222, 251);
+            this.CBSucurzal.Enabled = false;
+            this.CBSucurzal.BackColor = Color.FromArgb(187, 222, 251);
+            this.TBDireccion1.ReadOnly = true;
+            this.TBDireccion1.BackColor = Color.FromArgb(187, 222, 251);
+            this.TBTelefono.ReadOnly = true;
+            this.TBTelefono.BackColor = Color.FromArgb(187, 222, 251);
+
         }
 
         private void Limpiar()
         {
             this.TBCodigoID.Text = string.Empty;
-            this.CBEstado.SelectedIndex = 0;
-            this.TBDescripcion.Text = string.Empty;
+            this.TBNombre.Text = string.Empty;
             this.TBResponsable.Text = string.Empty;
             this.TBCiudad.Text = string.Empty;
             this.CBZonas.SelectedIndex = 0;
@@ -97,33 +104,75 @@ namespace CapaPresentacion
             this.TBTelefono.Text = string.Empty;
         }
 
-
-        private void Botones()
+        private void CrearTabla()
         {
-            if (this.IsNuevo == true)
-            {
-                this.btnNuevo.Visible = false;
-                this.btnGuardar.Visible = true;
-            }
+            //Crea la tabla con el nombre de Detalle
+            this.dtDetalle = new DataTable("Detalle");
+            //Agrega las columnas que tendra la tabla
+            this.dtDetalle.Columns.Add("Codigo Bodega", System.Type.GetType("System.Int32"));
+            this.dtDetalle.Columns.Add("Descripcion", System.Type.GetType("System.String"));
+            this.dtDetalle.Columns.Add("Sucurzal", System.Type.GetType("System.String"));
+            this.dtDetalle.Columns.Add("Ciudad", System.Type.GetType("System.String"));
+            //Relacionamos nuestro datagridview con nuestro datatable
+            this.DGResultado.DataSource = this.dtDetalle;
 
-            else
+        }
+
+        private void Consulta_CodigoID()
+        {
+            try
             {
-                this.btnNuevo.Visible = true;
-                this.btnGuardar.Visible = false;
+                DataTable Datos = CapaNegocio.fProduccion_Bodega.CodigoID_Solicitud("1");
+                //Evaluamos si  existen los Datos
+                if (Datos.Rows.Count == 0)
+                {
+                    Codigo_SQL = "1";
+                    //MessageBox.Show("No se Encontraron Registros en la Base de Datos", "Sistema Instituto Fundecar", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    Codigo_SQL = Datos.Rows[0][0].ToString();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
             }
         }
 
-
-        //Mensaje de confirmacion
-        private void MensajeOk(string mensaje)
+        public void AutoCompletar_ReInscripcion()
         {
-            MessageBox.Show(mensaje, "A&J Academico", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //Obtenemos el resultado de la base de datos de
+            //La columna Iddatos basicos - Tabla Prestamos.DatosBasicos
+            //Procedimiento Almacenado Sistema.CodigoID_Solicitud
+
+            this.TBCodigoID.Text = Codigo_SQL;
+
         }
 
-        //Mensaje de Error
-        private void MensajeError(string mensaje)
+        private void Consulta()
         {
-            MessageBox.Show(mensaje, "A&J Academico - Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //Se realiza una consulta General de los datos Registrados
+            //La cual se produce en la tabla Historico.Bodega
+            //Y el procedimiento Almacenado Produccion.Buscar_Bodega
+            try
+            {
+                this.DGResultado.DataSource = fProduccion_Bodega.Buscar_Bodega(this.TBBuscar.Text);
+                //this.DGResultado.Columns[0].Visible = false;
+                lblTotal.Text = "Datos Registrados: " + Convert.ToString(DGResultado.Rows.Count);
+
+                //Despues de realizar la consulta se procede
+                //A darle colores o fondo a los botones Eliminar y Editar
+
+                //btnEliminar.BackgroundImage = Properties.Resources.BV_Eliminar;
+                //btnNuevo.BackgroundImage = Properties.Resources.BV_Editar;
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
         }
 
         private void Combobox()
@@ -141,13 +190,45 @@ namespace CapaPresentacion
             }
         }
 
+        //Mensaje de confirmacion
+        private void MensajeOk(string mensaje)
+        {
+            MessageBox.Show(mensaje, "A&J Academico", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        //Mensaje de Error
+        private void MensajeError(string mensaje)
+        {
+            MessageBox.Show(mensaje, "A&J Academico - Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
+
         private void btnNuevo_Click(object sender, EventArgs e)
         {
-            this.IsNuevo = true;
-            this.Botones();
-            this.Habilitar();
+            if (!IsNuevo)
+            {
+                // Se procede habilitar los campos de textos del Datos Basicos
+                this.Habilitar();
+
+                // Se procede habilitar el Boton Guardar
+                // y los Campos de Textos junto con el Panel de Logo
+
+                this.btnGuardar.Enabled = true;
+                this.btnGuardar.Image = Properties.Resources.BV_Guardar;
+            }
+
+            // Se hace enfasis (Focus) Al Iniciar el Evento Click 
+            // sobre el Campo Nombre
+            
+            this.TBNombre.Focus();
             this.Combobox();
-            this.TBDescripcion.Focus();
+
+            // Se realiza la consulta para Auto Generar
+            // El Codigo del Proveedor desde la Base de Datos
+
+            this.Consulta_CodigoID();
+            this.AutoCompletar_ReInscripcion();
+            
+            this.IsNuevo = true;
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -162,15 +243,10 @@ namespace CapaPresentacion
                     MensajeError("Faltan Ingresar Algunos Datos, Estos Seran Remarcados");
                     TBCodigoID.BackColor = Color.FromArgb(250, 235, 215);
                 }
-                else if (this.CBEstado.Text == string.Empty)
+                else if (this.TBNombre.Text == string.Empty)
                 {
                     MensajeError("Faltan Ingresar Algunos Datos, Estos Seran Remarcados");
-                    CBEstado.BackColor = Color.FromArgb(250, 235, 215);
-                }
-                else if (this.TBDescripcion.Text == string.Empty)
-                {
-                    MensajeError("Faltan Ingresar Algunos Datos, Estos Seran Remarcados");
-                    TBDescripcion.BackColor = Color.FromArgb(250, 235, 215);
+                    TBNombre.BackColor = Color.FromArgb(250, 235, 215);
                 }
                 else if (this.TBCiudad.Text == string.Empty)
                 {
@@ -192,9 +268,9 @@ namespace CapaPresentacion
                 {
                     if (this.IsNuevo)
                     {
-                        //rptaDatosBasicos = fProduccion_Bodega.Guardar_DatosBasicos(4, this.TBCodigoID.Text, this.TBDescripcion.Text,
-                        //this.TBResponsable.Text, this.CBCiudadB.Text, this.CBZonas.Text, this.CBSucurzal.Text, this.TBDireccion1.Text, this.TBDireccion2.Text, this.TBTelefono.Text,
-                        //this.TBMovil.Text, this.CBPropiedad.Text, this.CBMensualidad.Text, this.TBValor.Text, this.CBEstado.Text, "1");
+                        rptaDatosBasicos = fProduccion_Bodega.Guardar_DatosBasicos(4, Convert.ToInt32(CBSucurzal.SelectedValue), this.TBCodigoID.Text, this.TBNombre.Text,
+                        this.TBResponsable.Text, this.TBCiudad.Text, this.CBZonas.Text, this.TBDireccion1.Text, this.TBTelefono.Text,
+                        1,"1");
                     }
 
                     if (rptaDatosBasicos.Equals("OK"))
@@ -211,9 +287,8 @@ namespace CapaPresentacion
                     }
 
                     this.IsNuevo = false;
-                    this.Botones();
                     this.Limpiar();
-                    this.Habilitar();
+                    this.DesHabilitar();
                 }
             }
             catch (Exception ex)
@@ -232,77 +307,106 @@ namespace CapaPresentacion
 
         }
 
+        private void DGResultado_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            try
+            {
+                //Cuando IsEditar o la Varible que se establezca en este caso IsEditar
+                //Contenga el simbolo ! su valor es igual al False
+                //Inicialmente esta Variable se esta Iniciando de Forma False en una variable de tipo Booleano
+
+                if (!IsEditar)
+                {
+                    this.TBIdbodega.Text = Convert.ToString(this.DGResultado.CurrentRow.Cells["Codigo Bodega"].Value);
+                    this.TBNombre.Text = Convert.ToString(this.DGResultado.CurrentRow.Cells["Descripcion"].Value);
+                    this.CBSucurzal.Text = Convert.ToString(this.DGResultado.CurrentRow.Cells["Sucurzal"].Value);
+                    this.TBCiudad.Text = Convert.ToString(this.DGResultado.CurrentRow.Cells["Ciudad"].Value);
+
+                }
+
+                //Se realiza el cambio del Boton Nuevo a Editar
+                //Igualmente se cambio se funcion de Habilitar o registrar un nuevo proveedor
+                //Para ahora realizar la funcion de Editar un registro en la Base de Datos
+                //cuando se le realice el evento Clip del Boton Ediatar/Guardar
+
+                this.btnEditar.Enabled = true;
+                this.btnEliminar.Enabled = true;
+
+                this.Habilitar();
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
+        }
+
+        private void TBBuscar_TextChanged(object sender, EventArgs e)
+        {
+            this.Consulta();
+        }
+
         private void btnNuevo_MouseDown(object sender, MouseEventArgs e)
         {
-            btnNuevo.BackgroundImage = Properties.Resources.BV_Nuevo;
+            btnNuevo.Image = Properties.Resources.BV_Nuevo;
         }
 
         private void btnNuevo_MouseLeave(object sender, EventArgs e)
         {
-            btnNuevo.BackgroundImage = Properties.Resources.BV_Nuevo;
+            btnNuevo.Image = Properties.Resources.BV_Nuevo;
         }
 
         private void btnNuevo_MouseMove(object sender, MouseEventArgs e)
         {
-            btnNuevo.BackgroundImage = Properties.Resources.BR_Nuevo;
+            btnNuevo.Image = Properties.Resources.BR_Nuevo;
         }
 
         private void btnGuardar_MouseDown(object sender, MouseEventArgs e)
         {
-            btnGuardar.BackgroundImage = Properties.Resources.BV_Guardar;
+            btnGuardar.Image = Properties.Resources.BV_Guardar;
         }
 
         private void btnGuardar_MouseLeave(object sender, EventArgs e)
         {
-            btnGuardar.BackgroundImage = Properties.Resources.BV_Guardar;
+            btnGuardar.Image = Properties.Resources.BV_Guardar;
         }
 
         private void btnGuardar_MouseMove(object sender, MouseEventArgs e)
         {
-            btnGuardar.BackgroundImage = Properties.Resources.BR_Guardar;
+            btnGuardar.Image = Properties.Resources.BR_Guardar;
         }
 
         private void btnEditar_MouseDown(object sender, MouseEventArgs e)
         {
-            btnEditar.BackgroundImage = Properties.Resources.BV_Editar;
+            btnEditar.Image = Properties.Resources.BV_Editar;
         }
 
         private void btnEditar_MouseLeave(object sender, EventArgs e)
         {
-            btnEditar.BackgroundImage = Properties.Resources.BV_Editar;
+            btnEditar.Image = Properties.Resources.BV_Editar;
         }
 
         private void btnEditar_MouseMove(object sender, MouseEventArgs e)
         {
-            btnEditar.BackgroundImage = Properties.Resources.BR_Editar;
+            btnEditar.Image = Properties.Resources.BR_Editar;
         }
 
         private void btnEliminar_MouseDown(object sender, MouseEventArgs e)
         {
-            btnEliminar.BackgroundImage = Properties.Resources.BV_Eliminar;
+            btnEliminar.Image = Properties.Resources.BV_Eliminar;
         }
 
         private void btnEliminar_MouseLeave(object sender, EventArgs e)
         {
-            btnEliminar.BackgroundImage = Properties.Resources.BV_Eliminar;
+            btnEliminar.Image = Properties.Resources.BV_Eliminar;
         }
 
         private void btnEliminar_MouseMove(object sender, MouseEventArgs e)
         {
-            btnEliminar.BackgroundImage = Properties.Resources.BR_Eliminar;
+            btnEliminar.Image = Properties.Resources.BR_Eliminar;
         }
 
         private void DGResultado_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void DGResultado_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void TBBuscar_TextChanged(object sender, EventArgs e)
         {
 
         }

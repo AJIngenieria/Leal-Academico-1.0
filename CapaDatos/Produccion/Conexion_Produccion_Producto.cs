@@ -14,7 +14,8 @@ namespace CapaDatos
         //Llaves primarias
         private int _Idproductos;
         private int _Idempleado;
-        private int _Idestado;
+        private int _Idproveedor;
+        private int _Estado;
         private int _Idmarca;
 
         private int _Auto;
@@ -35,7 +36,7 @@ namespace CapaDatos
 
         public int Idproductos { get => _Idproductos; set => _Idproductos = value; }
         public int Idempleado { get => _Idempleado; set => _Idempleado = value; }
-        public int Idestado { get => _Idestado; set => _Idestado = value; }
+        public int Estado { get => _Estado; set => _Estado = value; }
         public int Idmarca { get => _Idmarca; set => _Idmarca = value; }
         public int Auto { get => _Auto; set => _Auto = value; }
         public string Filtro { get => _Filtro; set => _Filtro = value; }
@@ -49,7 +50,7 @@ namespace CapaDatos
         public string Grupo { get => _Grupo; set => _Grupo = value; }
         public string Ofertable { get => _Ofertable; set => _Ofertable = value; }
         public string Ubicacion { get => _Ubicacion; set => _Ubicacion = value; }
-
+        public int Idproveedor { get => _Idproveedor; set => _Idproveedor = value; }
 
         public Conexion_Produccion_Producto()
         {
@@ -57,16 +58,17 @@ namespace CapaDatos
         }
         public Conexion_Produccion_Producto(
             
-            int idempleado, int auto, int idestado, string filtro, 
+            int idempleado, int idproveedor, int auto, int estado, string filtro, 
             string codigoid, string producto, string descripcion, string referencia, string importado, string empacado, string vence, string grupo,
             string ofertable, string ubicacion
             )
 
         {
             this.Idempleado = idempleado;
+            this.Idproveedor = idproveedor;
             this.Auto = auto;
 
-            this.Idestado = idestado;
+            this.Estado = estado;
             this.Filtro = filtro;
 
             //Datos Basicos
@@ -97,7 +99,7 @@ namespace CapaDatos
                 //Establecer la conexion para mandar a la base de datos
                 SqlCommand SqlCmd = new SqlCommand();
                 SqlCmd.Connection = SqlCon;
-                SqlCmd.CommandText = "Produccion.AJ_Productos";
+                SqlCmd.CommandText = "Produccion.LA_Productos";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
                 //Comienzo a mandar a la base de datos
@@ -119,11 +121,17 @@ namespace CapaDatos
                 ParIdmarca.Value = DatosBasicos.Idmarca;
                 SqlCmd.Parameters.Add(ParIdmarca);
 
-                SqlParameter ParIdestado = new SqlParameter();
-                ParIdestado.ParameterName = "@Idestado";
-                ParIdestado.SqlDbType = SqlDbType.Int;
-                ParIdestado.Value = DatosBasicos.Idestado;
-                SqlCmd.Parameters.Add(ParIdestado);
+                SqlParameter ParIdproveedor = new SqlParameter();
+                ParIdproveedor.ParameterName = "@Idproveedor";
+                ParIdproveedor.SqlDbType = SqlDbType.Int;
+                ParIdproveedor.Value = DatosBasicos.Idproveedor;
+                SqlCmd.Parameters.Add(ParIdproveedor);
+
+                SqlParameter ParEstado = new SqlParameter();
+                ParEstado.ParameterName = "@Estado";
+                ParEstado.SqlDbType = SqlDbType.Int;
+                ParEstado.Value = DatosBasicos.Estado;
+                SqlCmd.Parameters.Add(ParEstado);
 
                 SqlParameter ParAuto = new SqlParameter();
                 ParAuto.ParameterName = "@auto";
@@ -197,7 +205,7 @@ namespace CapaDatos
                 SqlParameter ParUbicacion = new SqlParameter();
                 ParUbicacion.ParameterName = "@Ubicacion";
                 ParUbicacion.SqlDbType = SqlDbType.VarChar;
-                ParUbicacion.Size = 10;
+                ParUbicacion.Size = 30;
                 ParUbicacion.Value = DatosBasicos.Ubicacion;
                 SqlCmd.Parameters.Add(ParUbicacion);
 
@@ -244,6 +252,39 @@ namespace CapaDatos
             }
             catch (Exception ex)
             {
+                DtResultado = null;
+            }
+            return DtResultado;
+        }
+
+        public DataTable Buscar_Producto(Conexion_Produccion_Producto Producto)
+        {
+            DataTable DtResultado = new DataTable("Produccion.Producto");
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                SqlCon.ConnectionString = Conexion_BaseDeDatos.Cn;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "Produccion.Buscar_Productos";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter ParTextoBuscar = new SqlParameter();
+                ParTextoBuscar.ParameterName = "@Filtro";
+                ParTextoBuscar.SqlDbType = SqlDbType.VarChar;
+                ParTextoBuscar.Size = 100;
+                ParTextoBuscar.Value = Producto.Filtro;
+                SqlCmd.Parameters.Add(ParTextoBuscar);
+
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+
+            }
+#pragma warning disable CS0168 // La variable está declarada pero nunca se usa
+            catch (Exception ex)
+#pragma warning restore CS0168 // La variable está declarada pero nunca se usa
+            {
+
                 DtResultado = null;
             }
             return DtResultado;

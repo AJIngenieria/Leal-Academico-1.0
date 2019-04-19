@@ -12,13 +12,17 @@ namespace CapaNegocio
     public class fProduccion_Proveedor
     {
         public static string Guardar_DatosBasicos
-            (//Datos Basicos
+            (
+            //Datos Basicos
 
-            int idempleado, string proveedor, string tipo, string area, string documento, string estado,
+            int idempleado, string proveedor, string codigoid, string tipo, string area, string documento,
             string titular, string pais, string ciudad, string telefono, string movil, string direccion1, string direccion2, 
             string email, DateTime inicio, byte[] foto,
 
-            int auto)
+            // Ingreso del Estado en el Sistema
+            // Y la verificacion si es Editar o Insertar
+            // Por medio de la variable Auto en la Base de Datos
+            int estado, int auto)
         {
             Conexion_Produccion_Proveedor Obj = new Conexion_Produccion_Proveedor();
 
@@ -30,6 +34,7 @@ namespace CapaNegocio
             Obj.Area = area;
             Obj.Estado = estado;
             Obj.Proveedor = proveedor;
+            Obj.CodigoID = codigoid;
             Obj.Documento = documento;
             Obj.Titular = titular;
             Obj.Pais = pais;
@@ -44,7 +49,6 @@ namespace CapaNegocio
 
             return Obj.Guardar_DatosBasicos(Obj);
         }
-
 
         public static DataTable Buscar_Proveedor(string filtro)
         {
