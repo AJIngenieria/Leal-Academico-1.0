@@ -139,8 +139,7 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.BackgroundImage = global::CapaPresentacion.Properties.Resources.BV_Guardar;
-            this.btnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGuardar.Image = global::CapaPresentacion.Properties.Resources.BV_Guardar;
             this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnGuardar.FlatAppearance.BorderSize = 0;
@@ -159,8 +158,7 @@
             // 
             // btnNuevo
             // 
-            this.btnNuevo.BackgroundImage = global::CapaPresentacion.Properties.Resources.BV_Nuevo;
-            this.btnNuevo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnNuevo.Image = global::CapaPresentacion.Properties.Resources.BV_Nuevo;
             this.btnNuevo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNuevo.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnNuevo.FlatAppearance.BorderSize = 0;
@@ -242,8 +240,7 @@
             // 
             // PanelFoto
             // 
-            this.PanelFoto.BackgroundImage = global::CapaPresentacion.Properties.Resources.A_J_Academico;
-            this.PanelFoto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.PanelFoto.Image = global::CapaPresentacion.Properties.Resources.A_J_Academico;
             this.PanelFoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PanelFoto.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PanelFoto.Location = new System.Drawing.Point(342, 64);

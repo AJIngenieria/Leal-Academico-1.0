@@ -39,8 +39,8 @@ namespace CapaPresentacion
 
         private void ColoresDeBotones()
         {
-            btnNuevo.BackgroundImage = Properties.Resources.BV_Nuevo;
-            btnGuardar.BackgroundImage = Properties.Resources.BV_Guardar;
+            btnNuevo.Image = Properties.Resources.BV_Nuevo;
+            btnGuardar.Image = Properties.Resources.BV_Guardar;
         }
 
         private void Habilitar()

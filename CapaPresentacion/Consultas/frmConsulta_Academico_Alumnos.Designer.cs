@@ -321,8 +321,7 @@
             // 
             // PanelFoto
             // 
-            this.PanelFoto.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("PanelFoto.BackgroundImage")));
-            this.PanelFoto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.PanelFoto.Image = ((System.Drawing.Image)(resources.GetObject("PanelFoto.Image")));
             this.PanelFoto.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PanelFoto.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PanelFoto.Location = new System.Drawing.Point(9, 6);
@@ -788,8 +787,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnExaminar_Familia.BackColor = System.Drawing.Color.White;
-            this.btnExaminar_Familia.BackgroundImage = global::CapaPresentacion.Properties.Resources.btnExaminar;
-            this.btnExaminar_Familia.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnExaminar_Familia.Image = global::CapaPresentacion.Properties.Resources.btnExaminar;
             this.btnExaminar_Familia.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnExaminar_Familia.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnExaminar_Familia.FlatAppearance.BorderSize = 0;
@@ -830,8 +828,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnExaminar_Orden.BackColor = System.Drawing.Color.White;
-            this.btnExaminar_Orden.BackgroundImage = global::CapaPresentacion.Properties.Resources.btnExaminar;
-            this.btnExaminar_Orden.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnExaminar_Orden.Image = global::CapaPresentacion.Properties.Resources.btnExaminar;
             this.btnExaminar_Orden.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnExaminar_Orden.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnExaminar_Orden.FlatAppearance.BorderSize = 0;
@@ -884,8 +881,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnExaminar_Codigo.BackColor = System.Drawing.Color.White;
-            this.btnExaminar_Codigo.BackgroundImage = global::CapaPresentacion.Properties.Resources.btnExaminar;
-            this.btnExaminar_Codigo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnExaminar_Codigo.Image = global::CapaPresentacion.Properties.Resources.btnExaminar;
             this.btnExaminar_Codigo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnExaminar_Codigo.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnExaminar_Codigo.FlatAppearance.BorderSize = 0;
@@ -2287,8 +2283,7 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.BackgroundImage = global::CapaPresentacion.Properties.Resources.BV_Guardar;
-            this.btnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGuardar.Image = global::CapaPresentacion.Properties.Resources.BV_Guardar;
             this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnGuardar.FlatAppearance.BorderSize = 0;
@@ -2303,8 +2298,7 @@
             // 
             // btnNuevo
             // 
-            this.btnNuevo.BackgroundImage = global::CapaPresentacion.Properties.Resources.BV_Nuevo;
-            this.btnNuevo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnNuevo.Image = global::CapaPresentacion.Properties.Resources.BV_Nuevo;
             this.btnNuevo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNuevo.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnNuevo.FlatAppearance.BorderSize = 0;

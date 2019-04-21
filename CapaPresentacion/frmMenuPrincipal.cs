@@ -157,6 +157,7 @@ namespace CapaPresentacion
             frmProduccion_Ingresos frmProduccion_IngresosDeBodega = frmProduccion_Ingresos.GetInstancia();
             frmProduccion_IngresosDeBodega.MdiParent = this;
             frmProduccion_IngresosDeBodega.Show();
+            frmProduccion_IngresosDeBodega.IDEmpleado = Convert.ToInt32(this.Idempleado);
         }
 
         private void registrosToolStripMenuItem_Click(object sender, EventArgs e)
@@ -289,9 +290,10 @@ namespace CapaPresentacion
 
         private void datosBasicosToolStripMenuItem2_Click(object sender, EventArgs e)
         {
-            frmProduccion_Cliente frmProduccion_Cliente_DatosBasicos = new frmProduccion_Cliente();
+            frmProduccion_Cliente frmProduccion_Cliente_DatosBasicos = frmProduccion_Cliente.GetInstancia();
             frmProduccion_Cliente_DatosBasicos.MdiParent = this;
             frmProduccion_Cliente_DatosBasicos.Show();
+            frmProduccion_Cliente_DatosBasicos.IDEmpleado = Convert.ToInt32(this.Idempleado);
         }
 
         private void datosBasicosToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -305,9 +307,10 @@ namespace CapaPresentacion
 
         private void costosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            frmProduccion_Costos frmProduccion_Costos = new frmProduccion_Costos();
+            frmProduccion_Costos frmProduccion_Costos = frmProduccion_Costos.GetInstancia();
             frmProduccion_Costos.MdiParent = this;
             frmProduccion_Costos.Show();
+            frmProduccion_Costos.IDEmpleado = Convert.ToInt32(this.Idempleado);
         }
 
         private void impuestosToolStripMenuItem3_Click(object sender, EventArgs e)

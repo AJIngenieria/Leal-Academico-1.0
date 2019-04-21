@@ -28,11 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.TBIdbodega = new System.Windows.Forms.TextBox();
-            this.TBIdproveedor = new System.Windows.Forms.TextBox();
-            this.btnBuscar = new System.Windows.Forms.Button();
+            this.btnAgregar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
@@ -40,14 +38,14 @@
             this.DGDetalles = new System.Windows.Forms.DataGridView();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.TBProveedor = new System.Windows.Forms.TextBox();
-            this.TBReferencia_Proveedor = new System.Windows.Forms.TextBox();
+            this.TBIdproveedor = new System.Windows.Forms.TextBox();
             this.btnExaminar_Proveedor = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.CBComprobante = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.TBComprobante = new System.Windows.Forms.TextBox();
-            this.TBReferencia_Bodega = new System.Windows.Forms.TextBox();
+            this.TBIdbodega = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnExaminar_Bodega = new System.Windows.Forms.Button();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
@@ -71,9 +69,7 @@
             this.groupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.groupBox1.Controls.Add(this.TBIdbodega);
-            this.groupBox1.Controls.Add(this.TBIdproveedor);
-            this.groupBox1.Controls.Add(this.btnBuscar);
+            this.groupBox1.Controls.Add(this.btnAgregar);
             this.groupBox1.Controls.Add(this.btnEliminar);
             this.groupBox1.Controls.Add(this.btnGuardar);
             this.groupBox1.Controls.Add(this.btnNuevo);
@@ -87,53 +83,37 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Leal Academico - Ingreso de Productos a Bodega";
             // 
-            // TBIdbodega
+            // btnAgregar
             // 
-            this.TBIdbodega.Location = new System.Drawing.Point(212, 464);
-            this.TBIdbodega.Name = "TBIdbodega";
-            this.TBIdbodega.Size = new System.Drawing.Size(47, 21);
-            this.TBIdbodega.TabIndex = 21;
-            // 
-            // TBIdproveedor
-            // 
-            this.TBIdproveedor.Location = new System.Drawing.Point(168, 464);
-            this.TBIdproveedor.Name = "TBIdproveedor";
-            this.TBIdproveedor.Size = new System.Drawing.Size(38, 21);
-            this.TBIdproveedor.TabIndex = 20;
-            // 
-            // btnBuscar
-            // 
-            this.btnBuscar.BackgroundImage = global::CapaPresentacion.Properties.Resources.BV_Agregar;
-            this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBuscar.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.btnBuscar.FlatAppearance.BorderSize = 0;
-            this.btnBuscar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.btnBuscar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.btnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscar.Location = new System.Drawing.Point(713, 464);
-            this.btnBuscar.Name = "btnBuscar";
-            this.btnBuscar.Size = new System.Drawing.Size(75, 25);
-            this.btnBuscar.TabIndex = 19;
-            this.btnBuscar.UseVisualStyleBackColor = true;
-            this.btnBuscar.Click += new System.EventHandler(this.btnBuscar_Click);
-            this.btnBuscar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnBuscar_MouseDown);
-            this.btnBuscar.MouseLeave += new System.EventHandler(this.btnBuscar_MouseLeave);
-            this.btnBuscar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnBuscar_MouseMove);
+            this.btnAgregar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAgregar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnAgregar.FlatAppearance.BorderSize = 0;
+            this.btnAgregar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnAgregar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnAgregar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregar.Image = global::CapaPresentacion.Properties.Resources.BV_Agregar;
+            this.btnAgregar.Location = new System.Drawing.Point(710, 467);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(76, 26);
+            this.btnAgregar.TabIndex = 19;
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            this.btnAgregar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnBuscar_MouseDown);
+            this.btnAgregar.MouseLeave += new System.EventHandler(this.btnBuscar_MouseLeave);
+            this.btnAgregar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnBuscar_MouseMove);
             // 
             // btnEliminar
             // 
-            this.btnEliminar.BackgroundImage = global::CapaPresentacion.Properties.Resources.BV_Eliminar;
-            this.btnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEliminar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnEliminar.FlatAppearance.BorderSize = 0;
             this.btnEliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEliminar.Location = new System.Drawing.Point(632, 464);
+            this.btnEliminar.Image = global::CapaPresentacion.Properties.Resources.BV_Eliminar;
+            this.btnEliminar.Location = new System.Drawing.Point(628, 467);
             this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(75, 25);
+            this.btnEliminar.Size = new System.Drawing.Size(76, 26);
             this.btnEliminar.TabIndex = 17;
             this.btnEliminar.UseVisualStyleBackColor = true;
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
@@ -143,17 +123,16 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.BackgroundImage = global::CapaPresentacion.Properties.Resources.BV_Guardar;
-            this.btnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnGuardar.FlatAppearance.BorderSize = 0;
             this.btnGuardar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.btnGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardar.Location = new System.Drawing.Point(87, 464);
+            this.btnGuardar.Image = global::CapaPresentacion.Properties.Resources.BV_Guardar;
+            this.btnGuardar.Location = new System.Drawing.Point(88, 467);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(75, 25);
+            this.btnGuardar.Size = new System.Drawing.Size(76, 26);
             this.btnGuardar.TabIndex = 16;
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
@@ -163,17 +142,16 @@
             // 
             // btnNuevo
             // 
-            this.btnNuevo.BackgroundImage = global::CapaPresentacion.Properties.Resources.BV_Nuevo;
-            this.btnNuevo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnNuevo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNuevo.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnNuevo.FlatAppearance.BorderSize = 0;
             this.btnNuevo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.btnNuevo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNuevo.Location = new System.Drawing.Point(6, 464);
+            this.btnNuevo.Image = global::CapaPresentacion.Properties.Resources.BV_Nuevo;
+            this.btnNuevo.Location = new System.Drawing.Point(6, 467);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(75, 25);
+            this.btnNuevo.Size = new System.Drawing.Size(76, 26);
             this.btnNuevo.TabIndex = 15;
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
@@ -189,7 +167,7 @@
             this.groupBox4.Controls.Add(this.DGDetalles);
             this.groupBox4.Location = new System.Drawing.Point(6, 134);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(780, 325);
+            this.groupBox4.Size = new System.Drawing.Size(780, 327);
             this.groupBox4.TabIndex = 14;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Detalle de Ingreso";
@@ -205,10 +183,10 @@
             this.DGDetalles.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DGDetalles.Location = new System.Drawing.Point(6, 20);
             this.DGDetalles.Name = "DGDetalles";
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DGDetalles.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DGDetalles.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.DGDetalles.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGDetalles.Size = new System.Drawing.Size(769, 299);
+            this.DGDetalles.Size = new System.Drawing.Size(769, 301);
             this.DGDetalles.TabIndex = 0;
             // 
             // groupBox3
@@ -217,14 +195,14 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox3.Controls.Add(this.TBProveedor);
-            this.groupBox3.Controls.Add(this.TBReferencia_Proveedor);
+            this.groupBox3.Controls.Add(this.TBIdproveedor);
             this.groupBox3.Controls.Add(this.btnExaminar_Proveedor);
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Controls.Add(this.label6);
             this.groupBox3.Controls.Add(this.CBComprobante);
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Controls.Add(this.TBComprobante);
-            this.groupBox3.Controls.Add(this.TBReferencia_Bodega);
+            this.groupBox3.Controls.Add(this.TBIdbodega);
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.btnExaminar_Bodega);
             this.groupBox3.Controls.Add(this.dateTimePicker1);
@@ -248,16 +226,16 @@
             this.TBProveedor.Size = new System.Drawing.Size(269, 21);
             this.TBProveedor.TabIndex = 29;
             // 
-            // TBReferencia_Proveedor
+            // TBIdproveedor
             // 
-            this.TBReferencia_Proveedor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.TBIdproveedor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TBReferencia_Proveedor.Location = new System.Drawing.Point(371, 49);
-            this.TBReferencia_Proveedor.Name = "TBReferencia_Proveedor";
-            this.TBReferencia_Proveedor.Size = new System.Drawing.Size(90, 21);
-            this.TBReferencia_Proveedor.TabIndex = 28;
-            this.TBReferencia_Proveedor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TBIdproveedor.Location = new System.Drawing.Point(371, 49);
+            this.TBIdproveedor.Name = "TBIdproveedor";
+            this.TBIdproveedor.Size = new System.Drawing.Size(90, 21);
+            this.TBIdproveedor.TabIndex = 28;
+            this.TBIdproveedor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnExaminar_Proveedor
             // 
@@ -349,16 +327,16 @@
             this.TBComprobante.Text = "000123456789";
             this.TBComprobante.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // TBReferencia_Bodega
+            // TBIdbodega
             // 
-            this.TBReferencia_Bodega.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.TBIdbodega.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TBReferencia_Bodega.Location = new System.Drawing.Point(371, 22);
-            this.TBReferencia_Bodega.Name = "TBReferencia_Bodega";
-            this.TBReferencia_Bodega.Size = new System.Drawing.Size(90, 21);
-            this.TBReferencia_Bodega.TabIndex = 22;
-            this.TBReferencia_Bodega.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TBIdbodega.Location = new System.Drawing.Point(371, 22);
+            this.TBIdbodega.Name = "TBIdbodega";
+            this.TBIdbodega.Size = new System.Drawing.Size(90, 21);
+            this.TBIdbodega.TabIndex = 22;
+            this.TBIdbodega.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label3
             // 
@@ -506,9 +484,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Produccion - Ingreso de Bodega";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmProduccion_Bodegas_Ingreso_FormClosing);
-            this.Load += new System.EventHandler(this.frmAlmacen_IngresosDeBodega_Load);
+            this.Load += new System.EventHandler(this.frmProduccion_Ingresos_Load);
             this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DGDetalles)).EndInit();
             this.groupBox3.ResumeLayout(false);
@@ -522,7 +499,7 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Button btnBuscar;
+        private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnNuevo;
@@ -535,7 +512,6 @@
         private System.Windows.Forms.ComboBox CBComprobante;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox TBComprobante;
-        private System.Windows.Forms.TextBox TBReferencia_Bodega;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnExaminar_Bodega;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
@@ -547,9 +523,8 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox TBIdbodega;
-        private System.Windows.Forms.TextBox TBIdproveedor;
         private System.Windows.Forms.TextBox TBProveedor;
-        private System.Windows.Forms.TextBox TBReferencia_Proveedor;
+        private System.Windows.Forms.TextBox TBIdproveedor;
         private System.Windows.Forms.Label label10;
     }
 }

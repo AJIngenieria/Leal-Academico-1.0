@@ -40,10 +40,10 @@ namespace CapaPresentacion
 
         private void ColoresDeBotones()
         {
-            btnNuevo.BackgroundImage = Properties.Resources.BV_Nuevo;
-            btnGuardar.BackgroundImage = Properties.Resources.BV_Guardar;
+            btnNuevo.Image = Properties.Resources.BV_Nuevo;
+            btnGuardar.Image = Properties.Resources.BV_Guardar;
 
-            btnExaminar.BackgroundImage = Properties.Resources.btnExaminar;
+            btnExaminar.Image = Properties.Resources.btnExaminar;
         }
 
         private void Habilitar()
@@ -238,32 +238,32 @@ namespace CapaPresentacion
 
         private void btnNuevo_MouseDown(object sender, MouseEventArgs e)
         {
-            btnNuevo.BackgroundImage = Properties.Resources.BV_Nuevo;
+            btnNuevo.Image = Properties.Resources.BV_Nuevo;
         }
 
         private void btnNuevo_MouseLeave(object sender, EventArgs e)
         {
-            btnNuevo.BackgroundImage = Properties.Resources.BV_Nuevo;
+            btnNuevo.Image = Properties.Resources.BV_Nuevo;
         }
 
         private void btnNuevo_MouseMove(object sender, MouseEventArgs e)
         {
-            btnNuevo.BackgroundImage = Properties.Resources.BR_Nuevo;
+            btnNuevo.Image = Properties.Resources.BR_Nuevo;
         }
 
         private void btnGuardar_MouseDown(object sender, MouseEventArgs e)
         {
-            btnGuardar.BackgroundImage = Properties.Resources.BV_Guardar;
+            btnGuardar.Image = Properties.Resources.BV_Guardar;
         }
 
         private void btnGuardar_MouseLeave(object sender, EventArgs e)
         {
-            btnGuardar.BackgroundImage = Properties.Resources.BV_Guardar;
+            btnGuardar.Image = Properties.Resources.BV_Guardar;
         }
 
         private void btnGuardar_MouseMove(object sender, MouseEventArgs e)
         {
-            btnGuardar.BackgroundImage = Properties.Resources.BR_Guardar;
+            btnGuardar.Image = Properties.Resources.BR_Guardar;
         }
 
         private void frmTesoreria_OrdenDeMatricula_FormClosing(object sender, FormClosingEventArgs e)

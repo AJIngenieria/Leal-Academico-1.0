@@ -438,7 +438,6 @@
             this.PanelLogo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.PanelLogo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.PanelLogo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.PanelLogo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PanelLogo.Location = new System.Drawing.Point(335, 68);

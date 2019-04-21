@@ -65,6 +65,9 @@
     <Compile Include="Biblioteca\Conexion_Biblioteca_DetalleDePrestamos.cs" />
     <Compile Include="Biblioteca\Conexion_Biblioteca_Libros.cs" />
     <Compile Include="Biblioteca\Conexion_Biblioteca_Prestamos.cs" />
+    <Compile Include="Produccion\Conexion_Produccion_DetalleDeIngreso.cs" />
+    <Compile Include="Produccion\Conexion_Produccion_Ingresos.cs" />
+    <Compile Include="Produccion\Conexion_Produccion_Costos.cs" />
     <Compile Include="Configuracion\Conexion_Configuracion_Equipos.cs" />
     <Compile Include="Configuracion\Configuracion_CodigoID.cs" />
     <Compile Include="Financiera\Conexion_Financiera_Consignaciones.cs" />
@@ -79,7 +82,7 @@
     <Compile Include="Produccion\Conexion_Produccion_Bodega.cs" />
     <Compile Include="Produccion\Conexion_Produccion_Clientes.cs" />
     <Compile Include="Produccion\Conexion_Produccion_Marca.cs" />
-    <Compile Include="Produccion\Conexion_Produccion_Producto_Codigos.cs" />
+    <Compile Include="Produccion\Conexion_Produccion_Cod_Barra.cs" />
     <Compile Include="Produccion\Conexion_Produccion_Producto_Costos.cs" />
     <Compile Include="Produccion\Conexion_Produccion_Impuesto.cs" />
     <Compile Include="Produccion\Conexion_Produccion_Producto.cs" />

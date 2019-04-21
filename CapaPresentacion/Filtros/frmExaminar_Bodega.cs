@@ -40,23 +40,19 @@ namespace CapaPresentacion
 
         private void DGResultados_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            //try
-            //{
-            //    if (e.KeyChar == Convert.ToChar(Keys.Enter))
-            //    {
-            //        frmProduccion_Bodegas_Ingreso form = frmProduccion_Bodegas_Ingreso.GetInstancia();
-            //        string par1, par2, par3;
-            //        par1 = Convert.ToString(this.DGResultados.CurrentRow.Cells["idbodega"].Value);
-            //        par2 = Convert.ToString(this.DGResultados.CurrentRow.Cells["Descripcion"].Value);
-            //        par3 = Convert.ToString(this.DGResultados.CurrentRow.Cells["CodigoID"].Value);
-            //        form.setBodega(par1, par2, par3);
-            //        this.Hide();
-            //    }
-            //}
-            //catch (Exception ex)
-            //{
-            //    MessageBox.Show(ex.Message + ex.StackTrace);
-            //}
+            try
+            {
+                frmProduccion_Ingresos form = frmProduccion_Ingresos.GetInstancia();
+                string par1, par2;
+                par1 = Convert.ToString(this.DGResultados.CurrentRow.Cells["Codigo"].Value);
+                par2 = Convert.ToString(this.DGResultados.CurrentRow.Cells["Bodega"].Value);
+                form.setBodega(par1, par2);
+                this.Hide();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
         }
 
         private void DGResultados_KeyPress(object sender, KeyPressEventArgs e)
@@ -66,11 +62,10 @@ namespace CapaPresentacion
                 if (e.KeyChar == Convert.ToChar(Keys.Enter))
                 {
                     frmProduccion_Ingresos form = frmProduccion_Ingresos.GetInstancia();
-                    string par1, par2, par3;
-                    par1 = Convert.ToString(this.DGResultados.CurrentRow.Cells["idbodega"].Value);
-                    par2 = Convert.ToString(this.DGResultados.CurrentRow.Cells["Descripcion"].Value);
-                    par3 = Convert.ToString(this.DGResultados.CurrentRow.Cells["CodigoID"].Value);
-                    form.setBodega(par1, par2, par3);
+                    string par1, par2;
+                    par1 = Convert.ToString(this.DGResultados.CurrentRow.Cells["Codigo"].Value);
+                    par2 = Convert.ToString(this.DGResultados.CurrentRow.Cells["Bodega"].Value);
+                    form.setBodega(par1, par2);
                     this.Hide();
                 }
             }

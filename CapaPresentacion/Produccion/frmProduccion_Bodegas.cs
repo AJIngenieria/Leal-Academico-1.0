@@ -164,8 +164,8 @@ namespace CapaPresentacion
                 //Despues de realizar la consulta se procede
                 //A darle colores o fondo a los botones Eliminar y Editar
 
-                //btnEliminar.BackgroundImage = Properties.Resources.BV_Eliminar;
-                //btnNuevo.BackgroundImage = Properties.Resources.BV_Editar;
+                //btnEliminar.Image = Properties.Resources.BV_Eliminar;
+                //btnNuevo.Image = Properties.Resources.BV_Editar;
 
 
             }
@@ -317,8 +317,8 @@ namespace CapaPresentacion
 
                 if (!IsEditar)
                 {
-                    this.TBIdbodega.Text = Convert.ToString(this.DGResultado.CurrentRow.Cells["Codigo Bodega"].Value);
-                    this.TBNombre.Text = Convert.ToString(this.DGResultado.CurrentRow.Cells["Descripcion"].Value);
+                    this.TBIdbodega.Text = Convert.ToString(this.DGResultado.CurrentRow.Cells["Codigo"].Value);
+                    this.TBNombre.Text = Convert.ToString(this.DGResultado.CurrentRow.Cells["Bodega"].Value);
                     this.CBSucurzal.Text = Convert.ToString(this.DGResultado.CurrentRow.Cells["Sucurzal"].Value);
                     this.TBCiudad.Text = Convert.ToString(this.DGResultado.CurrentRow.Cells["Ciudad"].Value);
 

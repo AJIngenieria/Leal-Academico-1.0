@@ -166,8 +166,8 @@ namespace CapaPresentacion
             this.dtDetalle.Columns.Add("Codigo Proveedor", System.Type.GetType("System.Int32"));
             this.dtDetalle.Columns.Add("Proveedor", System.Type.GetType("System.String"));
             this.dtDetalle.Columns.Add("Documento", System.Type.GetType("System.String"));
+            this.dtDetalle.Columns.Add("Referencia", System.Type.GetType("System.String"));
             this.dtDetalle.Columns.Add("Tipo", System.Type.GetType("System.String"));
-            this.dtDetalle.Columns.Add("Area", System.Type.GetType("System.String"));
             //Relacionamos nuestro datagridview con nuestro datatable
             this.DGResultados.DataSource = this.dtDetalle;
 
@@ -187,8 +187,8 @@ namespace CapaPresentacion
                 //Despues de realizar la consulta se procede
                 //A darle colores o fondo a los botones Eliminar y Editar
 
-                //btnEliminar.BackgroundImage = Properties.Resources.BV_Eliminar;
-                //btnNuevo.BackgroundImage = Properties.Resources.BV_Editar;
+                //btnEliminar.Image = Properties.Resources.BV_Eliminar;
+                //btnNuevo.Image = Properties.Resources.BV_Editar;
 
 
             }

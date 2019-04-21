@@ -58,6 +58,9 @@
     <Compile Include="Biblioteca\fBiblioteca_Prestamos.cs" />
     <Compile Include="Configuracion\fConfiguracion_Equipos.cs" />
     <Compile Include="fConfiguracion_CodigoID.cs" />
+    <Compile Include="Produccion\fProduccion_Costos.cs" />
+    <Compile Include="Produccion\fProduccion_Ingresos.cs" />
+    <Compile Include="Produccion\fProduccion_CodigoDeBarra.cs" />
     <Compile Include="Gestion\fGestion_DatosMedicos.cs" />
     <Compile Include="Gestion\fGestion_DatosPersonales.cs" />
     <Compile Include="Gestion\fGestion_Empleados.cs" />

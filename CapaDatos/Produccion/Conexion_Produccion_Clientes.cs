@@ -11,58 +11,61 @@ namespace CapaDatos
 {
     public class Conexion_Produccion_Clientes
     {
+        //Llaves Primarias
         private int _Idcliente;
-        private int _Idestado;
-        private int _Idciudad;
-        private int _Idpais;
+        private int _Idempleado;
+        private int _Estado;
 
-        private string _CodigoID;
+        //Datos Basicos
         private string _Cliente;
         private string _Documento;
-        private string _Identificacion;
-        private string _Telefono;
+        private string _Pais;
+        private string _Ciudad;
         private string _Movil;
+        private string _Telefono;
         private string _Email;
         private string _Direccion;
 
+        //Variables segun el proceso sea Insertar,Guardar,Buscar
         private int _Auto;
         private string _Filtro;
 
-        public int Idcliente { get => _Idcliente; set => _Idcliente = value; }
-        public int Idestado { get => _Idestado; set => _Idestado = value; }
-        public int Idciudad { get => _Idciudad; set => _Idciudad = value; }
-        public int Idpais { get => _Idpais; set => _Idpais = value; }
-        public string CodigoID { get => _CodigoID; set => _CodigoID = value; }
+        public int Idcliente { get => Idcliente1; set => Idcliente1 = value; }
+        public int Idcliente1 { get => _Idcliente; set => _Idcliente = value; }
+        public int Idempleado { get => _Idempleado; set => _Idempleado = value; }
+        public int Estado { get => _Estado; set => _Estado = value; }
         public string Cliente { get => _Cliente; set => _Cliente = value; }
         public string Documento { get => _Documento; set => _Documento = value; }
-        public string Identificacion { get => _Identificacion; set => _Identificacion = value; }
+        public string Pais { get => _Pais; set => _Pais = value; }
+        public string Ciudad { get => _Ciudad; set => _Ciudad = value; }
         public string Telefono { get => _Telefono; set => _Telefono = value; }
-        public string Movil { get => _Movil; set => _Movil = value; }
         public string Email { get => _Email; set => _Email = value; }
         public string Direccion { get => _Direccion; set => _Direccion = value; }
         public int Auto { get => _Auto; set => _Auto = value; }
         public string Filtro { get => _Filtro; set => _Filtro = value; }
+        public string Movil { get => _Movil; set => _Movil = value; }
 
         public Conexion_Produccion_Clientes()
         {
 
         }
 
-        public Conexion_Produccion_Clientes(
-            int idcliente, int idciudad, int idpais, string codigoid, string cliente, string documento, 
-            string identificacion, string telefono, string movil, string email, string direccion, int auto, string filtro
+        public Conexion_Produccion_Clientes
+            (
+                int idcliente, int idempleado, string cliente, string documento, 
+                string pais, string ciudad, string telefono, string movil, string email, string direccion, 
+                
+                int auto, string filtro
             )
         {
             this.Idcliente = idcliente;
-            this.Idciudad = idciudad;
-            this.Idestado = Idestado;
-            this.Idpais = idpais;
-            this.CodigoID = codigoid;
-            this.Cliente = cliente;
+            this.Idempleado = idempleado;
+            this.Cliente =cliente;
             this.Documento = documento;
-            this.Identificacion = identificacion;
-            this.Telefono = telefono;
+            this.Pais = pais;
+            this.Ciudad = ciudad;
             this.Movil = movil;
+            this.Telefono = telefono;
             this.Email = email;
             this.Direccion = direccion;
 
@@ -85,7 +88,7 @@ namespace CapaDatos
                 //Establecer la conexion para mandar a la base de datos
                 SqlCommand SqlCmd = new SqlCommand();
                 SqlCmd.Connection = SqlCon;
-                SqlCmd.CommandText = "Produccion.AJ_Cliente";
+                SqlCmd.CommandText = "Produccion.LA_Clientes";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
                 //Comienzo a mandar a la base de datos
@@ -101,57 +104,73 @@ namespace CapaDatos
                 ParAuto.Value = Cliente.Auto;
                 SqlCmd.Parameters.Add(ParAuto);
 
-                SqlParameter ParIdestado = new SqlParameter();
-                ParIdestado.ParameterName = "@Idestado";
-                ParIdestado.SqlDbType = SqlDbType.Int;
-                ParIdestado.Value = Cliente.Idestado;
-                SqlCmd.Parameters.Add(ParIdestado);
+                SqlParameter ParIdempleado = new SqlParameter();
+                ParIdempleado.ParameterName = "@Idempleado";
+                ParIdempleado.SqlDbType = SqlDbType.Int;
+                ParIdempleado.Value = Cliente.Idempleado;
+                SqlCmd.Parameters.Add(ParIdempleado);
 
-                SqlParameter ParIdpais = new SqlParameter();
-                ParIdpais.ParameterName = "@Idpais";
-                ParIdpais.SqlDbType = SqlDbType.Int;
-                ParIdpais.Value = Cliente.Idpais;
-                SqlCmd.Parameters.Add(ParIdpais);
+                SqlParameter ParEstado = new SqlParameter();
+                ParEstado.ParameterName = "@Estado";
+                ParEstado.SqlDbType = SqlDbType.Int;
+                ParEstado.Value = Cliente.Estado;
+                SqlCmd.Parameters.Add(ParEstado);
 
-                SqlParameter ParIdciudad = new SqlParameter();
-                ParIdciudad.ParameterName = "@Idciudad";
-                ParIdciudad.SqlDbType = SqlDbType.Int;
-                ParIdciudad.Value = Cliente.Idciudad;
-                SqlCmd.Parameters.Add(ParIdciudad);
+                SqlParameter ParCliente = new SqlParameter();
+                ParCliente.ParameterName = "@Cliente";
+                ParCliente.SqlDbType = SqlDbType.VarChar;
+                ParCliente.Size = 50;
+                ParCliente.Value = Cliente.Cliente;
+                SqlCmd.Parameters.Add(ParCliente);
 
-                SqlParameter ParCodigoID = new SqlParameter();
-                ParCodigoID.ParameterName = "@CodigoID";
-                ParCodigoID.SqlDbType = SqlDbType.VarChar;
-                ParCodigoID.Size = 20;
-                ParCodigoID.Value = Cliente.CodigoID;
-                SqlCmd.Parameters.Add(ParCodigoID);
+                SqlParameter ParDocumento = new SqlParameter();
+                ParDocumento.ParameterName = "@Documento";
+                ParDocumento.SqlDbType = SqlDbType.VarChar;
+                ParDocumento.Size = 20;
+                ParDocumento.Value = Cliente.Documento;
+                SqlCmd.Parameters.Add(ParDocumento);
 
-                //SqlParameter ParAutor = new SqlParameter();
-                //ParAutor.ParameterName = "@Autor";
-                //ParAutor.SqlDbType = SqlDbType.VarChar;
-                //ParAutor.Size = 50;
-                //ParAutor.Value = Cliente.Autor;
-                //SqlCmd.Parameters.Add(ParAutor);
+                SqlParameter ParPais = new SqlParameter();
+                ParPais.ParameterName = "@Pais";
+                ParPais.SqlDbType = SqlDbType.VarChar;
+                ParPais.Size = 20;
+                ParPais.Value = Cliente.Pais;
+                SqlCmd.Parameters.Add(ParPais);
 
-                //SqlParameter ParFecha = new SqlParameter();
-                //ParFecha.ParameterName = "@Fecha";
-                //ParFecha.SqlDbType = SqlDbType.Date;
-                //ParFecha.Value = Cliente.Fecha;
-                //SqlCmd.Parameters.Add(ParFecha);
+                SqlParameter ParCiudad = new SqlParameter();
+                ParCiudad.ParameterName = "@Ciudad";
+                ParCiudad.SqlDbType = SqlDbType.VarChar;
+                ParCiudad.Size = 20;
+                ParCiudad.Value = Cliente.Ciudad;
+                SqlCmd.Parameters.Add(ParCiudad);
 
-                //SqlParameter ParCantidad = new SqlParameter();
-                //ParCantidad.ParameterName = "@Cantidad";
-                //ParCantidad.SqlDbType = SqlDbType.VarChar;
-                //ParCantidad.Size = 20;
-                //ParCantidad.Value = Cliente.Cantidad;
-                //SqlCmd.Parameters.Add(ParCantidad);
+                SqlParameter ParMovil = new SqlParameter();
+                ParMovil.ParameterName = "@Movil";
+                ParMovil.SqlDbType = SqlDbType.VarChar;
+                ParMovil.Size = 50;
+                ParMovil.Value = Cliente.Movil;
+                SqlCmd.Parameters.Add(ParMovil);
 
-                //SqlParameter ParSerie = new SqlParameter();
-                //ParSerie.ParameterName = "@serie";
-                //ParSerie.SqlDbType = SqlDbType.VarChar;
-                //ParSerie.Size = 20;
-                //ParSerie.Value = Cliente.Serie;
-                //SqlCmd.Parameters.Add(ParSerie);
+                SqlParameter ParTelefono = new SqlParameter();
+                ParTelefono.ParameterName = "@Telefono";
+                ParTelefono.SqlDbType = SqlDbType.VarChar;
+                ParTelefono.Size = 50;
+                ParTelefono.Value = Cliente.Telefono;
+                SqlCmd.Parameters.Add(ParTelefono);
+
+                SqlParameter ParEmail = new SqlParameter();
+                ParEmail.ParameterName = "@Email";
+                ParEmail.SqlDbType = SqlDbType.VarChar;
+                ParEmail.Size = 50;
+                ParEmail.Value = Cliente.Email;
+                SqlCmd.Parameters.Add(ParEmail);
+
+                SqlParameter ParDireccion = new SqlParameter();
+                ParDireccion.ParameterName = "@Direccion";
+                ParDireccion.SqlDbType = SqlDbType.VarChar;
+                ParDireccion.Size = 100;
+                ParDireccion.Value = Cliente.Direccion;
+                SqlCmd.Parameters.Add(ParDireccion);
 
                 //ejecutamos el envio de datos
 
@@ -170,16 +189,48 @@ namespace CapaDatos
             return rpta;
         }
 
-        public DataTable Codigo_ID(Conexion_Produccion_Clientes CodigoID)
+        public DataTable Buscar_Cliente(Conexion_Produccion_Clientes Clientes)
         {
-            DataTable DtResultado = new DataTable("Produccion.Productos");
+            DataTable DtResultado = new DataTable("Produccion.Cliente");
             SqlConnection SqlCon = new SqlConnection();
             try
             {
                 SqlCon.ConnectionString = Conexion_BaseDeDatos.Cn;
                 SqlCommand SqlCmd = new SqlCommand();
                 SqlCmd.Connection = SqlCon;
-                SqlCmd.CommandText = "Sistema.ID_Productos";
+                SqlCmd.CommandText = "Produccion.Buscar_Cliente";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+                SqlParameter ParTextoBuscar = new SqlParameter();
+                ParTextoBuscar.ParameterName = "@Filtro";
+                ParTextoBuscar.SqlDbType = SqlDbType.VarChar;
+                ParTextoBuscar.Size = 100;
+                ParTextoBuscar.Value = Clientes.Filtro;
+                SqlCmd.Parameters.Add(ParTextoBuscar);
+
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(DtResultado);
+
+            }
+#pragma warning disable CS0168 // La variable está declarada pero nunca se usa
+            catch (Exception ex)
+#pragma warning restore CS0168 // La variable está declarada pero nunca se usa
+            {
+
+                DtResultado = null;
+            }
+            return DtResultado;
+        }
+        public DataTable CodigoID_Solicitud(Conexion_Produccion_Clientes CodigoID)
+        {
+            DataTable DtResultado = new DataTable("Produccion.Cliente");
+            SqlConnection SqlCon = new SqlConnection();
+            try
+            {
+                SqlCon.ConnectionString = Conexion_BaseDeDatos.Cn;
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "Sistema.ID_Cliente";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
                 SqlParameter ParFiltro = new SqlParameter();

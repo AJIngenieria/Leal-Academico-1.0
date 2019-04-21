@@ -186,17 +186,17 @@ namespace CapaPresentacion
                 //Datos Basicos
                 if (this.TBMarca.Text == string.Empty)
                 {
-                    MensajeError("Faltan Ingresar Algunos Datos en la Pestaña 'Datos Basicos', Estos Seran Remarcados");
+                    MensajeError("Faltan Ingresar Algunos Datos, Estos Seran Remarcados");
                     TBMarca.BackColor = Color.FromArgb(250, 235, 215);
                 }
                 else if (this.TBProveedor.Text == string.Empty)
                 {
-                    MensajeError("Faltan Ingresar Algunos Datos en la Pestaña 'Datos Basicos', Estos Seran Remarcados");
+                    MensajeError("Faltan Ingresar Algunos Datos, Estos Seran Remarcados");
                     TBProveedor.BackColor = Color.FromArgb(250, 235, 215);
                 }
                 else if (this.TBDescripcion.Text == string.Empty)
                 {
-                    MensajeError("Faltan Ingresar Algunos Datos en la Pestaña 'Datos Basicos', Estos Seran Remarcados");
+                    MensajeError("Faltan Ingresar Algunos Datos, Estos Seran Remarcados");
                     TBDescripcion.BackColor = Color.FromArgb(250, 235, 215);
                 }
 

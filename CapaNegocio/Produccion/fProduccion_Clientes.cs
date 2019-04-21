@@ -11,32 +11,42 @@ namespace CapaNegocio
 {
     public class fProduccion_Clientes
     {
-        public static string Guardar_DatosBasicos(int auto, int idestado, int idciudad, int idpais, string codigoid, string cliente, string documento,
-            string identificacion, string telefono, string movil, string email, string direccion)
+        public static string Guardar_DatosBasicos
+            (
+                int idempleado, string cliente, string documento,
+                string pais, string ciudad, string telefono, string movil, string email, string direccion,
+                int auto, int estado
+            )
         {
             Conexion_Produccion_Clientes Obj = new Conexion_Produccion_Clientes();
-            Obj.Idciudad = idciudad;
-            Obj.Idestado = idestado;
-            Obj.Idpais = idpais;
-            Obj.CodigoID = codigoid;
+            Obj.Idempleado = idempleado;
             Obj.Cliente = cliente;
             Obj.Documento = documento;
-            Obj.Identificacion = identificacion;
-            Obj.Telefono = telefono;
+            Obj.Pais = pais;
+            Obj.Ciudad = ciudad;
             Obj.Movil = movil;
+            Obj.Telefono = telefono;
             Obj.Email = email;
             Obj.Direccion = direccion;
 
+            Obj.Estado = estado;
             Obj.Auto = auto;
 
             return Obj.Guardar_DatosBasicos(Obj);
+        }
+
+        public static DataTable Buscar_Cliente(string filtro)
+        {
+            Conexion_Produccion_Clientes Obj = new Conexion_Produccion_Clientes();
+            Obj.Filtro = filtro;
+            return Obj.Buscar_Cliente(Obj);
         }
 
         public static DataTable CodigoID_Solicitud(string filtro)
         {
             Conexion_Produccion_Clientes Obj = new Conexion_Produccion_Clientes();
             Obj.Filtro = filtro;
-            return Obj.Codigo_ID(Obj);
+            return Obj.CodigoID_Solicitud(Obj);
         }
 
     }

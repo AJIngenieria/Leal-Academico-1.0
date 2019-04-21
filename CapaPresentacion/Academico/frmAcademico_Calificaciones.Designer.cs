@@ -121,8 +121,7 @@
             // 
             // btnBuscar
             // 
-            this.btnBuscar.BackgroundImage = global::CapaPresentacion.Properties.Resources.BV_Agregar;
-            this.btnBuscar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBuscar.Image = global::CapaPresentacion.Properties.Resources.BV_Agregar;
             this.btnBuscar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnBuscar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnBuscar.FlatAppearance.BorderSize = 0;
@@ -159,8 +158,7 @@
             // 
             // btnActualizar
             // 
-            this.btnActualizar.BackgroundImage = global::CapaPresentacion.Properties.Resources.BV_Agregar;
-            this.btnActualizar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnActualizar.Image = global::CapaPresentacion.Properties.Resources.BV_Agregar;
             this.btnActualizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnActualizar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnActualizar.FlatAppearance.BorderSize = 0;

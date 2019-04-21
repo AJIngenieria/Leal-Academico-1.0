@@ -131,7 +131,6 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEliminar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnEliminar.FlatAppearance.BorderSize = 0;
@@ -148,8 +147,7 @@
             // 
             // btnExaminar
             // 
-            this.btnExaminar.BackgroundImage = global::CapaPresentacion.Properties.Resources.btnExaminar;
-            this.btnExaminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnExaminar.Image = global::CapaPresentacion.Properties.Resources.btnExaminar;
             this.btnExaminar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnExaminar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnExaminar.FlatAppearance.BorderSize = 0;
@@ -165,7 +163,6 @@
             // 
             // btnEditar
             // 
-            this.btnEditar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEditar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnEditar.FlatAppearance.BorderSize = 0;
@@ -239,7 +236,6 @@
             // btnGuardar
             // 
             this.btnGuardar.BackColor = System.Drawing.SystemColors.Control;
-            this.btnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnGuardar.FlatAppearance.BorderSize = 0;
@@ -267,7 +263,6 @@
             // btnNuevo
             // 
             this.btnNuevo.BackColor = System.Drawing.Color.White;
-            this.btnNuevo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnNuevo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNuevo.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnNuevo.FlatAppearance.BorderSize = 0;

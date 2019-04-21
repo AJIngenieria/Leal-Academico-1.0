@@ -1669,34 +1669,34 @@
             // actualizarPreciosToolStripMenuItem1
             // 
             this.actualizarPreciosToolStripMenuItem1.Name = "actualizarPreciosToolStripMenuItem1";
-            this.actualizarPreciosToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.actualizarPreciosToolStripMenuItem1.Size = new System.Drawing.Size(171, 22);
             this.actualizarPreciosToolStripMenuItem1.Text = "Actualizar Precios";
             // 
             // codigosDeBarraToolStripMenuItem
             // 
             this.codigosDeBarraToolStripMenuItem.Name = "codigosDeBarraToolStripMenuItem";
-            this.codigosDeBarraToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.codigosDeBarraToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.codigosDeBarraToolStripMenuItem.Text = "Codigos de Barra";
             this.codigosDeBarraToolStripMenuItem.Click += new System.EventHandler(this.codigosDeBarraToolStripMenuItem_Click);
             // 
             // costosToolStripMenuItem
             // 
             this.costosToolStripMenuItem.Name = "costosToolStripMenuItem";
-            this.costosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.costosToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.costosToolStripMenuItem.Text = "Costos";
             this.costosToolStripMenuItem.Click += new System.EventHandler(this.costosToolStripMenuItem_Click);
             // 
             // datosBasicosToolStripMenuItem1
             // 
             this.datosBasicosToolStripMenuItem1.Name = "datosBasicosToolStripMenuItem1";
-            this.datosBasicosToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.datosBasicosToolStripMenuItem1.Size = new System.Drawing.Size(171, 22);
             this.datosBasicosToolStripMenuItem1.Text = "Datos Basicos";
             this.datosBasicosToolStripMenuItem1.Click += new System.EventHandler(this.datosBasicosToolStripMenuItem1_Click);
             // 
             // marcasToolStripMenuItem
             // 
             this.marcasToolStripMenuItem.Name = "marcasToolStripMenuItem";
-            this.marcasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.marcasToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
             this.marcasToolStripMenuItem.Text = "Marcas";
             this.marcasToolStripMenuItem.Click += new System.EventHandler(this.marcasToolStripMenuItem_Click);
             // 

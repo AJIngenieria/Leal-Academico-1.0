@@ -217,8 +217,8 @@ namespace CapaPresentacion
                 //Despues de realizar la consulta se procede
                 //A darle colores o fondo a los botones Eliminar y Editar
 
-                //btnEliminar.BackgroundImage = Properties.Resources.BV_Eliminar;
-                //btnNuevo.BackgroundImage = Properties.Resources.BV_Editar;
+                //btnEliminar.Image = Properties.Resources.BV_Eliminar;
+                //btnNuevo.Image = Properties.Resources.BV_Editar;
 
 
             }
@@ -508,10 +508,10 @@ namespace CapaPresentacion
                         //Para ahora realizar la funcion de editar cuando se le de clip
 
                         btnNuevo.Visible = true;
-                        btnNuevo.BackgroundImage = Properties.Resources.BV_Editar;
+                        btnNuevo.Image = Properties.Resources.BV_Editar;
 
                         btnGuardar.Visible = true;
-                        btnGuardar.BackgroundImage = Properties.Resources.BV_Cancelar;
+                        btnGuardar.Image = Properties.Resources.BV_Cancelar;
                     }
                 }
             }

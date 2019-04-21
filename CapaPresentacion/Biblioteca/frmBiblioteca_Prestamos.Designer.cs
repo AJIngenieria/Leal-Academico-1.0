@@ -105,8 +105,7 @@
             // 
             // btnNuevo
             // 
-            this.btnNuevo.BackgroundImage = global::CapaPresentacion.Properties.Resources.BV_Nuevo;
-            this.btnNuevo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnNuevo.Image = global::CapaPresentacion.Properties.Resources.BV_Nuevo;
             this.btnNuevo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNuevo.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnNuevo.FlatAppearance.BorderSize = 0;
@@ -122,8 +121,7 @@
             // 
             // btnExaminar_Articulo
             // 
-            this.btnExaminar_Articulo.BackgroundImage = global::CapaPresentacion.Properties.Resources.btnExaminar;
-            this.btnExaminar_Articulo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnExaminar_Articulo.Image = global::CapaPresentacion.Properties.Resources.btnExaminar;
             this.btnExaminar_Articulo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnExaminar_Articulo.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnExaminar_Articulo.FlatAppearance.BorderSize = 0;
@@ -139,8 +137,7 @@
             // 
             // btnAgregar
             // 
-            this.btnAgregar.BackgroundImage = global::CapaPresentacion.Properties.Resources.BV_Agregar;
-            this.btnAgregar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnAgregar.Image = global::CapaPresentacion.Properties.Resources.BV_Agregar;
             this.btnAgregar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAgregar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnAgregar.FlatAppearance.BorderSize = 0;
@@ -166,8 +163,7 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.BackgroundImage = global::CapaPresentacion.Properties.Resources.BV_Eliminar;
-            this.btnEliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnEliminar.Image = global::CapaPresentacion.Properties.Resources.BV_Eliminar;
             this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEliminar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnEliminar.FlatAppearance.BorderSize = 0;
@@ -195,8 +191,7 @@
             // 
             // btnGuardar
             // 
-            this.btnGuardar.BackgroundImage = global::CapaPresentacion.Properties.Resources.BV_Guardar;
-            this.btnGuardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGuardar.Image = global::CapaPresentacion.Properties.Resources.BV_Guardar;
             this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnGuardar.FlatAppearance.BorderSize = 0;
@@ -268,8 +263,7 @@
             // 
             // btnExaminar_Solicitante
             // 
-            this.btnExaminar_Solicitante.BackgroundImage = global::CapaPresentacion.Properties.Resources.btnExaminar;
-            this.btnExaminar_Solicitante.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnExaminar_Solicitante.Image = global::CapaPresentacion.Properties.Resources.btnExaminar;
             this.btnExaminar_Solicitante.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnExaminar_Solicitante.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnExaminar_Solicitante.FlatAppearance.BorderSize = 0;

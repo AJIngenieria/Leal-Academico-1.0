@@ -142,8 +142,7 @@
             // 
             // btnNuevo_Alumno
             // 
-            this.btnNuevo_Alumno.BackgroundImage = global::CapaPresentacion.Properties.Resources.BV_Nuevo;
-            this.btnNuevo_Alumno.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnNuevo_Alumno.Image = global::CapaPresentacion.Properties.Resources.BV_Nuevo;
             this.btnNuevo_Alumno.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNuevo_Alumno.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnNuevo_Alumno.FlatAppearance.BorderSize = 0;
@@ -159,8 +158,7 @@
             // 
             // btnGuardar_Alumno
             // 
-            this.btnGuardar_Alumno.BackgroundImage = global::CapaPresentacion.Properties.Resources.BV_Guardar;
-            this.btnGuardar_Alumno.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGuardar_Alumno.Image = global::CapaPresentacion.Properties.Resources.BV_Guardar;
             this.btnGuardar_Alumno.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGuardar_Alumno.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnGuardar_Alumno.FlatAppearance.BorderSize = 0;
@@ -194,8 +192,7 @@
             // 
             // btnGuardar_Empleado
             // 
-            this.btnGuardar_Empleado.BackgroundImage = global::CapaPresentacion.Properties.Resources.BV_Guardar;
-            this.btnGuardar_Empleado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnGuardar_Empleado.Image = global::CapaPresentacion.Properties.Resources.BV_Guardar;
             this.btnGuardar_Empleado.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGuardar_Empleado.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnGuardar_Empleado.FlatAppearance.BorderSize = 0;
@@ -211,8 +208,7 @@
             // 
             // btnNuevo_Empleado
             // 
-            this.btnNuevo_Empleado.BackgroundImage = global::CapaPresentacion.Properties.Resources.BV_Nuevo;
-            this.btnNuevo_Empleado.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnNuevo_Empleado.Image = global::CapaPresentacion.Properties.Resources.BV_Nuevo;
             this.btnNuevo_Empleado.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNuevo_Empleado.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnNuevo_Empleado.FlatAppearance.BorderSize = 0;
