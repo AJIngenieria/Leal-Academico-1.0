@@ -36,5 +36,23 @@ namespace CapaNegocio
         {
             return new Conexion_Produccion_Impuesto().Mostrar_Impuesto();
         }
+
+        public static string Guardar_AutoGenerador(
+            string impuesto, string tipo, string valor,
+            int idproveedor,string marca,string descripcion
+            )
+        {
+            Conexion_Produccion_Impuesto Obj = new Conexion_Produccion_Impuesto();
+            Obj.Impuesto = impuesto;
+            Obj.Tipo = tipo;
+            Obj.Valor = valor;
+
+            Obj.Idproveedor = idproveedor;
+            Obj.Marca = marca;
+            Obj.Descripcion =descripcion;
+
+            return Obj.Guardar_AutoGenerador(Obj);
+        }
+
     }
 }

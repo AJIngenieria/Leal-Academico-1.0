@@ -86,7 +86,6 @@
     <Compile Include="Produccion\Conexion_Produccion_Producto_Costos.cs" />
     <Compile Include="Produccion\Conexion_Produccion_Impuesto.cs" />
     <Compile Include="Produccion\Conexion_Produccion_Producto.cs" />
-    <Compile Include="Produccion\Conexion_Produccion_Producto_Proveedor.cs" />
     <Compile Include="Produccion\Conexion_Produccion_Proveedor.cs" />
     <Compile Include="Sistema\Conexion_Sistema_Estados.cs" />
     <Compile Include="Sistema\Conexion_Sistema_Sucurzal.cs" />

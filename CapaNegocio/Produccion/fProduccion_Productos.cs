@@ -11,11 +11,24 @@ namespace CapaNegocio
 {
     public class fProduccion_Productos
     {
-        //Método Insertar que llama al método Insertar de la clase DIngreso
-        //de la CapaDatos
-        public static string Guardar_DatosBasicos(int auto, int idempleado, int idmarca,  int estado,
-            string codigoid, string producto, string descripcion, string referencia, string importado, string empacado, string vence, string grupo,
-            string ofertable, string ubicacion)
+        
+        public static string Guardar_DatosBasicos
+            (
+                //Datos Basicos
+                int auto, int idempleado, int idmarca,  int estado,
+                string codigoid, string producto, string descripcion, string referencia, string importado, string empacado, string vence, string grupo,
+                string ofertable, string ubicacion,
+
+                //Costos de Productos
+                int idimpuesto, string compra, string va_venta, string va_maximo, string va_minimo, string ca_maxima,
+                string ca_minima, string oferta, DateTime inicio, DateTime fin, string v_impuesto, string balanza, string unidad, string medida
+
+                //Codigos de Barra
+
+
+
+                //Proveedor de Distribucion de Productos
+            )
         {
             Conexion_Produccion_Producto Obj = new Conexion_Produccion_Producto();
 
@@ -26,7 +39,7 @@ namespace CapaNegocio
             Obj.Estado = estado;
 
             //Datos Basicos
-            Obj.CodigoID = codigoid;
+            //Obj.CodigoID = codigoid;
             Obj.Producto = producto;
             Obj.Descripcion = descripcion;
 
@@ -36,7 +49,7 @@ namespace CapaNegocio
             Obj.Vence = vence;
             Obj.Grupo = grupo;
             Obj.Ofertable = ofertable;
-            Obj.Ubicacion = ubicacion;
+            //Obj.Ubicacion = ubicacion;
 
             return Obj.Guardar_DatosBasicos(Obj);
         }

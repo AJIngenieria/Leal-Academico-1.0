@@ -53,6 +53,7 @@ namespace CapaPresentacion
 
         private void frmAlmacen_Productos_Load(object sender, EventArgs e)
         {
+            
             //Inicio de Clase y Botones
             this.Combobox();
             this.DesHabilitar();
@@ -65,7 +66,6 @@ namespace CapaPresentacion
             this.btnGuardar.Enabled = false;
             this.btnEditar.Enabled = false;
             this.btnEliminar.Enabled = false;
-            this.btnExaminar.Enabled = false;
 
             this.TBIdproveedor.Visible = false;
 
@@ -73,7 +73,7 @@ namespace CapaPresentacion
             this.CBImportado.SelectedIndex = 0;
             this.CBEmpacado.SelectedIndex = 0;
             this.CBVence.SelectedIndex = 0;
-            this.CBGrupo.SelectedIndex = 0;
+            this.CBTipo.SelectedIndex = 0;
             this.CBOfertable.SelectedIndex = 0;
 
             //
@@ -82,14 +82,15 @@ namespace CapaPresentacion
 
         private void Habilitar()
         {
+            //Datos Basicos
             this.TBCodigoID.ReadOnly = false;
             this.TBCodigoID.BackColor = Color.FromArgb(32, 178, 170);
             this.TBProducto.ReadOnly = false;
             this.TBProducto.BackColor = Color.FromArgb(32, 178, 170);
             this.TBDescripcion.ReadOnly = false;
             this.TBDescripcion.BackColor = Color.FromArgb(32, 178, 170);
-            this.TBProveedor.ReadOnly = false;
-            this.TBProveedor.BackColor = Color.FromArgb(32, 178, 170);
+            this.TBBuscar_Proveedor.ReadOnly = false;
+            this.TBBuscar_Proveedor.BackColor = Color.FromArgb(32, 178, 170);
             this.CBMarca.Enabled = true;
             this.CBMarca.BackColor = Color.FromArgb(32, 178, 170);
             this.TBReferencia.ReadOnly = false;
@@ -102,12 +103,12 @@ namespace CapaPresentacion
             this.CBVence.BackColor = Color.FromArgb(32, 178, 170);
             this.TBDias.ReadOnly = false;
             this.TBDias.BackColor = Color.FromArgb(32, 178, 170);
-            this.CBGrupo.Enabled = true;
-            this.CBGrupo.BackColor = Color.FromArgb(32, 178, 170);
+            this.CBTipo.Enabled = true;
+            this.CBTipo.BackColor = Color.FromArgb(32, 178, 170);
             this.CBOfertable.Enabled = true;
             this.CBOfertable.BackColor = Color.FromArgb(32, 178, 170);
-            this.TBUbicacion.ReadOnly = false;
-            this.TBUbicacion.BackColor = Color.FromArgb(32, 178, 170);
+            this.TBBodega.ReadOnly = false;
+            this.TBBodega.BackColor = Color.FromArgb(32, 178, 170);
         }
 
         private void DesHabilitar()
@@ -118,8 +119,8 @@ namespace CapaPresentacion
             this.TBProducto.BackColor = Color.FromArgb(187, 222, 251);
             this.TBDescripcion.ReadOnly = true;
             this.TBDescripcion.BackColor = Color.FromArgb(187, 222, 251);
-            this.TBProveedor.ReadOnly = true;
-            this.TBProveedor.BackColor = Color.FromArgb(187, 222, 251);
+            this.TBBuscar_Proveedor.ReadOnly = true;
+            this.TBBuscar_Proveedor.BackColor = Color.FromArgb(187, 222, 251);
             this.CBMarca.Enabled = false;
             this.CBMarca.BackColor = Color.FromArgb(187, 222, 251);
             this.TBReferencia.ReadOnly = true;
@@ -132,12 +133,12 @@ namespace CapaPresentacion
             this.CBVence.BackColor = Color.FromArgb(187, 222, 251);
             this.TBDias.ReadOnly = true;
             this.TBDias.BackColor = Color.FromArgb(187, 222, 251);
-            this.CBGrupo.Enabled = false;
-            this.CBGrupo.BackColor = Color.FromArgb(187, 222, 251);
+            this.CBTipo.Enabled = false;
+            this.CBTipo.BackColor = Color.FromArgb(187, 222, 251);
             this.CBOfertable.Enabled = false;
             this.CBOfertable.BackColor = Color.FromArgb(187, 222, 251);
-            this.TBUbicacion.ReadOnly = true;
-            this.TBUbicacion.BackColor = Color.FromArgb(187, 222, 251);
+            this.TBBodega.ReadOnly = true;
+            this.TBBodega.BackColor = Color.FromArgb(187, 222, 251);
 
         }
 
@@ -148,14 +149,14 @@ namespace CapaPresentacion
             this.TBDescripcion.Text = string.Empty;
             this.CBMarca.Text = string.Empty;
             this.TBReferencia.Text = string.Empty;
-            this.TBProveedor.Text = string.Empty;
+            this.TBBuscar_Proveedor.Text = string.Empty;
             this.CBImportado.SelectedIndex = 0;
             this.CBEmpacado.SelectedIndex = 0;
             this.CBVence.SelectedIndex = 0;
             this.TBDias.Text = string.Empty;
-            this.CBGrupo.SelectedIndex = 0;
+            this.CBTipo.SelectedIndex = 0;
             this.CBOfertable.SelectedIndex = 0;
-            this.TBUbicacion.Text = string.Empty;
+            this.TBBodega.Text = string.Empty;
         }
 
         private void CrearTabla()
@@ -233,7 +234,7 @@ namespace CapaPresentacion
         public void setProveedor(string idproveedor, string proveedor)
         {
             this.TBIdproveedor.Text = idproveedor;
-            this.TBProveedor.Text = proveedor;
+            this.TBBuscar_Proveedor.Text = proveedor;
         }
 
         private void Combobox()
@@ -250,7 +251,7 @@ namespace CapaPresentacion
                 MessageBox.Show(ex.Message + ex.StackTrace);
             }
         }
-
+                
         //Mensaje de confirmacion
         private void MensajeOk(string mensaje)
         {
@@ -273,7 +274,7 @@ namespace CapaPresentacion
                 // Se procede habilitar el Boton Guardar
                 // y los Campos de Textos
 
-                this.btnExaminar.Enabled = true;
+                //this.btnExaminar.Enabled = true;
                 this.btnGuardar.Enabled = true;
                 this.btnGuardar.Image = Properties.Resources.BV_Guardar;
             }
@@ -306,10 +307,10 @@ namespace CapaPresentacion
                     MensajeError("Faltan Ingresar Algunos Datos en la Pestaña 'Datos Basicos', Estos Seran Remarcados");
                     TBProducto.BackColor = Color.FromArgb(250, 235, 215);
                 }
-                else if (this.TBProveedor.Text == string.Empty)
+                else if (this.TBBuscar_Proveedor.Text == string.Empty)
                 {
                     MensajeError("Faltan Ingresar Algunos Datos en la Pestaña 'Datos Basicos', Estos Seran Remarcados");
-                    TBProveedor.BackColor = Color.FromArgb(250, 235, 215);
+                    TBBuscar_Proveedor.BackColor = Color.FromArgb(250, 235, 215);
                 }
                 else if (this.TBDescripcion.Text == string.Empty)
                 {
@@ -321,9 +322,9 @@ namespace CapaPresentacion
                 {
                     if (this.IsNuevo)
                     {
-                        rptaDatosBasicos = fProduccion_Productos.Guardar_DatosBasicos(1,IDEmpleado, Convert.ToInt32(CBMarca.SelectedValue), 1,
-                        this.TBCodigoID.Text, this.TBProducto.Text, this.TBDescripcion.Text, this.TBReferencia.Text,
-                        this.CBImportado.Text, this.CBEmpacado.Text, this.CBVence.Text, this.CBGrupo.Text, this.CBOfertable.Text, this.TBUbicacion.Text);
+                        //rptaDatosBasicos = fProduccion_Productos.Guardar_DatosBasicos(1,IDEmpleado, Convert.ToInt32(CBMarca.SelectedValue), 1,
+                        //this.TBCodigoID.Text, this.TBProducto.Text, this.TBDescripcion.Text, this.TBReferencia.Text,
+                        //this.CBImportado.Text, this.CBEmpacado.Text, this.CBVence.Text, this.CBTipo.Text, this.CBOfertable.Text,this.TBBodega.Text);
                     }
 
                     if (rptaDatosBasicos.Equals("OK"))
@@ -377,7 +378,7 @@ namespace CapaPresentacion
                 if (!IsEditar)
                 {
                     this.TBIdproveedor.Text = Convert.ToString(this.DGResultados.CurrentRow.Cells["Codigo"].Value);
-                    this.TBProveedor.Text = Convert.ToString(this.DGResultados.CurrentRow.Cells["Producto"].Value);
+                    this.TBBuscar_Proveedor.Text = Convert.ToString(this.DGResultados.CurrentRow.Cells["Producto"].Value);
                     this.TBCodigoID.Text = Convert.ToString(this.DGResultados.CurrentRow.Cells["Marca"].Value);
 
                 }
@@ -455,6 +456,6 @@ namespace CapaPresentacion
         {
             _Instancia = null;
         }
-
+        
     }
 }

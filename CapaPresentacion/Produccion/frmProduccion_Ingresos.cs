@@ -437,5 +437,9 @@ namespace CapaPresentacion
             //this.TBProducto.Focus();
         }
 
+        private void productosBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+        }
     }
 }

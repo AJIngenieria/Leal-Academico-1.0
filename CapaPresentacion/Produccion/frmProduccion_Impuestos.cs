@@ -24,37 +24,28 @@ namespace CapaPresentacion
         {
             this.CBTipo.SelectedIndex = 0;
 
-            this.ColoresDeBotones();
-            this.Botones();
-            this.Habilitar();
         }
-        private void ColoresDeBotones()
+
+        private void DesHabilitar()
         {
-            btnNuevo.Image = Properties.Resources.BV_Nuevo;
-            btnGuardar.Image = Properties.Resources.BV_Guardar;
+            this.TBImpuesto.ReadOnly = true;
+            this.TBImpuesto.BackColor = Color.FromArgb(187, 222, 251);
+            this.CBTipo.Enabled = false;
+            this.CBTipo.BackColor = Color.FromArgb(187, 222, 251);
+            this.TBValor.ReadOnly = true;
+            this.TBValor.BackColor = Color.FromArgb(187, 222, 251);
+
+            
         }
 
         private void Habilitar()
         {
-            if (IsNuevo == false)
-            {
-                this.TBImpuesto.ReadOnly = true;
-                this.TBImpuesto.BackColor = Color.FromArgb(187, 222, 251);
-                this.CBTipo.Enabled = false;
-                this.CBTipo.BackColor = Color.FromArgb(187, 222, 251);
-                this.TBValor.ReadOnly = true;
-                this.TBValor.BackColor = Color.FromArgb(187, 222, 251);
-            }
-
-            else if (IsNuevo == true)
-            {
-                this.TBImpuesto.ReadOnly = false;
-                this.TBImpuesto.BackColor = Color.FromArgb(32, 178, 170);
-                this.CBTipo.Enabled = true;
-                this.CBTipo.BackColor = Color.FromArgb(32, 178, 170);
-                this.TBValor.ReadOnly = false;
-                this.TBValor.BackColor = Color.FromArgb(32, 178, 170);
-            }
+            this.TBImpuesto.ReadOnly = false;
+            this.TBImpuesto.BackColor = Color.FromArgb(32, 178, 170);
+            this.CBTipo.Enabled = true;
+            this.CBTipo.BackColor = Color.FromArgb(32, 178, 170);
+            this.TBValor.ReadOnly = false;
+            this.TBValor.BackColor = Color.FromArgb(32, 178, 170);
         }
 
         private void Limpiar()
@@ -65,40 +56,38 @@ namespace CapaPresentacion
         }
 
 
-        private void Botones()
-        {
-            if (this.IsNuevo == true)
-            {
-                this.btnNuevo.Visible = false;
-                this.btnGuardar.Visible = true;
-            }
-
-            else
-            {
-                this.btnNuevo.Visible = true;
-                this.btnGuardar.Visible = false;
-            }
-        }
-
-
         //Mensaje de confirmacion
         private void MensajeOk(string mensaje)
         {
-            MessageBox.Show(mensaje, "A&J Academico", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show(mensaje, "Leal Academico", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         //Mensaje de Error
         private void MensajeError(string mensaje)
         {
-            MessageBox.Show(mensaje, "A&J Academico - Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            MessageBox.Show(mensaje, "Leal Academico - Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
-            this.IsNuevo = true;
-            this.Botones();
-            this.Habilitar();
+            if (!IsNuevo)
+            {
+                // Se procede habilitar los campos de textos del Datos Basicos
+                this.Habilitar();
+
+                // Se procede habilitar el Boton Guardar
+                // y los Campos de Textos junto con el Panel de Logo
+
+                this.btnGuardar.Enabled = true;
+                this.btnGuardar.Image = Properties.Resources.BV_Guardar;
+            }
+
+            // Se hace enfasis (Focus) Al Iniciar el Evento Click 
+            // sobre el Campo Con Nombre Proveedor
+
             this.TBImpuesto.Focus();
+
+            this.IsNuevo = true;
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -127,7 +116,7 @@ namespace CapaPresentacion
                 {
                     if (this.IsNuevo)
                     {
-                        rptaDatosBasicos = fProduccion_Impuesto.Guardar_DatosBasicos("1", this.TBImpuesto.Text, this.CBTipo.Text, this.TBValor.Text);
+                        rptaDatosBasicos = fProduccion_Impuesto.Guardar_AutoGenerador("IVA_PRUEBA","IVA","19",1, "LENOVO3", "PRUEBA DE CONEXION");
                     }
 
                     if (rptaDatosBasicos.Equals("OK"))
@@ -143,10 +132,9 @@ namespace CapaPresentacion
                         this.MensajeError(rptaDatosBasicos);
                     }
 
-                    this.IsNuevo = false;
-                    this.Botones();
-                    this.Limpiar();
-                    this.Habilitar();
+                    //this.IsNuevo = false;
+                    //this.Limpiar();
+                    //this.Habilitar();
                 }
             }
             catch (Exception ex)

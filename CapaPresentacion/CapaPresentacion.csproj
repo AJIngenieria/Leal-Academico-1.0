@@ -34,9 +34,17 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ComboBoxMultiColumns">
+      <HintPath>..\..\..\..\..\Escritorio\ComboBoxMultiColumns(1)\ComboBoxMultiColumns\bin\Release\ComboBoxMultiColumns.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MultiColumnComboBox">
+      <HintPath>..\..\..\..\..\Descargas\MultiColumnComboBox\DLL\MultiColumnComboBox.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Management" />
     <Reference Include="System.Windows.Forms" />
@@ -67,6 +75,11 @@
     </Compile>
     <Compile Include="Biblioteca\frmBiblioteca_Niveles.Designer.cs">
       <DependentUpon>frmBiblioteca_Niveles.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <Compile Include="Sistema\frmSistema_CodigoID.cs">
       <SubType>Form</SubType>
@@ -692,6 +705,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
     <None Include="Resources\Academico.png" />
   </ItemGroup>
   <ItemGroup>
