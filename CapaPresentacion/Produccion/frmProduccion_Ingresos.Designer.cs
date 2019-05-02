@@ -171,12 +171,12 @@
             this.DGDetalles.AllowUserToDeleteRows = false;
             this.DGDetalles.BackgroundColor = System.Drawing.Color.White;
             this.DGDetalles.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.DGDetalles.Location = new System.Drawing.Point(6, 107);
+            this.DGDetalles.Location = new System.Drawing.Point(6, 20);
             this.DGDetalles.Name = "DGDetalles";
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DGDetalles.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.DGDetalles.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGDetalles.Size = new System.Drawing.Size(782, 228);
+            this.DGDetalles.Size = new System.Drawing.Size(782, 315);
             this.DGDetalles.TabIndex = 0;
             // 
             // groupBox3

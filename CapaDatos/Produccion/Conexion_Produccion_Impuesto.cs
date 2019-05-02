@@ -15,7 +15,7 @@ namespace CapaDatos
         private int _Idimpuesto;
         private string _Auto;
         private string _Filtro;
-        private string _Estado;
+        private int _Estado;
 
         //Adicional
         private int _Resultado;
@@ -26,15 +26,15 @@ namespace CapaDatos
         //Datos Basicos
         private string _Impuesto;
         private string _Tipo;
-        private string _Valor;
+        private int _Valor;
 
         public int Idimpuesto { get => _Idimpuesto; set => _Idimpuesto = value; }
         public string Auto { get => _Auto; set => _Auto = value; }
         public string Filtro { get => _Filtro; set => _Filtro = value; }
         public string Impuesto { get => _Impuesto; set => _Impuesto = value; }
         public string Tipo { get => _Tipo; set => _Tipo = value; }
-        public string Valor { get => _Valor; set => _Valor = value; }
-        public string Estado { get => _Estado; set => _Estado = value; }
+        public int Valor { get => _Valor; set => _Valor = value; }
+        public int Estado { get => _Estado; set => _Estado = value; }
         public int Resultado { get => _Resultado; set => _Resultado = value; }
         public int Idproveedor { get => _Idproveedor; set => _Idproveedor = value; }
         public string Marca { get => _Marca; set => _Marca = value; }
@@ -47,9 +47,9 @@ namespace CapaDatos
         }
         public Conexion_Produccion_Impuesto
             (//Datos Basicos
-            int idimpuesto, string impuesto, string tipo, string valor,
+            int idimpuesto, string impuesto, string tipo, int valor,
 
-            string filtro, string auto, string estado, 
+            string filtro, string auto, int estado, 
             
             int idproveedor, int resultado,
             string marca,string descripcion)
@@ -212,35 +212,22 @@ namespace CapaDatos
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
                 //Comienzo a mandar a la base de datos
-                //SqlParameter ParIdimpuesto = new SqlParameter();
-                //ParIdimpuesto.ParameterName = "@Idimpuesto";
-                //ParIdimpuesto.SqlDbType = SqlDbType.Int;
-                //ParIdimpuesto.Direction = ParameterDirection.Output;
-                //SqlCmd.Parameters.Add(ParIdimpuesto);
+                SqlParameter ParIdimpuesto = new SqlParameter();
+                ParIdimpuesto.ParameterName = "@Idimpuesto";
+                ParIdimpuesto.SqlDbType = SqlDbType.Int;
+                ParIdimpuesto.Direction = ParameterDirection.Output;
+                SqlCmd.Parameters.Add(ParIdimpuesto);
 
-                //SqlParameter ParIdmarcas = new SqlParameter();
-                //ParIdmarcas.ParameterName = "@Idmarcas";
-                //ParIdmarcas.SqlDbType = SqlDbType.Int;
-                //ParIdmarcas.Direction = ParameterDirection.Output;
-                //SqlCmd.Parameters.Add(ParIdmarcas);
-
-                SqlParameter ParResultado = new SqlParameter();
-                ParResultado.ParameterName = "@Resultado";
-                ParResultado.SqlDbType = SqlDbType.Int;
-                ParResultado.Direction = ParameterDirection.Output;
-                SqlCmd.Parameters.Add(ParResultado);
-
-                //SqlParameter ParAuto = new SqlParameter();
-                //ParAuto.ParameterName = "@Auto";
-                //ParAuto.SqlDbType = SqlDbType.VarChar;
-                //ParAuto.Size = 1;
-                //ParAuto.Value = DatosBasicos.Auto;
-                //SqlCmd.Parameters.Add(ParAuto);
+                SqlParameter ParIdmarcas = new SqlParameter();
+                ParIdmarcas.ParameterName = "@Idmarcas";
+                ParIdmarcas.SqlDbType = SqlDbType.Int;
+                ParIdmarcas.Direction = ParameterDirection.Output;
+                SqlCmd.Parameters.Add(ParIdmarcas);
 
                 SqlParameter ParImpuesto = new SqlParameter();
                 ParImpuesto.ParameterName = "@Impuesto";
                 ParImpuesto.SqlDbType = SqlDbType.VarChar;
-                ParImpuesto.Size = 20;
+                ParImpuesto.Size = 30;
                 ParImpuesto.Value = DatosBasicos.Impuesto;
                 SqlCmd.Parameters.Add(ParImpuesto);
 
@@ -253,8 +240,7 @@ namespace CapaDatos
 
                 SqlParameter ParValor = new SqlParameter();
                 ParValor.ParameterName = "@Valor";
-                ParValor.SqlDbType = SqlDbType.VarChar;
-                ParValor.Size = 20;
+                ParValor.SqlDbType = SqlDbType.Int;
                 ParValor.Value = DatosBasicos.Valor;
                 SqlCmd.Parameters.Add(ParValor);
 
@@ -271,7 +257,7 @@ namespace CapaDatos
                 SqlParameter ParMarca = new SqlParameter();
                 ParMarca.ParameterName = "@Marca";
                 ParMarca.SqlDbType = SqlDbType.VarChar;
-                ParMarca.Size = 20;
+                ParMarca.Size = 50;
                 ParMarca.Value = DatosBasicos.Marca;
                 SqlCmd.Parameters.Add(ParMarca);
 
@@ -282,19 +268,12 @@ namespace CapaDatos
                 ParDescripcion.Value = DatosBasicos.Descripcion;
                 SqlCmd.Parameters.Add(ParDescripcion);
 
-                //SqlParameter ParResultado = new SqlParameter();
-                //ParResultado.ParameterName = "@Resultado";
-                //ParResultado.SqlDbType = SqlDbType.Int;
-                //ParResultado.Value = DatosBasicos.Resultado;
-                //SqlCmd.Parameters.Add(ParResultado);
-
                 //ejecutamos el envio de datos
 
                 rpta = SqlCmd.ExecuteNonQuery() == 1 ? "OK" : "Error al Registrar";
             }
             catch (Exception ex)
             {
-
                 rpta = ex.Message;
             }
 

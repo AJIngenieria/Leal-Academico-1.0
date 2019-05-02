@@ -80,14 +80,15 @@ namespace CapaPresentacion
 
                 this.btnGuardar.Enabled = true;
                 this.btnGuardar.Image = Properties.Resources.BV_Guardar;
+
+                // Se hace enfasis (Focus) Al Iniciar el Evento Click 
+                // sobre el Campo Con Nombre Proveedor
+
+                this.TBImpuesto.Focus();
+
+                this.IsNuevo = true;
+
             }
-
-            // Se hace enfasis (Focus) Al Iniciar el Evento Click 
-            // sobre el Campo Con Nombre Proveedor
-
-            this.TBImpuesto.Focus();
-
-            this.IsNuevo = true;
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -95,6 +96,7 @@ namespace CapaPresentacion
             try
             {
                 string rptaDatosBasicos = "";
+                this.IsNuevo = true;
 
                 //Datos Basicos
                 if (this.TBImpuesto.Text == string.Empty)
@@ -116,7 +118,7 @@ namespace CapaPresentacion
                 {
                     if (this.IsNuevo)
                     {
-                        rptaDatosBasicos = fProduccion_Impuesto.Guardar_AutoGenerador("IVA_PRUEBA","IVA","19",1, "LENOVO3", "PRUEBA DE CONEXION");
+                        rptaDatosBasicos = fProduccion_Impuesto.Guardar_AutoGenerador("IVA_FINAL", "IVA", 19, 1, "LENOVO_FINAL", "PRUEBA FINAL");
                     }
 
                     if (rptaDatosBasicos.Equals("OK"))

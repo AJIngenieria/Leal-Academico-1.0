@@ -14,7 +14,7 @@ namespace CapaNegocio
     {
         //Método Insertar que llama al método Insertar de la clase DIngreso
         //de la CapaDatos
-        public static string Guardar_DatosBasicos(string auto, string impuesto, string tipo, string valor)
+        public static string Guardar_DatosBasicos(string auto, string impuesto, string tipo, int valor)
         {
             Conexion_Produccion_Impuesto Obj = new Conexion_Produccion_Impuesto();
             Obj.Auto = auto;
@@ -38,7 +38,7 @@ namespace CapaNegocio
         }
 
         public static string Guardar_AutoGenerador(
-            string impuesto, string tipo, string valor,
+            string impuesto, string tipo, int valor,
             int idproveedor,string marca,string descripcion
             )
         {
