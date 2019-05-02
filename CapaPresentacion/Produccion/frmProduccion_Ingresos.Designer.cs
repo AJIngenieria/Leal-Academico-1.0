@@ -56,6 +56,12 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cantidades = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Unidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Costo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGDetalles)).BeginInit();
@@ -170,14 +176,22 @@
             this.DGDetalles.AllowUserToAddRows = false;
             this.DGDetalles.AllowUserToDeleteRows = false;
             this.DGDetalles.BackgroundColor = System.Drawing.Color.White;
+            this.DGDetalles.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Codigo,
+            this.Descripcion,
+            this.Cantidades,
+            this.Unidad,
+            this.Costo,
+            this.Valor});
             this.DGDetalles.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DGDetalles.Location = new System.Drawing.Point(6, 20);
             this.DGDetalles.Name = "DGDetalles";
+            this.DGDetalles.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DGDetalles.RowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.DGDetalles.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.DGDetalles.Size = new System.Drawing.Size(782, 315);
             this.DGDetalles.TabIndex = 0;
+            this.DGDetalles.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGDetalles_CellEndEdit);
             // 
             // groupBox3
             // 
@@ -259,7 +273,7 @@
             this.CBComprobante.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CBComprobante.FormattingEnabled = true;
             this.CBComprobante.Items.AddRange(new object[] {
-            "Seleccione",
+            "-",
             "Boleta",
             "Cotizacion",
             "Factura",
@@ -398,6 +412,50 @@
             this.label7.TabIndex = 14;
             this.label7.Text = "Articulos en Lista";
             // 
+            // Codigo
+            // 
+            this.Codigo.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Codigo.HeaderText = "Codigo";
+            this.Codigo.Name = "Codigo";
+            this.Codigo.ReadOnly = true;
+            this.Codigo.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // Descripcion
+            // 
+            this.Descripcion.HeaderText = "Descripcion";
+            this.Descripcion.Name = "Descripcion";
+            this.Descripcion.ReadOnly = true;
+            this.Descripcion.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Descripcion.Width = 370;
+            // 
+            // Cantidades
+            // 
+            this.Cantidades.HeaderText = "Cant.";
+            this.Cantidades.Name = "Cantidades";
+            this.Cantidades.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Cantidades.Width = 60;
+            // 
+            // Unidad
+            // 
+            this.Unidad.HeaderText = "Unidad";
+            this.Unidad.Name = "Unidad";
+            this.Unidad.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Unidad.Width = 60;
+            // 
+            // Costo
+            // 
+            this.Costo.HeaderText = "Costo";
+            this.Costo.Name = "Costo";
+            this.Costo.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Costo.Width = 85;
+            // 
+            // Valor
+            // 
+            this.Valor.HeaderText = "Total";
+            this.Valor.Name = "Valor";
+            this.Valor.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Valor.Width = 85;
+            // 
             // frmProduccion_Ingresos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -433,7 +491,6 @@
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnNuevo;
         private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.DataGridView DGDetalles;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button btnExaminar_Proveedor;
         private System.Windows.Forms.Label label4;
@@ -454,5 +511,12 @@
         private System.Windows.Forms.TextBox TBIdbodega;
         private System.Windows.Forms.TextBox TBProveedor;
         private System.Windows.Forms.TextBox TBIdproveedor;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cantidades;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Unidad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Costo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Valor;
+        public System.Windows.Forms.DataGridView DGDetalles;
     }
 }

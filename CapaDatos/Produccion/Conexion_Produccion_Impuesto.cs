@@ -244,9 +244,7 @@ namespace CapaDatos
                 ParValor.Value = DatosBasicos.Valor;
                 SqlCmd.Parameters.Add(ParValor);
 
-
                 //Datos de Marcas
-
 
                 SqlParameter ParIdproveedor = new SqlParameter();
                 ParIdproveedor.ParameterName = "@Idproveedor";

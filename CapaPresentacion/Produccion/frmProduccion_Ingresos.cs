@@ -29,7 +29,7 @@ namespace CapaPresentacion
         //Variables para los detalles del ingreso
         //Se trabaja las columnas
         int Cantidad = 0;
-        decimal Unidad = 0;
+        decimal Valor_Unidad = 0;
         decimal Total = 0;
 
         // Variables para Generar Codigo de Proveedor
@@ -61,8 +61,8 @@ namespace CapaPresentacion
         {
             //Inicio de Clase y Botones
             this.DesHabilitar();
-            this.CrearTabla();
-            this.AutoAjustar_Columnas();
+            //this.CrearTabla();
+            //this.AutoAjustar_Columnas();
             
             //Desabilitacion de Botones
             this.btnGuardar.Enabled = false;
@@ -113,26 +113,6 @@ namespace CapaPresentacion
             this.TBComprobante.Text = string.Empty;
         }
 
-
-        private void Botones()
-        {
-            if (this.IsNuevo == true)
-            {
-                this.btnNuevo.Visible = false;
-                this.btnGuardar.Visible = true;
-                this.btnEliminar.Visible = true;
-                this.btnAgregar.Visible = true;
-            }
-
-            else
-            {
-                this.btnNuevo.Visible = true;
-                this.btnGuardar.Visible = false;
-                this.btnEliminar.Visible = false;
-                this.btnAgregar.Visible = false;
-            }
-        }
-
         private void Teclas(object sender, KeyPressEventArgs e)
         {
             if (Convert.ToInt32(e.KeyChar) == Convert.ToInt32(Keys.Control) + Convert.ToInt32(Keys.N))
@@ -144,48 +124,13 @@ namespace CapaPresentacion
         //Mensaje de confirmacion
         private void MensajeOk(string mensaje)
         {
-            MessageBox.Show(mensaje, "A&J Academico", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show(mensaje, "Leal Academico", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         //Mensaje de Error
         private void MensajeError(string mensaje)
         {
-            MessageBox.Show(mensaje, "A&J Academico - Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-        }
-
-        private void AutoAjustar_Columnas()
-        {
-            DGDetalles.Columns[0].Width = 70;
-            DGDetalles.Columns[1].Width = 375;
-            DGDetalles.Columns[2].Width = 70;
-            DGDetalles.Columns[3].Width = 70;
-            DGDetalles.Columns[4].Width = 70;
-            DGDetalles.Columns[5].Width = 70;
-        }
-
-        private void CrearTabla()
-        {
-            //Crea la tabla con el nombre de Detalle
-            this.dtDetalle = new DataTable("Detalle");
-            //Agrega las columnas que tendra la tabla
-            this.dtDetalle.Columns.Add("Codigo ID", System.Type.GetType("System.String"));
-            this.dtDetalle.Columns.Add("Producto", System.Type.GetType("System.String"));
-            this.dtDetalle.Columns.Add("Cantidad", System.Type.GetType("System.String"));
-            this.dtDetalle.Columns.Add("Unidad", System.Type.GetType("System.String"));
-            this.dtDetalle.Columns.Add("Costo", System.Type.GetType("System.String"));
-            this.dtDetalle.Columns.Add("Total", System.Type.GetType("System.String"));
-            //Relacionamos nuestro datagridview con nuestro datatable
-            this.DGDetalles.DataSource = this.dtDetalle;
-
-            DataRow row = dtDetalle.NewRow();
-            row["Codigo ID"] = "001";
-            row["Producto"] = "CAJA DE UNIFORMES DE DIARIO PARA HOMBRES";
-            row["Cantidad"] = "1";
-            row["Unidad"] = "CAJA";
-            row["Costo"] = "20000";
-            row["Total"] = "20000";
-
-            dtDetalle.Rows.Add(row);
+            MessageBox.Show(mensaje, "Leal Academico - Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
 
         private void Consulta_CodigoID()
@@ -231,7 +176,7 @@ namespace CapaPresentacion
             this.TBIdproveedor.Text = idproveedor;
             this.TBProveedor.Text = proveedor;
         }
-
+        
         private void btnNuevo_Click(object sender, EventArgs e)
         {
             if (!IsNuevo)
@@ -286,11 +231,6 @@ namespace CapaPresentacion
                     MensajeError("Falta Ingresar Campos Articulos, Estos Seran Remarcados");
                     TBComprobante.BackColor = Color.FromArgb(250, 235, 215);
                 }
-                //else if (this.TBAIANumeroDeComprobante.Text == string.Empty)
-                //{
-                //    MensajeError("Falta Ingresar Algunos Campos, Estos Seran Remarcados");
-                //    TBAIANumeroDeComprobante.BackColor = Color.FromArgb(250, 235, 215);
-                //}
 
                 else
                 {
@@ -314,7 +254,6 @@ namespace CapaPresentacion
                     }
 
                     this.IsNuevo = false;
-                    this.Botones();
                     this.Limpiar();
 
                 }
@@ -343,7 +282,8 @@ namespace CapaPresentacion
         {
             try
             {
-                
+                frmExaminar_Productos frmExaminar_Productos = new frmExaminar_Productos();
+                frmExaminar_Productos.ShowDialog();
             }
             catch (Exception ex)
             {
@@ -431,15 +371,40 @@ namespace CapaPresentacion
         private void btnNuevo_Auxiliar_Click(object sender, EventArgs e)
         {
             this.IsNuevo = true;
-            this.Botones();
             this.Habilitar();
             //this.Combobox();
             //this.TBProducto.Focus();
         }
 
-        private void productosBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        private void DGDetalles_CellEndEdit(object sender, DataGridViewCellEventArgs e)
         {
-            this.Validate();
+            if (DGDetalles.Columns[e.ColumnIndex].Name== "Costo")
+            {
+                try
+                {
+                    Cantidad=int.Parse(DGDetalles.Rows[e.RowIndex].Cells["Cantidades"].Value.ToString());
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Ingrese la Cantidad a Ingresar");
+                }
+
+                try
+                {
+                    Valor_Unidad = decimal.Parse(DGDetalles.Rows[e.RowIndex].Cells["Costo"].Value.ToString());
+                }
+                catch (Exception)
+                {
+                    MessageBox.Show("Debe Ingresar un Valor");
+                }
+
+                if (!(Cantidad==0)&&!(Valor_Unidad==0))
+                {
+                    Total = Cantidad * Valor_Unidad;
+                    DGDetalles.Rows[e.RowIndex].Cells["Valor"].Value = Total;
+                }
+            }
+            
         }
     }
 }

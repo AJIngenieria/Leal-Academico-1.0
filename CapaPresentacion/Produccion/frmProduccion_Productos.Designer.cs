@@ -81,12 +81,6 @@
             this.label34 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.TBValorCompra = new System.Windows.Forms.TextBox();
-            this.TPImpuestos = new System.Windows.Forms.TabPage();
-            this.label28 = new System.Windows.Forms.Label();
-            this.DGImpuestos = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
-            this.TBBuscar_Impuesto = new System.Windows.Forms.TextBox();
-            this.label26 = new System.Windows.Forms.Label();
             this.TPProveedor = new System.Windows.Forms.TabPage();
             this.label30 = new System.Windows.Forms.Label();
             this.label29 = new System.Windows.Forms.Label();
@@ -105,18 +99,16 @@
             this.btnNuevo = new System.Windows.Forms.Button();
             this.TBIdproveedor = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.TBIdbodega = new System.Windows.Forms.TextBox();
             this.lblTotal = new System.Windows.Forms.Label();
             this.DGResultados = new System.Windows.Forms.DataGridView();
             this.CHEliminar = new System.Windows.Forms.CheckBox();
             this.label4 = new System.Windows.Forms.Label();
             this.TBBuscar = new System.Windows.Forms.TextBox();
-            this.TBIdbodega = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.TPDatos.SuspendLayout();
             this.TPCostos.SuspendLayout();
-            this.TPImpuestos.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DGImpuestos)).BeginInit();
             this.TPProveedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGProveedor)).BeginInit();
             this.TPCodigos.SuspendLayout();
@@ -143,7 +135,6 @@
             // 
             this.tabControl1.Controls.Add(this.TPDatos);
             this.tabControl1.Controls.Add(this.TPCostos);
-            this.tabControl1.Controls.Add(this.TPImpuestos);
             this.tabControl1.Controls.Add(this.TPProveedor);
             this.tabControl1.Controls.Add(this.TPCodigos);
             this.tabControl1.Location = new System.Drawing.Point(8, 22);
@@ -703,77 +694,6 @@
             this.TBValorCompra.TabIndex = 160;
             this.TBValorCompra.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // TPImpuestos
-            // 
-            this.TPImpuestos.Controls.Add(this.label28);
-            this.TPImpuestos.Controls.Add(this.DGImpuestos);
-            this.TPImpuestos.Controls.Add(this.button1);
-            this.TPImpuestos.Controls.Add(this.TBBuscar_Impuesto);
-            this.TPImpuestos.Controls.Add(this.label26);
-            this.TPImpuestos.Location = new System.Drawing.Point(4, 24);
-            this.TPImpuestos.Name = "TPImpuestos";
-            this.TPImpuestos.Size = new System.Drawing.Size(340, 289);
-            this.TPImpuestos.TabIndex = 2;
-            this.TPImpuestos.Text = "Impuestos";
-            this.TPImpuestos.UseVisualStyleBackColor = true;
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(3, 30);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(31, 15);
-            this.label28.TabIndex = 189;
-            this.label28.Text = "------";
-            // 
-            // DGImpuestos
-            // 
-            this.DGImpuestos.AllowUserToAddRows = false;
-            this.DGImpuestos.AllowUserToDeleteRows = false;
-            this.DGImpuestos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.DGImpuestos.BackgroundColor = System.Drawing.Color.White;
-            this.DGImpuestos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DGImpuestos.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.DGImpuestos.Location = new System.Drawing.Point(6, 48);
-            this.DGImpuestos.Name = "DGImpuestos";
-            this.DGImpuestos.ReadOnly = true;
-            this.DGImpuestos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DGImpuestos.Size = new System.Drawing.Size(328, 238);
-            this.DGImpuestos.TabIndex = 188;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.BackgroundImage = global::CapaPresentacion.Properties.Resources.btnExaminar;
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(309, 6);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(25, 21);
-            this.button1.TabIndex = 187;
-            this.button1.UseVisualStyleBackColor = false;
-            // 
-            // TBBuscar_Impuesto
-            // 
-            this.TBBuscar_Impuesto.Location = new System.Drawing.Point(67, 6);
-            this.TBBuscar_Impuesto.Name = "TBBuscar_Impuesto";
-            this.TBBuscar_Impuesto.Size = new System.Drawing.Size(236, 21);
-            this.TBBuscar_Impuesto.TabIndex = 1;
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(3, 6);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(58, 15);
-            this.label26.TabIndex = 0;
-            this.label26.Text = "Impuesto";
-            // 
             // TPProveedor
             // 
             this.TPProveedor.Controls.Add(this.label30);
@@ -1012,6 +932,13 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Leal Academico - Consulta de Productos";
             // 
+            // TBIdbodega
+            // 
+            this.TBIdbodega.Location = new System.Drawing.Point(484, 18);
+            this.TBIdbodega.Name = "TBIdbodega";
+            this.TBIdbodega.Size = new System.Drawing.Size(14, 21);
+            this.TBIdbodega.TabIndex = 46;
+            // 
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
@@ -1070,13 +997,6 @@
             this.TBBuscar.TabIndex = 0;
             this.TBBuscar.TextChanged += new System.EventHandler(this.TBBuscar_TextChanged);
             // 
-            // TBIdbodega
-            // 
-            this.TBIdbodega.Location = new System.Drawing.Point(484, 18);
-            this.TBIdbodega.Name = "TBIdbodega";
-            this.TBIdbodega.Size = new System.Drawing.Size(14, 21);
-            this.TBIdbodega.TabIndex = 46;
-            // 
             // frmProduccion_Productos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -1099,9 +1019,6 @@
             this.TPDatos.PerformLayout();
             this.TPCostos.ResumeLayout(false);
             this.TPCostos.PerformLayout();
-            this.TPImpuestos.ResumeLayout(false);
-            this.TPImpuestos.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.DGImpuestos)).EndInit();
             this.TPProveedor.ResumeLayout(false);
             this.TPProveedor.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGProveedor)).EndInit();
@@ -1157,18 +1074,12 @@
         private System.Windows.Forms.TabPage TPDatos;
         private System.Windows.Forms.TabPage TPProveedor;
         private System.Windows.Forms.TabPage TPCostos;
-        private System.Windows.Forms.TabPage TPImpuestos;
         private System.Windows.Forms.TabPage TPCodigos;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.TextBox TBValorCompra;
         private System.Windows.Forms.TextBox TBBuscar_Proveedor;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox TBBuscar_Impuesto;
-        private System.Windows.Forms.Label label26;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.DataGridView DGImpuestos;
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.DataGridView DGProveedor;
         private System.Windows.Forms.Label label30;

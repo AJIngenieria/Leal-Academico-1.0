@@ -133,10 +133,6 @@ namespace CapaPresentacion
                     {
                         this.MensajeError(rptaDatosBasicos);
                     }
-
-                    //this.IsNuevo = false;
-                    //this.Limpiar();
-                    //this.Habilitar();
                 }
             }
             catch (Exception ex)

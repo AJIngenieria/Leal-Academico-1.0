@@ -62,6 +62,7 @@ namespace CapaPresentacion
             try
             {
                 frmProduccion_Costos frmPC = frmProduccion_Costos.GetInstancia();
+                frmProduccion_Ingresos frmPI = frmProduccion_Ingresos.GetInstancia();
 
                 ////Variables de frmProduccion_Marcas
                 //string frmPM1, frmPM2;
@@ -79,13 +80,32 @@ namespace CapaPresentacion
                     this.Hide();
                 }
 
-                //if (frmPM.Filtro)
-                //{
-                //    frmPM1 = Convert.ToString(this.DGResultados.CurrentRow.Cells["Codigo"].Value);
-                //    frmPM2 = Convert.ToString(this.DGResultados.CurrentRow.Cells["Proveedor"].Value);
-                //    frmPM.setProveedor(frmPM1, frmPM2);
-                //    this.Hide();
-                //}
+                if (frmPI.Filtro)
+                {
+                    //BOTON PASAR DATOS DE UNA DATAGRID A OTRA 
+                    foreach (DataGridViewRow row in DGResultados.SelectedRows)
+                    {
+
+                        //CAPTURAMOS VALOR DE LA FILA SELECCIONADA DG FORM2
+                        string A = this.DGResultados.CurrentRow.Cells["Codigo"].Value.ToString();
+                        string B = this.DGResultados.CurrentRow.Cells["Producto"].Value.ToString();
+
+                        //PASAMOS VAMOSRES DE FORM2  A FORM1 
+                        frmProduccion_Ingresos dato = new frmProduccion_Ingresos();
+                        foreach (Form frm in Application.OpenForms)
+                        {
+                            if (frm.Name == "Form1")
+                            {
+                                dato = (frmProduccion_Ingresos)frm;
+                                dato.DGDetalles.Rows.Add(A, B);
+
+                                this.Close();
+                                break;
+                            }
+                        }
+
+                    }
+                }
                 //if (frmPI.Filtro)
                 //{
                 //    frmPI1 = Convert.ToString(this.DGResultados.CurrentRow.Cells["Codigo"].Value);
