@@ -29,10 +29,11 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.TBIdimpuesto = new System.Windows.Forms.TextBox();
+            this.btnEliminar = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
+            this.CBAplicable = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.TBValor = new System.Windows.Forms.TextBox();
@@ -55,10 +56,11 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.comboBox1);
+            this.groupBox1.Controls.Add(this.TBIdimpuesto);
+            this.groupBox1.Controls.Add(this.btnEliminar);
+            this.groupBox1.Controls.Add(this.btnEditar);
+            this.groupBox1.Controls.Add(this.CBAplicable);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.btnGuardar);
             this.groupBox1.Controls.Add(this.btnNuevo);
             this.groupBox1.Controls.Add(this.TBValor);
@@ -69,56 +71,91 @@
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(330, 136);
+            this.groupBox1.Size = new System.Drawing.Size(330, 171);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "A&&J Academico - Registro de Impuestos";
+            this.groupBox1.Text = "Leal Academico - Registro de Impuestos";
             // 
-            // comboBox1
+            // TBIdimpuesto
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(230, 18);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(93, 23);
-            this.comboBox1.TabIndex = 12;
+            this.TBIdimpuesto.Location = new System.Drawing.Point(89, 111);
+            this.TBIdimpuesto.Name = "TBIdimpuesto";
+            this.TBIdimpuesto.Size = new System.Drawing.Size(57, 21);
+            this.TBIdimpuesto.TabIndex = 18;
+            // 
+            // btnEliminar
+            // 
+            this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEliminar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnEliminar.FlatAppearance.BorderSize = 0;
+            this.btnEliminar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnEliminar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnEliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEliminar.Image = global::CapaPresentacion.Properties.Resources.BV_Eliminar;
+            this.btnEliminar.Location = new System.Drawing.Point(248, 138);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(76, 26);
+            this.btnEliminar.TabIndex = 14;
+            this.btnEliminar.UseVisualStyleBackColor = true;
+            this.btnEliminar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnEliminar_MouseDown);
+            this.btnEliminar.MouseLeave += new System.EventHandler(this.btnEliminar_MouseLeave);
+            this.btnEliminar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnEliminar_MouseMove);
+            // 
+            // btnEditar
+            // 
+            this.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEditar.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.btnEditar.FlatAppearance.BorderSize = 0;
+            this.btnEditar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
+            this.btnEditar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
+            this.btnEditar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEditar.Image = global::CapaPresentacion.Properties.Resources.BV_Editar;
+            this.btnEditar.Location = new System.Drawing.Point(7, 138);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(76, 26);
+            this.btnEditar.TabIndex = 13;
+            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnEditar_MouseDown);
+            this.btnEditar.MouseLeave += new System.EventHandler(this.btnEditar_MouseLeave);
+            this.btnEditar.MouseMove += new System.Windows.Forms.MouseEventHandler(this.btnEditar_MouseMove);
+            // 
+            // CBAplicable
+            // 
+            this.CBAplicable.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.CBAplicable.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CBAplicable.FormattingEnabled = true;
+            this.CBAplicable.Items.AddRange(new object[] {
+            "-",
+            "Ambos",
+            "Juridico",
+            "Natural"});
+            this.CBAplicable.Location = new System.Drawing.Point(74, 77);
+            this.CBAplicable.Name = "CBAplicable";
+            this.CBAplicable.Size = new System.Drawing.Size(250, 23);
+            this.CBAplicable.Sorted = true;
+            this.CBAplicable.TabIndex = 12;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(179, 23);
+            this.label5.Location = new System.Drawing.Point(7, 80);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(45, 15);
+            this.label5.Size = new System.Drawing.Size(57, 15);
             this.label5.TabIndex = 11;
-            this.label5.Text = "Estado";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(73, 20);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 21);
-            this.textBox1.TabIndex = 10;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 23);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 15);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Codigo ID";
+            this.label5.Text = "Aplicable";
             // 
             // btnGuardar
             // 
-            this.btnGuardar.Image = global::CapaPresentacion.Properties.Resources.BV_Guardar;
             this.btnGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnGuardar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnGuardar.FlatAppearance.BorderSize = 0;
             this.btnGuardar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.btnGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuardar.Location = new System.Drawing.Point(248, 103);
+            this.btnGuardar.Image = global::CapaPresentacion.Properties.Resources.BV_Guardar;
+            this.btnGuardar.Location = new System.Drawing.Point(248, 106);
             this.btnGuardar.Name = "btnGuardar";
-            this.btnGuardar.Size = new System.Drawing.Size(75, 25);
+            this.btnGuardar.Size = new System.Drawing.Size(76, 26);
             this.btnGuardar.TabIndex = 8;
             this.btnGuardar.UseVisualStyleBackColor = true;
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
@@ -128,16 +165,16 @@
             // 
             // btnNuevo
             // 
-            this.btnNuevo.Image = global::CapaPresentacion.Properties.Resources.BV_Nuevo;
             this.btnNuevo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNuevo.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnNuevo.FlatAppearance.BorderSize = 0;
             this.btnNuevo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.White;
             this.btnNuevo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.White;
             this.btnNuevo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNuevo.Location = new System.Drawing.Point(9, 103);
+            this.btnNuevo.Image = global::CapaPresentacion.Properties.Resources.BV_Nuevo;
+            this.btnNuevo.Location = new System.Drawing.Point(7, 106);
             this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Size = new System.Drawing.Size(75, 25);
+            this.btnNuevo.Size = new System.Drawing.Size(76, 26);
             this.btnNuevo.TabIndex = 7;
             this.btnNuevo.UseVisualStyleBackColor = true;
             this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
@@ -147,7 +184,7 @@
             // 
             // TBValor
             // 
-            this.TBValor.Location = new System.Drawing.Point(230, 74);
+            this.TBValor.Location = new System.Drawing.Point(231, 48);
             this.TBValor.Name = "TBValor";
             this.TBValor.Size = new System.Drawing.Size(93, 21);
             this.TBValor.TabIndex = 6;
@@ -155,7 +192,7 @@
             // 
             // TBImpuesto
             // 
-            this.TBImpuesto.Location = new System.Drawing.Point(73, 47);
+            this.TBImpuesto.Location = new System.Drawing.Point(74, 21);
             this.TBImpuesto.Name = "TBImpuesto";
             this.TBImpuesto.Size = new System.Drawing.Size(250, 21);
             this.TBImpuesto.TabIndex = 5;
@@ -166,20 +203,19 @@
             this.CBTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CBTipo.FormattingEnabled = true;
             this.CBTipo.Items.AddRange(new object[] {
-            "Seleccione",
+            "-",
             "ReteIca",
             "ReteFuente",
             "ReteIVA"});
-            this.CBTipo.Location = new System.Drawing.Point(73, 74);
+            this.CBTipo.Location = new System.Drawing.Point(74, 48);
             this.CBTipo.Name = "CBTipo";
             this.CBTipo.Size = new System.Drawing.Size(100, 23);
             this.CBTipo.TabIndex = 4;
-            this.CBTipo.SelectedIndexChanged += new System.EventHandler(this.CBTipo_SelectedIndexChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(179, 77);
+            this.label3.Location = new System.Drawing.Point(180, 51);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(35, 15);
             this.label3.TabIndex = 3;
@@ -188,7 +224,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 77);
+            this.label2.Location = new System.Drawing.Point(7, 51);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(31, 15);
             this.label2.TabIndex = 2;
@@ -197,7 +233,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 50);
+            this.label1.Location = new System.Drawing.Point(7, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(58, 15);
             this.label1.TabIndex = 1;
@@ -210,10 +246,11 @@
             this.DGResultados.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DGResultados.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Eliminar});
+            this.DGResultados.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DGResultados.Location = new System.Drawing.Point(6, 62);
             this.DGResultados.Name = "DGResultados";
             this.DGResultados.ReadOnly = true;
-            this.DGResultados.Size = new System.Drawing.Size(500, 66);
+            this.DGResultados.Size = new System.Drawing.Size(500, 102);
             this.DGResultados.TabIndex = 13;
             this.DGResultados.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGResultados_CellContentClick);
             this.DGResultados.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGResultados_CellDoubleClick);
@@ -233,10 +270,10 @@
             this.groupBox2.Controls.Add(this.DGResultados);
             this.groupBox2.Location = new System.Drawing.Point(348, 12);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(513, 134);
+            this.groupBox2.Size = new System.Drawing.Size(513, 171);
             this.groupBox2.TabIndex = 14;
             this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
+            this.groupBox2.Text = "Leal Academico - Consulta de Impuestos Registrados";
             // 
             // label7
             // 
@@ -281,7 +318,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(871, 158);
+            this.ClientSize = new System.Drawing.Size(871, 193);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -310,10 +347,6 @@
         private System.Windows.Forms.TextBox TBValor;
         private System.Windows.Forms.TextBox TBImpuesto;
         private System.Windows.Forms.ComboBox CBTipo;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DataGridView DGResultados;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.CheckBox checkBox1;
@@ -321,5 +354,10 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Eliminar;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btnEliminar;
+        private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.ComboBox CBAplicable;
+        private System.Windows.Forms.TextBox TBIdimpuesto;
     }
 }

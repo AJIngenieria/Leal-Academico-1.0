@@ -29,7 +29,6 @@ namespace CapaPresentacion
             try
             {
                 this.DGResultados.DataSource = fProduccion_Bodega.Buscar_Bodega(this.TBBuscar.Text);
-                this.DGResultados.Columns[0].Visible = false;
                 lblTotal.Text = "Datos Registrados: " + Convert.ToString(DGResultados.Rows.Count);
             }
             catch (Exception ex)
@@ -42,12 +41,25 @@ namespace CapaPresentacion
         {
             try
             {
-                frmProduccion_Ingresos form = frmProduccion_Ingresos.GetInstancia();
-                string par1, par2;
-                par1 = Convert.ToString(this.DGResultados.CurrentRow.Cells["Codigo"].Value);
-                par2 = Convert.ToString(this.DGResultados.CurrentRow.Cells["Bodega"].Value);
-                form.setBodega(par1, par2);
-                this.Hide();
+                frmProduccion_Productos frmPP = frmProduccion_Productos.GetInstancia();
+
+                ////Variables de frmProduccion_Marcas
+                //string frmPM1, frmPM2;
+                ////Variables de frmProduccion_Ingresos
+                //string frmPI1, frmPI2, frmPI3;
+
+                //Variables de frmProduccion_Productos
+                string frmPP1, frmPP2;
+
+
+                if (frmPP.Filtro)
+                {
+                    frmPP1 = Convert.ToString(this.DGResultados.CurrentRow.Cells["Codigo"].Value);
+                    frmPP2 = Convert.ToString(this.DGResultados.CurrentRow.Cells["Bodega"].Value);
+                    frmPP.setBodega(frmPP1, frmPP2);
+                    this.Hide();
+                }
+
             }
             catch (Exception ex)
             {
@@ -61,12 +73,24 @@ namespace CapaPresentacion
             {
                 if (e.KeyChar == Convert.ToChar(Keys.Enter))
                 {
-                    frmProduccion_Ingresos form = frmProduccion_Ingresos.GetInstancia();
-                    string par1, par2;
-                    par1 = Convert.ToString(this.DGResultados.CurrentRow.Cells["Codigo"].Value);
-                    par2 = Convert.ToString(this.DGResultados.CurrentRow.Cells["Bodega"].Value);
-                    form.setBodega(par1, par2);
-                    this.Hide();
+                    frmProduccion_Productos frmPP = frmProduccion_Productos.GetInstancia();
+
+                    ////Variables de frmProduccion_Marcas
+                    //string frmPM1, frmPM2;
+                    ////Variables de frmProduccion_Ingresos
+                    //string frmPI1, frmPI2, frmPI3;
+
+                    //Variables de frmProduccion_Productos
+                    string frmPP1, frmPP2;
+
+
+                    if (frmPP.Filtro)
+                    {
+                        frmPP1 = Convert.ToString(this.DGResultados.CurrentRow.Cells["Codigo"].Value);
+                        frmPP2 = Convert.ToString(this.DGResultados.CurrentRow.Cells["Bodega"].Value);
+                        frmPP.setBodega(frmPP1, frmPP2);
+                        this.Hide();
+                    }
                 }
             }
             catch (Exception ex)

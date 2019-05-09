@@ -14,7 +14,7 @@ namespace CapaNegocio
         public static string Guardar_DatosBasicos
             (
             int idempleado, int idsucurzal, string codigoid, string descripcion, string responsable, 
-            string ciudad, string zona, string direccion, string telefono, 
+            string ciudad, string zona, string direccion01, string direccion02, string telefono, string movil,
             
             int estado, string auto
             )
@@ -30,7 +30,8 @@ namespace CapaNegocio
             Obj.Ciudad = ciudad;
             Obj.Zona = zona;
             Obj.Idsucurzal = idsucurzal;
-            Obj.Direccion = direccion;
+            Obj.Direccion01 = direccion02;
+            Obj.Direccion02 = direccion02;
             Obj.Telefono = telefono;
             
             return Obj.Guardar_DatosBasicos(Obj);

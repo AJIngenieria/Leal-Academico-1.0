@@ -14,8 +14,17 @@ namespace CapaPresentacion
 {
     public partial class frmProduccion_Bodegas : Form
     {
+        // Variable con la cual se define si el procecimiento 
+        // A realizar es Editar, Guardar, Buscar,Eliminar
         private bool IsNuevo = false;
         private bool IsEditar = false;
+        public bool Filtro = true;
+
+        //Variable para Metodo Eliminar
+        public string Eliminar_SQL;
+
+        //Variable para Captura el Empleado Logueado
+        public int IDEmpleado;
 
         // Variable para La Consulta de Datos en la Tabla o DataGriview
         private DataTable dtDetalle;
@@ -25,8 +34,7 @@ namespace CapaPresentacion
         public string Codigo_SQL = "";
         public string Codigo_ID = "";
 
-        //Variable para Metodo Eliminar
-        public string Eliminar_SQL;
+        //Instancia Utilizadas para los metodos de Examinar
         public frmProduccion_Bodegas()
         {
             InitializeComponent();
@@ -65,10 +73,14 @@ namespace CapaPresentacion
             this.CBZonas.BackColor = Color.FromArgb(32, 178, 170);
             this.CBSucurzal.Enabled = true;
             this.CBSucurzal.BackColor = Color.FromArgb(32, 178, 170);
-            this.TBDireccion1.ReadOnly = false;
-            this.TBDireccion1.BackColor = Color.FromArgb(32, 178, 170);
+            this.TBDireccion01.ReadOnly = false;
+            this.TBDireccion01.BackColor = Color.FromArgb(32, 178, 170);
+            this.TBDireccion02.ReadOnly = false;
+            this.TBDireccion02.BackColor = Color.FromArgb(32, 178, 170);
             this.TBTelefono.ReadOnly = false;
             this.TBTelefono.BackColor = Color.FromArgb(32, 178, 170);
+            this.TBMovil.ReadOnly = false;
+            this.TBMovil.BackColor = Color.FromArgb(32, 178, 170);
         }
 
         private void DesHabilitar()
@@ -85,11 +97,14 @@ namespace CapaPresentacion
             this.CBZonas.BackColor = Color.FromArgb(187, 222, 251);
             this.CBSucurzal.Enabled = false;
             this.CBSucurzal.BackColor = Color.FromArgb(187, 222, 251);
-            this.TBDireccion1.ReadOnly = true;
-            this.TBDireccion1.BackColor = Color.FromArgb(187, 222, 251);
+            this.TBDireccion01.ReadOnly = true;
+            this.TBDireccion01.BackColor = Color.FromArgb(187, 222, 251);
+            this.TBDireccion02.ReadOnly = true;
+            this.TBDireccion02.BackColor = Color.FromArgb(187, 222, 251);
             this.TBTelefono.ReadOnly = true;
             this.TBTelefono.BackColor = Color.FromArgb(187, 222, 251);
-
+            this.TBMovil.ReadOnly = true;
+            this.TBMovil.BackColor = Color.FromArgb(187, 222, 251);
         }
 
         private void Limpiar()
@@ -100,8 +115,10 @@ namespace CapaPresentacion
             this.TBCiudad.Text = string.Empty;
             this.CBZonas.SelectedIndex = 0;
             this.CBSucurzal.SelectedIndex = 0;
-            this.TBDireccion1.Text = string.Empty;
+            this.TBDireccion01.Text = string.Empty;
+            this.TBDireccion02.Text = string.Empty;
             this.TBTelefono.Text = string.Empty;
+            this.TBMovil.Text = string.Empty;
         }
 
         private void CrearTabla()
@@ -268,8 +285,8 @@ namespace CapaPresentacion
                 {
                     if (this.IsNuevo)
                     {
-                        rptaDatosBasicos = fProduccion_Bodega.Guardar_DatosBasicos(4, Convert.ToInt32(CBSucurzal.SelectedValue), this.TBCodigoID.Text, this.TBNombre.Text,
-                        this.TBResponsable.Text, this.TBCiudad.Text, this.CBZonas.Text, this.TBDireccion1.Text, this.TBTelefono.Text,
+                        rptaDatosBasicos = fProduccion_Bodega.Guardar_DatosBasicos(IDEmpleado, Convert.ToInt32(CBSucurzal.SelectedValue), this.TBCodigoID.Text, this.TBNombre.Text,
+                        this.TBResponsable.Text, this.TBCiudad.Text, this.CBZonas.Text, this.TBDireccion01.Text, this.TBDireccion02.Text,this.TBTelefono.Text,this.TBMovil.Text,
                         1,"1");
                     }
 

@@ -101,7 +101,8 @@
             this.btnExaminar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExaminar.Image = global::CapaPresentacion.Properties.Resources.btnExaminar;
+            this.btnExaminar.BackgroundImage = global::CapaPresentacion.Properties.Resources.btnExaminar;
+            this.btnExaminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnExaminar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnExaminar.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.btnExaminar.FlatAppearance.BorderSize = 0;

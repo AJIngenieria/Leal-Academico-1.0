@@ -21,7 +21,6 @@ namespace CapaPresentacion
 
         private void frmExaminarProduccion_Productos_Load(object sender, EventArgs e)
         {
-            this.Mostrar();
             this.TBBuscar.Focus();
 
             //
@@ -31,13 +30,6 @@ namespace CapaPresentacion
         private void TBBuscar_TextChanged(object sender, EventArgs e)
         {
             this.DGResultados.DataSource = fProduccion_Impuesto.Buscar_Impuesto(this.TBBuscar.Text);
-            //this.DGResultados.Columns[0].Visible = false;
-            lblTotal.Text = "Datos Registrados: " + Convert.ToString(DGResultados.Rows.Count);
-        }
-
-        private void Mostrar()
-        {
-            this.DGResultados.DataSource = fProduccion_Impuesto.Mostrar_Impuesto();
             lblTotal.Text = "Datos Registrados: " + Convert.ToString(DGResultados.Rows.Count);
         }
 
@@ -45,13 +37,57 @@ namespace CapaPresentacion
         {
             try
             {
-                frmProduccion_Costos form = frmProduccion_Costos.GetInstancia();
-                string par1, par2, par3;
-                par1 = Convert.ToString(this.DGResultados.CurrentRow.Cells["idimpuesto"].Value);
-                par2 = Convert.ToString(this.DGResultados.CurrentRow.Cells["Impuesto"].Value);
-                par3 = Convert.ToString(this.DGResultados.CurrentRow.Cells["Valor"].Value);
-                form.setImpuesto(par1, par2, par3);
-                this.Hide();
+                frmProduccion_Productos frmPP = frmProduccion_Productos.GetInstancia();
+
+                ////Variables de frmProduccion_Marcas
+                //string frmPM1, frmPM2;
+                ////Variables de frmProduccion_Ingresos
+                //string frmPI1, frmPI2, frmPI3;
+
+                //Variables de frmProduccion_Productos
+                string frmPP1, frmPP2;
+
+
+                if (frmPP.Filtro)
+                {
+                    frmPP1 = Convert.ToString(this.DGResultados.CurrentRow.Cells["Codigo"].Value);
+                    frmPP2 = Convert.ToString(this.DGResultados.CurrentRow.Cells["Impuesto"].Value);
+                    frmPP.setImpuesto(frmPP1, frmPP2);
+                    this.Hide();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
+        }
+
+        private void DGResultados_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            try
+            {
+                if (e.KeyChar == Convert.ToChar(Keys.Enter))
+                {
+                    frmProduccion_Productos frmPP = frmProduccion_Productos.GetInstancia();
+
+                    ////Variables de frmProduccion_Marcas
+                    //string frmPM1, frmPM2;
+                    ////Variables de frmProduccion_Ingresos
+                    //string frmPI1, frmPI2, frmPI3;
+
+                    //Variables de frmProduccion_Productos
+                    string frmPP1, frmPP2;
+
+                    if (frmPP.Filtro)
+                    {
+                        frmPP1 = Convert.ToString(this.DGResultados.CurrentRow.Cells["Codigo"].Value);
+                        frmPP2 = Convert.ToString(this.DGResultados.CurrentRow.Cells["Impuesto"].Value);
+                        frmPP.setImpuesto(frmPP1, frmPP2);
+                        this.Hide();
+                    }
+                }
+
             }
             catch (Exception ex)
             {

@@ -15,18 +15,12 @@ namespace CapaDatos
         private int _Idimpuesto;
         private string _Auto;
         private string _Filtro;
-        private int _Estado;
-
-        //Adicional
-        private int _Resultado;
-        private int _Idproveedor;
-        private string _Marca;
-        private string _Descripcion;
-
+     
         //Datos Basicos
         private string _Impuesto;
         private string _Tipo;
         private int _Valor;
+        private string _Aplicable;
 
         public int Idimpuesto { get => _Idimpuesto; set => _Idimpuesto = value; }
         public string Auto { get => _Auto; set => _Auto = value; }
@@ -34,11 +28,7 @@ namespace CapaDatos
         public string Impuesto { get => _Impuesto; set => _Impuesto = value; }
         public string Tipo { get => _Tipo; set => _Tipo = value; }
         public int Valor { get => _Valor; set => _Valor = value; }
-        public int Estado { get => _Estado; set => _Estado = value; }
-        public int Resultado { get => _Resultado; set => _Resultado = value; }
-        public int Idproveedor { get => _Idproveedor; set => _Idproveedor = value; }
-        public string Marca { get => _Marca; set => _Marca = value; }
-        public string Descripcion { get => _Descripcion; set => _Descripcion = value; }
+        public string Aplicable { get => _Aplicable; set => _Aplicable = value; }
 
         //Constructores
         public Conexion_Produccion_Impuesto()
@@ -47,25 +37,18 @@ namespace CapaDatos
         }
         public Conexion_Produccion_Impuesto
             (//Datos Basicos
-            int idimpuesto, string impuesto, string tipo, int valor,
+                int idimpuesto, string impuesto, string tipo, int valor,
 
-            string filtro, string auto, int estado, 
-            
-            int idproveedor, int resultado,
-            string marca,string descripcion)
+                string filtro, string auto, string aplicable
+            )
         {
-            this.Estado = estado;
             this.Auto = auto;
             this.Filtro = filtro;
 
             this.Impuesto = impuesto;
             this.Tipo = tipo;
             this.Valor = valor;
-
-            this.Idproveedor = idproveedor;
-            this.Marca = marca;
-            this.Descripcion = descripcion;
-            this.Resultado = resultado;
+            this.Aplicable = aplicable;
         }
 
         public string Guardar_DatosBasicos(Conexion_Produccion_Impuesto DatosBasicos)
@@ -81,7 +64,7 @@ namespace CapaDatos
                 //Establecer la conexion para mandar a la base de datos
                 SqlCommand SqlCmd = new SqlCommand();
                 SqlCmd.Connection = SqlCon;
-                SqlCmd.CommandText = "Produccion.AJ_Impuestos";
+                SqlCmd.CommandText = "Produccion.LA_Impuestos";
                 SqlCmd.CommandType = CommandType.StoredProcedure;
 
                 //Comienzo a mandar a la base de datos
@@ -118,6 +101,13 @@ namespace CapaDatos
                 ParValor.Size = 20;
                 ParValor.Value = DatosBasicos.Valor;
                 SqlCmd.Parameters.Add(ParValor);
+
+                SqlParameter ParAplicable = new SqlParameter();
+                ParAplicable.ParameterName = "@Aplicable";
+                ParAplicable.SqlDbType = SqlDbType.VarChar;
+                ParAplicable.Size = 10;
+                ParAplicable.Value = DatosBasicos.Aplicable;
+                SqlCmd.Parameters.Add(ParAplicable);
 
                 //ejecutamos el envio de datos
 
@@ -246,29 +236,29 @@ namespace CapaDatos
 
                 //Datos de Marcas
 
-                SqlParameter ParIdproveedor = new SqlParameter();
-                ParIdproveedor.ParameterName = "@Idproveedor";
-                ParIdproveedor.SqlDbType = SqlDbType.Int;
-                ParIdproveedor.Value = DatosBasicos.Idproveedor;
-                SqlCmd.Parameters.Add(ParIdproveedor);
+                //SqlParameter ParIdproveedor = new SqlParameter();
+                //ParIdproveedor.ParameterName = "@Idproveedor";
+                //ParIdproveedor.SqlDbType = SqlDbType.Int;
+                //ParIdproveedor.Value = DatosBasicos.Idproveedor;
+                //SqlCmd.Parameters.Add(ParIdproveedor);
 
-                SqlParameter ParMarca = new SqlParameter();
-                ParMarca.ParameterName = "@Marca";
-                ParMarca.SqlDbType = SqlDbType.VarChar;
-                ParMarca.Size = 50;
-                ParMarca.Value = DatosBasicos.Marca;
-                SqlCmd.Parameters.Add(ParMarca);
+                //SqlParameter ParMarca = new SqlParameter();
+                //ParMarca.ParameterName = "@Marca";
+                //ParMarca.SqlDbType = SqlDbType.VarChar;
+                //ParMarca.Size = 50;
+                //ParMarca.Value = DatosBasicos.Marca;
+                //SqlCmd.Parameters.Add(ParMarca);
 
-                SqlParameter ParDescripcion = new SqlParameter();
-                ParDescripcion.ParameterName = "@Descripcion";
-                ParDescripcion.SqlDbType = SqlDbType.VarChar;
-                ParDescripcion.Size = 50;
-                ParDescripcion.Value = DatosBasicos.Descripcion;
-                SqlCmd.Parameters.Add(ParDescripcion);
+                //SqlParameter ParDescripcion = new SqlParameter();
+                //ParDescripcion.ParameterName = "@Descripcion";
+                //ParDescripcion.SqlDbType = SqlDbType.VarChar;
+                //ParDescripcion.Size = 50;
+                //ParDescripcion.Value = DatosBasicos.Descripcion;
+                //SqlCmd.Parameters.Add(ParDescripcion);
 
                 //ejecutamos el envio de datos
 
-                rpta = SqlCmd.ExecuteNonQuery() == 1 ? "OK" : "Error al Registrar";
+                rpta = SqlCmd.ExecuteNonQuery() != 0 ? "OK" : "Error al Registrar";
             }
             catch (Exception ex)
             {

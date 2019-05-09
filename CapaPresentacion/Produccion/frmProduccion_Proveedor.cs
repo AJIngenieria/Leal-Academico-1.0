@@ -9,9 +9,17 @@ namespace CapaPresentacion
 {
     public partial class frmProduccion_Proveedor : Form
     {
-        // Variable con la cual se define si el procecimiento a realizar es EDITAR o Guardar
+        // Variable con la cual se define si el procecimiento 
+        // A realizar es Editar, Guardar, Buscar,Eliminar
         private bool IsNuevo = false;
-        private bool IsEditar = true;
+        private bool IsEditar = false;
+        public bool Filtro = true;
+
+        //Variable para Metodo Eliminar
+        public string Eliminar_SQL;
+
+        //Variable para Captura el Empleado Logueado
+        public int IDEmpleado;
 
         // Variable para La Consulta de Datos en la Tabla o DataGriview
         private DataTable dtDetalle;
@@ -20,9 +28,6 @@ namespace CapaPresentacion
         // Y Consultarlo desde la Base de Datos
         public string Codigo_SQL = "";
         public string Codigo_ID = "";
-
-        //Variable para Metodo Eliminar
-        public string Eliminar_SQL;
 
         public frmProduccion_Proveedor()
         {

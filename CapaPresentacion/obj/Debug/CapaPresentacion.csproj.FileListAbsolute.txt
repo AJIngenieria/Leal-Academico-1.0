@@ -661,3 +661,4 @@ E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\CapaPresentacion\bin\Debug\Lea
 E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\CapaPresentacion\bin\Debug\MultiColumnComboBox.dll
 E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\CapaPresentacion\bin\Debug\ComboBoxMultiColumns.dll
 E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\CapaPresentacion\bin\Debug\ComboBoxMultiColumns.pdb
+E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\CapaPresentacion\obj\Debug\CapaPresentacion.frmExaminar_Marcas.resources

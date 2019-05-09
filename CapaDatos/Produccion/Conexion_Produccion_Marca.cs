@@ -98,7 +98,7 @@ namespace CapaDatos
                 SqlParameter ParDescripcion = new SqlParameter();
                 ParDescripcion.ParameterName = "@Descripcion";
                 ParDescripcion.SqlDbType = SqlDbType.VarChar;
-                ParDescripcion.Size = 50;
+                ParDescripcion.Size = 100;
                 ParDescripcion.Value = Marcas.Descripcion;
                 SqlCmd.Parameters.Add(ParDescripcion);
 

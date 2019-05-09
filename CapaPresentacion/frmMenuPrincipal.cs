@@ -165,6 +165,7 @@ namespace CapaPresentacion
             frmProduccion_Bodegas frmProduccion_Bodegas = new frmProduccion_Bodegas();
             frmProduccion_Bodegas.MdiParent = this;
             frmProduccion_Bodegas.Show();
+            frmProduccion_Bodegas.IDEmpleado = Convert.ToInt32(this.Idempleado);
         }
 
         private void salidasDeBodegaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -184,6 +185,7 @@ namespace CapaPresentacion
             frmProduccion_Impuestos frmProduccion_Impuestos = new frmProduccion_Impuestos();
             frmProduccion_Impuestos.MdiParent = this;
             frmProduccion_Impuestos.Show();
+            frmProduccion_Impuestos.IDEmpleado = Convert.ToInt32(this.Idempleado);
         }
 
         private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)

@@ -14,13 +14,17 @@ namespace CapaNegocio
     {
         //Método Insertar que llama al método Insertar de la clase DIngreso
         //de la CapaDatos
-        public static string Guardar_DatosBasicos(string auto, string impuesto, string tipo, int valor)
+        public static string Guardar_DatosBasicos
+            (
+                string auto, string impuesto, string tipo, int valor, string aplicable
+            )
         {
             Conexion_Produccion_Impuesto Obj = new Conexion_Produccion_Impuesto();
             Obj.Auto = auto;
             Obj.Impuesto = impuesto;
             Obj.Tipo = tipo;
             Obj.Valor = valor;
+            Obj.Aplicable = aplicable;
 
             return Obj.Guardar_DatosBasicos(Obj);
         }
@@ -47,9 +51,9 @@ namespace CapaNegocio
             Obj.Tipo = tipo;
             Obj.Valor = valor;
 
-            Obj.Idproveedor = idproveedor;
-            Obj.Marca = marca;
-            Obj.Descripcion =descripcion;
+            //Obj.Idproveedor = idproveedor;
+            //Obj.Marca = marca;
+            //Obj.Descripcion =descripcion;
 
             return Obj.Guardar_AutoGenerador(Obj);
         }

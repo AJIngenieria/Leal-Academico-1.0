@@ -222,6 +222,7 @@ namespace CapaPresentacion
 
                     this.IsNuevo = false;
                     this.Limpiar();
+                    this.DesHabilitar();
                 }
             }
             catch (Exception ex)

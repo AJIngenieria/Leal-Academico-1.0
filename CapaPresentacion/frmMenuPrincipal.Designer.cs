@@ -211,8 +211,6 @@
             this.realizarPedidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.actualizarPreciosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.codigosDeBarraToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.costosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.datosBasicosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.marcasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.proveedorToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -1656,8 +1654,6 @@
             // 
             this.productosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.actualizarPreciosToolStripMenuItem1,
-            this.codigosDeBarraToolStripMenuItem,
-            this.costosToolStripMenuItem,
             this.datosBasicosToolStripMenuItem1,
             this.marcasToolStripMenuItem});
             this.productosToolStripMenuItem.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
@@ -1669,34 +1665,20 @@
             // actualizarPreciosToolStripMenuItem1
             // 
             this.actualizarPreciosToolStripMenuItem1.Name = "actualizarPreciosToolStripMenuItem1";
-            this.actualizarPreciosToolStripMenuItem1.Size = new System.Drawing.Size(171, 22);
+            this.actualizarPreciosToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.actualizarPreciosToolStripMenuItem1.Text = "Actualizar Precios";
-            // 
-            // codigosDeBarraToolStripMenuItem
-            // 
-            this.codigosDeBarraToolStripMenuItem.Name = "codigosDeBarraToolStripMenuItem";
-            this.codigosDeBarraToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
-            this.codigosDeBarraToolStripMenuItem.Text = "Codigos de Barra";
-            this.codigosDeBarraToolStripMenuItem.Click += new System.EventHandler(this.codigosDeBarraToolStripMenuItem_Click);
-            // 
-            // costosToolStripMenuItem
-            // 
-            this.costosToolStripMenuItem.Name = "costosToolStripMenuItem";
-            this.costosToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
-            this.costosToolStripMenuItem.Text = "Costos";
-            this.costosToolStripMenuItem.Click += new System.EventHandler(this.costosToolStripMenuItem_Click);
             // 
             // datosBasicosToolStripMenuItem1
             // 
             this.datosBasicosToolStripMenuItem1.Name = "datosBasicosToolStripMenuItem1";
-            this.datosBasicosToolStripMenuItem1.Size = new System.Drawing.Size(171, 22);
+            this.datosBasicosToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.datosBasicosToolStripMenuItem1.Text = "Datos Basicos";
             this.datosBasicosToolStripMenuItem1.Click += new System.EventHandler(this.datosBasicosToolStripMenuItem1_Click);
             // 
             // marcasToolStripMenuItem
             // 
             this.marcasToolStripMenuItem.Name = "marcasToolStripMenuItem";
-            this.marcasToolStripMenuItem.Size = new System.Drawing.Size(171, 22);
+            this.marcasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.marcasToolStripMenuItem.Text = "Marcas";
             this.marcasToolStripMenuItem.Click += new System.EventHandler(this.marcasToolStripMenuItem_Click);
             // 
@@ -2587,8 +2569,6 @@
         private System.Windows.Forms.ToolStripMenuItem experienciaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem formacionToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem referenciasToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem codigosDeBarraToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem costosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem sucurzalesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ePSSeguroMedicoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aRLSeguroLaboralToolStripMenuItem;

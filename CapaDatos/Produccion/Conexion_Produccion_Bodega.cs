@@ -20,8 +20,10 @@ namespace CapaDatos
         private string _Responsable;
         private string _Ciudad;
         private string _Zona;
-        private string _Direccion;
+        private string _Direccion01;
+        private string _Direccion02;
         private string _Telefono;
+        private string _Movil;
 
         private int _Estado;
         private string _Auto;
@@ -38,8 +40,10 @@ namespace CapaDatos
         public string Responsable { get => _Responsable; set => _Responsable = value; }
         public string Ciudad { get => _Ciudad; set => _Ciudad = value; }
         public string Zona { get => _Zona; set => _Zona = value; }
-        public string Direccion { get => _Direccion; set => _Direccion = value; }
+        public string Direccion01 { get => _Direccion01; set => _Direccion01 = value; }
         public string Telefono { get => _Telefono; set => _Telefono = value; }
+        public string Direccion02 { get => _Direccion02; set => _Direccion02 = value; }
+        public string Movil { get => _Movil; set => _Movil = value; }
 
         //Constructores
         public Conexion_Produccion_Bodega()
@@ -50,7 +54,7 @@ namespace CapaDatos
             (
             //Datos Basicos
             int idbodega, int idempleado, int idsucurzal, string codigoid, string descripcion, string responsable, string ciudad, string zona,
-            string direccion, string telefono, 
+            string direccion01, string direccion02, string telefono, string movil,
 
             string auto, int estado, string filtro)
         {
@@ -68,8 +72,10 @@ namespace CapaDatos
             this.Ciudad = ciudad;
             this.Zona = zona;
 
-            this.Direccion = direccion;
+            this.Direccion01 = direccion01;
+            this.Direccion02 = direccion02;
             this.Telefono = telefono;
+            this.Movil = movil;
         }
               
         public string Guardar_DatosBasicos(Conexion_Produccion_Bodega DatosBasicos)
@@ -156,19 +162,33 @@ namespace CapaDatos
                 ParZona.Value = DatosBasicos.Zona;
                 SqlCmd.Parameters.Add(ParZona);
 
-                SqlParameter ParDireccion1 = new SqlParameter();
-                ParDireccion1.ParameterName = "@Direccion";
-                ParDireccion1.SqlDbType = SqlDbType.VarChar;
-                ParDireccion1.Size = 100;
-                ParDireccion1.Value = DatosBasicos.Direccion;
-                SqlCmd.Parameters.Add(ParDireccion1);
-                
+                SqlParameter ParDireccion01 = new SqlParameter();
+                ParDireccion01.ParameterName = "@Direccion01";
+                ParDireccion01.SqlDbType = SqlDbType.VarChar;
+                ParDireccion01.Size = 100;
+                ParDireccion01.Value = DatosBasicos.Direccion01;
+                SqlCmd.Parameters.Add(ParDireccion01);
+
+                SqlParameter ParDireccion02 = new SqlParameter();
+                ParDireccion02.ParameterName = "@Direccion02";
+                ParDireccion02.SqlDbType = SqlDbType.VarChar;
+                ParDireccion02.Size = 100;
+                ParDireccion02.Value = DatosBasicos.Direccion02;
+                SqlCmd.Parameters.Add(ParDireccion02);
+
                 SqlParameter ParTelefono = new SqlParameter();
                 ParTelefono.ParameterName = "@Telefono";
                 ParTelefono.SqlDbType = SqlDbType.VarChar;
                 ParTelefono.Size = 30;
                 ParTelefono.Value = DatosBasicos.Telefono;
                 SqlCmd.Parameters.Add(ParTelefono);
+
+                SqlParameter ParMovil = new SqlParameter();
+                ParMovil.ParameterName = "@Movil";
+                ParMovil.SqlDbType = SqlDbType.VarChar;
+                ParMovil.Size = 30;
+                ParMovil.Value = DatosBasicos.Movil;
+                SqlCmd.Parameters.Add(ParMovil);
 
                 //ejecutamos el envio de datos
 
