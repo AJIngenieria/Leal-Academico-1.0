@@ -382,5 +382,12 @@ namespace CapaPresentacion
             frmProduccion_Proveedor_Financiera.MdiParent = this;
             frmProduccion_Proveedor_Financiera.Show();
         }
+
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmProduccion_Cliente frmProduccion_Cliente = new frmProduccion_Cliente();
+            frmProduccion_Cliente.MdiParent = this;
+            frmProduccion_Cliente.Show();
+        }
     }
 }

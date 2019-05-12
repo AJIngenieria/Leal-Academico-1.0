@@ -15,7 +15,6 @@ namespace CapaDatos
         private int _Idempleados;
         private int _Idsucurzal;
 
-        private string _CodigoID;
         private string _Descripcion;
         private string _Responsable;
         private string _Ciudad;
@@ -35,7 +34,6 @@ namespace CapaDatos
         public string Auto { get => _Auto; set => _Auto = value; }
         public int Estado { get => _Estado; set => _Estado = value; }
         public string Filtro { get => _Filtro; set => _Filtro = value; }
-        public string CodigoID { get => _CodigoID; set => _CodigoID = value; }
         public string Descripcion { get => _Descripcion; set => _Descripcion = value; }
         public string Responsable { get => _Responsable; set => _Responsable = value; }
         public string Ciudad { get => _Ciudad; set => _Ciudad = value; }
@@ -53,7 +51,7 @@ namespace CapaDatos
         public Conexion_Produccion_Bodega
             (
             //Datos Basicos
-            int idbodega, int idempleado, int idsucurzal, string codigoid, string descripcion, string responsable, string ciudad, string zona,
+            int idbodega, int idempleado, int idsucurzal, string descripcion, string responsable, string ciudad, string zona,
             string direccion01, string direccion02, string telefono, string movil,
 
             string auto, int estado, string filtro)
@@ -66,7 +64,6 @@ namespace CapaDatos
             this.Estado = estado;
             this.Filtro = filtro;
 
-            this.CodigoID = codigoid;
             this.Descripcion = descripcion;
             this.Responsable = responsable;
             this.Ciudad = ciudad;
@@ -126,13 +123,6 @@ namespace CapaDatos
                 ParEstado.SqlDbType = SqlDbType.Int;
                 ParEstado.Value = DatosBasicos.Estado;
                 SqlCmd.Parameters.Add(ParEstado);
-
-                SqlParameter ParCodigoID = new SqlParameter();
-                ParCodigoID.ParameterName = "@CodigoID";
-                ParCodigoID.SqlDbType = SqlDbType.VarChar;
-                ParCodigoID.Size = 50;
-                ParCodigoID.Value = DatosBasicos.CodigoID;
-                SqlCmd.Parameters.Add(ParCodigoID);
 
                 SqlParameter ParDescripcion = new SqlParameter();
                 ParDescripcion.ParameterName = "@Descripcion";

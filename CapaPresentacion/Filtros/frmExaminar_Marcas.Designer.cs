@@ -51,7 +51,7 @@
             this.groupBox1.Size = new System.Drawing.Size(512, 344);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Leal Academico - Filtro de Marcas";
+            this.groupBox1.Text = "Leal Academico - Filtro de Marcas Registradas";
             // 
             // lblTotal
             // 
@@ -70,9 +70,9 @@
             this.TBBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TBBuscar.Location = new System.Drawing.Point(55, 22);
+            this.TBBuscar.Location = new System.Drawing.Point(120, 22);
             this.TBBuscar.Name = "TBBuscar";
-            this.TBBuscar.Size = new System.Drawing.Size(451, 21);
+            this.TBBuscar.Size = new System.Drawing.Size(386, 21);
             this.TBBuscar.TabIndex = 2;
             this.TBBuscar.TextChanged += new System.EventHandler(this.TBBuscar_TextChanged);
             // 
@@ -84,9 +84,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(7, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(42, 15);
+            this.label1.Size = new System.Drawing.Size(107, 15);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Marca";
+            this.label1.Text = "Marca a Consultar";
             // 
             // DGResultados
             // 
@@ -119,7 +119,7 @@
             this.MaximizeBox = false;
             this.Name = "frmExaminar_Marcas";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmExaminar_Marcas";
+            this.Text = "Examinar - Marcas";
             this.Load += new System.EventHandler(this.frmExaminar_Marcas_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

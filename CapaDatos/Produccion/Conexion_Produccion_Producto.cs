@@ -194,12 +194,6 @@ namespace CapaDatos
                 ParIdmarca.Value = DatosBasicos.Idmarca;
                 SqlCmd.Parameters.Add(ParIdmarca);
 
-                //SqlParameter ParIdproveedor = new SqlParameter();
-                //ParIdproveedor.ParameterName = "@Idproveedor";
-                //ParIdproveedor.SqlDbType = SqlDbType.Int;
-                //ParIdproveedor.Value = DatosBasicos.Idproveedor;
-                //SqlCmd.Parameters.Add(ParIdproveedor);
-
                 SqlParameter ParCodigoID = new SqlParameter();
                 ParCodigoID.ParameterName = "@CodigoID";
                 ParCodigoID.SqlDbType = SqlDbType.Int;
@@ -244,7 +238,7 @@ namespace CapaDatos
                 SqlParameter ParEmpacado = new SqlParameter();
                 ParEmpacado.ParameterName = "@Empacado";
                 ParEmpacado.SqlDbType = SqlDbType.VarChar;
-                ParEmpacado.Size = 10;
+                ParEmpacado.Size = 20;
                 ParEmpacado.Value = DatosBasicos.Empacada;
                 SqlCmd.Parameters.Add(ParEmpacado);
 
@@ -268,6 +262,119 @@ namespace CapaDatos
                 ParVence.Size = 5;
                 ParVence.Value = DatosBasicos.Vence;
                 SqlCmd.Parameters.Add(ParVence);
+                
+                //Panel de Costos y Precios - Formulario frmProduccion_Productos
+
+                SqlParameter ParIdcostos = new SqlParameter();
+                ParIdcostos.ParameterName = "@Idcostos";
+                ParIdcostos.SqlDbType = SqlDbType.Int;
+                ParIdcostos.Direction = ParameterDirection.Output;
+                SqlCmd.Parameters.Add(ParIdcostos);
+
+                SqlParameter ParValorCompra = new SqlParameter();
+                ParValorCompra.ParameterName = "@Compra";
+                ParValorCompra.SqlDbType = SqlDbType.VarChar;
+                ParValorCompra.Size = 50;
+                ParValorCompra.Value = DatosBasicos.ValorCompra;
+                SqlCmd.Parameters.Add(ParValorCompra);
+
+                SqlParameter ParVa_Venta01 = new SqlParameter();
+                ParVa_Venta01.ParameterName = "@Va_Venta01";
+                ParVa_Venta01.SqlDbType = SqlDbType.VarChar;
+                ParVa_Venta01.Size = 50;
+                ParVa_Venta01.Value = DatosBasicos.ValorVenta1;
+                SqlCmd.Parameters.Add(ParVa_Venta01);
+
+                SqlParameter ParVa_Venta02 = new SqlParameter();
+                ParVa_Venta02.ParameterName = "@Va_Venta02";
+                ParVa_Venta02.SqlDbType = SqlDbType.VarChar;
+                ParVa_Venta02.Size = 50;
+                ParVa_Venta02.Value = DatosBasicos.ValorVenta2;
+                SqlCmd.Parameters.Add(ParVa_Venta02);
+
+                SqlParameter ParVa_Venta03 = new SqlParameter();
+                ParVa_Venta03.ParameterName = "@Va_Venta03";
+                ParVa_Venta03.SqlDbType = SqlDbType.VarChar;
+                ParVa_Venta03.Size = 50;
+                ParVa_Venta03.Value = DatosBasicos.ValorVenta3;
+                SqlCmd.Parameters.Add(ParVa_Venta03);
+
+                SqlParameter ParVa_Publico = new SqlParameter();
+                ParVa_Publico.ParameterName = "@Va_Publico";
+                ParVa_Publico.SqlDbType = SqlDbType.VarChar;
+                ParVa_Publico.Size = 50;
+                ParVa_Publico.Value = DatosBasicos.ValorVentaPublico;
+                SqlCmd.Parameters.Add(ParVa_Publico);
+
+                SqlParameter ParCa_Minima = new SqlParameter();
+                ParCa_Minima.ParameterName = "@Ca_Minima";
+                ParCa_Minima.SqlDbType = SqlDbType.VarChar;
+                ParCa_Minima.Size = 50;
+                ParCa_Minima.Value = DatosBasicos.Ca_Minima;
+                SqlCmd.Parameters.Add(ParCa_Minima);
+
+                SqlParameter ParCa_Maxima = new SqlParameter();
+                ParCa_Maxima.ParameterName = "@Ca_Maxima";
+                ParCa_Maxima.SqlDbType = SqlDbType.VarChar;
+                ParCa_Maxima.Size = 50;
+                ParCa_Maxima.Value = DatosBasicos.Ubicacion;
+                SqlCmd.Parameters.Add(ParCa_Maxima);
+
+                SqlParameter ParValorOferta = new SqlParameter();
+                ParValorOferta.ParameterName = "@Va_Oferta";
+                ParValorOferta.SqlDbType = SqlDbType.VarChar;
+                ParValorOferta.Size = 50;
+                ParValorOferta.Value = DatosBasicos.ValorOferta;
+                SqlCmd.Parameters.Add(ParValorOferta);
+
+                //Panel de Impuestos - Otros Datos - Formulario frmProduccion_Productos
+
+                SqlParameter ParIdotros = new SqlParameter();
+                ParIdotros.ParameterName = "@Idotros";
+                ParIdotros.SqlDbType = SqlDbType.Int;
+                ParIdotros.Direction = ParameterDirection.Output;
+                SqlCmd.Parameters.Add(ParIdotros);
+
+                SqlParameter ParIdimpuesto = new SqlParameter();
+                ParIdimpuesto.ParameterName = "@Idimpuesto";
+                ParIdimpuesto.SqlDbType = SqlDbType.Int;
+                ParIdimpuesto.Value = DatosBasicos.Idimpuesto;
+                SqlCmd.Parameters.Add(ParIdimpuesto);
+
+                SqlParameter ParIdbodega = new SqlParameter();
+                ParIdbodega.ParameterName = "@Idbodega";
+                ParIdbodega.SqlDbType = SqlDbType.Int;
+                ParIdbodega.Value = DatosBasicos.Idbodega;
+                SqlCmd.Parameters.Add(ParIdbodega);
+
+                SqlParameter ParIdproveedor = new SqlParameter();
+                ParIdproveedor.ParameterName = "@Idproveedor";
+                ParIdproveedor.SqlDbType = SqlDbType.Int;
+                ParIdproveedor.Value = DatosBasicos.Idproveedor;
+                SqlCmd.Parameters.Add(ParIdproveedor);
+
+                SqlParameter ParUbicacion = new SqlParameter();
+                ParUbicacion.ParameterName = "@Ubicacion";
+                ParUbicacion.SqlDbType = SqlDbType.VarChar;
+                ParUbicacion.Size = 50;
+                ParUbicacion.Value = DatosBasicos.Ubicacion;
+                SqlCmd.Parameters.Add(ParUbicacion);
+
+                SqlParameter ParUnidadDeVenta = new SqlParameter();
+                ParUnidadDeVenta.ParameterName = "@Unidad";
+                ParUnidadDeVenta.SqlDbType = SqlDbType.VarChar;
+                ParUnidadDeVenta.Size = 10;
+                ParUnidadDeVenta.Value = DatosBasicos.UnidadDeVenta;
+                SqlCmd.Parameters.Add(ParUnidadDeVenta);
+
+                SqlParameter ParObservacion = new SqlParameter();
+                ParObservacion.ParameterName = "@Observacion";
+                ParObservacion.SqlDbType = SqlDbType.VarChar;
+                ParObservacion.Size = 100;
+                ParObservacion.Value = DatosBasicos.Observacion;
+                SqlCmd.Parameters.Add(ParObservacion);
+
+                //Datos - Tipo de Envio y/o Proceso a realizar (Eliminar,Guardar,Editar)
 
                 SqlParameter ParEstado = new SqlParameter();
                 ParEstado.ParameterName = "@Estado";
@@ -280,15 +387,6 @@ namespace CapaDatos
                 ParAuto.SqlDbType = SqlDbType.Int;
                 ParAuto.Value = DatosBasicos.Auto;
                 SqlCmd.Parameters.Add(ParAuto);
-
-                //Panel de Datos Basicos - Formulario frmProduccion_Productos
-
-                //SqlParameter ParUbicacion = new SqlParameter();
-                //ParUbicacion.ParameterName = "@Ubicacion";
-                //ParUbicacion.SqlDbType = SqlDbType.VarChar;
-                //ParUbicacion.Size = 30;
-                //ParUbicacion.Value = DatosBasicos.Ubicacion;
-                //SqlCmd.Parameters.Add(ParUbicacion);
 
                 //ejecutamos el envio de datos
 

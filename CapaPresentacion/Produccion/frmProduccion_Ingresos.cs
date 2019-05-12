@@ -61,8 +61,6 @@ namespace CapaPresentacion
         {
             //Inicio de Clase y Botones
             this.DesHabilitar();
-            //this.CrearTabla();
-            //this.AutoAjustar_Columnas();
             
             //Desabilitacion de Botones
             this.btnGuardar.Enabled = false;
@@ -78,14 +76,18 @@ namespace CapaPresentacion
 
         private void Habilitar()
         {
-            this.TBBodega.ReadOnly = false;
-            this.TBBodega.BackColor = Color.FromArgb(32, 178, 170);
-            this.TBProveedor.ReadOnly = false;
-            this.TBProveedor.BackColor = Color.FromArgb(32, 178, 170);
-            this.TBIdbodega.ReadOnly = false;
-            this.TBIdbodega.BackColor = Color.FromArgb(32, 178, 170);
-            this.TBIdproveedor.ReadOnly = false;
-            this.TBIdproveedor.BackColor = Color.FromArgb(32, 178, 170);
+            //this.TBBodega.ReadOnly = false;
+            //this.TBBodega.BackColor = Color.FromArgb(32, 178, 170);
+            //this.TBProveedor.ReadOnly = false;
+            //this.TBProveedor.BackColor = Color.FromArgb(32, 178, 170);
+            //this.TBIdbodega.ReadOnly = false;
+            //this.TBIdbodega.BackColor = Color.FromArgb(32, 178, 170);
+            //this.TBIdproveedor.ReadOnly = false;
+            //this.TBIdproveedor.BackColor = Color.FromArgb(32, 178, 170);
+            this.DTFechaDeIngreso.Enabled = true;
+            this.DTFechaDeIngreso.BackColor = Color.FromArgb(32, 178, 170);
+            this.CBComprobante.Enabled = true;
+            this.CBComprobante.BackColor = Color.FromArgb(32, 178, 170);
             this.TBComprobante.ReadOnly = false;
             this.TBComprobante.BackColor = Color.FromArgb(32, 178, 170);
         }
@@ -100,6 +102,10 @@ namespace CapaPresentacion
             this.TBIdproveedor.BackColor = Color.FromArgb(187, 222, 251);
             this.TBProveedor.ReadOnly = true;
             this.TBProveedor.BackColor = Color.FromArgb(187, 222, 251);
+            this.DTFechaDeIngreso.Enabled = false;
+            this.DTFechaDeIngreso.BackColor = Color.FromArgb(32, 178, 170);
+            this.CBComprobante.Enabled = false;
+            this.CBComprobante.BackColor = Color.FromArgb(187, 222, 251);
             this.TBComprobante.ReadOnly = true;
             this.TBComprobante.BackColor = Color.FromArgb(187, 222, 251);
         }
@@ -110,15 +116,8 @@ namespace CapaPresentacion
             this.TBProveedor.Text = string.Empty;
             this.TBIdbodega.Text = string.Empty;
             this.TBIdproveedor.Text = string.Empty;
+            this.CBComprobante.SelectedIndex = 0;
             this.TBComprobante.Text = string.Empty;
-        }
-
-        private void Teclas(object sender, KeyPressEventArgs e)
-        {
-            if (Convert.ToInt32(e.KeyChar) == Convert.ToInt32(Keys.Control) + Convert.ToInt32(Keys.N))
-            {
-                MessageBox.Show("Se ha pulsado la combinación de teclas Control+N");
-            }
         }
 
         //Mensaje de confirmacion
@@ -293,14 +292,14 @@ namespace CapaPresentacion
 
         private void btnExaminar_Bodega_Click(object sender, EventArgs e)
         {
-            frmExaminar_Bodega frmExaminarProduccion_Bodega = new frmExaminar_Bodega();
-            frmExaminarProduccion_Bodega.ShowDialog();
+            frmExaminar_Bodega frmExaminar_Bodega = new frmExaminar_Bodega();
+            frmExaminar_Bodega.ShowDialog();
         }
 
         private void btnExaminar_Proveedor_Click(object sender, EventArgs e)
         {
-            frmExaminar_Proveedor frmExaminarProduccion_Proveedor = new frmExaminar_Proveedor();
-            frmExaminarProduccion_Proveedor.ShowDialog();
+            frmExaminar_Proveedor frmExaminar_Proveedor = new frmExaminar_Proveedor();
+            frmExaminar_Proveedor.ShowDialog();
         }
 
         private void btnNuevo_MouseDown(object sender, MouseEventArgs e)
@@ -368,14 +367,6 @@ namespace CapaPresentacion
             _Instancia = null;
         }
 
-        private void btnNuevo_Auxiliar_Click(object sender, EventArgs e)
-        {
-            this.IsNuevo = true;
-            this.Habilitar();
-            //this.Combobox();
-            //this.TBProducto.Focus();
-        }
-
         private void DGDetalles_CellEndEdit(object sender, DataGridViewCellEventArgs e)
         {
             if (DGDetalles.Columns[e.ColumnIndex].Name== "Costo")
@@ -405,6 +396,15 @@ namespace CapaPresentacion
                 }
             }
             
+        }
+
+        private void frmProduccion_Ingresos_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData==Keys.F2)
+            {
+                frmExaminar_Productos frmExaminar_Productos = new frmExaminar_Productos();
+                frmExaminar_Productos.Show();
+            }
         }
     }
 }

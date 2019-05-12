@@ -205,6 +205,12 @@ namespace CapaPresentacion
             this.CBUnidad.BackColor = Color.FromArgb(187, 222, 251);
             this.TBObservacion.ReadOnly = true;
             this.TBObservacion.BackColor = Color.FromArgb(187, 222, 251);
+
+            //Botones de Filtros Y/O Examinar
+            this.btnExaminar_Bodega.Enabled = false;
+            this.btnExaminar_Impuesto.Enabled = false;
+            this.btnExaminar_Marca.Enabled = false;
+            this.btnExaminar_Proveedor.Enabled = false;
         }
 
         private void Limpiar()
@@ -251,7 +257,6 @@ namespace CapaPresentacion
             try
             {
                 this.DGResultados.DataSource = fProduccion_Productos.Buscar_Producto(this.TBBuscar.Text);
-                //this.DGResultado.Columns[0].Visible = false;
                 lblTotal.Text = "Datos Registrados: " + Convert.ToString(DGResultados.Rows.Count);
 
             }
@@ -408,9 +413,23 @@ namespace CapaPresentacion
                 {
                     if (this.IsNuevo)
                     {
-                        //rptaDatosBasicos = fProduccion_Productos.Guardar_DatosBasicos(1,IDEmpleado, Convert.ToInt32(TBMarca.SelectedValue), 1,
-                        //this.TBCodigoID.Text, this.TBProducto.Text, this.TBDescripcion.Text, this.TBReferencia.Text,
-                        //this.CBImportado.Text, this.CBEmpacado.Text, this.CBVence.Text, this.CBTipo.Text, this.CBOfertable.Text,this.TBBodega.Text);
+                        rptaDatosBasicos = fProduccion_Productos.Guardar_DatosBasicos
+
+                               (
+                                    //Panel de Datos Basicos
+                                    IDEmpleado, Convert.ToInt32(this.TBIdmarca.Text), Convert.ToInt32(this.TBCodigoID.Text), this.TBProducto.Text, this.TBReferencia.Text,
+                                    this.TBDescripcion.Text, this.CBOfertable.Text, this.CBImportado.Text, this.CBEmpacado.Text, this.CBTipo.Text, this.CBGrupo.Text,
+                                    this.CBVence.Text,
+
+                                    //Panel de Datos Basicos
+                                    this.TBValorCompra.Text, this.TBValorVenta01.Text, this.TBValorVenta02.Text, this.TBValorVenta03.Text, this.TBValorOferta.Text,
+                                    this.CBVentaPublico.Text, this.TBCantidadMaxima.Text, this.TBCantidadMinima.Text,
+
+                                    //Panel de Datos Basicos
+
+                                    Convert.ToInt32(TBIdimpuesto.Text), Convert.ToInt32(TBIdbodega.Text), Convert.ToInt32(TBIdproveedor.Text),
+                                    this.TBUbicacion.Text, this.CBUnidad.Text, this.TBObservacion.Text, 1, 1
+                               );
                     }
 
                     if (rptaDatosBasicos.Equals("OK"))
@@ -468,8 +487,8 @@ namespace CapaPresentacion
 
         private void btnExaminar_Proveedor_Click(object sender, EventArgs e)
         {
-            frmExaminar_Bodega frmExaminar_Bodega = new frmExaminar_Bodega();
-            frmExaminar_Bodega.ShowDialog();
+            frmExaminar_Proveedor frmExaminar_Proveedor = new frmExaminar_Proveedor();
+            frmExaminar_Proveedor.ShowDialog();
         }
 
         private void DGResultados_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -487,9 +506,9 @@ namespace CapaPresentacion
 
                 if (!IsEditar)
                 {
-                    this.TBIdproveedor.Text = Convert.ToString(this.DGResultados.CurrentRow.Cells["Codigo"].Value);
-                    this.TBProveedor.Text = Convert.ToString(this.DGResultados.CurrentRow.Cells["Producto"].Value);
-                    this.TBCodigoID.Text = Convert.ToString(this.DGResultados.CurrentRow.Cells["Marca"].Value);
+                    this.TBCodigoID.Text = Convert.ToString(this.DGResultados.CurrentRow.Cells["Codigo"].Value);
+                    this.TBProducto.Text = Convert.ToString(this.DGResultados.CurrentRow.Cells["Producto"].Value);
+                    this.TBMarca.Text = Convert.ToString(this.DGResultados.CurrentRow.Cells["Marca"].Value);
 
                 }
 
@@ -501,10 +520,10 @@ namespace CapaPresentacion
                 this.Habilitar();
 
                 //Botones Comunes
-                btnNuevo.Enabled = false;
-                btnGuardar.Enabled = true;
-                btnEditar.Enabled = true;
-                btnEliminar.Enabled = true;
+                this.btnNuevo.Enabled = false;
+                this.btnGuardar.Enabled = true;
+                this.btnEditar.Enabled = true;
+                this.btnEliminar.Enabled = true;
 
                 //Botones Examinar
                 this.btnExaminar_Bodega.Enabled = true;

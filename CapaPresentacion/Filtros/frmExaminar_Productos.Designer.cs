@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.lblTotal = new System.Windows.Forms.Label();
             this.DGResultados = new System.Windows.Forms.DataGridView();
             this.TBBuscar = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DGResultados)).BeginInit();
             this.SuspendLayout();
@@ -48,16 +48,25 @@
             this.groupBox1.Size = new System.Drawing.Size(516, 344);
             this.groupBox1.TabIndex = 2;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Text = "Leal Academico - Filtro de Productos Registrados";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(6, 25);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(121, 15);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "Producto a Consultar";
             // 
             // lblTotal
             // 
             this.lblTotal.AutoSize = true;
             this.lblTotal.Location = new System.Drawing.Point(6, 48);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(41, 15);
+            this.lblTotal.Size = new System.Drawing.Size(31, 15);
             this.lblTotal.TabIndex = 7;
-            this.lblTotal.Text = "label1";
+            this.lblTotal.Text = "------";
             // 
             // DGResultados
             // 
@@ -80,18 +89,9 @@
             // 
             this.TBBuscar.Location = new System.Drawing.Point(133, 22);
             this.TBBuscar.Name = "TBBuscar";
-            this.TBBuscar.Size = new System.Drawing.Size(250, 21);
+            this.TBBuscar.Size = new System.Drawing.Size(373, 21);
             this.TBBuscar.TabIndex = 4;
             this.TBBuscar.TextChanged += new System.EventHandler(this.TBBuscar_TextChanged);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 25);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 15);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Producto a Consultar";
             // 
             // frmExaminar_Productos
             // 
@@ -106,7 +106,7 @@
             this.MaximizeBox = false;
             this.Name = "frmExaminar_Productos";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmExaminarProduccion_Productos";
+            this.Text = "Examinar - Productos";
             this.Load += new System.EventHandler(this.frmExaminarProduccion_Productos_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

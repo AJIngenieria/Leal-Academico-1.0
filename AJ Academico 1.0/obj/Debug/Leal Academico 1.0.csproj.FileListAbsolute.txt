@@ -53,6 +53,3 @@ E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\AJ Academico 1.0\obj\Debug\Lea
 E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\AJ Academico 1.0\obj\Debug\Leal Academico 1.0.exe
 E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\AJ Academico 1.0\obj\Debug\Leal Academico 1.0.pdb
 E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\AJ Academico 1.0\bin\Debug\CapaPresentacion.dll.config
-E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\AJ Academico 1.0\bin\Debug\Leal_Configuracion.exe
-E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\AJ Academico 1.0\bin\Debug\Leal_Configuracion.pdb
-E:\Alex\Universidad\Codigos C#\Leal-Academico-1.0\AJ Academico 1.0\bin\Debug\Leal_Configuracion.exe.config

@@ -21,8 +21,7 @@ namespace CapaPresentacion
 
         //Variable para Captura el Empleado Logueado
         public int IDEmpleado;
-
-
+        
         // Variable para La Consulta de Datos en la Tabla o DataGriview
         private DataTable dtDetalle;
 
@@ -56,14 +55,15 @@ namespace CapaPresentacion
             //Inicio de Clase y Botones
             this.DesHabilitar();
 
-            this.btnGuardar.Enabled = false;
-            this.btnEliminar.Enabled = false;
-            this.btnEditar.Enabled = false;
-
             //Desabilitacion de Botones
             this.btnGuardar.Enabled = false;
             this.btnEditar.Enabled = false;
             this.btnEliminar.Enabled = false;
+
+            //Seleccion principal de Combobox
+            this.CBTipo.SelectedIndex = 0;
+            this.CBTipoDeCuenta01.SelectedIndex = 0;
+            this.CBTipoDeCuenta02.SelectedIndex = 0;
 
             //
             this.TBBuscar.BackColor = Color.FromArgb(32, 178, 170);
@@ -71,31 +71,51 @@ namespace CapaPresentacion
 
         private void Habilitar()
         {
-            this.TBCodigoID.ReadOnly = false;
-            this.TBCodigoID.BackColor = Color.FromArgb(32, 178, 170);
+            //Panel - Datos Basicos
+            this.CBTipo.Enabled = true;
+            this.CBTipo.BackColor = Color.FromArgb(32, 178, 170);
             this.TBCliente.ReadOnly = false;
             this.TBCliente.BackColor = Color.FromArgb(32, 178, 170);
             this.TBDocumento.ReadOnly = false;
             this.TBDocumento.BackColor = Color.FromArgb(32, 178, 170);
-            this.TBPais.ReadOnly = false;
-            this.TBPais.BackColor = Color.FromArgb(32, 178, 170);
-            this.TBCiudad.ReadOnly = false;
-            this.TBCiudad.BackColor = Color.FromArgb(32, 178, 170);
             this.TBTelefono.ReadOnly = false;
             this.TBTelefono.BackColor = Color.FromArgb(32, 178, 170);
             this.TBMovil.ReadOnly = false;
             this.TBMovil.BackColor = Color.FromArgb(32, 178, 170);
             this.TBEmail.ReadOnly = false;
             this.TBEmail.BackColor = Color.FromArgb(32, 178, 170);
-            this.TBDireccion.ReadOnly = false;
-            this.TBDireccion.BackColor = Color.FromArgb(32, 178, 170);
+
+            //Panel - Datos de Envio
+            this.TBCodigoPostal.ReadOnly = false;
+            this.TBCodigoPostal.BackColor = Color.FromArgb(32, 178, 170);
+            this.TBPais.ReadOnly = false;
+            this.TBPais.BackColor = Color.FromArgb(32, 178, 170);
+            this.TBCiudad.ReadOnly = false;
+            this.TBCiudad.BackColor = Color.FromArgb(32, 178, 170);
+            this.TBDireccion01.ReadOnly = false;
+            this.TBDireccion01.BackColor = Color.FromArgb(32, 178, 170);
+            this.TBDireccion02.ReadOnly = false;
+            this.TBDireccion02.BackColor = Color.FromArgb(32, 178, 170);
+
+            //Panel - Datos Financieros
+            this.CBBancoPrincipal.Enabled = true;
+            this.CBBancoPrincipal.BackColor = Color.FromArgb(32, 178, 170);
+            this.CBTipoDeCuenta01.Enabled = true;
+            this.CBTipoDeCuenta01.BackColor = Color.FromArgb(32, 178, 170);
+            this.TBNumeroCuenta01.ReadOnly = false;
+            this.TBNumeroCuenta01.BackColor = Color.FromArgb(32, 178, 170);
+            this.CBBancoSecundario.Enabled = true;
+            this.CBBancoSecundario.BackColor = Color.FromArgb(32, 178, 170);
+            this.CBTipoDeCuenta02.Enabled = true;
+            this.CBTipoDeCuenta02.BackColor = Color.FromArgb(32, 178, 170);
+            this.TBNumeroCuenta02.ReadOnly = false;
+            this.TBNumeroCuenta02.BackColor = Color.FromArgb(32, 178, 170);
             
         }
 
         private void DesHabilitar()
         {
-            this.TBCodigoID.ReadOnly = true;
-            this.TBCodigoID.BackColor = Color.FromArgb(187, 222, 251);
+            //Panel - Datos Basicos
             this.TBCliente.ReadOnly = true;
             this.TBCliente.BackColor = Color.FromArgb(187, 222, 251);
             this.TBDocumento.ReadOnly = true;
@@ -110,14 +130,40 @@ namespace CapaPresentacion
             this.TBMovil.BackColor = Color.FromArgb(187, 222, 251);
             this.TBEmail.ReadOnly = true;
             this.TBEmail.BackColor = Color.FromArgb(187, 222, 251);
-            this.TBDireccion.ReadOnly = true;
-            this.TBDireccion.BackColor = Color.FromArgb(187, 222, 251);
+            this.TBDireccion02.ReadOnly = true;
+            this.TBDireccion02.BackColor = Color.FromArgb(187, 222, 251);
 
+            //Panel - Datos de Envio
+            this.TBCodigoPostal.ReadOnly = true;
+            this.TBCodigoPostal.BackColor = Color.FromArgb(187, 222, 251);
+            this.TBPais.ReadOnly = true;
+            this.TBPais.BackColor = Color.FromArgb(187, 222, 251);
+            this.TBCiudad.ReadOnly = true;
+            this.TBCiudad.BackColor = Color.FromArgb(187, 222, 251);
+            this.TBDireccion01.ReadOnly = true;
+            this.TBDireccion01.BackColor = Color.FromArgb(187, 222, 251);
+            this.TBDireccion02.ReadOnly = true;
+            this.TBDireccion02.BackColor = Color.FromArgb(187, 222, 251);
+
+            //Panel - Datos Financieros
+            this.CBBancoPrincipal.Enabled = false;
+            this.CBBancoPrincipal.BackColor = Color.FromArgb(187, 222, 251);
+            this.CBTipoDeCuenta01.Enabled = false;
+            this.CBTipoDeCuenta01.BackColor = Color.FromArgb(187, 222, 251);
+            this.TBNumeroCuenta01.ReadOnly = false;
+            this.TBNumeroCuenta01.BackColor = Color.FromArgb(187, 222, 251);
+            this.CBBancoSecundario.Enabled = false;
+            this.CBBancoSecundario.BackColor = Color.FromArgb(187, 222, 251);
+            this.CBTipoDeCuenta02.Enabled = false;
+            this.CBTipoDeCuenta02.BackColor = Color.FromArgb(187, 222, 251);
+            this.TBNumeroCuenta02.ReadOnly = false;
+            this.TBNumeroCuenta02.BackColor = Color.FromArgb(187, 222, 251);
         }
 
         private void Limpiar()
         {
-            this.TBCodigoID.Text = string.Empty;
+            //Panel - Datos Basicos
+            this.CBTipo.SelectedIndex = 0;
             this.TBCliente.Text = string.Empty;
             this.TBDocumento.Text = string.Empty;
             this.TBPais.Text = string.Empty;
@@ -125,7 +171,24 @@ namespace CapaPresentacion
             this.TBTelefono.Text = string.Empty;
             this.TBMovil.Text = string.Empty;
             this.TBEmail.Text = string.Empty;
-            this.TBDireccion.Text = string.Empty;
+            this.TBDireccion02.Text = string.Empty;
+
+            //Panel - Datos de Envio
+            this.TBCodigoPostal.Text = string.Empty;
+            this.TBPais.Text = string.Empty;
+            this.TBCiudad.Text = string.Empty;
+            this.TBDireccion01.Text = string.Empty;
+            this.TBDireccion02.Text = string.Empty;
+
+            //Panel - Datos Financieros
+            this.CBBancoPrincipal.SelectedIndex = 0;
+            this.CBTipoDeCuenta01.SelectedIndex = 0;
+            this.TBNumeroCuenta01.Text = string.Empty;
+            this.CBBancoSecundario.SelectedIndex = 0;
+            this.CBTipoDeCuenta02.SelectedIndex = 0;
+            this.TBNumeroCuenta02.Text = string.Empty;
+
+
         }
 
         private void Botones_Consultas()
@@ -161,40 +224,6 @@ namespace CapaPresentacion
             this.DGResultado.DataSource = this.dtDetalle;
         }
 
-        private void Consulta_CodigoID()
-        {
-            try
-            {
-                DataTable Datos = CapaNegocio.fProduccion_Clientes.CodigoID_Solicitud("1");
-                //Evaluamos si  existen los Datos
-                if (Datos.Rows.Count == 0)
-                {
-                    Codigo_SQL = "1";
-                    //TBCodigoID.Text = "1";
-                    //MessageBox.Show("No se Encontraron Registros en la Base de Datos", "Sistema", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                else
-                {
-                    //frmAcademico_RegistrarAlumno frm = new frmAcademico_RegistrarAlumno();
-                    Codigo_SQL = Datos.Rows[0][0].ToString();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message + ex.StackTrace);
-            }
-        }
-
-        public void AutoCompletar_ReInscripcion()
-        {
-            //Obtenemos el resultado de la base de datos de
-            //La columna Iddatos basicos - Tabla Prestamos.DatosBasicos
-            //Procedimiento Almacenado Sistema.CodigoID_Solicitud
-
-            this.TBCodigoID.Text = Codigo_SQL;
-
-        }
-
         private void Consulta()
         {
             //Se realiza una consulta General de los datos Registrados
@@ -204,12 +233,6 @@ namespace CapaPresentacion
             {
                 this.DGResultado.DataSource = fProduccion_Clientes.Buscar_Cliente(this.TBBuscar.Text);
                 lblTotal.Text = "Datos Registrados: " + Convert.ToString(DGResultado.Rows.Count);
-
-                //Despues de realizar la consulta se procede
-                //A darle colores o fondo a los botones Eliminar y Editar
-                btnEliminar.Image = Properties.Resources.BV_Eliminar;
-                btnEditar.Image = Properties.Resources.BV_Editar;
-
 
             }
             catch (Exception ex)
@@ -237,25 +260,16 @@ namespace CapaPresentacion
                 // Se procede habilitar los campos de textos del Datos Basicos
                 this.Habilitar();
 
-                // Se procede habilitar el Boton Guardar
-                // y los Campos de Textos
+                // Se hace enfasis (Focus) Al Iniciar el Evento Click 
+                // sobre el Campo Con Nombre Proveedor
 
-                this.btnGuardar.Enabled = true;
-                this.btnGuardar.Image = Properties.Resources.BV_Guardar;
+                this.TBCliente.Focus();
+
+                // Se realiza la consulta para Auto Generar
+                // El Codigo del Proveedor desde la Base de Datos
+
+                this.IsNuevo = true;
             }
-
-            // Se hace enfasis (Focus) Al Iniciar el Evento Click 
-            // sobre el Campo Con Nombre Proveedor
-
-            this.TBCliente.Focus();
-
-            // Se realiza la consulta para Auto Generar
-            // El Codigo del Proveedor desde la Base de Datos
-
-            this.Consulta_CodigoID();
-            this.AutoCompletar_ReInscripcion();
-
-            this.IsNuevo = true;
 
         }
 
@@ -282,7 +296,7 @@ namespace CapaPresentacion
                     if (this.IsNuevo)
                     {
                         rptaDatosBasicos = fProduccion_Clientes.Guardar_DatosBasicos(IDEmpleado, this.TBCliente.Text, this.TBDocumento.Text,
-                        this.TBPais.Text, this.TBCiudad.Text, this.TBTelefono.Text, this.TBMovil.Text, this.TBEmail.Text, this.TBDireccion.Text, 1, 1);
+                        this.TBPais.Text, this.TBCiudad.Text, this.TBTelefono.Text, this.TBMovil.Text, this.TBEmail.Text, this.TBDireccion02.Text, 1, 1);
                     }
 
                     if (rptaDatosBasicos.Equals("OK"))

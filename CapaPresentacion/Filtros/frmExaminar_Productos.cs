@@ -38,6 +38,7 @@ namespace CapaPresentacion
             this.dtDetalle.Columns.Add("Producto", System.Type.GetType("System.String"));
             this.dtDetalle.Columns.Add("Marca", System.Type.GetType("System.String"));
             this.dtDetalle.Columns.Add("Referencia", System.Type.GetType("System.String"));
+            this.dtDetalle.Columns.Add("Unidad", System.Type.GetType("System.String"));
             //Relacionamos nuestro datagridview con nuestro datatable
             this.DGResultados.DataSource = this.dtDetalle;
 
@@ -48,7 +49,6 @@ namespace CapaPresentacion
             try
             {
                 this.DGResultados.DataSource = fProduccion_Productos.Buscar_Producto(this.TBBuscar.Text);
-                //this.DGResultados.Columns[0].Visible = false;
                 lblTotal.Text = "Datos Registrados: " + Convert.ToString(DGResultados.Rows.Count);
             }
             catch (Exception ex)
@@ -89,15 +89,16 @@ namespace CapaPresentacion
                         //CAPTURAMOS VALOR DE LA FILA SELECCIONADA DG FORM2
                         string A = this.DGResultados.CurrentRow.Cells["Codigo"].Value.ToString();
                         string B = this.DGResultados.CurrentRow.Cells["Producto"].Value.ToString();
+                        string C = this.DGResultados.CurrentRow.Cells["Unidad"].Value.ToString();
 
                         //PASAMOS VAMOSRES DE FORM2  A FORM1 
                         frmProduccion_Ingresos dato = new frmProduccion_Ingresos();
                         foreach (Form frm in Application.OpenForms)
                         {
-                            if (frm.Name == "Form1")
+                            if (frm.Name == "frmProduccion_Ingresos")
                             {
                                 dato = (frmProduccion_Ingresos)frm;
-                                dato.DGDetalles.Rows.Add(A, B);
+                                dato.DGDetalles.Rows.Add(A, B, C);
 
                                 this.Close();
                                 break;
@@ -106,14 +107,6 @@ namespace CapaPresentacion
 
                     }
                 }
-                //if (frmPI.Filtro)
-                //{
-                //    frmPI1 = Convert.ToString(this.DGResultados.CurrentRow.Cells["Codigo"].Value);
-                //    frmPI2 = Convert.ToString(this.DGResultados.CurrentRow.Cells["Proveedor"].Value);
-                //    frmPI3 = Convert.ToString(this.DGResultados.CurrentRow.Cells[3].Value);
-                //    frmPI.setProveedor(frmPI1, frmPI2, frmPI3);
-                //    this.Hide();
-                //}
 
             }
             catch (Exception ex)
@@ -124,7 +117,60 @@ namespace CapaPresentacion
 
         private void DGResultados_KeyPress(object sender, KeyPressEventArgs e)
         {
+            try
+            {
+                frmProduccion_Costos frmPC = frmProduccion_Costos.GetInstancia();
+                frmProduccion_Ingresos frmPI = frmProduccion_Ingresos.GetInstancia();
 
+                ////Variables de frmProduccion_Marcas
+                //string frmPM1, frmPM2;
+                ////Variables de frmProduccion_Ingresos
+                //string frmPI1, frmPI2, frmPI3;
+                //Variables de frmProduccion_Productos
+                string frmPC1, frmPC2;
+
+
+                if (frmPC.Filtro)
+                {
+                    frmPC1 = Convert.ToString(this.DGResultados.CurrentRow.Cells["Codigo"].Value);
+                    frmPC2 = Convert.ToString(this.DGResultados.CurrentRow.Cells["Producto"].Value);
+                    frmPC.setProducto(frmPC1, frmPC2);
+                    this.Hide();
+                }
+
+                if (frmPI.Filtro)
+                {
+                    //BOTON PASAR DATOS DE UNA DATAGRID A OTRA 
+                    foreach (DataGridViewRow row in DGResultados.SelectedRows)
+                    {
+
+                        //CAPTURAMOS VALOR DE LA FILA SELECCIONADA DG FORM2
+                        string A = this.DGResultados.CurrentRow.Cells["Codigo"].Value.ToString();
+                        string B = this.DGResultados.CurrentRow.Cells["Producto"].Value.ToString();
+                        string C = this.DGResultados.CurrentRow.Cells["Unidad"].Value.ToString();
+
+                        //PASAMOS VAMOSRES DE FORM2  A FORM1 
+                        frmProduccion_Ingresos dato = new frmProduccion_Ingresos();
+                        foreach (Form frm in Application.OpenForms)
+                        {
+                            if (frm.Name == "frmProduccion_Ingresos")
+                            {
+                                dato = (frmProduccion_Ingresos)frm;
+                                dato.DGDetalles.Rows.Add(A, B, C);
+                                dato.DGDetalles.Focus();
+                                this.Close();
+                                break;
+                            }
+                        }
+
+                    }
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
         }
     }
 }

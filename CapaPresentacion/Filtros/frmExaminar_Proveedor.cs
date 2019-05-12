@@ -112,11 +112,14 @@ namespace CapaPresentacion
                 {
                     frmProduccion_Marcas frmPM = frmProduccion_Marcas.GetInstancia();
                     frmProduccion_Ingresos frmPI = frmProduccion_Ingresos.GetInstancia();
+                    frmProduccion_Productos frmPP = frmProduccion_Productos.GetInstancia();
 
                     //Variables de frmProduccion_Marcas
                     string frmPM1, frmPM2;
                     //Variables de frmProduccion_Ingresos
                     string frmPI1, frmPI2;
+                    //Variables de frmProduccion_Productos
+                    string frmPP1, frmPP2;
 
                     if (frmPM.Filtro)
                     {
@@ -125,11 +128,18 @@ namespace CapaPresentacion
                         frmPM.setProveedor(frmPM1, frmPM2);
                         this.Hide();
                     }
-                    else if (frmPI.Filtro)
+                    if (frmPI.Filtro)
                     {
                         frmPI1 = Convert.ToString(this.DGResultados.CurrentRow.Cells["Codigo"].Value);
                         frmPI2 = Convert.ToString(this.DGResultados.CurrentRow.Cells["Proveedor"].Value);
                         frmPI.setProveedor(frmPI1, frmPI2);
+                        this.Hide();
+                    }
+                    if (frmPP.Filtro)
+                    {
+                        frmPP1 = Convert.ToString(this.DGResultados.CurrentRow.Cells["Codigo"].Value);
+                        frmPP2 = Convert.ToString(this.DGResultados.CurrentRow.Cells["Proveedor"].Value);
+                        frmPP.setProveedor(frmPP1, frmPP2);
                         this.Hide();
                     }
                 }

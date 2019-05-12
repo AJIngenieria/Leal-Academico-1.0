@@ -16,7 +16,7 @@ namespace CapaNegocio
             (
                 //llaves Primarias
 
-                int idempleado, int idotros, int idmarca, int idcostos,
+                int idempleado, int idmarca,
 
                 //Datos Basicos
 

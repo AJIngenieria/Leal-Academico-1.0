@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnEliminar = new System.Windows.Forms.Button();
@@ -48,7 +49,7 @@
             this.TBIdbodega = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.btnExaminar_Bodega = new System.Windows.Forms.Button();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.DTFechaDeIngreso = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.TBBodega = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -58,8 +59,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.Codigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Cantidades = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Unidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Cantidades = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Costo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
@@ -176,19 +177,28 @@
             this.DGDetalles.AllowUserToAddRows = false;
             this.DGDetalles.AllowUserToDeleteRows = false;
             this.DGDetalles.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.BottomCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DGDetalles.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.DGDetalles.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Codigo,
             this.Descripcion,
-            this.Cantidades,
             this.Unidad,
+            this.Cantidades,
             this.Costo,
             this.Valor});
             this.DGDetalles.Cursor = System.Windows.Forms.Cursors.Hand;
             this.DGDetalles.Location = new System.Drawing.Point(6, 20);
             this.DGDetalles.Name = "DGDetalles";
+            this.DGDetalles.RowHeadersVisible = false;
             this.DGDetalles.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DGDetalles.RowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DGDetalles.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.DGDetalles.Size = new System.Drawing.Size(782, 315);
             this.DGDetalles.TabIndex = 0;
             this.DGDetalles.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.DGDetalles_CellEndEdit);
@@ -206,7 +216,7 @@
             this.groupBox3.Controls.Add(this.TBIdbodega);
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.btnExaminar_Bodega);
-            this.groupBox3.Controls.Add(this.dateTimePicker1);
+            this.groupBox3.Controls.Add(this.DTFechaDeIngreso);
             this.groupBox3.Controls.Add(this.label1);
             this.groupBox3.Controls.Add(this.TBBodega);
             this.groupBox3.Controls.Add(this.label2);
@@ -252,7 +262,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(343, 79);
+            this.label4.Location = new System.Drawing.Point(360, 79);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(41, 15);
             this.label4.TabIndex = 6;
@@ -278,12 +288,14 @@
             "Cotizacion",
             "Factura",
             "Guia de Ingreso",
-            "Guia de Traslado",
             "Guia de Remision",
-            "Orden de Compra"});
+            "Guia de Traslado",
+            "Orden de Compra",
+            "Orden de Servicio"});
             this.CBComprobante.Location = new System.Drawing.Point(94, 76);
             this.CBComprobante.Name = "CBComprobante";
             this.CBComprobante.Size = new System.Drawing.Size(118, 23);
+            this.CBComprobante.Sorted = true;
             this.CBComprobante.TabIndex = 15;
             // 
             // label5
@@ -298,8 +310,9 @@
             // TBComprobante
             // 
             this.TBComprobante.Location = new System.Drawing.Point(218, 76);
+            this.TBComprobante.Multiline = true;
             this.TBComprobante.Name = "TBComprobante";
-            this.TBComprobante.Size = new System.Drawing.Size(119, 21);
+            this.TBComprobante.Size = new System.Drawing.Size(136, 23);
             this.TBComprobante.TabIndex = 23;
             this.TBComprobante.Text = "000123456789";
             this.TBComprobante.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -338,14 +351,14 @@
             this.btnExaminar_Bodega.UseVisualStyleBackColor = true;
             this.btnExaminar_Bodega.Click += new System.EventHandler(this.btnExaminar_Bodega_Click);
             // 
-            // dateTimePicker1
+            // DTFechaDeIngreso
             // 
-            this.dateTimePicker1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(390, 76);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(114, 21);
-            this.dateTimePicker1.TabIndex = 7;
+            this.DTFechaDeIngreso.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DTFechaDeIngreso.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DTFechaDeIngreso.Location = new System.Drawing.Point(404, 76);
+            this.DTFechaDeIngreso.Name = "DTFechaDeIngreso";
+            this.DTFechaDeIngreso.Size = new System.Drawing.Size(100, 21);
+            this.DTFechaDeIngreso.TabIndex = 7;
             // 
             // label1
             // 
@@ -428,19 +441,19 @@
             this.Descripcion.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Descripcion.Width = 370;
             // 
-            // Cantidades
-            // 
-            this.Cantidades.HeaderText = "Cant.";
-            this.Cantidades.Name = "Cantidades";
-            this.Cantidades.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            this.Cantidades.Width = 60;
-            // 
             // Unidad
             // 
             this.Unidad.HeaderText = "Unidad";
             this.Unidad.Name = "Unidad";
             this.Unidad.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.Unidad.Width = 60;
+            // 
+            // Cantidades
+            // 
+            this.Cantidades.HeaderText = "Cant.";
+            this.Cantidades.Name = "Cantidades";
+            this.Cantidades.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.Cantidades.Width = 60;
             // 
             // Costo
             // 
@@ -472,6 +485,7 @@
             this.Text = "Produccion - Ingreso de Bodega";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmProduccion_Bodegas_Ingreso_FormClosing);
             this.Load += new System.EventHandler(this.frmProduccion_Ingresos_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.frmProduccion_Ingresos_KeyDown);
             this.groupBox1.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.DGDetalles)).EndInit();
@@ -500,7 +514,7 @@
         private System.Windows.Forms.TextBox TBComprobante;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnExaminar_Bodega;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker DTFechaDeIngreso;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox TBBodega;
         private System.Windows.Forms.Label label2;
@@ -511,12 +525,12 @@
         private System.Windows.Forms.TextBox TBIdbodega;
         private System.Windows.Forms.TextBox TBProveedor;
         private System.Windows.Forms.TextBox TBIdproveedor;
+        public System.Windows.Forms.DataGridView DGDetalles;
         private System.Windows.Forms.DataGridViewTextBoxColumn Codigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Cantidades;
         private System.Windows.Forms.DataGridViewTextBoxColumn Unidad;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Cantidades;
         private System.Windows.Forms.DataGridViewTextBoxColumn Costo;
         private System.Windows.Forms.DataGridViewTextBoxColumn Valor;
-        public System.Windows.Forms.DataGridView DGDetalles;
     }
 }

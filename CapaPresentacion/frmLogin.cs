@@ -24,11 +24,29 @@ namespace CapaPresentacion
         {
             this.TBUsuario.Focus();
 
-            this.textBox1.ReadOnly = true;
-            this.textBox5.ReadOnly = true;
+            this.TBUsuario.ReadOnly = false;
+            this.TBUsuario.BackColor = Color.FromArgb(32, 178, 170);
+            this.TBContraseña.ReadOnly = false;
+            this.TBContraseña.BackColor = Color.FromArgb(32, 178, 170);
 
         }
 
+        private void TBUsuario_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            try
+            {
+                if (e.KeyChar == Convert.ToChar(Keys.Enter))
+                {
+                    this.TBContraseña.Focus();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message + ex.StackTrace);
+            }
+
+        }
 
         private void TBContraseña_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -61,26 +79,5 @@ namespace CapaPresentacion
             }
         }
 
-        private void TBUsuario_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            try
-            {
-                if (e.KeyChar == Convert.ToChar(Keys.Enter))
-                {
-                    this.TBContraseña.Focus();
-                }
-                else if (e.KeyChar == Convert.ToChar(Keys.Escape))
-                {
-                    frmSETUP_Equipos frmSETUP_Equipos = new frmSETUP_Equipos();
-                    frmSETUP_Equipos.Show();
-                    this.Hide();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message + ex.StackTrace);
-            }
-            
-        }
     }
 }

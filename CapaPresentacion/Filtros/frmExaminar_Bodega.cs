@@ -14,6 +14,8 @@ namespace CapaPresentacion
 {
     public partial class frmExaminar_Bodega : Form
     {
+        // Variable para La Consulta de Datos en la Tabla o DataGriview
+        private DataTable dtDetalle;
         public frmExaminar_Bodega()
         {
             InitializeComponent();
@@ -21,6 +23,23 @@ namespace CapaPresentacion
 
         private void frmExaminarProduccion_Bodega_Load(object sender, EventArgs e)
         {
+            //Inicio de Clase
+            this.CrearTabla();
+
+            this.TBBuscar.BackColor = Color.FromArgb(32, 178, 170);
+        }
+
+        private void CrearTabla()
+        {
+            //Crea la tabla con el nombre de Detalle
+            this.dtDetalle = new DataTable("Detalle");
+            //Agrega las columnas que tendra la tabla
+            this.dtDetalle.Columns.Add("Codigo", System.Type.GetType("System.Int32"));
+            this.dtDetalle.Columns.Add("Bodega", System.Type.GetType("System.String"));
+            this.dtDetalle.Columns.Add("Sucurzal", System.Type.GetType("System.String"));
+            this.dtDetalle.Columns.Add("Ciudad", System.Type.GetType("System.String"));
+            //Relacionamos nuestro datagridview con nuestro datatable
+            this.DGResultados.DataSource = this.dtDetalle;
 
         }
 
@@ -42,11 +61,13 @@ namespace CapaPresentacion
             try
             {
                 frmProduccion_Productos frmPP = frmProduccion_Productos.GetInstancia();
+                frmProduccion_Ingresos frmPI = frmProduccion_Ingresos.GetInstancia();
+
 
                 ////Variables de frmProduccion_Marcas
                 //string frmPM1, frmPM2;
-                ////Variables de frmProduccion_Ingresos
-                //string frmPI1, frmPI2, frmPI3;
+                //Variables de frmProduccion_Ingresos
+                string frmPI1, frmPI2;
 
                 //Variables de frmProduccion_Productos
                 string frmPP1, frmPP2;
@@ -57,6 +78,14 @@ namespace CapaPresentacion
                     frmPP1 = Convert.ToString(this.DGResultados.CurrentRow.Cells["Codigo"].Value);
                     frmPP2 = Convert.ToString(this.DGResultados.CurrentRow.Cells["Bodega"].Value);
                     frmPP.setBodega(frmPP1, frmPP2);
+                    this.Hide();
+                }
+
+                if (frmPI.Filtro)
+                {
+                    frmPI1 = Convert.ToString(this.DGResultados.CurrentRow.Cells["Codigo"].Value);
+                    frmPI2 = Convert.ToString(this.DGResultados.CurrentRow.Cells["Bodega"].Value);
+                    frmPI.setBodega(frmPI1, frmPI2);
                     this.Hide();
                 }
 
@@ -74,11 +103,13 @@ namespace CapaPresentacion
                 if (e.KeyChar == Convert.ToChar(Keys.Enter))
                 {
                     frmProduccion_Productos frmPP = frmProduccion_Productos.GetInstancia();
+                    frmProduccion_Ingresos frmPI = frmProduccion_Ingresos.GetInstancia();
+
 
                     ////Variables de frmProduccion_Marcas
                     //string frmPM1, frmPM2;
-                    ////Variables de frmProduccion_Ingresos
-                    //string frmPI1, frmPI2, frmPI3;
+                    //Variables de frmProduccion_Ingresos
+                    string frmPI1, frmPI2;
 
                     //Variables de frmProduccion_Productos
                     string frmPP1, frmPP2;
@@ -89,6 +120,14 @@ namespace CapaPresentacion
                         frmPP1 = Convert.ToString(this.DGResultados.CurrentRow.Cells["Codigo"].Value);
                         frmPP2 = Convert.ToString(this.DGResultados.CurrentRow.Cells["Bodega"].Value);
                         frmPP.setBodega(frmPP1, frmPP2);
+                        this.Hide();
+                    }
+
+                    if (frmPI.Filtro)
+                    {
+                        frmPI1 = Convert.ToString(this.DGResultados.CurrentRow.Cells["Codigo"].Value);
+                        frmPI2 = Convert.ToString(this.DGResultados.CurrentRow.Cells["Bodega"].Value);
+                        frmPI.setBodega(frmPI1, frmPI2);
                         this.Hide();
                     }
                 }

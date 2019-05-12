@@ -48,16 +48,16 @@
             this.groupBox1.Size = new System.Drawing.Size(512, 344);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Text = "Leal Academico - Filtro de Bodegas Registradas";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(6, 25);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 15);
+            this.label1.Size = new System.Drawing.Size(115, 15);
             this.label1.TabIndex = 8;
-            this.label1.Text = "Consultar Bodega";
+            this.label1.Text = "Bodega a Consultar";
             // 
             // lblTotal
             // 
@@ -90,9 +90,9 @@
             this.TBBuscar.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TBBuscar.Location = new System.Drawing.Point(117, 22);
+            this.TBBuscar.Location = new System.Drawing.Point(127, 22);
             this.TBBuscar.Name = "TBBuscar";
-            this.TBBuscar.Size = new System.Drawing.Size(389, 21);
+            this.TBBuscar.Size = new System.Drawing.Size(379, 21);
             this.TBBuscar.TabIndex = 4;
             this.TBBuscar.TextChanged += new System.EventHandler(this.TBBuscar_TextChanged);
             // 
@@ -108,7 +108,7 @@
             this.MaximizeBox = false;
             this.Name = "frmExaminar_Bodega";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmExaminarProduccion_Bodega";
+            this.Text = "Examinar - Bodega";
             this.Load += new System.EventHandler(this.frmExaminarProduccion_Bodega_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

@@ -85,8 +85,6 @@ namespace CapaPresentacion
 
         private void DesHabilitar()
         {
-            this.TBCodigoID.ReadOnly = true;
-            this.TBCodigoID.BackColor = Color.FromArgb(187, 222, 251);
             this.TBNombre.ReadOnly = true;
             this.TBNombre.BackColor = Color.FromArgb(187, 222, 251);
             this.TBResponsable.ReadOnly = true;
@@ -109,7 +107,6 @@ namespace CapaPresentacion
 
         private void Limpiar()
         {
-            this.TBCodigoID.Text = string.Empty;
             this.TBNombre.Text = string.Empty;
             this.TBResponsable.Text = string.Empty;
             this.TBCiudad.Text = string.Empty;
@@ -132,38 +129,6 @@ namespace CapaPresentacion
             this.dtDetalle.Columns.Add("Ciudad", System.Type.GetType("System.String"));
             //Relacionamos nuestro datagridview con nuestro datatable
             this.DGResultado.DataSource = this.dtDetalle;
-
-        }
-
-        private void Consulta_CodigoID()
-        {
-            try
-            {
-                DataTable Datos = CapaNegocio.fProduccion_Bodega.CodigoID_Solicitud("1");
-                //Evaluamos si  existen los Datos
-                if (Datos.Rows.Count == 0)
-                {
-                    Codigo_SQL = "1";
-                    //MessageBox.Show("No se Encontraron Registros en la Base de Datos", "Sistema Instituto Fundecar", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
-                else
-                {
-                    Codigo_SQL = Datos.Rows[0][0].ToString();
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message + ex.StackTrace);
-            }
-        }
-
-        public void AutoCompletar_ReInscripcion()
-        {
-            //Obtenemos el resultado de la base de datos de
-            //La columna Iddatos basicos - Tabla Prestamos.DatosBasicos
-            //Procedimiento Almacenado Sistema.CodigoID_Solicitud
-
-            this.TBCodigoID.Text = Codigo_SQL;
 
         }
 
@@ -238,12 +203,6 @@ namespace CapaPresentacion
             
             this.TBNombre.Focus();
             this.Combobox();
-
-            // Se realiza la consulta para Auto Generar
-            // El Codigo del Proveedor desde la Base de Datos
-
-            this.Consulta_CodigoID();
-            this.AutoCompletar_ReInscripcion();
             
             this.IsNuevo = true;
         }
@@ -255,12 +214,7 @@ namespace CapaPresentacion
                 string rptaDatosBasicos = "";
 
                 //Datos Basicos
-                if (this.TBCodigoID.Text == string.Empty)
-                {
-                    MensajeError("Faltan Ingresar Algunos Datos, Estos Seran Remarcados");
-                    TBCodigoID.BackColor = Color.FromArgb(250, 235, 215);
-                }
-                else if (this.TBNombre.Text == string.Empty)
+                if (this.TBNombre.Text == string.Empty)
                 {
                     MensajeError("Faltan Ingresar Algunos Datos, Estos Seran Remarcados");
                     TBNombre.BackColor = Color.FromArgb(250, 235, 215);
@@ -285,7 +239,7 @@ namespace CapaPresentacion
                 {
                     if (this.IsNuevo)
                     {
-                        rptaDatosBasicos = fProduccion_Bodega.Guardar_DatosBasicos(IDEmpleado, Convert.ToInt32(CBSucurzal.SelectedValue), this.TBCodigoID.Text, this.TBNombre.Text,
+                        rptaDatosBasicos = fProduccion_Bodega.Guardar_DatosBasicos(IDEmpleado, Convert.ToInt32(CBSucurzal.SelectedValue), this.TBNombre.Text,
                         this.TBResponsable.Text, this.TBCiudad.Text, this.CBZonas.Text, this.TBDireccion01.Text, this.TBDireccion02.Text,this.TBTelefono.Text,this.TBMovil.Text,
                         1,"1");
                     }
